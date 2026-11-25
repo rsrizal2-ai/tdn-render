@@ -15,7 +15,7 @@ import { ThreeCanvas } from "@remotion/three";
 import { Box, Cyl, Ball, CanvasPlane } from "../style/toon";
 import { Look } from "../style/puppet";
 import { Person, Lights, Desk, Grade, seg, lerp, clamp, V3 } from "../style/kit";
-import { Floor, WallDoor, SideWall, Glow, Shaft, Plant, Lamp, Monitor, Chair, Rug, Dust } from "../style/props";
+import { Floor, WallDoor, SideWall, Glow, Shaft, Plant, Frame, Lamp, Monitor, Chair, Rug, Dust } from "../style/props";
 import { Cam, Key, Globe, Stars } from "../style/extra";
 import { Captions } from "../Main";
 
