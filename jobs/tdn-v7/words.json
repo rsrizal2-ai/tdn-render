@@ -1,0 +1,977 @@
+[
+ {
+  "word": "Thirty",
+  "start": 0.0,
+  "end": 0.24
+ },
+ {
+  "word": "people",
+  "start": 0.24,
+  "end": 0.48
+ },
+ {
+  "word": "went",
+  "start": 0.48,
+  "end": 0.71
+ },
+ {
+  "word": "out",
+  "start": 0.71,
+  "end": 0.84
+ },
+ {
+  "word": "to",
+  "start": 0.84,
+  "end": 0.92
+ },
+ {
+  "word": "buy",
+  "start": 0.92,
+  "end": 1.09
+ },
+ {
+  "word": "groceries",
+  "start": 1.09,
+  "end": 1.66
+ },
+ {
+  "word": "in",
+  "start": 1.66,
+  "end": 1.76
+ },
+ {
+  "word": "Colombia",
+  "start": 1.76,
+  "end": 2.36
+ },
+ {
+  "word": "They",
+  "start": 2.36,
+  "end": 2.55
+ },
+ {
+  "word": "came",
+  "start": 2.55,
+  "end": 2.77
+ },
+ {
+  "word": "home",
+  "start": 2.77,
+  "end": 2.98
+ },
+ {
+  "word": "seventeen",
+  "start": 2.98,
+  "end": 3.59
+ },
+ {
+  "word": "hours",
+  "start": 3.59,
+  "end": 3.93
+ },
+ {
+  "word": "later",
+  "start": 3.93,
+  "end": 4.3
+ },
+ {
+  "word": "freed",
+  "start": 4.3,
+  "end": 4.73
+ },
+ {
+  "word": "by",
+  "start": 4.73,
+  "end": 4.87
+ },
+ {
+  "word": "special",
+  "start": 4.87,
+  "end": 5.24
+ },
+ {
+  "word": "forces",
+  "start": 5.24,
+  "end": 5.82
+ },
+ {
+  "word": "On",
+  "start": 6.03,
+  "end": 6.17
+ },
+ {
+  "word": "Tuesday",
+  "start": 6.17,
+  "end": 6.5
+ },
+ {
+  "word": "morning",
+  "start": 6.5,
+  "end": 6.92
+ },
+ {
+  "word": "an",
+  "start": 6.92,
+  "end": 7.11
+ },
+ {
+  "word": "armed",
+  "start": 7.11,
+  "end": 7.46
+ },
+ {
+  "word": "crew",
+  "start": 7.46,
+  "end": 7.81
+ },
+ {
+  "word": "tried",
+  "start": 7.81,
+  "end": 8.09
+ },
+ {
+  "word": "to",
+  "start": 8.09,
+  "end": 8.15
+ },
+ {
+  "word": "rob",
+  "start": 8.15,
+  "end": 8.49
+ },
+ {
+  "word": "an",
+  "start": 8.49,
+  "end": 8.57
+ },
+ {
+  "word": "armored",
+  "start": 8.57,
+  "end": 8.94
+ },
+ {
+  "word": "cash",
+  "start": 8.94,
+  "end": 9.29
+ },
+ {
+  "word": "truck",
+  "start": 9.29,
+  "end": 9.63
+ },
+ {
+  "word": "outside",
+  "start": 9.63,
+  "end": 9.99
+ },
+ {
+  "word": "a",
+  "start": 9.99,
+  "end": 10.02
+ },
+ {
+  "word": "supermarket",
+  "start": 10.02,
+  "end": 10.72
+ },
+ {
+  "word": "in",
+  "start": 10.72,
+  "end": 10.85
+ },
+ {
+  "word": "Cartagena",
+  "start": 10.85,
+  "end": 11.72
+ },
+ {
+  "word": "a",
+  "start": 11.72,
+  "end": 11.78
+ },
+ {
+  "word": "Caribbean",
+  "start": 11.78,
+  "end": 12.23
+ },
+ {
+  "word": "port",
+  "start": 12.23,
+  "end": 12.53
+ },
+ {
+  "word": "city",
+  "start": 12.53,
+  "end": 12.82
+ },
+ {
+  "word": "packed",
+  "start": 12.82,
+  "end": 13.23
+ },
+ {
+  "word": "with",
+  "start": 13.23,
+  "end": 13.39
+ },
+ {
+  "word": "tourists",
+  "start": 13.39,
+  "end": 14.0
+ },
+ {
+  "word": "But",
+  "start": 14.0,
+  "end": 14.32
+ },
+ {
+  "word": "the",
+  "start": 14.32,
+  "end": 14.39
+ },
+ {
+  "word": "truck",
+  "start": 14.39,
+  "end": 14.7
+ },
+ {
+  "word": "had",
+  "start": 14.7,
+  "end": 14.79
+ },
+ {
+  "word": "already",
+  "start": 14.79,
+  "end": 15.07
+ },
+ {
+  "word": "left",
+  "start": 15.07,
+  "end": 15.72
+ },
+ {
+  "word": "So",
+  "start": 15.72,
+  "end": 15.85
+ },
+ {
+  "word": "the",
+  "start": 15.85,
+  "end": 15.93
+ },
+ {
+  "word": "gunmen",
+  "start": 15.93,
+  "end": 16.27
+ },
+ {
+  "word": "ran",
+  "start": 16.27,
+  "end": 16.59
+ },
+ {
+  "word": "inside",
+  "start": 16.59,
+  "end": 17.2
+ },
+ {
+  "word": "and",
+  "start": 17.2,
+  "end": 17.39
+ },
+ {
+  "word": "took",
+  "start": 17.39,
+  "end": 17.54
+ },
+ {
+  "word": "the",
+  "start": 17.54,
+  "end": 17.61
+ },
+ {
+  "word": "whole",
+  "start": 17.61,
+  "end": 17.89
+ },
+ {
+  "word": "store",
+  "start": 17.89,
+  "end": 18.25
+ },
+ {
+  "word": "hostage",
+  "start": 18.25,
+  "end": 18.86
+ },
+ {
+  "word": "about",
+  "start": 19.05,
+  "end": 19.28
+ },
+ {
+  "word": "thirty",
+  "start": 19.28,
+  "end": 19.6
+ },
+ {
+  "word": "shoppers",
+  "start": 19.6,
+  "end": 20.14
+ },
+ {
+  "word": "and",
+  "start": 20.14,
+  "end": 20.24
+ },
+ {
+  "word": "workers",
+  "start": 20.24,
+  "end": 20.78
+ },
+ {
+  "word": "They",
+  "start": 20.97,
+  "end": 21.09
+ },
+ {
+  "word": "demanded",
+  "start": 21.09,
+  "end": 21.49
+ },
+ {
+  "word": "seven",
+  "start": 21.49,
+  "end": 21.95
+ },
+ {
+  "word": "billion",
+  "start": 21.95,
+  "end": 22.33
+ },
+ {
+  "word": "pesos",
+  "start": 22.33,
+  "end": 23.01
+ },
+ {
+  "word": "about",
+  "start": 23.11,
+  "end": 23.37
+ },
+ {
+  "word": "two",
+  "start": 23.37,
+  "end": 23.58
+ },
+ {
+  "word": "million",
+  "start": 23.58,
+  "end": 23.95
+ },
+ {
+  "word": "dollars",
+  "start": 23.95,
+  "end": 24.59
+ },
+ {
+  "word": "and",
+  "start": 24.59,
+  "end": 24.72
+ },
+ {
+  "word": "a",
+  "start": 24.72,
+  "end": 24.75
+ },
+ {
+  "word": "way",
+  "start": 24.75,
+  "end": 25.03
+ },
+ {
+  "word": "out",
+  "start": 25.03,
+  "end": 25.58
+ },
+ {
+  "word": "The",
+  "start": 25.58,
+  "end": 25.66
+ },
+ {
+  "word": "windows",
+  "start": 25.66,
+  "end": 26.14
+ },
+ {
+  "word": "were",
+  "start": 26.14,
+  "end": 26.24
+ },
+ {
+  "word": "papered",
+  "start": 26.24,
+  "end": 26.62
+ },
+ {
+  "word": "over",
+  "start": 26.62,
+  "end": 27.02
+ },
+ {
+  "word": "Police",
+  "start": 27.15,
+  "end": 27.6
+ },
+ {
+  "word": "and",
+  "start": 27.6,
+  "end": 27.69
+ },
+ {
+  "word": "soldiers",
+  "start": 27.69,
+  "end": 28.2
+ },
+ {
+  "word": "surrounded",
+  "start": 28.2,
+  "end": 28.68
+ },
+ {
+  "word": "the",
+  "start": 28.68,
+  "end": 28.74
+ },
+ {
+  "word": "block",
+  "start": 28.74,
+  "end": 29.43
+ },
+ {
+  "word": "Through",
+  "start": 29.43,
+  "end": 29.61
+ },
+ {
+  "word": "the",
+  "start": 29.61,
+  "end": 29.7
+ },
+ {
+  "word": "day",
+  "start": 29.7,
+  "end": 30.18
+ },
+ {
+  "word": "ten",
+  "start": 30.18,
+  "end": 30.41
+ },
+ {
+  "word": "hostages",
+  "start": 30.41,
+  "end": 31.05
+ },
+ {
+  "word": "were",
+  "start": 31.05,
+  "end": 31.15
+ },
+ {
+  "word": "let",
+  "start": 31.15,
+  "end": 31.35
+ },
+ {
+  "word": "go",
+  "start": 31.35,
+  "end": 31.79
+ },
+ {
+  "word": "several",
+  "start": 31.88,
+  "end": 32.24
+ },
+ {
+  "word": "of",
+  "start": 32.24,
+  "end": 32.35
+ },
+ {
+  "word": "them",
+  "start": 32.35,
+  "end": 32.6
+ },
+ {
+  "word": "elderly",
+  "start": 32.6,
+  "end": 33.02
+ },
+ {
+  "word": "women",
+  "start": 33.02,
+  "end": 33.44
+ },
+ {
+  "word": "The",
+  "start": 33.44,
+  "end": 33.65
+ },
+ {
+  "word": "country's",
+  "start": 33.65,
+  "end": 34.05
+ },
+ {
+  "word": "president",
+  "start": 34.05,
+  "end": 34.54
+ },
+ {
+  "word": "showed",
+  "start": 34.54,
+  "end": 34.82
+ },
+ {
+  "word": "up",
+  "start": 34.82,
+  "end": 34.96
+ },
+ {
+  "word": "in",
+  "start": 34.96,
+  "end": 35.07
+ },
+ {
+  "word": "person",
+  "start": 35.07,
+  "end": 35.55
+ },
+ {
+  "word": "Then",
+  "start": 35.55,
+  "end": 36.19
+ },
+ {
+  "word": "at",
+  "start": 36.19,
+  "end": 36.3
+ },
+ {
+  "word": "half",
+  "start": 36.3,
+  "end": 36.55
+ },
+ {
+  "word": "past",
+  "start": 36.55,
+  "end": 36.89
+ },
+ {
+  "word": "one",
+  "start": 36.89,
+  "end": 37.09
+ },
+ {
+  "word": "in",
+  "start": 37.09,
+  "end": 37.16
+ },
+ {
+  "word": "the",
+  "start": 37.16,
+  "end": 37.22
+ },
+ {
+  "word": "morning",
+  "start": 37.22,
+  "end": 37.63
+ },
+ {
+  "word": "explosions",
+  "start": 37.77,
+  "end": 38.51
+ },
+ {
+  "word": "shook",
+  "start": 38.51,
+  "end": 38.8
+ },
+ {
+  "word": "the",
+  "start": 38.8,
+  "end": 38.88
+ },
+ {
+  "word": "street",
+  "start": 38.88,
+  "end": 39.48
+ },
+ {
+  "word": "and",
+  "start": 39.48,
+  "end": 39.6
+ },
+ {
+  "word": "special",
+  "start": 39.6,
+  "end": 39.98
+ },
+ {
+  "word": "forces",
+  "start": 39.98,
+  "end": 40.43
+ },
+ {
+  "word": "stormed",
+  "start": 40.43,
+  "end": 40.92
+ },
+ {
+  "word": "the",
+  "start": 40.92,
+  "end": 40.99
+ },
+ {
+  "word": "store",
+  "start": 40.99,
+  "end": 41.51
+ },
+ {
+  "word": "Minutes",
+  "start": 41.72,
+  "end": 42.02
+ },
+ {
+  "word": "later",
+  "start": 42.02,
+  "end": 42.54
+ },
+ {
+  "word": "it",
+  "start": 42.54,
+  "end": 42.63
+ },
+ {
+  "word": "was",
+  "start": 42.63,
+  "end": 42.82
+ },
+ {
+  "word": "over",
+  "start": 42.82,
+  "end": 43.2
+ },
+ {
+  "word": "Every",
+  "start": 43.39,
+  "end": 43.65
+ },
+ {
+  "word": "hostage",
+  "start": 43.65,
+  "end": 44.15
+ },
+ {
+  "word": "walked",
+  "start": 44.15,
+  "end": 44.51
+ },
+ {
+  "word": "out",
+  "start": 44.51,
+  "end": 44.64
+ },
+ {
+  "word": "alive",
+  "start": 44.64,
+  "end": 45.16
+ },
+ {
+  "word": "One",
+  "start": 45.31,
+  "end": 45.55
+ },
+ {
+  "word": "captor",
+  "start": 45.55,
+  "end": 45.91
+ },
+ {
+  "word": "was",
+  "start": 45.91,
+  "end": 46.1
+ },
+ {
+  "word": "killed",
+  "start": 46.1,
+  "end": 46.66
+ },
+ {
+  "word": "and",
+  "start": 46.66,
+  "end": 46.77
+ },
+ {
+  "word": "the",
+  "start": 46.77,
+  "end": 46.88
+ },
+ {
+  "word": "other",
+  "start": 46.88,
+  "end": 47.04
+ },
+ {
+  "word": "four",
+  "start": 47.04,
+  "end": 47.37
+ },
+ {
+  "word": "were",
+  "start": 47.37,
+  "end": 47.51
+ },
+ {
+  "word": "taken",
+  "start": 47.51,
+  "end": 47.81
+ },
+ {
+  "word": "away",
+  "start": 47.81,
+  "end": 48.07
+ },
+ {
+  "word": "in",
+  "start": 48.07,
+  "end": 48.15
+ },
+ {
+  "word": "handcuffs",
+  "start": 48.15,
+  "end": 48.86
+ },
+ {
+  "word": "And",
+  "start": 49.06,
+  "end": 49.17
+ },
+ {
+  "word": "here",
+  "start": 49.17,
+  "end": 49.49
+ },
+ {
+  "word": "is",
+  "start": 49.49,
+  "end": 49.66
+ },
+ {
+  "word": "the",
+  "start": 49.66,
+  "end": 49.73
+ },
+ {
+  "word": "twist",
+  "start": 49.73,
+  "end": 50.35
+ },
+ {
+  "word": "the",
+  "start": 50.35,
+  "end": 50.5
+ },
+ {
+  "word": "siege",
+  "start": 50.5,
+  "end": 50.97
+ },
+ {
+  "word": "ended",
+  "start": 50.97,
+  "end": 51.3
+ },
+ {
+  "word": "on",
+  "start": 51.3,
+  "end": 51.41
+ },
+ {
+  "word": "the",
+  "start": 51.41,
+  "end": 51.48
+ },
+ {
+  "word": "tenth",
+  "start": 51.48,
+  "end": 51.88
+ },
+ {
+  "word": "anniversary",
+  "start": 51.88,
+  "end": 52.51
+ },
+ {
+  "word": "of",
+  "start": 52.51,
+  "end": 52.6
+ },
+ {
+  "word": "Colombia's",
+  "start": 52.6,
+  "end": 53.17
+ },
+ {
+  "word": "peace",
+  "start": 53.17,
+  "end": 53.47
+ },
+ {
+  "word": "deal",
+  "start": 53.47,
+  "end": 53.83
+ },
+ {
+  "word": "in",
+  "start": 53.96,
+  "end": 54.05
+ },
+ {
+  "word": "a",
+  "start": 54.05,
+  "end": 54.08
+ },
+ {
+  "word": "city",
+  "start": 54.08,
+  "end": 54.43
+ },
+ {
+  "word": "famous",
+  "start": 54.43,
+  "end": 54.91
+ },
+ {
+  "word": "for",
+  "start": 54.91,
+  "end": 55.07
+ },
+ {
+  "word": "its",
+  "start": 55.07,
+  "end": 55.18
+ },
+ {
+  "word": "walled",
+  "start": 55.18,
+  "end": 55.62
+ },
+ {
+  "word": "old",
+  "start": 55.62,
+  "end": 55.95
+ },
+ {
+  "word": "town",
+  "start": 55.95,
+  "end": 56.32
+ },
+ {
+  "word": "and",
+  "start": 56.32,
+  "end": 56.45
+ },
+ {
+  "word": "cruise",
+  "start": 56.45,
+  "end": 56.73
+ },
+ {
+  "word": "ships",
+  "start": 56.73,
+  "end": 57.19
+ },
+ {
+  "word": "Thirty",
+  "start": 57.35,
+  "end": 57.69
+ },
+ {
+  "word": "people",
+  "start": 57.69,
+  "end": 57.99
+ },
+ {
+  "word": "went",
+  "start": 57.99,
+  "end": 58.23
+ },
+ {
+  "word": "shopping",
+  "start": 58.23,
+  "end": 58.86
+ },
+ {
+  "word": "All",
+  "start": 58.86,
+  "end": 59.06
+ },
+ {
+  "word": "thirty",
+  "start": 59.06,
+  "end": 59.44
+ },
+ {
+  "word": "came",
+  "start": 59.44,
+  "end": 59.73
+ },
+ {
+  "word": "home",
+  "start": 59.73,
+  "end": 60.13
+ },
+ {
+  "word": "The",
+  "start": 60.32,
+  "end": 60.39
+ },
+ {
+  "word": "Daily",
+  "start": 60.39,
+  "end": 60.76
+ },
+ {
+  "word": "Toon",
+  "start": 60.76,
+  "end": 61.09
+ },
+ {
+  "word": "News",
+  "start": 61.09,
+  "end": 61.58
+ },
+ {
+  "word": "the",
+  "start": 61.68,
+  "end": 61.77
+ },
+ {
+  "word": "world",
+  "start": 61.77,
+  "end": 62.29
+ },
+ {
+  "word": "in",
+  "start": 62.29,
+  "end": 62.48
+ },
+ {
+  "word": "toons",
+  "start": 62.48,
+  "end": 63.07
+ }
+]
