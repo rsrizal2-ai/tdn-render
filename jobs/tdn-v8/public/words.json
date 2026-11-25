@@ -1,0 +1,997 @@
+[
+ {
+  "word": "On",
+  "start": 0.0,
+  "end": 0.15
+ },
+ {
+  "word": "Wednesday",
+  "start": 0.15,
+  "end": 0.45
+ },
+ {
+  "word": "morning",
+  "start": 0.45,
+  "end": 0.83
+ },
+ {
+  "word": "China",
+  "start": 0.83,
+  "end": 1.14
+ },
+ {
+  "word": "launched",
+  "start": 1.14,
+  "end": 1.49
+ },
+ {
+  "word": "a",
+  "start": 1.49,
+  "end": 1.52
+ },
+ {
+  "word": "foreign",
+  "start": 1.52,
+  "end": 1.9
+ },
+ {
+  "word": "astronaut",
+  "start": 1.9,
+  "end": 2.46
+ },
+ {
+  "word": "for",
+  "start": 2.46,
+  "end": 2.58
+ },
+ {
+  "word": "the",
+  "start": 2.58,
+  "end": 2.65
+ },
+ {
+  "word": "first",
+  "start": 2.65,
+  "end": 3.05
+ },
+ {
+  "word": "time",
+  "start": 3.05,
+  "end": 3.29
+ },
+ {
+  "word": "in",
+  "start": 3.29,
+  "end": 3.36
+ },
+ {
+  "word": "its",
+  "start": 3.36,
+  "end": 3.5
+ },
+ {
+  "word": "history",
+  "start": 3.5,
+  "end": 3.96
+ },
+ {
+  "word": "The",
+  "start": 4.1,
+  "end": 4.2
+ },
+ {
+  "word": "passenger",
+  "start": 4.2,
+  "end": 4.67
+ },
+ {
+  "word": "was",
+  "start": 4.67,
+  "end": 4.88
+ },
+ {
+  "word": "Muhammad",
+  "start": 4.88,
+  "end": 5.35
+ },
+ {
+  "word": "Zeeshan",
+  "start": 5.35,
+  "end": 5.83
+ },
+ {
+  "word": "Ali",
+  "start": 5.83,
+  "end": 6.38
+ },
+ {
+  "word": "a",
+  "start": 6.38,
+  "end": 6.44
+ },
+ {
+  "word": "forty-year-old",
+  "start": 6.44,
+  "end": 7.06
+ },
+ {
+  "word": "Pakistani",
+  "start": 7.06,
+  "end": 7.73
+ },
+ {
+  "word": "air",
+  "start": 7.73,
+  "end": 7.87
+ },
+ {
+  "word": "force",
+  "start": 7.87,
+  "end": 8.16
+ },
+ {
+  "word": "pilot",
+  "start": 8.16,
+  "end": 8.7
+ },
+ {
+  "word": "and",
+  "start": 8.7,
+  "end": 8.86
+ },
+ {
+  "word": "now",
+  "start": 8.86,
+  "end": 9.08
+ },
+ {
+  "word": "the",
+  "start": 9.08,
+  "end": 9.16
+ },
+ {
+  "word": "first",
+  "start": 9.16,
+  "end": 9.55
+ },
+ {
+  "word": "Pakistani",
+  "start": 9.55,
+  "end": 10.3
+ },
+ {
+  "word": "ever",
+  "start": 10.3,
+  "end": 10.59
+ },
+ {
+  "word": "to",
+  "start": 10.59,
+  "end": 10.69
+ },
+ {
+  "word": "reach",
+  "start": 10.69,
+  "end": 10.97
+ },
+ {
+  "word": "orbit",
+  "start": 10.97,
+  "end": 11.49
+ },
+ {
+  "word": "At",
+  "start": 11.49,
+  "end": 11.66
+ },
+ {
+  "word": "eight",
+  "start": 11.66,
+  "end": 11.83
+ },
+ {
+  "word": "eighteen",
+  "start": 11.83,
+  "end": 12.22
+ },
+ {
+  "word": "in",
+  "start": 12.22,
+  "end": 12.29
+ },
+ {
+  "word": "the",
+  "start": 12.29,
+  "end": 12.35
+ },
+ {
+  "word": "morning",
+  "start": 12.35,
+  "end": 12.84
+ },
+ {
+  "word": "a",
+  "start": 12.84,
+  "end": 12.87
+ },
+ {
+  "word": "Long",
+  "start": 12.87,
+  "end": 13.25
+ },
+ {
+  "word": "March",
+  "start": 13.25,
+  "end": 13.55
+ },
+ {
+  "word": "rocket",
+  "start": 13.55,
+  "end": 13.96
+ },
+ {
+  "word": "lifted",
+  "start": 13.96,
+  "end": 14.34
+ },
+ {
+  "word": "Shenzhou",
+  "start": 14.34,
+  "end": 14.84
+ },
+ {
+  "word": "Twenty-Four",
+  "start": 14.84,
+  "end": 15.49
+ },
+ {
+  "word": "off",
+  "start": 15.49,
+  "end": 15.7
+ },
+ {
+  "word": "the",
+  "start": 15.7,
+  "end": 15.78
+ },
+ {
+  "word": "pad",
+  "start": 15.78,
+  "end": 16.12
+ },
+ {
+  "word": "at",
+  "start": 16.12,
+  "end": 16.23
+ },
+ {
+  "word": "Jiuquan",
+  "start": 16.23,
+  "end": 16.96
+ },
+ {
+  "word": "in",
+  "start": 16.96,
+  "end": 17.07
+ },
+ {
+  "word": "China's",
+  "start": 17.07,
+  "end": 17.47
+ },
+ {
+  "word": "Gobi",
+  "start": 17.47,
+  "end": 17.74
+ },
+ {
+  "word": "Desert",
+  "start": 17.74,
+  "end": 18.16
+ },
+ {
+  "word": "Beside",
+  "start": 18.16,
+  "end": 18.65
+ },
+ {
+  "word": "Ali",
+  "start": 18.65,
+  "end": 19.0
+ },
+ {
+  "word": "sat",
+  "start": 19.0,
+  "end": 19.26
+ },
+ {
+  "word": "the",
+  "start": 19.26,
+  "end": 19.32
+ },
+ {
+  "word": "commander",
+  "start": 19.32,
+  "end": 19.97
+ },
+ {
+  "word": "Tang",
+  "start": 19.97,
+  "end": 20.25
+ },
+ {
+  "word": "Hongbo",
+  "start": 20.25,
+  "end": 20.86
+ },
+ {
+  "word": "visiting",
+  "start": 20.99,
+  "end": 21.34
+ },
+ {
+  "word": "the",
+  "start": 21.34,
+  "end": 21.4
+ },
+ {
+  "word": "station",
+  "start": 21.4,
+  "end": 21.85
+ },
+ {
+  "word": "for",
+  "start": 21.85,
+  "end": 22.06
+ },
+ {
+  "word": "a",
+  "start": 22.06,
+  "end": 22.09
+ },
+ {
+  "word": "record",
+  "start": 22.09,
+  "end": 22.49
+ },
+ {
+  "word": "third",
+  "start": 22.49,
+  "end": 22.89
+ },
+ {
+  "word": "time",
+  "start": 22.89,
+  "end": 23.3
+ },
+ {
+  "word": "and",
+  "start": 23.41,
+  "end": 23.55
+ },
+ {
+  "word": "flight",
+  "start": 23.55,
+  "end": 23.87
+ },
+ {
+  "word": "engineer",
+  "start": 23.87,
+  "end": 24.49
+ },
+ {
+  "word": "Wu",
+  "start": 24.49,
+  "end": 24.75
+ },
+ {
+  "word": "Yi",
+  "start": 24.75,
+  "end": 25.15
+ },
+ {
+  "word": "Three",
+  "start": 25.35,
+  "end": 25.51
+ },
+ {
+  "word": "and",
+  "start": 25.51,
+  "end": 25.6
+ },
+ {
+  "word": "a",
+  "start": 25.6,
+  "end": 25.63
+ },
+ {
+  "word": "half",
+  "start": 25.63,
+  "end": 25.86
+ },
+ {
+  "word": "hours",
+  "start": 25.86,
+  "end": 26.16
+ },
+ {
+  "word": "later",
+  "start": 26.16,
+  "end": 26.64
+ },
+ {
+  "word": "the",
+  "start": 26.64,
+  "end": 26.71
+ },
+ {
+  "word": "capsule",
+  "start": 26.71,
+  "end": 27.13
+ },
+ {
+  "word": "docked",
+  "start": 27.13,
+  "end": 27.5
+ },
+ {
+  "word": "with",
+  "start": 27.5,
+  "end": 27.68
+ },
+ {
+  "word": "Tiangong",
+  "start": 27.68,
+  "end": 28.38
+ },
+ {
+  "word": "the",
+  "start": 28.38,
+  "end": 28.49
+ },
+ {
+  "word": "heavenly",
+  "start": 28.49,
+  "end": 28.85
+ },
+ {
+  "word": "palace",
+  "start": 28.85,
+  "end": 29.35
+ },
+ {
+  "word": "and",
+  "start": 29.35,
+  "end": 29.62
+ },
+ {
+  "word": "Ali",
+  "start": 29.62,
+  "end": 29.95
+ },
+ {
+  "word": "became",
+  "start": 29.95,
+  "end": 30.27
+ },
+ {
+  "word": "the",
+  "start": 30.27,
+  "end": 30.33
+ },
+ {
+  "word": "first",
+  "start": 30.33,
+  "end": 30.74
+ },
+ {
+  "word": "foreign",
+  "start": 30.74,
+  "end": 31.11
+ },
+ {
+  "word": "astronaut",
+  "start": 31.11,
+  "end": 31.74
+ },
+ {
+  "word": "ever",
+  "start": 31.74,
+  "end": 32.04
+ },
+ {
+  "word": "to",
+  "start": 32.04,
+  "end": 32.13
+ },
+ {
+  "word": "board",
+  "start": 32.13,
+  "end": 32.41
+ },
+ {
+  "word": "it",
+  "start": 32.41,
+  "end": 32.78
+ },
+ {
+  "word": "He",
+  "start": 32.78,
+  "end": 32.88
+ },
+ {
+  "word": "will",
+  "start": 32.88,
+  "end": 32.98
+ },
+ {
+  "word": "spend",
+  "start": 32.98,
+  "end": 33.24
+ },
+ {
+  "word": "about",
+  "start": 33.24,
+  "end": 33.43
+ },
+ {
+  "word": "a",
+  "start": 33.43,
+  "end": 33.46
+ },
+ {
+  "word": "week",
+  "start": 33.46,
+  "end": 33.82
+ },
+ {
+  "word": "aboard",
+  "start": 33.82,
+  "end": 34.24
+ },
+ {
+  "word": "as",
+  "start": 34.24,
+  "end": 34.35
+ },
+ {
+  "word": "a",
+  "start": 34.35,
+  "end": 34.39
+ },
+ {
+  "word": "payload",
+  "start": 34.39,
+  "end": 34.89
+ },
+ {
+  "word": "specialist",
+  "start": 34.89,
+  "end": 35.66
+ },
+ {
+  "word": "running",
+  "start": 35.66,
+  "end": 35.9
+ },
+ {
+  "word": "experiments",
+  "start": 35.9,
+  "end": 36.77
+ },
+ {
+  "word": "including",
+  "start": 36.77,
+  "end": 37.19
+ },
+ {
+  "word": "four",
+  "start": 37.19,
+  "end": 37.51
+ },
+ {
+  "word": "biotechnology",
+  "start": 37.51,
+  "end": 38.42
+ },
+ {
+  "word": "studies",
+  "start": 38.42,
+  "end": 38.85
+ },
+ {
+  "word": "built",
+  "start": 38.85,
+  "end": 39.09
+ },
+ {
+  "word": "by",
+  "start": 39.09,
+  "end": 39.22
+ },
+ {
+  "word": "universities",
+  "start": 39.22,
+  "end": 39.96
+ },
+ {
+  "word": "back",
+  "start": 39.96,
+  "end": 40.21
+ },
+ {
+  "word": "home",
+  "start": 40.21,
+  "end": 40.44
+ },
+ {
+  "word": "in",
+  "start": 40.44,
+  "end": 40.53
+ },
+ {
+  "word": "Pakistan",
+  "start": 40.53,
+  "end": 41.22
+ },
+ {
+  "word": "His",
+  "start": 41.43,
+  "end": 41.54
+ },
+ {
+  "word": "seat",
+  "start": 41.54,
+  "end": 41.82
+ },
+ {
+  "word": "came",
+  "start": 41.82,
+  "end": 42.07
+ },
+ {
+  "word": "from",
+  "start": 42.07,
+  "end": 42.21
+ },
+ {
+  "word": "a",
+  "start": 42.21,
+  "end": 42.25
+ },
+ {
+  "word": "deal",
+  "start": 42.25,
+  "end": 42.56
+ },
+ {
+  "word": "signed",
+  "start": 42.56,
+  "end": 42.92
+ },
+ {
+  "word": "in",
+  "start": 42.92,
+  "end": 43.01
+ },
+ {
+  "word": "February",
+  "start": 43.01,
+  "end": 43.61
+ },
+ {
+  "word": "twenty",
+  "start": 43.61,
+  "end": 43.9
+ },
+ {
+  "word": "twenty-five",
+  "start": 43.9,
+  "end": 44.57
+ },
+ {
+  "word": "Pakistan",
+  "start": 44.57,
+  "end": 45.32
+ },
+ {
+  "word": "chose",
+  "start": 45.32,
+  "end": 45.65
+ },
+ {
+  "word": "two",
+  "start": 45.65,
+  "end": 45.9
+ },
+ {
+  "word": "candidate",
+  "start": 45.9,
+  "end": 46.34
+ },
+ {
+  "word": "pilots",
+  "start": 46.34,
+  "end": 46.89
+ },
+ {
+  "word": "Ali",
+  "start": 47.04,
+  "end": 47.33
+ },
+ {
+  "word": "won",
+  "start": 47.33,
+  "end": 47.55
+ },
+ {
+  "word": "the",
+  "start": 47.55,
+  "end": 47.61
+ },
+ {
+  "word": "flight",
+  "start": 47.61,
+  "end": 48.12
+ },
+ {
+  "word": "and",
+  "start": 48.12,
+  "end": 48.27
+ },
+ {
+  "word": "Khurram",
+  "start": 48.27,
+  "end": 48.67
+ },
+ {
+  "word": "Dawood",
+  "start": 48.67,
+  "end": 49.12
+ },
+ {
+  "word": "stayed",
+  "start": 49.12,
+  "end": 49.42
+ },
+ {
+  "word": "behind",
+  "start": 49.42,
+  "end": 49.78
+ },
+ {
+  "word": "as",
+  "start": 49.78,
+  "end": 49.86
+ },
+ {
+  "word": "his",
+  "start": 49.86,
+  "end": 50.02
+ },
+ {
+  "word": "backup",
+  "start": 50.02,
+  "end": 50.51
+ },
+ {
+  "word": "And",
+  "start": 50.74,
+  "end": 50.86
+ },
+ {
+  "word": "here",
+  "start": 50.86,
+  "end": 51.11
+ },
+ {
+  "word": "is",
+  "start": 51.11,
+  "end": 51.21
+ },
+ {
+  "word": "the",
+  "start": 51.21,
+  "end": 51.28
+ },
+ {
+  "word": "twist",
+  "start": 51.28,
+  "end": 51.76
+ },
+ {
+  "word": "a",
+  "start": 51.94,
+  "end": 52.0
+ },
+ {
+  "word": "Pakistani",
+  "start": 52.0,
+  "end": 52.67
+ },
+ {
+  "word": "had",
+  "start": 52.67,
+  "end": 52.86
+ },
+ {
+  "word": "touched",
+  "start": 52.86,
+  "end": 53.21
+ },
+ {
+  "word": "space",
+  "start": 53.21,
+  "end": 53.57
+ },
+ {
+  "word": "before",
+  "start": 53.57,
+  "end": 54.22
+ },
+ {
+  "word": "on",
+  "start": 54.22,
+  "end": 54.35
+ },
+ {
+  "word": "a",
+  "start": 54.35,
+  "end": 54.39
+ },
+ {
+  "word": "suborbital",
+  "start": 54.39,
+  "end": 55.09
+ },
+ {
+  "word": "tourist",
+  "start": 55.09,
+  "end": 55.52
+ },
+ {
+  "word": "flight",
+  "start": 55.52,
+  "end": 55.83
+ },
+ {
+  "word": "in",
+  "start": 55.83,
+  "end": 55.97
+ },
+ {
+  "word": "twenty",
+  "start": 55.97,
+  "end": 56.26
+ },
+ {
+  "word": "twenty-three",
+  "start": 56.26,
+  "end": 57.07
+ },
+ {
+  "word": "but",
+  "start": 57.07,
+  "end": 57.21
+ },
+ {
+  "word": "no",
+  "start": 57.21,
+  "end": 57.46
+ },
+ {
+  "word": "Pakistani",
+  "start": 57.46,
+  "end": 58.13
+ },
+ {
+  "word": "had",
+  "start": 58.13,
+  "end": 58.4
+ },
+ {
+  "word": "ever",
+  "start": 58.4,
+  "end": 58.64
+ },
+ {
+  "word": "reached",
+  "start": 58.64,
+  "end": 59.0
+ },
+ {
+  "word": "orbit",
+  "start": 59.0,
+  "end": 59.55
+ },
+ {
+  "word": "Ali",
+  "start": 59.55,
+  "end": 59.88
+ },
+ {
+  "word": "even",
+  "start": 59.88,
+  "end": 60.11
+ },
+ {
+  "word": "comes",
+  "start": 60.11,
+  "end": 60.4
+ },
+ {
+  "word": "home",
+  "start": 60.4,
+  "end": 60.68
+ },
+ {
+  "word": "on",
+  "start": 60.68,
+  "end": 60.82
+ },
+ {
+  "word": "a",
+  "start": 60.82,
+  "end": 60.86
+ },
+ {
+  "word": "different",
+  "start": 60.86,
+  "end": 61.26
+ },
+ {
+  "word": "ship",
+  "start": 61.26,
+  "end": 61.74
+ },
+ {
+  "word": "Shenzhou",
+  "start": 61.74,
+  "end": 62.24
+ },
+ {
+  "word": "Twenty-Three",
+  "start": 62.24,
+  "end": 62.99
+ },
+ {
+  "word": "The",
+  "start": 63.16,
+  "end": 63.24
+ },
+ {
+  "word": "Daily",
+  "start": 63.24,
+  "end": 63.62
+ },
+ {
+  "word": "Toon",
+  "start": 63.62,
+  "end": 63.96
+ },
+ {
+  "word": "News",
+  "start": 63.96,
+  "end": 64.43
+ },
+ {
+  "word": "the",
+  "start": 64.43,
+  "end": 64.6
+ },
+ {
+  "word": "world",
+  "start": 64.6,
+  "end": 65.17
+ },
+ {
+  "word": "in",
+  "start": 65.17,
+  "end": 65.33
+ },
+ {
+  "word": "toons",
+  "start": 65.33,
+  "end": 65.89
+ }
+]

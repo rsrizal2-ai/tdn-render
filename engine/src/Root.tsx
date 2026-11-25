@@ -9,6 +9,7 @@ import { TdnV3 } from "./videos/TdnV3";
 import { TdnV5 } from "./videos/TdnV5";
 import { TdnV6 } from "./videos/TdnV6";
 import { TdnV7 } from "./videos/TdnV7";
+import { TdnV8 } from "./videos/TdnV8";
 import { TdnV9 } from "./videos/TdnV9";
 // DURATION: set durationInFrames = ceil(voiceover_seconds * 30). Use --props or edit per video.
 export const Root: React.FC = () => <>
@@ -20,5 +21,6 @@ export const Root: React.FC = () => <>
   <Composition id="TdnV5" component={TdnV5} width={720} height={1280} fps={30} durationInFrames={918} />
   <Composition id="TdnV6" component={TdnV6} width={720} height={1280} fps={30} durationInFrames={945} />
   <Composition id="TdnV7" component={TdnV7} width={720} height={1280} fps={30} durationInFrames={1895} />
+  <Composition id="TdnV8" component={TdnV8} width={720} height={1280} fps={30} durationInFrames={1979} />
   <Composition id="TdnV9" component={TdnV9} width={720} height={1280} fps={30} durationInFrames={1965} />
 </>;
