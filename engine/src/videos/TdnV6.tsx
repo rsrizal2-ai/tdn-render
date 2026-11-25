@@ -223,8 +223,8 @@ const S3 = ({ t, f }: Ctx) => (<>
 
 /* =================== S4 15.03 – 18.66  "from Cisco's router code to T-Mobile's phone-testing robot" — the evidence bench =================== */
 const K4: Key[] = [
-  { t: 15.03, pos: [-2.4, 3.0, 10.2], look: [-2.0, 2.1, -3.5], fov: 60 },
-  { t: 18.66, pos: [2.2, 2.9, 9.9], look: [2.4, 2.1, -3.5], fov: 58 },
+  { t: 15.03, pos: [-2.2, 3.1, 11.6], look: [-1.9, 2.2, -3.5], fov: 60 },
+  { t: 18.66, pos: [2.0, 3.0, 11.2], look: [2.2, 2.2, -3.5], fov: 58 },
 ];
 const S4 = ({ t, f }: Ctx) => {
   const tapPh = Math.max(0, Math.sin((t - 17.0) * 6.2));
@@ -308,7 +308,7 @@ const S5 = ({ t, f }: Ctx) => {
 
 /* =================== S6 23.03 – 28.62  "Huawei calls the verdict baseless... Sentencing lands in September 2027" — podium + calendar =================== */
 const K6: Key[] = [
-  { t: 23.03, pos: [-1.4, 3.1, 11.2], look: [-1.6, 3.4, -3], fov: 60 },
+  { t: 23.03, pos: [-1.4, 3.1, 11.2], look: [-1.9, 3.4, -3], fov: 60 },
   { t: 26.3, pos: [-0.6, 3.1, 11.0], look: [0.2, 3.5, -3], fov: 59 },
   { t: 28.62, pos: [1.9, 3.3, 10.6], look: [3.6, 3.9, -3], fov: 58 },
 ];
@@ -332,9 +332,9 @@ const S6 = ({ t, f }: Ctx) => {
     <Glow p={[-2.2, 4.5, -6.4]} r={5.4} color="rgba(90,160,255,1)" o={0.18} />
     {/* the podium + the lawyer + microphones */}
     <Desk p={[-3.6, 0, -2.4]} w={2.6} top="#39424e" leg="#1a2233" d={1.2} />
-    <Cyl p={[-4.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, 0.3]} color="#10131c" line={0} /><Ball p={[-4.22, 1.72, -2.02]} r={0.11} color="#10131c" ink={1} />
-    <Cyl p={[-3.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, -0.3]} color="#10131c" line={0} /><Ball p={[-2.98, 1.72, -2.02]} r={0.11} color="#10131c" ink={1} />
-    <Person p={[-6.1, 0, -2.2]} sy={0} h={3.5} look={lawyer} f={f} pose={{ mood: "deadpan", arms: t > 25.4 ? "point" : "down", armK: seg(t, 25.4, 25.7), armR: [0.7, 0.6], lookX: 0.55 }} />
+    <Cyl p={[-4.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, 0.3]} color="#10131c" line={0} /><Cyl p={[-4.22, 1.72, -2.02]} rt={0.09} h={0.24} rot={[0.5, 0, 0.3]} color="#10131c" line={1} />
+    <Cyl p={[-3.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, -0.3]} color="#10131c" line={0} /><Cyl p={[-2.98, 1.72, -2.02]} rt={0.09} h={0.24} rot={[0.5, 0, -0.3]} color="#10131c" line={1} />
+    <Person p={[-5.4, 0, -2.2]} sy={0} h={3.5} look={lawyer} f={f} pose={{ mood: "deadpan", arms: t > 25.4 ? "point" : "down", armK: seg(t, 25.4, 25.7), armR: [0.7, 0.6], lookX: 0.55 }} />
     {/* the APPEAL stamp slams on "fight on" */}
     <Stamp t={t} t0={25.5} p={[1.6, 2.6, -1.6]} s={[3.2, 1.5]} rot={-0.14} lines={["APPEAL"]} ink="#2f8cff" />
     {/* the September 2027 calendar, the 14th circled */}
