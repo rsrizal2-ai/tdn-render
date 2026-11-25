@@ -1,0 +1,87 @@
+name: render
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Job folder under jobs/ (contains job.json + public/)"
+        required: true
+        default: "tdn-v5"
+      mode:
+        description: "stills = QA stills at job.json frames; render = final MP4"
+        required: true
+        type: choice
+        options: [stills, render]
+        default: stills
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Install engine deps
+        working-directory: engine
+        run: npm ci
+
+      - name: Stage job assets into engine/public
+        shell: bash
+        run: |
+          set -euo pipefail
+          JOB="jobs/${{ inputs.job }}"
+          test -f "$JOB/job.json"
+          cp "$JOB/public/words.json" "$JOB/public/script.json" "$JOB/public/voice.wav" "$JOB/public/mix.wav" engine/public/
+          ls -la engine/public
+
+      - name: Read job manifest
+        id: job
+        shell: bash
+        run: |
+          set -euo pipefail
+          JOB="jobs/${{ inputs.job }}"
+          echo "comp=$(jq -r .composition "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "output=$(jq -r .output "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "scale=$(jq -r .render.scale "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "gl=$(jq -r .render.gl "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "concurrency=$(jq -r .render.concurrency "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "still_scale=$(jq -r .stills.scale "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+          echo "still_frames=$(jq -r '.stills.frames | join(",")' "$JOB/job.json")" >> "$GITHUB_OUTPUT"
+
+      - name: Render stills (QA)
+        if: inputs.mode == 'stills'
+        working-directory: engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ../out/stills
+          IFS=',' read -ra FRAMES <<< "${{ steps.job.outputs.still_frames }}"
+          for fr in "${FRAMES[@]}"; do
+            npx remotion still "${{ steps.job.outputs.comp }}" "../out/stills/frame-${fr}.png" --frame="$fr" --scale="${{ steps.job.outputs.still_scale }}" --gl="${{ steps.job.outputs.gl }}"
+          done
+          ls -la ../out/stills
+
+      - name: Render final MP4
+        if: inputs.mode == 'render'
+        working-directory: engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ../out
+          npx remotion render "${{ steps.job.outputs.comp }}" "../out/${{ steps.job.outputs.output }}" \
+            --scale="${{ steps.job.outputs.scale }}" --gl="${{ steps.job.outputs.gl }}" \
+            --concurrency="${{ steps.job.outputs.concurrency }}" --codec=h264
+          ls -la ../out
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.job }}-${{ inputs.mode }}
+          path: out/
+          retention-days: 14
