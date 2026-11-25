@@ -453,7 +453,7 @@ const S7 = ({ t, f }: Ctx) => {
     <SideWall x={-13} kind="plain" a="#ddd2b2" b="#ddd2b2" /><SideWall x={13} kind="plain" a="#ddd2b2" b="#ddd2b2" />
     {/* the two flags */}
     <Cyl p={[-6.4, 2.2, -7.3]} rt={0.06} rb={0.06} h={4.4} color="#5a3a20" line={0} />
-    <CanvasPlane p={[-5.15, 5.6, -7.3]} s={[2.3, 1.55]} px={[460, 310]} draw={(c, W, H) => {
+    <CanvasPlane p={[-5.7, 4.5, -7.3]} s={[2.3, 1.55]} px={[460, 310]} draw={(c, W, H) => {
       c.fillStyle = "#de2910"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#ffde00"; star2d(c, W * 0.20, H * 0.30, H * 0.17);
       [[0.40, 0.16], [0.46, 0.32], [0.46, 0.50], [0.40, 0.64]].forEach(([fx, fy]) => star2d(c, W * fx, H * fy, H * 0.055));
@@ -467,7 +467,7 @@ const S7 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ffffff"; star2d(c, W * 0.71, H * 0.30, H * 0.06);
     }} />
     {/* the deal document */}
-    <CanvasPlane p={[-1.85, 5.0, -7.7]} s={[6.8, 3.5]} px={[816, 420]} frame="#5a3a20" draw={(c, W, H) => {
+    <CanvasPlane p={[-1.6, 5.0, -7.7]} s={[6.8, 3.5]} px={[816, 420]} frame="#5a3a20" draw={(c, W, H) => {
       c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#c2372f"; c.fillRect(0, 0, W, 16);
       c.fillStyle = "#1b1b2a"; c.font = "900 54px Inter, Arial"; c.textAlign = "center";
@@ -558,11 +558,11 @@ const S9 = ({ t, f }: Ctx) => {
     <Station p={[-0.6, 3.9, -6]} hatchK={1} />
     {/* Shenzhou-24, docked at the port: the ride up */}
     <Capsule p={[-6.1, 3.9, -6]} rot={[0, 0, -Math.PI / 2]} s={0.9} />
-    <Plate t={t} t0={60.0} p={[-4.9, 6.9, -5.2]} s={[3.2, 0.95]} lines={["24 — THE RIDE UP"]} fg="#aab4c8" border="#565e70" />
+    <Plate t={t} t0={60.0} p={[-4.2, 6.9, -5.2]} s={[3.2, 0.95]} lines={["24 — THE RIDE UP"]} fg="#aab4c8" border="#565e70" />
     {/* Shenzhou-23, waiting alongside: the ride home */}
     <Capsule p={[5.6, 4.7 + Math.sin(t * 1.1) * 0.06, -6]} rot={[0, 0, Math.PI / 2]} s={0.9} />
     <Glow p={[5.6, 4.7, -6.9]} r={3.4} color="rgba(64,255,170,1)" o={0.30 * seg(t, 61.74, 62.1)} />
-    <Plate t={t} t0={61.74} p={[4.9, 7.3, -5.2]} s={[3.6, 1.0]} lines={["23 — THE RIDE HOME"]} fg="#7dffce" border="#2fd46a" />
+    <Plate t={t} t0={61.74} p={[4.6, 7.3, -5.2]} s={[3.6, 1.0]} lines={["23 — THE RIDE HOME"]} fg="#7dffce" border="#2fd46a" />
     <Astro p={aliP} look={aliSuit} f={f} h={3.1} arms="point" armK={seg(t, 60.4, 60.7)} armR={[0.8, 0.4]} />
     <Dust t={t} area={[8, 5, 6]} color="rgba(190,215,255,.7)" />
   </>);
