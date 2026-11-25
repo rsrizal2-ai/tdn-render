@@ -1,0 +1,115 @@
+{
+ "original_duration": 36.432,
+ "trimmed_duration": 31.435,
+ "removed_total": 4.997,
+ "cuts": [
+  {
+   "orig_pause_start": 0.0,
+   "orig_pause_len": 0.149,
+   "new_pause_len": 0.05,
+   "removed": 0.099
+  },
+  {
+   "orig_pause_start": 2.976,
+   "orig_pause_len": 0.59,
+   "new_pause_len": 0.247,
+   "removed": 0.343
+  },
+  {
+   "orig_pause_start": 5.427,
+   "orig_pause_len": 0.416,
+   "new_pause_len": 0.195,
+   "removed": 0.221
+  },
+  {
+   "orig_pause_start": 9.489,
+   "orig_pause_len": 0.486,
+   "new_pause_len": 0.216,
+   "removed": 0.27
+  },
+  {
+   "orig_pause_start": 10.51,
+   "orig_pause_len": 0.334,
+   "new_pause_len": 0.17,
+   "removed": 0.164
+  },
+  {
+   "orig_pause_start": 11.504,
+   "orig_pause_len": 0.341,
+   "new_pause_len": 0.172,
+   "removed": 0.169
+  },
+  {
+   "orig_pause_start": 12.583,
+   "orig_pause_len": 0.376,
+   "new_pause_len": 0.183,
+   "removed": 0.193
+  },
+  {
+   "orig_pause_start": 14.119,
+   "orig_pause_len": 0.342,
+   "new_pause_len": 0.173,
+   "removed": 0.17
+  },
+  {
+   "orig_pause_start": 16.651,
+   "orig_pause_len": 0.449,
+   "new_pause_len": 0.205,
+   "removed": 0.244
+  },
+  {
+   "orig_pause_start": 18.1,
+   "orig_pause_len": 0.413,
+   "new_pause_len": 0.194,
+   "removed": 0.219
+  },
+  {
+   "orig_pause_start": 18.851,
+   "orig_pause_len": 0.286,
+   "new_pause_len": 0.156,
+   "removed": 0.13
+  },
+  {
+   "orig_pause_start": 20.842,
+   "orig_pause_len": 0.793,
+   "new_pause_len": 0.308,
+   "removed": 0.485
+  },
+  {
+   "orig_pause_start": 24.03,
+   "orig_pause_len": 0.509,
+   "new_pause_len": 0.223,
+   "removed": 0.286
+  },
+  {
+   "orig_pause_start": 25.991,
+   "orig_pause_len": 0.74,
+   "new_pause_len": 0.292,
+   "removed": 0.448
+  },
+  {
+   "orig_pause_start": 29.413,
+   "orig_pause_len": 0.792,
+   "new_pause_len": 0.308,
+   "removed": 0.485
+  },
+  {
+   "orig_pause_start": 32.438,
+   "orig_pause_len": 0.679,
+   "new_pause_len": 0.274,
+   "removed": 0.405
+  },
+  {
+   "orig_pause_start": 34.183,
+   "orig_pause_len": 0.414,
+   "new_pause_len": 0.194,
+   "removed": 0.22
+  },
+  {
+   "orig_pause_start": 35.938,
+   "orig_pause_len": 0.494,
+   "new_pause_len": 0.05,
+   "removed": 0.444
+  }
+ ]
+}
