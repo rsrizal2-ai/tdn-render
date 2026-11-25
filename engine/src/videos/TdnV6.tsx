@@ -77,9 +77,9 @@ const VerdictBoard: React.FC<{ t: number; mode: "count" | "twist" }> = ({ t, mod
           c.fillStyle = "#aab4c8"; c.font = "800 30px Inter, Arial"; c.fillText("COUNT", x + cw / 2, y + ch * 0.38);
           c.fillStyle = "#e8ecf4"; c.font = "900 74px Inter, Arial"; c.fillText(String(i + 1), x + cw / 2, y + ch * 0.78);
         } else if (back === "guilty") {
-          c.fillStyle = "#ffd9d4"; c.font = "900 52px Inter, Arial"; c.textBaseline = "middle"; c.fillText("GUILTY", x + cw / 2, y + ch / 2 + 2); c.textBaseline = "alphabetic";
+          c.fillStyle = "#ffd9d4"; c.font = "900 40px Inter, Arial"; c.textBaseline = "middle"; c.fillText("GUILTY", x + cw / 2, y + ch / 2 + 2); c.textBaseline = "alphabetic";
         } else {
-          c.fillStyle = "#c8fff2"; c.font = "900 48px Inter, Arial"; c.fillText("NOT", x + cw / 2, y + ch * 0.44);
+          c.fillStyle = "#c8fff2"; c.font = "900 37px Inter, Arial"; c.fillText("NOT", x + cw / 2, y + ch * 0.44);
           c.fillText("GUILTY", x + cw / 2, y + ch * 0.76);
         }
       }
@@ -112,11 +112,11 @@ const S1 = ({ t, f }: Ctx) => {
     <Box p={[3.1, 8.15, -6]} s={[6.6, 0.4, 2.4]} rot={[0, 0, -0.16]} color="#9a9eb2" line={1} />
     <CanvasPlane p={[0, 6.55, -4.62]} s={[5.6, 0.95]} px={[700, 120]} draw={(c, W, H) => { c.fillStyle = "#2c3049"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 62px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("FEDERAL COURT", W / 2, H / 2 + 2); }} />
     {/* the giant gavel on the steps: it strikes on "ended" */}
-    <Cyl p={[3.6, 1.68, -2.2]} rt={0.62} h={0.22} color="#5a3a20" line={2} />
-    <group position={[3.6, 1.82, -2.2]} rotation={[0, 0, lerp(-0.52, 0.10, strike)]}>
-      <Cyl p={[0.85, 0.1, 0]} rt={0.09} h={1.9} rot={[0, 0, Math.PI / 2 - 0.12]} color="#8a5a2a" line={1} />
-      <Cyl p={[1.78, 0.28, 0]} rt={0.24} h={0.85} rot={[0, 0, Math.PI / 2]} color="#6e4520" line={2} />
-      <Cyl p={[1.78, 0.28, 0]} rt={0.26} h={0.3} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={1} />
+    <Cyl p={[3.0, 1.68, -1.3]} rt={0.72} h={0.24} color="#5a3a20" line={2} />
+    <group position={[3.0, 1.84, -1.3]} rotation={[0, 0, lerp(-0.52, 0.10, strike)]}>
+      <Cyl p={[0.95, 0.1, 0]} rt={0.10} h={2.1} rot={[0, 0, Math.PI / 2 - 0.12]} color="#8a5a2a" line={1} />
+      <Cyl p={[1.95, 0.3, 0]} rt={0.27} h={0.95} rot={[0, 0, Math.PI / 2]} color="#6e4520" line={2} />
+      <Cyl p={[1.95, 0.3, 0]} rt={0.29} h={0.32} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={1} />
     </group>
     <Lamp p={[-6.4, 0, -2.6]} h={3.4} color="#ffd9ae" /><Lamp p={[6.9, 0, -3.4]} h={3.4} color="#ffd9ae" />
     <Plant p={[-8.6, 0, -4.8]} s={1.3} /><Plant p={[8.8, 0, -5.2]} s={1.3} />
@@ -158,7 +158,7 @@ const Courtroom: React.FC<{ t: number; f: number; mode: "count" | "twist" }> = (
   <Box p={[0, 0.95, -4.4]} s={[9.6, 1.9, 1.1]} color="#5a3a20" line={2} />
   <Box p={[0, 2.0, -4.4]} s={[10.1, 0.22, 1.4]} color="#6e4a28" line={1} />
   <Person p={[0, 1.55, -5.3]} sy={1.55} h={3.3} look={judge} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0 }} />
-  <CanvasPlane p={[-3.6, 1.0, -3.82]} s={[2.2, 0.85]} px={[440, 170]} draw={(c, W, H) => { c.fillStyle = "#10131c"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 62px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("SINCE 2018", W / 2, H / 2 + 2); }} />
+  <CanvasPlane p={[-3.1, 1.0, -3.82]} s={[2.2, 0.85]} px={[440, 170]} draw={(c, W, H) => { c.fillStyle = "#10131c"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 62px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("SINCE 2018", W / 2, H / 2 + 2); }} />
   <Box p={[3.4, 2.22, -4.3]} s={[0.8, 0.06, 1.0]} color="#f2f0ea" line={1} /><Box p={[3.5, 2.28, -4.35]} s={[0.8, 0.06, 1.0]} color="#dfe6ee" rot={[0, 0.2, 0]} line={1} />
   <Lamp p={[-7.8, 0, -3.6]} h={3.6} color="#ffca7a" /><Lamp p={[7.8, 0, -3.6]} h={3.6} color="#ffca7a" />
 </>);
@@ -179,11 +179,12 @@ const Stamp: React.FC<{ t: number; t0: number; p: [number, number, number]; s: [
   const k = seg(t, t0 - 0.15, t0 + 0.05, Easing.in(Easing.cubic));
   return (
     <group position={p} rotation={[0, 0, rot]} scale={[lerp(2.3, 1, k), lerp(2.3, 1, k), 1]}>
-      <CanvasPlane p={[0, 0, 0]} s={s} px={[620, Math.round(620 * (s[1] / s[0]))]} draw={(c, W, H) => {
+      <CanvasPlane p={[0, 0, 0]} s={s} px={[Math.round(310 * s[0]), Math.round(310 * s[1])]} draw={(c, W, H) => {
         c.clearRect(0, 0, W, H);
         c.strokeStyle = ink; c.lineWidth = 13; c.strokeRect(12, 12, W - 24, H - 24);
         c.fillStyle = ink; c.textAlign = "center"; c.textBaseline = "middle";
-        const fs = lines.length > 1 ? H * 0.30 : H * 0.42;
+        const maxLen = Math.max(...lines.map((ln) => ln.length));
+        const fs = Math.min(lines.length > 1 ? H * 0.30 : H * 0.42, (W * 0.88) / (0.60 * maxLen));
         c.font = `900 ${fs}px Inter, Arial`;
         lines.forEach((ln, i) => c.fillText(ln, W / 2, H * (lines.length > 1 ? 0.30 + i * 0.40 : 0.52)));
       }} />
@@ -222,8 +223,8 @@ const S3 = ({ t, f }: Ctx) => (<>
 
 /* =================== S4 15.03 – 18.66  "from Cisco's router code to T-Mobile's phone-testing robot" — the evidence bench =================== */
 const K4: Key[] = [
-  { t: 15.03, pos: [-2.6, 3.2, 11.8], look: [-2.2, 2.4, -3.5], fov: 60 },
-  { t: 18.66, pos: [2.4, 3.1, 11.4], look: [2.6, 2.4, -3.5], fov: 58 },
+  { t: 15.03, pos: [-2.4, 3.0, 10.2], look: [-2.0, 2.1, -3.5], fov: 60 },
+  { t: 18.66, pos: [2.2, 2.9, 9.9], look: [2.4, 2.1, -3.5], fov: 58 },
 ];
 const S4 = ({ t, f }: Ctx) => {
   const tapPh = Math.max(0, Math.sin((t - 17.0) * 6.2));
@@ -237,7 +238,7 @@ const S4 = ({ t, f }: Ctx) => {
       c.strokeStyle = "rgba(90,180,200,.16)"; c.lineWidth = 3;
       for (let i = 1; i < 10; i++) { c.beginPath(); c.moveTo((W / 10) * i, 0); c.lineTo((W / 10) * i, H); c.stroke(); }
       for (let i = 1; i < 5; i++) { c.beginPath(); c.moveTo(0, (H / 5) * i); c.lineTo(W, (H / 5) * i); c.stroke(); }
-      c.fillStyle = "rgba(140,220,240,.5)"; c.font = "900 44px Inter, Arial"; c.textAlign = "left"; c.fillText("EVIDENCE LAB", 40, 66);
+      c.fillStyle = "rgba(140,220,240,.5)"; c.font = "900 44px Inter, Arial"; c.textAlign = "center"; c.fillText("EVIDENCE LAB", W / 2, 66);
     }} />
     {/* the bench */}
     <Box p={[0, 1.02, -3.5]} s={[12.4, 0.3, 3.4]} color="#39424e" line={2} />
@@ -248,7 +249,7 @@ const S4 = ({ t, f }: Ctx) => {
       {[-1.05, -0.55, 0, 0.55, 1.05].map((x, i) => <Ball key={i} p={[x, 0.36, 0.97]} r={0.075} color={((f >> 3) + i) % 2 ? "#2fd46a" : "#0d3a1e"} ink={0} />)}
       {[-0.9, 0, 0.9].map((x, i) => <Cyl key={i} p={[x, 1.15, -0.6]} rt={0.05} h={0.95} rot={[0, 0, (i - 1) * 0.22]} color="#8a93a6" line={1} />)}
     </group>
-    <CanvasPlane p={[-3.3, 3.35, -4.9]} s={[3.5, 2.0]} px={[700, 400]} frame="#10131c" draw={(c, W, H) => {
+    <CanvasPlane p={[-3.3, 3.5, -4.9]} s={[3.9, 2.2]} px={[700, 400]} frame="#10131c" draw={(c, W, H) => {
       c.fillStyle = "#0a1410"; c.fillRect(0, 0, W, H);
       c.font = "700 25px monospace"; c.textAlign = "left";
       for (let r = 0; r < 9; r++) {
@@ -260,7 +261,7 @@ const S4 = ({ t, f }: Ctx) => {
     }} />
     <CanvasPlane p={[-3.3, 1.32, -1.72]} s={[1.7, 0.6]} px={[340, 120]} draw={(c, W, H) => { c.fillStyle = "#ffd36a"; c.fillRect(0, 0, W, H); c.fillStyle = "#1b1b2a"; c.font = "900 52px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("EXHIBIT A", W / 2, H / 2 + 2); }} />
     {/* EXHIBIT B: the phone-testing robot */}
-    <group position={[3.2, 1.17, -3.9]}>
+    <group position={[3.2, 1.17, -3.9]} scale={[1.3, 1.3, 1.3]}>
       <Cyl p={[0, 0.14, 0]} rt={0.72} h={0.28} color="#39424e" line={2} />
       <Cyl p={[0, 0.85, 0]} rt={0.17} h={1.2} color="#5a6a7a" line={1} />
       <group position={[0, 1.5, 0]} rotation={[0, 0, armRot]}>
@@ -316,7 +317,7 @@ const S6 = ({ t, f }: Ctx) => {
   return (<>
     <Cam t={t} keys={K6} />
     <Lights warm="#d8e8ff" />
-    <Floor kind="carpet" a="#232c3e" b="#1e2636" unit={2} w={34} d={34} />
+    <Floor kind="carpet" a="#28334a" b="#1e2636" unit={2} w={34} d={34} />
     <WallDoor z={-7.5} W={34} kind="plain" a="#2c3852" b="#2c3852" base="#1a2233" />
     <SideWall x={-12} kind="plain" a="#26324a" b="#26324a" /><SideWall x={12} kind="plain" a="#26324a" b="#26324a" />
     {/* the statement board */}
@@ -333,7 +334,7 @@ const S6 = ({ t, f }: Ctx) => {
     <Desk p={[-3.6, 0, -2.4]} w={2.6} top="#39424e" leg="#1a2233" d={1.2} />
     <Cyl p={[-4.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, 0.3]} color="#10131c" line={0} /><Ball p={[-4.22, 1.72, -2.02]} r={0.11} color="#10131c" ink={1} />
     <Cyl p={[-3.1, 1.35, -2.2]} rt={0.035} h={0.8} rot={[0.5, 0, -0.3]} color="#10131c" line={0} /><Ball p={[-2.98, 1.72, -2.02]} r={0.11} color="#10131c" ink={1} />
-    <Person p={[-3.6, 0, -3.5]} sy={0} h={3.5} look={lawyer} f={f} pose={{ mood: "deadpan", arms: t > 25.4 ? "point" : "down", armK: seg(t, 25.4, 25.7), armR: [0.7, 0.6], lookX: 0.3 }} />
+    <Person p={[-6.1, 0, -2.2]} sy={0} h={3.5} look={lawyer} f={f} pose={{ mood: "deadpan", arms: t > 25.4 ? "point" : "down", armK: seg(t, 25.4, 25.7), armR: [0.7, 0.6], lookX: 0.55 }} />
     {/* the APPEAL stamp slams on "fight on" */}
     <Stamp t={t} t0={25.5} p={[1.6, 2.6, -1.6]} s={[3.2, 1.5]} rot={-0.14} lines={["APPEAL"]} ink="#2f8cff" />
     {/* the September 2027 calendar, the 14th circled */}
