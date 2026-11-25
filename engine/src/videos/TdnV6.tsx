@@ -224,7 +224,7 @@ const S3 = ({ t, f }: Ctx) => (<>
 /* =================== S4 15.03 – 18.66  "from Cisco's router code to T-Mobile's phone-testing robot" — the evidence bench =================== */
 const K4: Key[] = [
   { t: 15.03, pos: [-2.2, 3.1, 11.6], look: [-1.9, 2.2, -3.5], fov: 60 },
-  { t: 18.66, pos: [2.0, 3.0, 11.2], look: [2.2, 2.2, -3.5], fov: 58 },
+  { t: 18.66, pos: [2.0, 3.0, 11.2], look: [1.9, 2.2, -3.5], fov: 58 },
 ];
 const S4 = ({ t, f }: Ctx) => {
   const tapPh = Math.max(0, Math.sin((t - 17.0) * 6.2));
@@ -249,7 +249,7 @@ const S4 = ({ t, f }: Ctx) => {
       {[-1.05, -0.55, 0, 0.55, 1.05].map((x, i) => <Ball key={i} p={[x, 0.36, 0.97]} r={0.075} color={((f >> 3) + i) % 2 ? "#2fd46a" : "#0d3a1e"} ink={0} />)}
       {[-0.9, 0, 0.9].map((x, i) => <Cyl key={i} p={[x, 1.15, -0.6]} rt={0.05} h={0.95} rot={[0, 0, (i - 1) * 0.22]} color="#8a93a6" line={1} />)}
     </group>
-    <CanvasPlane p={[-3.3, 3.5, -4.9]} s={[3.9, 2.2]} px={[700, 400]} frame="#10131c" draw={(c, W, H) => {
+    <CanvasPlane p={[-2.85, 3.5, -4.9]} s={[3.9, 2.2]} px={[700, 400]} frame="#10131c" draw={(c, W, H) => {
       c.fillStyle = "#0a1410"; c.fillRect(0, 0, W, H);
       c.font = "700 25px monospace"; c.textAlign = "left";
       for (let r = 0; r < 9; r++) {
