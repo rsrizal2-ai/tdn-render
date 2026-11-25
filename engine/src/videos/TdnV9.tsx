@@ -57,7 +57,7 @@ const Station: React.FC<{ p: V3; s?: number; rotY?: number }> = ({ p, s = 0.62, 
   <group position={p} scale={[s, s, s]} rotation={[0, rotY, 0]}>
     <Cyl p={[0, 0, 0]} rt={1.05} h={5.6} rot={[0, 0, Math.PI / 2]} color="#e8ecf4" line={2} />
     <Cyl p={[-1.4, 0, 0]} rt={1.09} h={0.35} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={1} />
-    <Ball p={[1.9, 0, 0]} r={1.28} color="#dfe6ee" ink={2} />
+    <Cyl p={[1.9, 0, 0]} rt={1.28} h={1.7} rot={[0, 0, Math.PI / 2]} color="#dfe6ee" line={2} />
     <Cyl p={[3.6, 0, 0]} rt={0.82} h={2.2} rot={[0, 0, Math.PI / 2]} color="#e8ecf4" line={2} />
     {/* docking port, left end */}
     <Cyl p={[-3.15, 0, 0]} rt={0.72} h={0.6} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={2} />
@@ -118,13 +118,13 @@ const S1 = ({ t, f }: Ctx) => {
     <Cam t={t} keys={K1} />
     <Lights warm="#ffe9c4" />
     <Stars p={[0, 6, -26]} s={[46, 26]} t={t} n={170} />
-    <EarthLimb />
-    <Station p={[0.6, 4.6, -6]} s={0.62} />
+    <EarthLimb y={-27} />
+    <Station p={[0.4, 4.8, -6.5]} s={0.78} />
     {pop > 0.02 ? <group position={[3.35, 5.9, -5.2]} scale={[pop, pop, 1]}><FlagPlaque p={[0, 0, 0]} /></group> : null}
     <Glow p={[3.35, 5.9, -5.8]} r={2.2} color="rgba(60,220,140,1)" o={0.16 * pop} />
     {/* the analyst, floating on a tether, points at the plaque on "Chinese rocket" */}
     <Cyl p={[-1.9, 3.1 + bob * 0.5, -3.4]} rt={0.035} h={3.4} rot={[0, 0, 1.15]} color="#aab4c8" line={0} />
-    <Person p={[-3.6, 2.0 + bob, -2.6]} h={3.3} look={analyst} f={f} shadow={false} pose={{ mood: "grin", arms: "point", armK: seg(t, 3.3, 3.6), armR: [0.85, 0.62], lookX: 0.6 }} />
+    <Person p={[-3.3, 2.1 + bob, -2.6]} h={3.6} look={analyst} f={f} shadow={false} pose={{ mood: "grin", arms: "point", armK: seg(t, 3.3, 3.6), armR: [0.85, 0.62], lookX: 0.6 }} />
     <Dust t={t} area={[8, 5, 5]} color="rgba(200,220,255,.8)" />
   </>);
 };
@@ -175,7 +175,7 @@ const S2 = ({ t, f }: Ctx) => {
     <Rocket rise={rise} t={t} />
     {/* ignition smoke billows */}
     {smoke > 0 ? [-2.6, -1.2, 0.4, 1.9, 3.2].map((x, i) => (
-      <Ball key={i} p={[0.8 + x * (0.7 + smoke * 0.9), 0.5 + smoke * rnd(i + 21) * 0.8, -6 + (rnd(i + 31) - 0.5) * 2.2]} r={(0.8 + smoke * 1.5) * (0.7 + rnd(i + 41) * 0.6)} color={i % 2 ? "#e8e2d8" : "#cfc8bc"} ink={0} />
+      <Ball key={i} p={[0.8 + x * (0.7 + smoke * 0.9), 0.35 + smoke * rnd(i + 21) * 0.6, -6 + (rnd(i + 31) - 0.5) * 2.2]} r={(0.55 + smoke * 0.85) * (0.7 + rnd(i + 41) * 0.5)} color={i % 2 ? "#efe9df" : "#e2dbcf"} ink={0} />
     )) : null}
     {/* support buildings + a distant second tower */}
     <Box p={[-11, 1.1, -11]} s={[4.6, 2.2, 3]} color="#a8763e" line={1} />
@@ -210,8 +210,8 @@ const S3 = ({ t, f }: Ctx) => {
       c.fillStyle = "#31586b"; c.fillRect(0, 0, W, H);
       c.strokeStyle = "rgba(160,220,230,.25)"; c.lineWidth = 3;
       for (let i = 1; i < 8; i++) { c.beginPath(); c.moveTo((W / 8) * i, 0); c.lineTo((W / 8) * i, H); c.stroke(); }
-      c.fillStyle = "rgba(200,240,255,.55)"; c.font = "900 40px Inter, Arial"; c.textAlign = "center"; c.fillText("SHENZHOU-24 · CREW CABIN", W / 2, 58);
     }} />
+    <CanvasPlane p={[0, 8.1, -8.6]} s={[8.6, 0.95]} px={[1032, 114]} draw={(c, W, H) => { c.fillStyle = "#0d2136"; c.fillRect(0, 0, W, H); c.fillStyle = "#8ae8ff"; c.font = "900 52px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("SHENZHOU-24 · CREW CABIN", W / 2, H / 2 + 2); }} />
     {/* round window with Earth */}
     <Cyl p={[-4.6, 4.9, -8.5]} rt={1.35} h={0.3} rot={[Math.PI / 2, 0, 0]} color="#8a93a6" line={2} />
     <CanvasPlane p={[-4.6, 4.9, -8.32]} s={[2.3, 2.3]} px={[230, 230]} draw={(c, W, H) => {
@@ -246,7 +246,7 @@ const K4: Key[] = [
   { t: 25.80, pos: [0, 3.4, 11.2], look: [0, 4.1, -5], fov: 58 },
 ];
 const CrewScreen: React.FC<{ t: number }> = ({ t }) => (
-  <CanvasPlane p={[0, 4.9, -7.6]} s={[11.6, 5.6]} px={[1160, 560]} frame="#0b1026" draw={(c, W, H) => {
+  <CanvasPlane p={[0, 4.9, -7.6]} s={[13.2, 6.0]} px={[1320, 600]} frame="#0b1026" draw={(c, W, H) => {
     c.fillStyle = "#0d1b33"; c.fillRect(0, 0, W, H);
     c.strokeStyle = "rgba(110,200,255,.35)"; c.lineWidth = 3; c.strokeRect(14, 14, W - 28, H - 28);
     c.fillStyle = "#8ae8ff"; c.font = "900 44px Inter, Arial"; c.textAlign = "left"; c.fillText("SHENZHOU-24 · CREW", 44, 66);
@@ -280,14 +280,14 @@ const S4 = ({ t, f }: Ctx) => (<>
   <Floor kind="tile" a="#232c4e" b="#1e2745" unit={2} w={40} d={40} />
   <CanvasPlane p={[0, 5.8, -8.8]} s={[26, 11.5]} px={[780, 345]} draw={(c, W, H) => { c.fillStyle = "#141c3d"; c.fillRect(0, 0, W, H); c.fillStyle = "rgba(120,160,255,.14)"; for (let i = 0; i < 7; i++) c.fillRect(50 + i * 105, 0, 6, H); }} />
   <CrewScreen t={t} />
-  <Desk p={[-3.4, 0, -2.6]} w={4.2} top="#2c3852" leg="#141a30" d={1.6} />
-  <Desk p={[3.4, 0, -2.6]} w={4.2} top="#2c3852" leg="#141a30" d={1.6} />
-  <Monitor p={[-4.2, 1.05, -2.8]} rot={[0, 0.3, 0]} screen="#35d3c5" />
-  <Monitor p={[-2.6, 1.05, -2.8]} rot={[0, -0.2, 0]} screen="#ffd36a" />
-  <Monitor p={[3.4, 1.05, -2.8]} rot={[0, 0.1, 0]} screen="#7fb2ff" />
-  <Person p={[-3.4, 0, -1.4]} h={3.4} look={controllerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 21.8, 22.1), armR: [0.6, 0.75], lookX: 0.3 }} />
-  <Person p={[3.6, 0, -1.5]} h={3.4} look={controller2Look} f={f} pose={{ mood: "smile", arms: "down", lookX: -0.3 }} />
-  <Chair p={[-5.6, 0, -1.2]} rotY={0.5} color="#2c3852" /><Chair p={[5.8, 0, -1.3]} rotY={-0.4} color="#2c3852" />
+  <Desk p={[-2.9, 0, -2.6]} w={4.2} top="#2c3852" leg="#141a30" d={1.6} />
+  <Desk p={[2.9, 0, -2.6]} w={4.2} top="#2c3852" leg="#141a30" d={1.6} />
+  <Monitor p={[-3.7, 1.05, -2.8]} rot={[0, 0.3, 0]} screen="#35d3c5" />
+  <Monitor p={[-2.1, 1.05, -2.8]} rot={[0, -0.2, 0]} screen="#ffd36a" />
+  <Monitor p={[2.9, 1.05, -2.8]} rot={[0, 0.1, 0]} screen="#7fb2ff" />
+  <Person p={[-2.9, 0, -1.4]} h={3.4} look={controllerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 21.8, 22.1), armR: [0.6, 0.75], lookX: 0.3 }} />
+  <Person p={[3.1, 0, -1.5]} h={3.4} look={controller2Look} f={f} pose={{ mood: "smile", arms: "down", lookX: -0.3 }} />
+  <Chair p={[-5.0, 0, -1.2]} rotY={0.5} color="#2c3852" /><Chair p={[5.2, 0, -1.3]} rotY={-0.4} color="#2c3852" />
   <Plant p={[-8.4, 0, -4.6]} s={1.2} /><Lamp p={[8.6, 0, -4.2]} h={3.4} color="#d8e8ff" />
   <Dust t={t} area={[8, 5, 5]} color="rgba(190,215,255,.85)" />
 </>);
@@ -361,10 +361,10 @@ const S6 = ({ t, f }: Ctx) => {
       <Box p={[0.62, 5.55, -6.3]} s={[0.18, 0.5, 0.3]} color="#c9a227" line={1} />
       <Box p={[0.62, 3.75, -6.3]} s={[0.18, 0.5, 0.3]} color="#c9a227" line={1} />
     </>) : null}
-    {boardPop > 0.02 ? <group position={[3.1, 7.6, -6.6]} scale={[boardPop, boardPop, 1]}>
-      <CanvasPlane p={[0, 0, 0]} s={[6.4, 1.15]} px={[1024, 184]} frame="#6e5a1e" draw={(c, W, H) => {
+    {boardPop > 0.02 ? <group position={[1.0, 7.7, -6.6]} scale={[boardPop, boardPop, 1]}>
+      <CanvasPlane p={[0, 0, 0]} s={[5.8, 1.15]} px={[1024, 184]} frame="#6e5a1e" draw={(c, W, H) => {
         c.fillStyle = "#101828"; c.fillRect(0, 0, W, H);
-        c.fillStyle = "#ffd36a"; c.font = "900 66px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle";
+        c.fillStyle = "#ffd36a"; c.font = "900 54px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle";
         c.fillText("TIANGONG — THE HEAVENLY PALACE", W / 2, H / 2 + 2);
       }} />
     </group> : null}
@@ -382,7 +382,7 @@ const K7: Key[] = [
   { t: 44.07, pos: [0.6, 3.2, 11.0], look: [0.2, 3.6, -4], fov: 58 },
 ];
 const GrowRack: React.FC<{ t: number }> = ({ t }) => (
-  <group position={[-3.6, 0, -4.6]}>
+  <group position={[-3.05, 0, -4.6]}>
     <Box p={[0, 2.2, 0]} s={[3.4, 4.4, 1.1]} color="#39424e" line={2} />
     {[0, 1, 2, 3].map((i) => {
       const lit = t > 39.47 + i * 0.45;
@@ -420,10 +420,10 @@ const S7 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ffffff"; for (let i = 0; i < 20; i++) c.fillRect(rnd(i + 55) * W, rnd(i + 65) * H * 0.45, 3, 3);
     }} />
     <GrowRack t={t} />
-    <Glow p={[-3.6, 2.6, -3.4]} r={3.0} color="rgba(255,90,200,1)" o={t > 39.47 ? 0.14 : 0.05} />
+    <Glow p={[-3.05, 2.6, -3.4]} r={3.0} color="rgba(255,90,200,1)" o={t > 39.47 ? 0.14 : 0.05} />
     {/* Ali floats with a sample box */}
-    <Person p={[1.7, 1.9 + bob, -2.8]} h={3.3} look={aliLook} f={f} shadow={false} pose={{ mood: "smile", arms: "hold", armR: [0.55, 0.55], armL: [-0.55, 0.55], lookX: -0.3 }} />
-    <Box p={[1.7, 2.6 + bob, -2.35]} s={[0.85, 0.6, 0.6]} color="#ffd36a" line={2} />
+    <Person p={[1.3, 1.9 + bob, -2.8]} h={3.3} look={aliLook} f={f} shadow={false} pose={{ mood: "smile", arms: "hold", armR: [0.55, 0.55], armL: [-0.55, 0.55], lookX: -0.3 }} />
+    <Box p={[1.3, 2.6 + bob, -2.35]} s={[0.85, 0.6, 0.6]} color="#ffd36a" line={2} />
     {calPop > 0.02 ? <group position={[-0.6, 6.3, -5.5]} scale={[calPop, calPop, 1]}>
       <CanvasPlane p={[0, 0, 0]} s={[3.4, 1.0]} px={[680, 200]} frame="#274b73" draw={(c, W, H) => {
         c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
@@ -491,17 +491,17 @@ const S9 = ({ t, f }: Ctx) => {
     <Cyl p={[0, 4.3, -7]} rt={2.3} h={11} rot={[0, 0, Math.PI / 2]} color="#dfe6ee" line={2} />
     <Cyl p={[-2.8, 4.3, -7]} rt={2.34} h={0.4} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={1} />
     <Cyl p={[3.4, 4.3, -7]} rt={2.34} h={0.4} rot={[0, 0, Math.PI / 2]} color="#c9a227" line={1} />
-    <CanvasPlane p={[0, 7.3, -5.6]} s={[5.6, 0.85]} px={[896, 136]} draw={(c, W, H) => { c.fillStyle = "#101828"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 62px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("TIANGONG · BUILT BY CHINA ALONE", W / 2, H / 2 + 2); }} />
+    <CanvasPlane p={[0, 7.3, -5.6]} s={[5.6, 0.85]} px={[896, 136]} draw={(c, W, H) => { c.fillStyle = "#101828"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 62px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("BUILT BY CHINA ALONE", W / 2, H / 2 + 2); }} />
     {/* gold light waiting behind the hatch */}
     <Glow p={[0, 4.3, -4.4]} r={3.4} color="rgba(255,190,80,1)" o={0.12 + openK * 0.5} />
-    <Cyl p={[0, 4.3, -4.72]} rt={1.02} h={0.22} rot={[Math.PI / 2, 0, 0]} color={openK > 0.4 ? "#ffca7a" : "#101828"} line={0} />
+    <Cyl p={[0, 4.3, -4.72]} rt={0.85} h={0.22} rot={[Math.PI / 2, 0, 0]} color={openK > 0.4 ? "#ffca7a" : "#101828"} line={0} />
     {/* the hatch door, swinging open */}
-    <group position={[-1.05, 4.3, -4.6]} rotation={[0, -openK * 1.85, 0]}>
-      <Cyl p={[1.05, 0, 0]} rt={1.05} h={0.24} rot={[Math.PI / 2, 0, 0]} color="#8a93a6" line={2} />
-      <Cyl p={[1.05, 0, 0.2]} rt={0.34} h={0.22} rot={[Math.PI / 2, 0, 0]} color="#c9a227" line={1} />
+    <group position={[-0.95, 4.3, -4.6]} rotation={[0, -openK * 1.85, 0]}>
+      <Cyl p={[0.95, 0, 0]} rt={0.95} h={0.24} rot={[Math.PI / 2, 0, 0]} color="#8a93a6" line={2} />
+      <Cyl p={[0.95, 0, 0.2]} rt={0.32} h={0.22} rot={[Math.PI / 2, 0, 0]} color="#c9a227" line={1} />
     </group>
-    <Cyl p={[-1.05, 4.3, -4.55]} rt={0.16} h={0.5} rot={[Math.PI / 2, 0, 0]} color="#5a6a7a" line={1} />
-    <Cyl p={[1.05, 4.3, -4.55]} rt={0.16} h={0.5} rot={[Math.PI / 2, 0, 0]} color="#5a6a7a" line={1} />
+    <Cyl p={[-0.95, 4.3, -4.55]} rt={0.16} h={0.5} rot={[Math.PI / 2, 0, 0]} color="#5a6a7a" line={1} />
+    <Cyl p={[0.95, 4.3, -4.55]} rt={0.16} h={0.5} rot={[Math.PI / 2, 0, 0]} color="#5a6a7a" line={1} />
     {/* the chain across the hatch — it drops when the hatch opens */}
     {chainDrop < 1 ? [-0.8, -0.4, 0, 0.4, 0.8].map((x, i) => (
       <Ball key={i} p={[x, 4.3 + Math.abs(x) * -0.25 - chainDrop * 4.5, -4.35]} r={0.13} color="#ffd36a" ink={1} />
