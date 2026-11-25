@@ -68,7 +68,7 @@ const Palm: React.FC<{ p: V3; s?: number }> = ({ p, s = 1 }) => (
     {[0, 1, 2, 3, 4].map((i) => (
       <Ball key={i} p={[0.35 + Math.cos(i * 1.256) * 0.85, 3.55 + (i % 2) * 0.14, Math.sin(i * 1.256) * 0.85]} r={0.85} s={[1.5, 0.34, 1.5]} color="#2f9e6a" ink={0.04} />
     ))}
-    <Ball p={[0.3, 3.2, 0]} r={0.22} color="#5a3a20" ink={1} />
+    <Ball p={[0.3, 3.2, 0]} r={0.22} color="#5a3a20" ink={0.05} />
   </group>
 );
 
@@ -105,7 +105,7 @@ const StoreFront: React.FC<{ t: number; sky: [string, string]; wall: string; sig
     {door > 0.02 ? <Box p={[0, 2.05, -6.72]} s={[2.6, 3.9, 0.1]} color="#ffca7a" line={0} /> : null}
     <group position={[-1.3, 0, -6.35]} rotation={[0, -door * 1.9, 0]}>
       <Box p={[1.3, 2.05, 0]} s={[2.6, 4.0, 0.16]} color={lit ? "#7a4a20" : "#2c5a74"} line={2} />
-      <Ball p={[2.25, 2.05, 0.16]} r={0.11} color="#ffd36a" ink={1} />
+      <Ball p={[2.25, 2.05, 0.16]} r={0.11} color="#ffd36a" ink={0.05} />
     </group>
     <Box p={[0, 4.35, -6.3]} s={[3.4, 0.3, 0.5]} color="#e5b43a" line={1} />
     {flashers ? <>
@@ -117,8 +117,8 @@ const StoreFront: React.FC<{ t: number; sky: [string, string]; wall: string; sig
 
 /* =================== S1 0 – 5.82  the hook — a normal shopping morning, a clock that races 17 hours =================== */
 const K1: Key[] = [
-  { t: 0, pos: [0, 3.3, 13.4], look: [0, 3.3, -4], fov: 60 },
-  { t: 5.82, pos: [0, 3.1, 11.6], look: [0, 3.4, -4], fov: 58 },
+  { t: 0, pos: [0, 3.3, 14.8], look: [0, 3.2, -4], fov: 60 },
+  { t: 5.82, pos: [0, 3.1, 13.0], look: [0, 3.3, -4], fov: 58 },
 ];
 const StoreClock: React.FC<{ t: number }> = ({ t }) => (
   <CanvasPlane p={[0, 8.6, -6.9]} s={[3.3, 3.3]} px={[396, 396]} draw={(c, W, H) => {
@@ -149,22 +149,22 @@ const S1 = ({ t, f }: Ctx) => {
     <StoreClock t={t} />
     <Palm p={[-10.6, 0, -4.6]} s={1.15} /><Palm p={[10.8, 0, -4.2]} s={1.0} />
     {/* shoppers streaming in with baskets */}
-    <Person p={[ax, 0, -2.2]} sy={0} h={3.4} look={hostageLooks[0]} f={f} pose={{ mood: "smile", walk: walkA * 9 * WALK, speed: 0.8, arms: "hold", armK: 1, armR: [0.34, 0.72], armL: [-0.34, 0.72], lookX: 0.3 }} />
-    <Box p={[ax, 1.55, -1.95]} s={[0.95, 0.55, 0.6]} color="#c9552e" line={2} />
-    <Person p={[bx, 0, -2.6]} sy={0} h={3.45} look={hostageLooks[3]} f={f} pose={{ mood: "smile", walk: walkB * 8.4 * WALK, speed: 0.8, arms: "hold", armK: 1, armR: [0.34, 0.72], armL: [-0.34, 0.72], lookX: -0.3, flip: true }} />
-    <Box p={[bx, 1.55, -2.35]} s={[0.95, 0.55, 0.6]} color="#2f7fc4" line={2} />
+    <Person p={[ax, 0, -2.2]} sy={0} h={3.4} look={hostageLooks[0]} f={f} pose={{ mood: "smile", walk: walkA * 9 * WALK, speed: 0.8, arms: "hold", armK: 1, armR: [0.34, 0.48], armL: [-0.34, 0.48], lookX: 0.3 }} />
+    <Box p={[ax, 1.42, -1.95]} s={[0.95, 0.55, 0.6]} color="#c9552e" line={2} />
+    <Person p={[bx, 0, -2.6]} sy={0} h={3.45} look={hostageLooks[3]} f={f} pose={{ mood: "smile", walk: walkB * 8.4 * WALK, speed: 0.8, arms: "hold", armK: 1, armR: [0.34, 0.48], armL: [-0.34, 0.48], lookX: -0.3, flip: true }} />
+    <Box p={[bx, 1.42, -2.35]} s={[0.95, 0.55, 0.6]} color="#2f7fc4" line={2} />
     {/* the analyst with his own basket — grin until "seventeen hours", then deadpan */}
-    <Person p={[3.9, 0, 0.6]} sy={0} h={3.5} look={analyst} f={f} pose={{ mood: t > 2.98 ? "deadpan" : "grin", arms: "hold", armK: 1, armR: [0.36, 0.74], armL: [-0.36, 0.74], lookX: -0.2 }} />
-    <Box p={[3.9, 1.6, 0.85]} s={[1.0, 0.58, 0.62]} color="#7a4a2a" line={2} />
-    <Ball p={[3.7, 2.05, 0.85]} r={0.21} color="#e23b3b" ink={1} /><Ball p={[4.15, 2.08, 0.8]} r={0.19} color="#2f9e6a" ink={1} />
+    <Person p={[3.2, 0, -0.9]} sy={0} h={3.5} look={analyst} f={f} pose={{ mood: t > 2.98 ? "deadpan" : "grin", arms: "hold", armK: 1, armR: [0.36, 0.48], armL: [-0.36, 0.48], lookX: -0.2 }} />
+    <Box p={[3.2, 1.42, -0.65]} s={[1.0, 0.58, 0.62]} color="#7a4a2a" line={2} />
+    <Ball p={[3.0, 1.8, -0.65]} r={0.21} color="#e23b3b" ink={0.05} /><Ball p={[3.45, 1.83, -0.7]} r={0.19} color="#2f9e6a" ink={0.05} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(255,240,200,.9)" />
   </>);
 };
 
 /* =================== S2 5.82 – 15.72  the failed heist — the cash truck leaves without them =================== */
 const K2: Key[] = [
-  { t: 5.82, pos: [-1.2, 2.9, 12.6], look: [-0.5, 2.3, -3], fov: 60 },
-  { t: 15.72, pos: [1.6, 2.9, 11.8], look: [1.2, 2.4, -3], fov: 58 },
+  { t: 5.82, pos: [-2.6, 3.0, 14.8], look: [-2.0, 2.4, -3.5], fov: 62 },
+  { t: 15.72, pos: [-1.2, 3.0, 13.8], look: [-1.4, 2.4, -3.5], fov: 60 },
 ];
 const Truck: React.FC<{ x: number }> = ({ x }) => (
   <group position={[x, 0, -4.2]}>
@@ -240,8 +240,8 @@ const S3 = ({ t, f }: Ctx) => (<>
     return <Person key={i} p={[hx, 0, hz]} sy={0} h={2.95} look={lk} f={f} pose={{ mood: "worry", hunch: 0.5, sweat: i === 2 ? 0.8 : 0, arms: "down", lookX: (rnd(i + 31) - 0.5) * 0.8 }} />;
   })}
   {/* two of the crew stand guard at the aisle ends */}
-  <Person p={[-4.9, 0, -0.9]} sy={0} h={3.5} look={crewLook} f={f} pose={{ mood: "angry", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.55 }} />
-  <Person p={[4.9, 0, -0.9]} sy={0} h={3.5} look={crewLook} f={f} pose={{ mood: "angry", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.55 }} />
+  <Person p={[-4.3, 0, -0.9]} sy={0} h={3.5} look={crewLook} f={f} pose={{ mood: "angry", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.55 }} />
+  <Person p={[4.3, 0, -0.9]} sy={0} h={3.5} look={crewLook} f={f} pose={{ mood: "angry", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.55 }} />
   {/* a tipped shopping cart */}
   <group position={[3.1, 0.35, 0.6]} rotation={[0, 0.5, 1.35]}>
     <Box p={[0, 0, 0]} s={[1.5, 0.9, 0.9]} color="#8a93a6" line={2} />
@@ -252,7 +252,7 @@ const S3 = ({ t, f }: Ctx) => (<>
 /* =================== S4 20.78 – 29.43  the demand, and the ring of steel =================== */
 const K4: Key[] = [
   { t: 20.78, pos: [0, 3.2, 10.2], look: [0, 3.3, -5], fov: 60 },
-  { t: 29.43, pos: [0, 3.7, 15.2], look: [0, 2.9, -4], fov: 62 },
+  { t: 29.43, pos: [0, 3.6, 14.0], look: [0, 2.9, -4], fov: 62 },
 ];
 const PoliceCar: React.FC<{ p: V3; rotY?: number; f: number }> = ({ p, rotY = 0, f }) => (
   <group position={p} rotation={[0, rotY, 0]}>
@@ -288,14 +288,14 @@ const S4 = ({ t, f }: Ctx) => (<>
   <StoreFront t={t} f={f} sky={["#3a2c5e", "#c65a4a"]} wall="#d9a83e" signBg="#173f30" papered />
   <DemandNote t={t} />
   {/* the cordon, revealed as the camera pulls back */}
-  <PoliceCar p={[-5.9, 0, 1.8]} rotY={0.35} f={f} />
-  <PoliceCar p={[6.1, 0, 2.2]} rotY={-0.3} f={f} />
-  <Box p={[0, 1.05, 3.4]} s={[15.5, 0.16, 0.06]} color="#ffd94a" line={0} />
-  {[-7.4, 7.4].map((x, i) => <Cyl key={i} p={[x, 0.5, 3.4]} rt={0.09} h={1.0} color="#8a93a6" line={1} />)}
-  <Person p={[-3.4, 0, 2.2]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.2 }} />
-  <Person p={[3.6, 0, 2.4]} sy={0} h={3.45} look={soldierLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.2 }} />
-  <Person p={[-8.6, 0, 4.6]} sy={0} h={3.3} look={hostageLooks[4]} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.5 }} />
-  <Person p={[8.8, 0, 4.8]} sy={0} h={3.35} look={hostageLooks[1]} f={f} pose={{ mood: "worry", arms: "down", lookX: -0.5 }} />
+  <PoliceCar p={[-4.7, 0, 2.7]} rotY={0.35} f={f} />
+  <PoliceCar p={[4.8, 0, 2.8]} rotY={-0.3} f={f} />
+  <Box p={[0, 1.05, 3.4]} s={[13.5, 0.16, 0.06]} color="#ffd94a" line={0} />
+  {[-6.5, 6.5].map((x, i) => <Cyl key={i} p={[x, 0.5, 3.4]} rt={0.09} h={1.0} color="#8a93a6" line={1} />)}
+  <Person p={[-2.7, 0, 2.3]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.2 }} />
+  <Person p={[2.9, 0, 2.5]} sy={0} h={3.45} look={soldierLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.2 }} />
+  <Person p={[-5.9, 0, 4.4]} sy={0} h={3.3} look={hostageLooks[4]} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.5 }} />
+  <Person p={[6.0, 0, 4.5]} sy={0} h={3.35} look={hostageLooks[1]} f={f} pose={{ mood: "worry", arms: "down", lookX: -0.5 }} />
   <Lamp p={[-9.8, 0, -2.4]} h={3.4} color="#ffb27a" /><Lamp p={[9.8, 0, -2.4]} h={3.4} color="#ffb27a" />
   <Dust t={t} area={[8, 4, 5]} color="rgba(255,200,160,.9)" />
 </>);
@@ -310,7 +310,7 @@ const ReleasedBoard: React.FC<{ t: number }> = ({ t }) => {
   if (t < 30.1) return null;
   const k = seg(t, 30.1, 30.45, Easing.out(Easing.back(1.8)));
   return (
-    <group position={[-3.6, 4.9, -6.2]} scale={[k, k, 1]}>
+    <group position={[-3.0, 4.9, -6.2]} scale={[k, k, 1]}>
       <CanvasPlane p={[0, 0, 0]} s={[3.3, 1.5]} px={[660, 300]} frame="#10131c" draw={(c, W, H) => {
         c.fillStyle = "#10131c"; c.fillRect(0, 0, W, H);
         c.fillStyle = "#8a93a6"; c.font = "800 52px Inter, Arial"; c.textAlign = "center"; c.fillText("RELEASED", W / 2, 92);
@@ -382,12 +382,12 @@ const Clock130: React.FC = () => (
 );
 const SfFigure: React.FC<{ t: number; f: number; i: number }> = ({ t, f, i }) => {
   const adv = seg(t, 39.6 + i * 0.18, 41.2 + i * 0.18, Easing.out(Easing.cubic));
-  const x = lerp(-8.5 + i * 1.7, -1.9 + i * 1.25, adv), z = lerp(-0.5, -3.4 + (i % 2) * 0.5, adv);
+  const x = lerp(-8.5 + i * 1.7, -2.6 + i * 1.7, adv), z = lerp(-0.5, -3.4 + (i % 2) * 0.5, adv);
   const done = t > 42.3;
   return (
     <group position={[x, 0, z]}>
       <Person p={[0, 0, 0]} sy={0} h={3.35} look={sfLook} f={f} pose={{ mood: "deadpan", hunch: done ? 0.05 : 0.38, walk: adv * 6.5 * WALK, speed: 0.85, arms: done && i === 1 ? "up" : "hold", armK: 1, armR: [0.3, 0.78], armL: [-0.3, 0.78], lookX: 0.4 }} />
-      <Ball p={[0, 3.02, 0]} r={0.52} s={[1.12, 0.55, 1.12]} color="#232733" ink={1} />
+      <Ball p={[0, 3.02, 0]} r={0.5} s={[1.12, 0.6, 1.12]} color="#232733" ink={0.05} />
     </group>
   );
 };
@@ -431,11 +431,11 @@ const S7 = ({ t, f }: Ctx) => {
       return <Person key={i} p={[wx, 0, wz]} sy={0} h={3.35} look={hostageLooks[i]} f={f} pose={{ mood: i % 2 ? "laugh" : "smile", walk: k * 6.8 * WALK, speed: 0.75, arms: i === 2 && k > 0.85 ? "up" : "down", armK: 1, lookX: (rnd(i + 51) - 0.5) * 0.6 }} />;
     })}
     {/* a hug at the tape line */}
-    <Person p={[-6.3, 0, 2.2]} sy={0} h={3.3} look={hostageLooks[5]} f={f} pose={{ mood: "laugh", arms: "hold", armK: 1, armR: [0.42, 0.8], armL: [-0.1, 0.8], lookX: 0.6 }} />
-    <Person p={[-5.2, 0, 2.3]} sy={0} h={3.4} look={hostageLooks[1]} f={f} pose={{ mood: "laugh", arms: "hold", armK: 1, armR: [0.1, 0.8], armL: [-0.42, 0.8], lookX: -0.6, flip: true }} />
+    <Person p={[-4.2, 0, 2.0]} sy={0} h={3.3} look={hostageLooks[5]} f={f} pose={{ mood: "laugh", arms: "hold", armK: 1, armR: [0.42, 0.8], armL: [-0.1, 0.8], lookX: 0.6 }} />
+    <Person p={[-3.2, 0, 2.1]} sy={0} h={3.4} look={hostageLooks[1]} f={f} pose={{ mood: "laugh", arms: "hold", armK: 1, armR: [0.1, 0.8], armL: [-0.42, 0.8], lookX: -0.6, flip: true }} />
     <Box p={[0, 1.05, 3.6]} s={[15.5, 0.16, 0.06]} color="#ffd94a" line={0} />
     {/* the medic van */}
-    <group position={[7.3, 0, -1.4]} rotation={[0, -0.25, 0]}>
+    <group position={[5.7, 0, -3.6]} rotation={[0, -0.15, 0]}>
       <Box p={[0, 1.35, 0]} s={[4.4, 2.3, 2.1]} color="#f2f0ea" line={2} />
       <Box p={[2.6, 1.0, 0]} s={[1.1, 1.6, 1.9]} color="#dfe6ee" line={2} />
       <CanvasPlane p={[0, 1.5, 1.07]} s={[1.15, 1.15]} px={[230, 230]} draw={(c, W, H) => { c.clearRect(0, 0, W, H); c.fillStyle = "#e23b3b"; c.fillRect(W * 0.38, H * 0.12, W * 0.24, H * 0.76); c.fillRect(W * 0.12, H * 0.38, W * 0.76, H * 0.24); }} />
@@ -443,11 +443,11 @@ const S7 = ({ t, f }: Ctx) => {
     </group>
     {/* the four surviving captors, led away hunched between officers (from 45.3) */}
     {t > 45.0 ? [0, 1, 2, 3].map((i) => (
-      <Person key={i} p={[3.1 + i * 0.95, 0, 1.6]} sy={0} h={3.2} look={crewLook} f={f} pose={{ mood: "deadpan", hunch: 0.55, arms: "down", lookX: 0 }} />
+      <Person key={i} p={[2.9 + i * 0.95, 0, 1.6]} sy={0} h={3.2} look={crewLook} f={f} pose={{ mood: "deadpan", hunch: 0.55, arms: "down", lookX: 0 }} />
     )) : null}
     {t > 45.0 ? <>
-      <Person p={[2.2, 0, 1.7]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.4 }} />
-      <Person p={[7.15, 0, 1.7]} sy={0} h={3.45} look={soldierLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.4 }} />
+      <Person p={[2.0, 0, 1.7]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.4 }} />
+      <Person p={[6.6, 0, 1.7]} sy={0} h={3.45} look={soldierLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: -0.4 }} />
     </> : null}
     <Palm p={[-10.6, 0, -4.6]} s={1.15} /><Palm p={[10.8, 0, -4.2]} s={1.0} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(255,230,190,.9)" />
@@ -482,8 +482,8 @@ const Dove: React.FC<{ t: number; i: number }> = ({ t, i }) => {
   const flap = Math.sin(t * 11 + i * 2) * 0.55;
   return (
     <group position={[x, y, -5.2]}>
-      <Ball p={[0, 0, 0]} r={0.30} s={[1.35, 0.85, 0.9]} color="#ffffff" ink={1} />
-      <Ball p={[0.38, 0.10, 0]} r={0.17} color="#ffffff" ink={1} />
+      <Ball p={[0, 0, 0]} r={0.30} s={[1.35, 0.85, 0.9]} color="#ffffff" ink={0.05} />
+      <Ball p={[0.38, 0.10, 0]} r={0.17} color="#ffffff" ink={0.05} />
       <Box p={[-0.25, 0.16, 0.28]} s={[0.62, 0.07, 0.34]} rot={[flap, 0, 0]} color="#eef2f6" line={1} />
       <Box p={[-0.25, 0.16, -0.28]} s={[0.62, 0.07, 0.34]} rot={[-flap, 0, 0]} color="#eef2f6" line={1} />
     </group>
@@ -508,7 +508,7 @@ const S8 = ({ t, f }: Ctx) => (<>
   <group position={[6.3, 0, -10.5]}>
     <Box p={[0, 3.1, 0]} s={[1.7, 6.2, 1.7]} color="#f2e3c8" line={2} />
     <Cyl p={[0, 6.9, 0]} rt={0.06} rb={1.5} h={1.6} color="#a83e22" line={1} />
-    <Ball p={[0, 5.6, 0]} r={0.34} color="#c9a227" ink={1} />
+    <Ball p={[0, 5.6, 0]} r={0.34} color="#c9a227" ink={0.05} />
   </group>
   {/* the cruise ship on the teal sea */}
   <group position={[8.6, 0, -13.5]}>
@@ -521,7 +521,7 @@ const S8 = ({ t, f }: Ctx) => (<>
   <PeaceMedallion t={t} />
   <Dove t={t} i={0} /><Dove t={t} i={1} />
   <Palm p={[-9.8, 0, -3.6]} s={1.1} /><Palm p={[10.4, 0, -4.4]} s={0.95} />
-  <Person p={[-6.9, 0, 0.4]} sy={0} h={3.5} look={analyst} f={f} pose={{ mood: "grin", arms: "point", armK: 1, armR: [0.85, 0.62], lookX: 0.65 }} />
+  <Person p={[-5.8, 0, 0.4]} sy={0} h={3.5} look={analyst} f={f} pose={{ mood: "grin", arms: "point", armK: 1, armR: [0.85, 0.62], lookX: 0.65 }} />
   <Dust t={t} area={[8, 4, 5]} color="rgba(255,240,200,.9)" />
 </>);
 
@@ -554,7 +554,7 @@ const S9 = ({ t, f }: Ctx) => (
     <group position={[1.85, 1.05, -2.5]}>
       <Box p={[0, 0.5, 0]} s={[0.95, 1.0, 0.65]} color="#c9a06a" line={2} />
       <Box p={[0, 1.04, 0]} s={[0.99, 0.14, 0.69]} color="#a87f4c" line={1} />
-      <Ball p={[-0.2, 1.22, 0]} r={0.17} color="#e23b3b" ink={1} /><Ball p={[0.22, 1.25, 0.05]} r={0.15} color="#2f9e6a" ink={1} />
+      <Ball p={[-0.2, 1.22, 0]} r={0.17} color="#e23b3b" ink={0.05} /><Ball p={[0.22, 1.25, 0.05]} r={0.15} color="#2f9e6a" ink={0.05} />
       <CanvasPlane p={[0, 0.5, 0.34]} s={[0.62, 0.4]} px={[248, 160]} draw={(c, W, H) => { c.clearRect(0, 0, W, H); c.fillStyle = "#5a3a20"; c.font = "900 44px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("FOOD", W / 2, H / 2); }} />
     </group>
     <Box p={[-1.7, 1.12, -2.5]} s={[0.85, 0.05, 1.1]} color="#f2f0ea" line={1} /><Box p={[-1.6, 1.17, -2.55]} s={[0.85, 0.05, 1.1]} color="#dfe6ee" rot={[0, 0.25, 0]} line={1} />
