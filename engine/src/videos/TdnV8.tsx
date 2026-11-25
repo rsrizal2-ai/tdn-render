@@ -129,7 +129,7 @@ const Capsule: React.FC<{ p: V3; rot?: V3; s?: number }> = ({ p, rot = [0, 0, 0]
     <Cyl p={[0, 0, 0]} rt={0.78} rb={1.02} h={1.5} color="#dfe3e8" line={2} />
     <Cyl p={[0, 1.32, 0]} rt={0.78} rb={0.78} h={1.2} color="#f2f4f7" line={1} />
     <Cyl p={[0, 2.08, 0]} rt={0.48} rb={0.64} h={0.4} color="#8a93a6" line={1} />
-    <Ball p={[0, 0.35, 0.92]} r={0.17} color="#274b73" ink={1} />
+    <Ball p={[0, 0.35, 0.92]} r={0.17} color="#274b73" ink={0.04} />
     <Ball p={[0.45, 0.85, 0.82]} r={0.11} color="#7ac74f" ink={0} />
     {[-1.30, 1.30].map((dx, i) => <Box key={i} p={[dx, -0.25, 0]} s={[1.05, 0.72, 0.07]} color="#274b8f" line={1} />)}
     <Cyl p={[0, -0.95, 0]} rt={0.62} rb={0.5} h={0.5} color="#8a93a6" line={1} />
@@ -254,7 +254,7 @@ const S3 = ({ t, f }: Ctx) => {
     <Box p={[14, 1.0, -21]} s={[13, 2.0, 5]} color="#c39f60" line={1} />
     <Box p={[-9, 0.5, -14]} s={[6, 1.0, 3]} color="#c69f5e" line={1} />
     {/* the 08:18 clock board */}
-    <CanvasPlane p={[-4.7, 4.2, -7]} s={[3.5, 4.3]} px={[525, 645]} frame="#5a3a20" draw={(c, W, H) => {
+    <CanvasPlane p={[-4.15, 4.2, -7]} s={[3.5, 4.3]} px={[525, 645]} frame="#5a3a20" draw={(c, W, H) => {
       c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#274b73"; c.font = "900 52px Inter, Arial"; c.textAlign = "center"; c.fillText("JIUQUAN", W / 2, 70);
       const cx = W / 2, cy = H * 0.46, r = W * 0.31;
@@ -325,7 +325,7 @@ const S4 = ({ t, f }: Ctx) => {
     <Plate t={t} t0={22.09} p={[0, 1.55, -2.45]} s={[2.3, 0.66]} lines={["3RD VISIT"]} bg="#3a2c10" fg="#ffd36a" border="#c9a227" />
     {/* a pen, floating in zero-g */}
     <Cyl p={[1.9, 3.15 + Math.sin(t * 1.4) * 0.1, -2.8]} rt={0.045} rb={0.045} h={0.85} rot={[t * 0.7, 0, 1.1]} color="#ffd36a" line={0} />
-    <CanvasPlane p={[5.9, 4.6, -6.5]} s={[2.2, 2.8]} px={[330, 420]} frame="#10131c" draw={(c, W, H) => {
+    <CanvasPlane p={[5.45, 4.6, -6.5]} s={[2.2, 2.8]} px={[330, 420]} frame="#10131c" draw={(c, W, H) => {
       c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#1b1b2a"; c.font = "900 40px Inter, Arial"; c.textAlign = "center"; c.fillText("CHECKLIST", W / 2, 58);
       c.strokeStyle = "rgba(90,90,110,.4)"; c.lineWidth = 3;
@@ -354,7 +354,7 @@ const S5 = ({ t, f }: Ctx) => {
     <Globe p={[-9, -6.8, -16]} r={7} rotY={t * 0.03} />
     <Station p={[2.4, 3.8, -6]} hatchK={seg(t, 32.0, 32.35)} />
     <Capsule p={[cx, cy, -6]} rot={[0, 0, -Math.PI / 2]} s={0.9} />
-    <Plate t={t} t0={25.5} p={[-3.85, 8.1, -7]} s={[3.3, 1.5]} lines={["FLIGHT TIME", "3 H 30 MIN"]} />
+    <Plate t={t} t0={25.5} p={[-2.9, 8.1, -7]} s={[3.3, 1.5]} lines={["FLIGHT TIME", "3 H 30 MIN"]} />
     {pulse > 0.01 ? <Glow p={[-1.0, 3.8, -5.2]} r={2.3} color="rgba(64,200,160,1)" o={0.38 * pulse} /> : null}
     <Dust t={t} area={[8, 5, 6]} color="rgba(190,215,255,.7)" />
   </>);
@@ -383,7 +383,7 @@ const S6 = ({ t, f }: Ctx) => {
       c.fillStyle = "#3f9e58"; c.beginPath(); c.arc(W * 0.36, H * 0.94, 26, 0, 7); c.fill();
     }} />
     {/* the week calendar */}
-    <CanvasPlane p={[-4.4, 4.6, -6.9]} s={[3.1, 3.8]} px={[465, 570]} frame="#4a6a52" draw={(c, W, H) => {
+    <CanvasPlane p={[-4.05, 4.6, -6.9]} s={[3.1, 3.8]} px={[465, 570]} frame="#4a6a52" draw={(c, W, H) => {
       c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#1d5c38"; c.fillRect(0, 0, W, H * 0.17);
       c.fillStyle = "#ffffff"; c.font = "900 40px Inter, Arial"; c.textAlign = "center"; c.fillText("ONE WEEK ABOARD", W / 2, H * 0.115);
@@ -417,8 +417,8 @@ const S6 = ({ t, f }: Ctx) => {
       <Box key={i} p={[1.5 + i * 0.75, 1.28, -3.95]} s={[0.55, 0.62, 0.5]} color={["#dfe8ee", "#cfe0ea", "#dfe8ee"][i]} line={1} />
     ))}
     <Cyl p={[3.35, 1.0, -3.9]} rt={0.34} rb={0.28} h={0.4} color="#8a5a2a" line={1} />
-    <Ball p={[3.35, 1.48, -3.9]} r={0.30} color="#7ac74f" ink={1} />
-    {expK > 0.02 ? <Glow p={[2.3, 2.6, -3.3]} r={2.4} color="rgba(80,255,170,1)" o={0.26 * expK} /> : null}
+    <Ball p={[3.35, 1.48, -3.9]} r={0.30} color="#7ac74f" ink={0.04} />
+    
     {/* Ali, floating at the rack */}
     <Astro p={[-1.7, 1.30 + Math.sin(t * 1.25) * 0.09, -3.4]} look={aliSuit} f={f} h={3.3} helmet={false} arms="hold" armR={[0.85, 0.45]} />
     {/* a clipboard, drifting */}
@@ -467,7 +467,7 @@ const S7 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ffffff"; star2d(c, W * 0.71, H * 0.30, H * 0.06);
     }} />
     {/* the deal document */}
-    <CanvasPlane p={[-2.2, 5.0, -7.7]} s={[6.8, 3.5]} px={[816, 420]} frame="#5a3a20" draw={(c, W, H) => {
+    <CanvasPlane p={[-1.85, 5.0, -7.7]} s={[6.8, 3.5]} px={[816, 420]} frame="#5a3a20" draw={(c, W, H) => {
       c.fillStyle = "#f6f1e6"; c.fillRect(0, 0, W, H);
       c.fillStyle = "#c2372f"; c.fillRect(0, 0, W, 16);
       c.fillStyle = "#1b1b2a"; c.font = "900 54px Inter, Arial"; c.textAlign = "center";
@@ -522,21 +522,21 @@ const S8 = ({ t, f }: Ctx) => {
     <Lights warm="#dfe8ff" />
     <Stars p={[0, 7, -26]} s={[52, 30]} t={t} />
     <Globe p={[0, -2.2, -9]} r={5.2} rotY={t * 0.03} />
-    <Plate t={t} t0={51.28} p={[-5.6, 9.4, -8]} s={[2.6, 0.9]} lines={["THE TWIST"]} bg="#3a2c10" fg="#ffd36a" border="#c9a227" />
+    <Plate t={t} t0={51.28} p={[-4.6, 9.3, -8]} s={[2.6, 0.9]} lines={["THE TWIST"]} bg="#3a2c10" fg="#ffd36a" border="#c9a227" />
     {/* the hop: dashed gold dots on a parabola, drawn as the capsule flies it */}
     {Array.from({ length: 14 }, (_, i) => {
       const u = i / 13;
       return u <= hopK + 0.001 ? <Ball key={i} p={[lerp(-9.8, -4.0, u), -0.4 + 4.8 * Math.sin(Math.PI * u), -8.2]} r={0.10} color="#ffd36a" ink={0} /> : null;
     })}
     {t > 54.3 ? <Capsule p={hopPos} rot={[0, 0, lerp(0.9, -0.9, hopK)]} s={0.5} /> : null}
-    <Plate t={t} t0={54.3} p={[-6.9, 7.0, -8]} s={[3.4, 1.3]} lines={["2023", "SUBORBITAL HOP"]} fg="#ffd36a" border="#c9a227" />
+    <Plate t={t} t0={54.3} p={[-4.7, 6.8, -8]} s={[3.0, 1.25]} lines={["2023", "SUBORBITAL HOP"]} fg="#ffd36a" border="#c9a227" />
     {/* the orbit: teal dots closing the full ring */}
     {Array.from({ length: 40 }, (_, i) => {
       const u = i / 40, a = -2.6 + u * Math.PI * 2;
       return u <= ringK + 0.001 ? <Ball key={i} p={[7.6 * Math.cos(a), -2.2 + 6.3 * Math.sin(a), -9]} r={0.10} color="#2fd4b8" ink={0} /> : null;
     })}
     {t > 57.1 ? <Capsule p={orbPos} rot={[0, 0, oa]} s={0.5} /> : null}
-    <Plate t={t} t0={57.3} p={[6.4, 6.4, -8]} s={[2.6, 1.3]} lines={["2026", "ORBIT"]} fg="#7dffce" border="#2fd4b8" />
+    <Plate t={t} t0={57.3} p={[4.7, 6.6, -8]} s={[2.6, 1.3]} lines={["2026", "ORBIT"]} fg="#7dffce" border="#2fd4b8" />
     {flashK > 0.01 ? <Glow p={orbPos} r={2.6} color="rgba(64,255,190,1)" o={0.4 * flashK} /> : null}
     <Dust t={t} area={[8, 5, 6]} color="rgba(190,215,255,.7)" />
   </>);
@@ -544,8 +544,8 @@ const S8 = ({ t, f }: Ctx) => {
 
 /* =================== S9 59.55 – 63.16  "Ali even comes home on a different ship: Shenzhou Twenty-Three" =================== */
 const K9: Key[] = [
-  { t: 59.55, pos: [0, 3.8, 13.0], look: [0, 4.0, -5], fov: 60 },
-  { t: 63.16, pos: [0.6, 3.9, 11.4], look: [0.8, 4.1, -5], fov: 58 },
+  { t: 59.55, pos: [0, 3.8, 14.2], look: [0, 4.0, -5], fov: 60 },
+  { t: 63.16, pos: [0.6, 3.9, 12.6], look: [0.8, 4.1, -5], fov: 58 },
 ];
 const S9 = ({ t, f }: Ctx) => {
   const driftK = seg(t, 60.4, 62.4);
@@ -558,11 +558,11 @@ const S9 = ({ t, f }: Ctx) => {
     <Station p={[-0.6, 3.9, -6]} hatchK={1} />
     {/* Shenzhou-24, docked at the port: the ride up */}
     <Capsule p={[-6.1, 3.9, -6]} rot={[0, 0, -Math.PI / 2]} s={0.9} />
-    <Plate t={t} t0={60.0} p={[-6.1, 6.7, -5.2]} s={[3.2, 0.95]} lines={["24 — THE RIDE UP"]} fg="#aab4c8" border="#565e70" />
+    <Plate t={t} t0={60.0} p={[-4.9, 6.9, -5.2]} s={[3.2, 0.95]} lines={["24 — THE RIDE UP"]} fg="#aab4c8" border="#565e70" />
     {/* Shenzhou-23, waiting alongside: the ride home */}
     <Capsule p={[5.6, 4.7 + Math.sin(t * 1.1) * 0.06, -6]} rot={[0, 0, Math.PI / 2]} s={0.9} />
     <Glow p={[5.6, 4.7, -6.9]} r={3.4} color="rgba(64,255,170,1)" o={0.30 * seg(t, 61.74, 62.1)} />
-    <Plate t={t} t0={61.74} p={[5.6, 7.4, -5.2]} s={[3.6, 1.0]} lines={["23 — THE RIDE HOME"]} fg="#7dffce" border="#2fd46a" />
+    <Plate t={t} t0={61.74} p={[4.9, 7.3, -5.2]} s={[3.6, 1.0]} lines={["23 — THE RIDE HOME"]} fg="#7dffce" border="#2fd46a" />
     <Astro p={aliP} look={aliSuit} f={f} h={3.1} arms="point" armK={seg(t, 60.4, 60.7)} armR={[0.8, 0.4]} />
     <Dust t={t} area={[8, 5, 6]} color="rgba(190,215,255,.7)" />
   </>);
