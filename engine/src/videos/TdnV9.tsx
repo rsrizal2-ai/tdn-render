@@ -144,8 +144,8 @@ const S2 = ({ t, f }: Ctx) => {
       const on = t > 5.8 + i * 0.135;
       return <Ball key={i} p={[-5 + rnd(i + 3) * 10, 2.5 + rnd(i + 71) * 3.4, -8.05]} r={0.11} color={on ? "#ffd36a" : "#33507a"} ink={0.02} />;
     })}
-    <Person p={[-4.4, 0, -3.4]} h={3.7} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 6.5, 7.2), armR: [0.8, 0.7], lookX: 0.4 }} />
-    <Person p={[4.5, 0, -3.4]} h={3.7} look={officer2Look} f={f} pose={{ mood: "smile", arms: "point", armK: seg(t, 7.5, 8.2), armL: [-0.8, 0.7], lookX: -0.4 }} />
+    <Person p={[-4.1, 0, -2.9]} h={3.7} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 6.5, 7.2), armR: [0.8, 0.7], lookX: 0.4 }} />
+    <Person p={[4.2, 0, -2.9]} h={3.7} look={officer2Look} f={f} pose={{ mood: "smile", arms: "point", armK: seg(t, 7.5, 8.2), armL: [-0.8, 0.7], lookX: -0.4 }} />
     {signK > 0.02 ? <group position={[0, 1.3, -5.2]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[5.8, 1.1]} text="57 COUNTRIES" bg="#0d2136" fg="#ffd36a" size={92} frame="#ffd36a" /></group> : null}
     <Dust t={t} area={[7, 4, 5]} color="rgba(190,215,255,.85)" />
   </>);
@@ -161,8 +161,8 @@ const S3 = ({ t, f }: Ctx) => {
   return (<>
     <Cam t={t} keys={K3} />
     <Lights warm="#ffd9a0" />
-    <Floor kind="tile" a="#3d2c1c" b="#352716" unit={2} w={36} d={36} />
-    <WallDoor z={-10} W={36} kind="plain" a="#33241a" b="#33241a" base="#20150e" />
+    <Floor kind="tile" a="#4a3823" b="#413019" unit={2} w={36} d={36} />
+    <WallDoor z={-10} W={36} kind="plain" a="#3d2a1e" b="#3d2a1e" base="#241811" />
     {[-4.7, -3.1].map((x, i) => <group key={i}>{[0, 1, 2].map((r) => <Crate key={r} p={[x, r * 1.16, -6.5]} s={1.05} color={i ? "#a8743a" : "#b9803e"} />)}</group>)}
     {[3.3, 4.9].map((x, i) => <group key={i}>{[0, 1].map((r) => <Crate key={r} p={[x, r * 1.16, -6.5]} s={1.05} color="#9c6c34" />)}</group>)}
     <Crate p={[0.2, 0, -4.6]} s={1.25} />
@@ -231,7 +231,7 @@ const S5 = ({ t, f }: Ctx) => {
       <CanvasPlane p={[0, 0, 0]} s={[1.2, 0.58]} px={[360, 174]} draw={(c, W, H) => { c.fillStyle = "#c9a227"; c.fillRect(0, 0, W, H); c.fillStyle = "#241a04"; c.font = "900 58px Inter, Arial"; c.textAlign = "center"; c.fillText("EXTRA", W / 2, 68); c.fillText("VIRGIN", W / 2, 132); }} />
     </group> : null}
     <Person p={[3.2, 1.09, -3.9]} h={3.6} look={tricksterLook} f={f} pose={{ mood: "grin", arms: "shrug", armK: seg(t, 31.6, 32.0), lookX: -0.4 }} />
-    <Sign p={[-3.2, 6.9, -7.7]} s={[5.0, 1.0]} text="THE OLIVE OIL TRICK" bg="#123330" fg="#a8e6c9" size={68} frame="#35d07f" />
+    <Sign p={[0, 7.35, -7.7]} s={[5.6, 1.0]} text="THE OLIVE OIL TRICK" bg="#123330" fg="#a8e6c9" size={68} frame="#35d07f" />
     <Plant p={[-6.4, 0, -4.5]} s={1.1} /><Lamp p={[6.8, 0, -4.5]} h={3.2} />
   </>);
 };
@@ -320,7 +320,7 @@ const S8 = ({ t, f }: Ctx) => {
     <Lights warm="#dfeaff" />
     <Floor kind="tile" a="#0c1220" b="#101828" unit={2} w={36} d={36} />
     <WallDoor z={-10} W={36} kind="plain" a="#131c2e" b="#131c2e" base="#0a0f1a" />
-    <group position={[-3.7, 0, -6]}>
+    <group position={[-3.1, 0, -6]}>
       <Box p={[0, 1.5, 0]} s={[4.6, 2.6, 2.2]} color="#28418c" line={2} />
       <Box p={[0, 1.55, 1.13]} s={[3.4, 1.1, 0.03]} color="#f5f7fa" line={0} />
       <Box p={[-1.2, 2.95, 0]} s={[0.7, 0.3, 1.2]} color={flash ? "#ff4040" : "#7a2020"} line={1} />
@@ -328,10 +328,10 @@ const S8 = ({ t, f }: Ctx) => {
       <Ball p={[-1.5, 0.45, 1.05]} r={0.45} color="#14161c" ink={0.04} />
       <Ball p={[1.5, 0.45, 1.05]} r={0.45} color="#14161c" ink={0.04} />
     </group>
-    <Glow p={[-4.9, 3.5, -5.2]} r={2.6} color="rgba(255,70,70,1)" o={flash ? 0.3 : 0.05} />
-    <Glow p={[-2.5, 3.5, -5.2]} r={2.6} color="rgba(80,130,255,1)" o={flash ? 0.05 : 0.3} />
+    <Glow p={[-4.3, 3.5, -5.2]} r={2.6} color="rgba(255,70,70,1)" o={flash ? 0.3 : 0.05} />
+    <Glow p={[-1.9, 3.5, -5.2]} r={2.6} color="rgba(80,130,255,1)" o={flash ? 0.05 : 0.3} />
     {[-0.5, 1.6, 3.7].map((x, i) => <Person key={i} p={[x, 0, -3.6 - (i % 2) * 0.5]} h={3.7} look={hoodLook} f={f} pose={{ mood: "worry", arms: "up", lookX: i === 1 ? 0 : i === 0 ? 0.3 : -0.3 }} />)}
-    <Person p={[-2.0, 0, -2.1]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 44.6, 45.1), armR: [0.85, 0.6], lookX: 0.5 }} />
+    <Person p={[-1.6, 0, -2.1]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 44.6, 45.1), armR: [0.85, 0.6], lookX: 0.5 }} />
     {b1 > 0.02 ? <group position={[2.7, 7.0, -7.6]} scale={[b1, b1, 1]}><Board p={[0, 0, 0]} w={5.4} lines={[{ t: "79 ARRESTED", s: 100, c: "#ffd36a" }]} /></group> : null}
     {b2 > 0.02 ? <group position={[-2.7, 7.0, -7.6]} scale={[b2, b2, 1]}><Board p={[0, 0, 0]} w={6.2} frame="#8a3a2e" lines={[{ t: "18 GANGS SMASHED", s: 84, c: "#ff9a8a" }]} /></group> : null}
     <Dust t={t} area={[7, 4, 5]} color="rgba(190,215,255,.85)" />
@@ -349,7 +349,7 @@ const S9 = ({ t, f }: Ctx) => {
     <group position={[x, 0, -5]}>
       <Box p={[0, 0.15, 0]} s={[1.9, 0.3, 1.4]} color="#39424f" line={1} />
       <Box p={[0, 0.3 + (hMax * k) / 2, 0]} s={[1.5, Math.max(0.05, hMax * k), 1.1]} color={color} line={2} />
-      <Sign p={[0, 1.35 + hMax * k + 0.55, 0.4]} s={[3.2, 1.15]} text={label} bg="#141a22" fg={color} size={62} frame={color} />
+      <Sign p={[0, 1.35 + hMax * k + 0.55, 0.4]} s={[3.6, 1.25]} text={label} bg="#141a22" fg={color} size={66} frame={color} />
       <Sign p={[0, 0.95, 0.75]} s={[2.9, 0.62]} text={sub} bg="#141a22" fg="#f5f7fa" size={52} frame="#39424f" />
     </group>
   );
@@ -386,7 +386,7 @@ const S10 = ({ t, f }: Ctx) => {
       c.fillText("EXTRA VIRGIN OLIVE OIL,", 14, 46); c.fillText("pressed from the finest", 14, 80); c.fillText("groves at dawn, bottled", 14, 114); c.fillText("under the Tuscan sun...", 14, 148);
       c.fillStyle = "#b03030"; c.font = "900 26px Inter, Arial"; c.fillText("— A STORY.", 14, 186);
     }} />
-    <Person p={[-3.7, 0, -2.2]} h={3.9} look={analyst} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 54.9, 55.4), armR: [0.9, 0.62], lookX: 0.6 }} />
+    <Person p={[-3.25, 0, -2.2]} h={3.9} look={analyst} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 54.9, 55.4), armR: [0.9, 0.62], lookX: 0.6 }} />
     <group position={[magX, 3.1, -2.6]} rotation={[0.15, 0, -0.4]}>
       <Cyl p={[0, 0, 0]} rt={0.52} h={0.1} rot={[Math.PI / 2, 0, 0]} color="#2b2118" line={1} />
       <Cyl p={[0, 0, 0.03]} rt={0.42} h={0.05} rot={[Math.PI / 2, 0, 0]} color="#bfe8ff" line={0} />
