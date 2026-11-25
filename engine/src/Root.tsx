@@ -22,5 +22,5 @@ export const Root: React.FC = () => <>
   <Composition id="TdnV6" component={TdnV6} width={720} height={1280} fps={30} durationInFrames={945} />
   <Composition id="TdnV7" component={TdnV7} width={720} height={1280} fps={30} durationInFrames={1895} />
   <Composition id="TdnV8" component={TdnV8} width={720} height={1280} fps={30} durationInFrames={1979} />
-  <Composition id="TdnV9" component={TdnV9} width={720} height={1280} fps={30} durationInFrames={1965} />
+  <Composition id="TdnV9" component={TdnV9} width={720} height={1280} fps={30} durationInFrames={1867} />
 </>;

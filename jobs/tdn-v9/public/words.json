@@ -1,1007 +1,932 @@
 [
  {
-  "word": "Pakistan",
+  "word": "That",
   "start": 0.0,
-  "end": 0.57
+  "end": 0.18
  },
  {
-  "word": "just",
-  "start": 0.57,
-  "end": 0.83
+  "word": "bottle",
+  "start": 0.18,
+  "end": 0.52
  },
  {
-  "word": "put",
-  "start": 0.83,
-  "end": 0.98
+  "word": "of",
+  "start": 0.52,
+  "end": 0.61
  },
  {
-  "word": "its",
-  "start": 0.98,
+  "word": "premium",
+  "start": 0.61,
   "end": 1.12
  },
  {
-  "word": "first",
+  "word": "olive",
   "start": 1.12,
-  "end": 1.54
+  "end": 1.42
  },
  {
-  "word": "astronaut",
-  "start": 1.54,
-  "end": 2.06
- },
- {
-  "word": "in",
-  "start": 2.06,
-  "end": 2.14
- },
- {
-  "word": "orbit",
-  "start": 2.14,
-  "end": 2.6
- },
- {
-  "word": "and",
-  "start": 2.6,
-  "end": 2.75
- },
- {
-  "word": "he",
-  "start": 2.75,
-  "end": 2.81
- },
- {
-  "word": "flew",
-  "start": 2.81,
-  "end": 3.05
- },
- {
-  "word": "there",
-  "start": 3.05,
-  "end": 3.24
- },
- {
-  "word": "on",
-  "start": 3.24,
-  "end": 3.34
- },
- {
-  "word": "a",
-  "start": 3.34,
-  "end": 3.39
- },
- {
-  "word": "Chinese",
-  "start": 3.39,
-  "end": 3.92
- },
- {
-  "word": "rocket",
-  "start": 3.92,
-  "end": 4.52
- },
- {
-  "word": "On",
-  "start": 4.52,
-  "end": 4.67
- },
- {
-  "word": "Wednesday",
-  "start": 4.67,
-  "end": 5.01
- },
- {
-  "word": "morning",
-  "start": 5.01,
-  "end": 5.48
- },
- {
-  "word": "a",
-  "start": 5.48,
-  "end": 5.52
- },
- {
-  "word": "Long",
-  "start": 5.52,
-  "end": 5.92
- },
- {
-  "word": "March",
-  "start": 5.92,
-  "end": 6.21
- },
- {
-  "word": "rocket",
-  "start": 6.21,
-  "end": 6.56
- },
- {
-  "word": "lifted",
-  "start": 6.56,
-  "end": 6.9
- },
- {
-  "word": "off",
-  "start": 6.9,
-  "end": 7.14
- },
- {
-  "word": "from",
-  "start": 7.14,
-  "end": 7.28
- },
- {
-  "word": "the",
-  "start": 7.28,
-  "end": 7.35
- },
- {
-  "word": "Jiuquan",
-  "start": 7.35,
-  "end": 7.71
- },
- {
-  "word": "launch",
-  "start": 7.71,
-  "end": 8.2
- },
- {
-  "word": "centre",
-  "start": 8.2,
-  "end": 8.5
+  "word": "oil",
+  "start": 1.42,
+  "end": 1.65
  },
  {
   "word": "in",
-  "start": 8.5,
-  "end": 8.61
+  "start": 1.65,
+  "end": 1.71
  },
  {
-  "word": "the",
-  "start": 8.61,
-  "end": 8.67
+  "word": "your",
+  "start": 1.71,
+  "end": 1.81
  },
  {
-  "word": "Gobi",
-  "start": 8.67,
-  "end": 9.01
+  "word": "kitchen",
+  "start": 1.81,
+  "end": 2.35
  },
  {
-  "word": "Desert",
-  "start": 9.01,
-  "end": 9.44
- },
- {
-  "word": "carrying",
-  "start": 9.44,
-  "end": 9.83
- },
- {
-  "word": "the",
-  "start": 9.83,
-  "end": 9.89
- },
- {
-  "word": "Shenzhou-24",
-  "start": 9.89,
-  "end": 11.1
- },
- {
-  "word": "spacecraft",
-  "start": 11.1,
-  "end": 11.92
- },
- {
-  "word": "and",
-  "start": 11.92,
-  "end": 12.03
- },
- {
-  "word": "a",
-  "start": 12.03,
-  "end": 12.06
- },
- {
-  "word": "crew",
-  "start": 12.06,
-  "end": 12.36
- },
- {
-  "word": "of",
-  "start": 12.36,
-  "end": 12.44
- },
- {
-  "word": "three",
-  "start": 12.44,
-  "end": 12.88
- },
- {
-  "word": "In",
-  "start": 13.06,
-  "end": 13.14
- },
- {
-  "word": "the",
-  "start": 13.14,
-  "end": 13.21
- },
- {
-  "word": "third",
-  "start": 13.21,
-  "end": 13.51
- },
- {
-  "word": "seat",
-  "start": 13.51,
-  "end": 13.91
- },
- {
-  "word": "sat",
-  "start": 13.91,
-  "end": 14.14
- },
- {
-  "word": "Muhammad",
-  "start": 14.14,
-  "end": 14.65
- },
- {
-  "word": "Zeeshan",
-  "start": 14.65,
-  "end": 15.13
- },
- {
-  "word": "Ali",
-  "start": 15.13,
-  "end": 15.73
- },
- {
-  "word": "a",
-  "start": 15.73,
-  "end": 15.81
- },
- {
-  "word": "forty-year-old",
-  "start": 15.81,
-  "end": 16.53
- },
- {
-  "word": "Pakistan",
-  "start": 16.53,
-  "end": 17.15
- },
- {
-  "word": "Air",
-  "start": 17.15,
-  "end": 17.36
- },
- {
-  "word": "Force",
-  "start": 17.36,
-  "end": 17.65
- },
- {
-  "word": "pilot",
-  "start": 17.65,
-  "end": 18.05
- },
- {
-  "word": "Beside",
-  "start": 18.05,
-  "end": 18.51
- },
- {
-  "word": "him",
-  "start": 18.51,
-  "end": 18.69
- },
- {
-  "word": "commander",
-  "start": 18.85,
-  "end": 19.24
- },
- {
-  "word": "Tang",
-  "start": 19.24,
-  "end": 19.58
- },
- {
-  "word": "Hongbo",
-  "start": 19.58,
-  "end": 20.19
- },
- {
-  "word": "visiting",
-  "start": 20.31,
-  "end": 20.64
- },
- {
-  "word": "China's",
-  "start": 20.64,
-  "end": 20.98
- },
- {
-  "word": "space",
-  "start": 20.98,
-  "end": 21.3
- },
- {
-  "word": "station",
-  "start": 21.3,
-  "end": 21.68
- },
- {
-  "word": "for",
-  "start": 21.68,
-  "end": 21.89
- },
- {
-  "word": "a",
-  "start": 21.89,
-  "end": 21.92
- },
- {
-  "word": "record",
-  "start": 21.92,
-  "end": 22.32
- },
- {
-  "word": "third",
-  "start": 22.32,
-  "end": 22.74
- },
- {
-  "word": "time",
-  "start": 22.74,
-  "end": 23.15
- },
- {
-  "word": "and",
-  "start": 23.15,
-  "end": 23.4
- },
- {
-  "word": "rookie",
-  "start": 23.4,
-  "end": 23.78
- },
- {
-  "word": "Wu",
-  "start": 23.78,
-  "end": 24.12
- },
- {
-  "word": "Yi",
-  "start": 24.12,
-  "end": 24.53
- },
- {
-  "word": "on",
-  "start": 24.63,
-  "end": 24.72
- },
- {
-  "word": "his",
-  "start": 24.72,
-  "end": 24.88
- },
- {
-  "word": "first",
-  "start": 24.88,
-  "end": 25.16
- },
- {
-  "word": "flight",
-  "start": 25.16,
-  "end": 25.58
- },
- {
-  "word": "Ten",
-  "start": 25.8,
-  "end": 25.98
- },
- {
-  "word": "minutes",
-  "start": 25.98,
-  "end": 26.26
- },
- {
-  "word": "after",
-  "start": 26.26,
-  "end": 26.47
- },
- {
-  "word": "liftoff",
-  "start": 26.47,
-  "end": 27.02
- },
- {
-  "word": "their",
-  "start": 27.02,
-  "end": 27.21
- },
- {
-  "word": "capsule",
-  "start": 27.21,
-  "end": 27.61
- },
- {
-  "word": "was",
-  "start": 27.61,
-  "end": 27.8
- },
- {
-  "word": "in",
-  "start": 27.8,
-  "end": 27.88
- },
- {
-  "word": "orbit",
-  "start": 27.88,
-  "end": 28.47
- },
- {
-  "word": "Three",
-  "start": 28.47,
-  "end": 28.64
- },
- {
-  "word": "and",
-  "start": 28.64,
-  "end": 28.73
- },
- {
-  "word": "a",
-  "start": 28.73,
-  "end": 28.76
- },
- {
-  "word": "half",
-  "start": 28.76,
-  "end": 28.98
- },
- {
-  "word": "hours",
-  "start": 28.98,
-  "end": 29.28
- },
- {
-  "word": "later",
-  "start": 29.28,
-  "end": 29.76
- },
- {
-  "word": "it",
-  "start": 29.76,
-  "end": 29.93
- },
- {
-  "word": "docked",
-  "start": 29.93,
-  "end": 30.27
- },
- {
-  "word": "with",
-  "start": 30.27,
-  "end": 30.45
- },
- {
-  "word": "Tiangong",
-  "start": 30.45,
-  "end": 31.26
- },
- {
-  "word": "the",
-  "start": 31.26,
-  "end": 31.33
- },
- {
-  "word": "heavenly",
-  "start": 31.33,
-  "end": 31.74
- },
- {
-  "word": "palace",
-  "start": 31.74,
-  "end": 32.28
- },
- {
-  "word": "making",
-  "start": 32.46,
-  "end": 32.75
- },
- {
-  "word": "Ali",
-  "start": 32.75,
-  "end": 33.17
- },
- {
-  "word": "the",
-  "start": 33.17,
-  "end": 33.25
- },
- {
-  "word": "first",
-  "start": 33.25,
-  "end": 33.69
- },
- {
-  "word": "foreign",
-  "start": 33.69,
-  "end": 34.03
- },
- {
-  "word": "astronaut",
-  "start": 34.03,
-  "end": 34.71
- },
- {
-  "word": "ever",
-  "start": 34.71,
-  "end": 34.98
- },
- {
-  "word": "to",
-  "start": 34.98,
-  "end": 35.07
- },
- {
-  "word": "board",
-  "start": 35.07,
-  "end": 35.39
- },
- {
-  "word": "China's",
-  "start": 35.39,
-  "end": 35.74
- },
- {
-  "word": "station",
-  "start": 35.74,
-  "end": 36.29
- },
- {
-  "word": "He",
-  "start": 36.42,
-  "end": 36.5
- },
- {
-  "word": "will",
-  "start": 36.5,
-  "end": 36.6
- },
- {
-  "word": "stay",
-  "start": 36.6,
-  "end": 36.85
- },
- {
-  "word": "about",
-  "start": 36.85,
-  "end": 37.05
- },
- {
-  "word": "a",
-  "start": 37.05,
-  "end": 37.08
- },
- {
-  "word": "week",
-  "start": 37.08,
-  "end": 37.51
- },
- {
-  "word": "running",
-  "start": 37.63,
-  "end": 37.84
- },
- {
-  "word": "science",
-  "start": 37.84,
-  "end": 38.24
- },
- {
-  "word": "experiments",
-  "start": 38.24,
-  "end": 38.92
- },
- {
-  "word": "including",
-  "start": 39.05,
-  "end": 39.47
- },
- {
-  "word": "four",
-  "start": 39.47,
-  "end": 39.8
- },
- {
-  "word": "biotechnology",
-  "start": 39.8,
-  "end": 40.77
- },
- {
-  "word": "studies",
-  "start": 40.77,
-  "end": 41.27
- },
- {
-  "word": "built",
-  "start": 41.27,
-  "end": 41.54
- },
- {
-  "word": "by",
-  "start": 41.54,
-  "end": 41.72
- },
- {
-  "word": "universities",
-  "start": 41.72,
-  "end": 42.45
- },
- {
-  "word": "back",
-  "start": 42.45,
-  "end": 42.75
- },
- {
-  "word": "home",
-  "start": 42.75,
-  "end": 43.03
- },
- {
-  "word": "in",
-  "start": 43.03,
-  "end": 43.16
- },
- {
-  "word": "Pakistan",
-  "start": 43.16,
-  "end": 43.87
- },
- {
-  "word": "Then",
-  "start": 44.07,
-  "end": 44.34
- },
- {
-  "word": "he",
-  "start": 44.34,
-  "end": 44.48
- },
- {
-  "word": "hitches",
-  "start": 44.48,
-  "end": 44.8
- },
- {
-  "word": "a",
-  "start": 44.8,
-  "end": 44.83
- },
- {
-  "word": "ride",
-  "start": 44.83,
-  "end": 45.14
- },
- {
-  "word": "home",
-  "start": 45.14,
-  "end": 45.5
- },
- {
-  "word": "on",
-  "start": 45.5,
-  "end": 45.64
- },
- {
-  "word": "a",
-  "start": 45.64,
-  "end": 45.69
- },
- {
-  "word": "different",
-  "start": 45.69,
-  "end": 46.06
- },
- {
-  "word": "ship",
-  "start": 46.06,
-  "end": 46.57
- },
- {
-  "word": "Shenzhou-23",
-  "start": 46.57,
-  "end": 47.9
- },
- {
-  "word": "China",
-  "start": 48.52,
-  "end": 48.81
- },
- {
-  "word": "built",
-  "start": 48.81,
-  "end": 49.22
- },
- {
-  "word": "Tiangong",
-  "start": 49.22,
-  "end": 49.47
- },
- {
-  "word": "all",
-  "start": 49.47,
-  "end": 49.53
- },
- {
-  "word": "on",
-  "start": 49.53,
-  "end": 49.66
- },
- {
-  "word": "its",
-  "start": 49.66,
-  "end": 49.84
- },
- {
-  "word": "own",
-  "start": 49.84,
-  "end": 50.2
- },
- {
-  "word": "after",
-  "start": 50.2,
-  "end": 50.41
- },
- {
-  "word": "being",
-  "start": 50.41,
-  "end": 50.61
- },
- {
-  "word": "shut",
-  "start": 50.61,
-  "end": 50.89
- },
- {
-  "word": "out",
-  "start": 50.89,
-  "end": 51.04
- },
- {
-  "word": "of",
-  "start": 51.04,
-  "end": 51.12
- },
- {
-  "word": "the",
-  "start": 51.12,
-  "end": 51.23
- },
- {
-  "word": "International",
-  "start": 51.23,
-  "end": 51.79
- },
- {
-  "word": "Space",
-  "start": 51.79,
-  "end": 52.12
- },
- {
-  "word": "Station",
-  "start": 52.12,
-  "end": 52.63
- },
- {
-  "word": "Now",
-  "start": 52.78,
-  "end": 53.02
- },
- {
-  "word": "it",
-  "start": 53.02,
-  "end": 53.08
- },
- {
-  "word": "has",
-  "start": 53.08,
-  "end": 53.24
- },
- {
-  "word": "opened",
-  "start": 53.24,
-  "end": 53.49
- },
- {
-  "word": "the",
-  "start": 53.49,
-  "end": 53.55
- },
- {
-  "word": "hatch",
-  "start": 53.55,
-  "end": 53.9
- },
- {
-  "word": "to",
-  "start": 53.9,
-  "end": 54.03
- },
- {
-  "word": "its",
-  "start": 54.03,
-  "end": 54.16
- },
- {
-  "word": "first",
-  "start": 54.16,
-  "end": 54.55
- },
- {
-  "word": "guest",
-  "start": 54.55,
-  "end": 55.16
- },
- {
-  "word": "and",
-  "start": 55.16,
-  "end": 55.31
- },
- {
-  "word": "Beijing",
-  "start": 55.31,
-  "end": 55.87
- },
- {
-  "word": "says",
-  "start": 55.87,
-  "end": 56.21
- },
- {
-  "word": "he",
-  "start": 56.21,
-  "end": 56.32
- },
- {
-  "word": "will",
-  "start": 56.32,
-  "end": 56.48
- },
- {
-  "word": "not",
-  "start": 56.48,
-  "end": 56.75
+  "word": "might",
+  "start": 2.35,
+  "end": 2.53
  },
  {
   "word": "be",
-  "start": 56.75,
-  "end": 56.92
+  "start": 2.53,
+  "end": 2.62
  },
  {
   "word": "the",
-  "start": 56.92,
-  "end": 56.99
+  "start": 2.62,
+  "end": 2.69
  },
  {
-  "word": "last",
-  "start": 56.99,
-  "end": 57.52
+  "word": "biggest",
+  "start": 2.69,
+  "end": 3.14
  },
  {
-  "word": "One",
-  "start": 57.75,
-  "end": 57.95
+  "word": "lie",
+  "start": 3.14,
+  "end": 3.5
  },
  {
-  "word": "small",
-  "start": 57.95,
-  "end": 58.3
+  "word": "in",
+  "start": 3.5,
+  "end": 3.57
  },
  {
-  "word": "docking",
-  "start": 58.3,
-  "end": 58.7
+  "word": "the",
+  "start": 3.57,
+  "end": 3.63
  },
  {
-  "word": "for",
-  "start": 58.7,
-  "end": 58.85
+  "word": "supermarket",
+  "start": 3.63,
+  "end": 4.51
  },
  {
-  "word": "a",
-  "start": 58.85,
-  "end": 58.88
+  "word": "This",
+  "start": 4.51,
+  "end": 4.67
  },
  {
-  "word": "capsule",
-  "start": 58.88,
-  "end": 59.44
+  "word": "week",
+  "start": 4.67,
+  "end": 5.03
  },
  {
-  "word": "One",
-  "start": 59.54,
-  "end": 59.81
+  "word": "police",
+  "start": 5.03,
+  "end": 5.4
  },
  {
-  "word": "giant",
-  "start": 59.81,
-  "end": 60.2
+  "word": "on",
+  "start": 5.4,
+  "end": 5.52
  },
  {
-  "word": "hello",
-  "start": 60.2,
-  "end": 60.62
+  "word": "five",
+  "start": 5.52,
+  "end": 5.87
+ },
+ {
+  "word": "continents",
+  "start": 5.87,
+  "end": 6.41
+ },
+ {
+  "word": "unveiled",
+  "start": 6.41,
+  "end": 6.84
+ },
+ {
+  "word": "the",
+  "start": 6.84,
+  "end": 6.9
+ },
+ {
+  "word": "haul",
+  "start": 6.9,
+  "end": 7.23
  },
  {
   "word": "from",
-  "start": 60.62,
-  "end": 60.8
+  "start": 7.23,
+  "end": 7.4
+ },
+ {
+  "word": "Operation",
+  "start": 7.4,
+  "end": 8.0
+ },
+ {
+  "word": "OPSON",
+  "start": 8.0,
+  "end": 8.56
+ },
+ {
+  "word": "Fifteen",
+  "start": 8.56,
+  "end": 9.19
  },
  {
   "word": "a",
-  "start": 60.8,
-  "end": 60.85
+  "start": 9.33,
+  "end": 9.39
  },
  {
-  "word": "brand-new",
-  "start": 60.85,
-  "end": 61.53
+  "word": "six-month",
+  "start": 9.39,
+  "end": 9.93
  },
  {
-  "word": "era",
-  "start": 61.53,
-  "end": 61.81
+  "word": "crackdown",
+  "start": 9.93,
+  "end": 10.48
+ },
+ {
+  "word": "on",
+  "start": 10.48,
+  "end": 10.6
+ },
+ {
+  "word": "fake",
+  "start": 10.6,
+  "end": 10.94
+ },
+ {
+  "word": "food",
+  "start": 10.94,
+  "end": 11.47
+ },
+ {
+  "word": "run",
+  "start": 11.47,
+  "end": 11.65
+ },
+ {
+  "word": "by",
+  "start": 11.65,
+  "end": 11.79
+ },
+ {
+  "word": "Interpol",
+  "start": 11.79,
+  "end": 12.38
+ },
+ {
+  "word": "and",
+  "start": 12.38,
+  "end": 12.54
+ },
+ {
+  "word": "Europol",
+  "start": 12.54,
+  "end": 13.11
+ },
+ {
+  "word": "across",
+  "start": 13.11,
+  "end": 13.46
+ },
+ {
+  "word": "fifty-seven",
+  "start": 13.46,
+  "end": 14.15
+ },
+ {
+  "word": "countries",
+  "start": 14.15,
+  "end": 14.71
+ },
+ {
+  "word": "Officers",
+  "start": 14.95,
+  "end": 15.42
+ },
+ {
+  "word": "carried",
+  "start": 15.42,
+  "end": 15.69
+ },
+ {
+  "word": "out",
+  "start": 15.69,
+  "end": 15.81
+ },
+ {
+  "word": "more",
+  "start": 15.81,
+  "end": 15.99
+ },
+ {
+  "word": "than",
+  "start": 15.99,
+  "end": 16.13
+ },
+ {
+  "word": "seventeen",
+  "start": 16.13,
+  "end": 16.72
+ },
+ {
+  "word": "thousand",
+  "start": 16.72,
+  "end": 17.21
+ },
+ {
+  "word": "inspections",
+  "start": 17.21,
+  "end": 18.07
+ },
+ {
+  "word": "and",
+  "start": 18.07,
+  "end": 18.19
+ },
+ {
+  "word": "seized",
+  "start": 18.19,
+  "end": 18.52
+ },
+ {
+  "word": "over",
+  "start": 18.52,
+  "end": 18.7
+ },
+ {
+  "word": "half",
+  "start": 18.7,
+  "end": 19.02
+ },
+ {
+  "word": "a",
+  "start": 19.02,
+  "end": 19.06
+ },
+ {
+  "word": "million",
+  "start": 19.06,
+  "end": 19.53
+ },
+ {
+  "word": "counterfeit",
+  "start": 19.53,
+  "end": 20.02
+ },
+ {
+  "word": "items",
+  "start": 20.02,
+  "end": 20.46
+ },
+ {
+  "word": "more",
+  "start": 20.63,
+  "end": 20.78
+ },
+ {
+  "word": "than",
+  "start": 20.78,
+  "end": 20.91
+ },
+ {
+  "word": "sixteen",
+  "start": 20.91,
+  "end": 21.38
+ },
+ {
+  "word": "hundred",
+  "start": 21.38,
+  "end": 21.77
+ },
+ {
+  "word": "tonnes",
+  "start": 21.77,
+  "end": 22.11
+ },
+ {
+  "word": "of",
+  "start": 22.11,
+  "end": 22.22
+ },
+ {
+  "word": "dodgy",
+  "start": 22.22,
+  "end": 22.59
+ },
+ {
+  "word": "food",
+  "start": 22.59,
+  "end": 23.13
+ },
+ {
+  "word": "and",
+  "start": 23.13,
+  "end": 23.26
+ },
+ {
+  "word": "almost",
+  "start": 23.26,
+  "end": 23.56
+ },
+ {
+  "word": "two",
+  "start": 23.56,
+  "end": 23.74
+ },
+ {
+  "word": "hundred",
+  "start": 23.74,
+  "end": 23.99
+ },
+ {
+  "word": "and",
+  "start": 23.99,
+  "end": 24.09
+ },
+ {
+  "word": "twenty-eight",
+  "start": 24.09,
+  "end": 24.57
+ },
+ {
+  "word": "thousand",
+  "start": 24.57,
+  "end": 25.06
+ },
+ {
+  "word": "litres",
+  "start": 25.06,
+  "end": 25.45
+ },
+ {
+  "word": "of",
+  "start": 25.45,
+  "end": 25.54
+ },
+ {
+  "word": "doctored",
+  "start": 25.54,
+  "end": 25.98
+ },
+ {
+  "word": "drinks",
+  "start": 25.98,
+  "end": 26.45
+ },
+ {
+  "word": "eighty-seven",
+  "start": 26.7,
+  "end": 27.21
+ },
+ {
+  "word": "million",
+  "start": 27.21,
+  "end": 27.62
+ },
+ {
+  "word": "dollars",
+  "start": 27.62,
+  "end": 27.98
+ },
+ {
+  "word": "of",
+  "start": 27.98,
+  "end": 28.05
+ },
+ {
+  "word": "fraud",
+  "start": 28.05,
+  "end": 28.48
  },
  {
   "word": "in",
-  "start": 61.81,
-  "end": 61.98
+  "start": 28.48,
+  "end": 28.63
  },
  {
-  "word": "space",
-  "start": 61.98,
-  "end": 62.52
+  "word": "total",
+  "start": 28.63,
+  "end": 29.11
  },
  {
   "word": "The",
-  "start": 62.52,
-  "end": 62.82
+  "start": 29.3,
+  "end": 29.38
  },
  {
-  "word": "Daily",
-  "start": 62.82,
-  "end": 63.18
+  "word": "tricks",
+  "start": 29.38,
+  "end": 29.67
  },
  {
-  "word": "Toon",
-  "start": 63.18,
-  "end": 63.47
+  "word": "were",
+  "start": 29.67,
+  "end": 29.77
  },
  {
-  "word": "News",
-  "start": 63.47,
-  "end": 64.05
+  "word": "brazen",
+  "start": 29.77,
+  "end": 30.37
+ },
+ {
+  "word": "Cheap",
+  "start": 30.49,
+  "end": 30.76
+ },
+ {
+  "word": "oil",
+  "start": 30.76,
+  "end": 31.12
+ },
+ {
+  "word": "dressed",
+  "start": 31.12,
+  "end": 31.46
+ },
+ {
+  "word": "up",
+  "start": 31.46,
+  "end": 31.59
+ },
+ {
+  "word": "as",
+  "start": 31.59,
+  "end": 31.76
+ },
+ {
+  "word": "extra",
+  "start": 31.76,
+  "end": 32.1
+ },
+ {
+  "word": "virgin",
+  "start": 32.1,
+  "end": 32.76
+ },
+ {
+  "word": "Expired",
+  "start": 32.76,
+  "end": 33.27
+ },
+ {
+  "word": "food",
+  "start": 33.27,
+  "end": 33.65
+ },
+ {
+  "word": "repackaged",
+  "start": 33.65,
+  "end": 34.35
+ },
+ {
+  "word": "with",
+  "start": 34.35,
+  "end": 34.48
+ },
+ {
+  "word": "fresh",
+  "start": 34.48,
+  "end": 34.85
+ },
+ {
+  "word": "dates",
+  "start": 34.85,
+  "end": 35.33
+ },
+ {
+  "word": "Horse",
+  "start": 35.52,
+  "end": 35.78
+ },
+ {
+  "word": "meat",
+  "start": 35.78,
+  "end": 35.99
+ },
+ {
+  "word": "moved",
+  "start": 35.99,
+  "end": 36.31
+ },
+ {
+  "word": "through",
+  "start": 36.31,
+  "end": 36.43
  },
  {
   "word": "the",
-  "start": 64.05,
-  "end": 64.13
+  "start": 36.43,
+  "end": 36.52
  },
  {
-  "word": "world",
-  "start": 64.13,
-  "end": 64.64
+  "word": "chain",
+  "start": 36.52,
+  "end": 36.89
  },
  {
   "word": "in",
-  "start": 64.64,
-  "end": 64.83
+  "start": 36.89,
+  "end": 36.99
+ },
+ {
+  "word": "secret",
+  "start": 36.99,
+  "end": 37.59
+ },
+ {
+  "word": "Sugar",
+  "start": 37.59,
+  "end": 37.97
+ },
+ {
+  "word": "and",
+  "start": 37.97,
+  "end": 38.06
+ },
+ {
+  "word": "honey",
+  "start": 38.06,
+  "end": 38.38
+ },
+ {
+  "word": "faked",
+  "start": 38.38,
+  "end": 38.84
+ },
+ {
+  "word": "and",
+  "start": 38.84,
+  "end": 38.95
+ },
+ {
+  "word": "stretched",
+  "start": 38.95,
+  "end": 39.5
+ },
+ {
+  "word": "In",
+  "start": 39.69,
+  "end": 39.83
+ },
+ {
+  "word": "Brazil",
+  "start": 39.83,
+  "end": 40.16
+ },
+ {
+  "word": "alone",
+  "start": 40.16,
+  "end": 40.72
+ },
+ {
+  "word": "ninety",
+  "start": 40.72,
+  "end": 41.14
+ },
+ {
+  "word": "tonnes",
+  "start": 41.14,
+  "end": 41.55
+ },
+ {
+  "word": "of",
+  "start": 41.55,
+  "end": 41.63
+ },
+ {
+  "word": "adulterated",
+  "start": 41.63,
+  "end": 42.26
+ },
+ {
+  "word": "sugar",
+  "start": 42.26,
+  "end": 42.61
+ },
+ {
+  "word": "and",
+  "start": 42.61,
+  "end": 42.71
+ },
+ {
+  "word": "soybeans",
+  "start": 42.71,
+  "end": 43.3
+ },
+ {
+  "word": "were",
+  "start": 43.3,
+  "end": 43.42
+ },
+ {
+  "word": "seized",
+  "start": 43.42,
+  "end": 43.98
+ },
+ {
+  "word": "By",
+  "start": 44.19,
+  "end": 44.31
+ },
+ {
+  "word": "the",
+  "start": 44.31,
+  "end": 44.45
+ },
+ {
+  "word": "end",
+  "start": 44.45,
+  "end": 44.84
+ },
+ {
+  "word": "seventy-nine",
+  "start": 44.84,
+  "end": 45.49
+ },
+ {
+  "word": "people",
+  "start": 45.49,
+  "end": 45.81
+ },
+ {
+  "word": "were",
+  "start": 45.81,
+  "end": 45.97
+ },
+ {
+  "word": "under",
+  "start": 45.97,
+  "end": 46.22
+ },
+ {
+  "word": "arrest",
+  "start": 46.22,
+  "end": 46.82
+ },
+ {
+  "word": "and",
+  "start": 46.82,
+  "end": 47.02
+ },
+ {
+  "word": "eighteen",
+  "start": 47.02,
+  "end": 47.46
+ },
+ {
+  "word": "organised",
+  "start": 47.46,
+  "end": 48.04
+ },
+ {
+  "word": "crime",
+  "start": 48.04,
+  "end": 48.38
+ },
+ {
+  "word": "groups",
+  "start": 48.38,
+  "end": 48.67
+ },
+ {
+  "word": "had",
+  "start": 48.67,
+  "end": 48.78
+ },
+ {
+  "word": "been",
+  "start": 48.78,
+  "end": 48.91
+ },
+ {
+  "word": "smashed",
+  "start": 48.91,
+  "end": 49.57
+ },
+ {
+  "word": "The",
+  "start": 49.77,
+  "end": 49.86
+ },
+ {
+  "word": "draw",
+  "start": 49.86,
+  "end": 50.14
+ },
+ {
+  "word": "is",
+  "start": 50.14,
+  "end": 50.21
+ },
+ {
+  "word": "simple",
+  "start": 50.21,
+  "end": 50.76
+ },
+ {
+  "word": "supermarket",
+  "start": 50.76,
+  "end": 51.34
+ },
+ {
+  "word": "shelves",
+  "start": 51.34,
+  "end": 51.88
+ },
+ {
+  "word": "drug-trade",
+  "start": 51.99,
+  "end": 52.56
+ },
+ {
+  "word": "margins",
+  "start": 52.56,
+  "end": 53.21
+ },
+ {
+  "word": "and",
+  "start": 53.21,
+  "end": 53.34
+ },
+ {
+  "word": "a",
+  "start": 53.34,
+  "end": 53.37
+ },
+ {
+  "word": "fraction",
+  "start": 53.37,
+  "end": 53.89
+ },
+ {
+  "word": "of",
+  "start": 53.89,
+  "end": 53.98
+ },
+ {
+  "word": "the",
+  "start": 53.98,
+  "end": 54.04
+ },
+ {
+  "word": "risk",
+  "start": 54.04,
+  "end": 54.5
+ },
+ {
+  "word": "So",
+  "start": 54.7,
+  "end": 54.83
+ },
+ {
+  "word": "read",
+  "start": 54.83,
+  "end": 55.04
+ },
+ {
+  "word": "the",
+  "start": 55.04,
+  "end": 55.1
+ },
+ {
+  "word": "label",
+  "start": 55.1,
+  "end": 55.4
+ },
+ {
+  "word": "twice",
+  "start": 55.4,
+  "end": 55.93
+ },
+ {
+  "word": "The",
+  "start": 55.93,
+  "end": 56.14
+ },
+ {
+  "word": "most",
+  "start": 56.14,
+  "end": 56.34
+ },
+ {
+  "word": "dangerous",
+  "start": 56.34,
+  "end": 56.83
+ },
+ {
+  "word": "thing",
+  "start": 56.83,
+  "end": 57.03
+ },
+ {
+  "word": "on",
+  "start": 57.03,
+  "end": 57.13
+ },
+ {
+  "word": "your",
+  "start": 57.13,
+  "end": 57.23
+ },
+ {
+  "word": "plate",
+  "start": 57.23,
+  "end": 57.67
+ },
+ {
+  "word": "might",
+  "start": 57.67,
+  "end": 57.86
+ },
+ {
+  "word": "be",
+  "start": 57.86,
+  "end": 57.97
+ },
+ {
+  "word": "the",
+  "start": 57.97,
+  "end": 58.03
+ },
+ {
+  "word": "story",
+  "start": 58.03,
+  "end": 58.45
+ },
+ {
+  "word": "printed",
+  "start": 58.45,
+  "end": 58.82
+ },
+ {
+  "word": "on",
+  "start": 58.82,
+  "end": 59.03
+ },
+ {
+  "word": "it",
+  "start": 59.03,
+  "end": 59.3
+ },
+ {
+  "word": "The",
+  "start": 59.3,
+  "end": 59.38
+ },
+ {
+  "word": "Daily",
+  "start": 59.38,
+  "end": 59.77
+ },
+ {
+  "word": "Toon",
+  "start": 59.77,
+  "end": 60.11
+ },
+ {
+  "word": "News",
+  "start": 60.11,
+  "end": 60.69
+ },
+ {
+  "word": "the",
+  "start": 60.69,
+  "end": 60.77
+ },
+ {
+  "word": "world",
+  "start": 60.77,
+  "end": 61.38
+ },
+ {
+  "word": "in",
+  "start": 61.38,
+  "end": 61.56
  },
  {
   "word": "toons",
-  "start": 64.83,
-  "end": 65.41
+  "start": 61.56,
+  "end": 62.13
  }
 ]

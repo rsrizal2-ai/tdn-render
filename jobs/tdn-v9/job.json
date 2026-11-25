@@ -1,1 +1,31 @@
-{"composition":"TdnV9","durationInFrames":1965,"fps":30,"height":1280,"job":"tdn-v9","output":"tdn-09-shenzhou-first-astronaut.mp4","render":{"concurrency":3,"gl":"swangle","scale":1.5},"stills":{"frames":[60,200,330,450,620,810,920,1010,1200,1390,1560,1640,1770,1900],"scale":0.4},"video":"TDN #9 — Shenzhou-24: Pakistan's first astronaut docks at Tiangong","width":720}
+{
+  "job": "tdn-v9",
+  "video": "TDN #9 \u2014 OPSON XV: the great fake-food bust (INTERPOL/Europol, 57 countries)",
+  "composition": "TdnV9",
+  "durationInFrames": 1867,
+  "fps": 30,
+  "width": 720,
+  "height": 1280,
+  "render": {
+    "scale": 1.5,
+    "gl": "swangle",
+    "concurrency": 3
+  },
+  "output": "tdn-09-opson-fake-food.mp4",
+  "stills": {
+    "frames": [
+      60,
+      260,
+      500,
+      700,
+      940,
+      1060,
+      1240,
+      1400,
+      1560,
+      1700,
+      1810
+    ],
+    "scale": 0.4
+  }
+}
