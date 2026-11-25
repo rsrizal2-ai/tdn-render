@@ -1,0 +1,462 @@
+[
+ {
+  "word": "Taiwan's",
+  "start": 0.0,
+  "end": 0.43
+ },
+ {
+  "word": "stock",
+  "start": 0.43,
+  "end": 0.75
+ },
+ {
+  "word": "market",
+  "start": 0.75,
+  "end": 1.1
+ },
+ {
+  "word": "just",
+  "start": 1.1,
+  "end": 1.32
+ },
+ {
+  "word": "had",
+  "start": 1.32,
+  "end": 1.46
+ },
+ {
+  "word": "the",
+  "start": 1.46,
+  "end": 1.53
+ },
+ {
+  "word": "best",
+  "start": 1.53,
+  "end": 1.95
+ },
+ {
+  "word": "day",
+  "start": 1.95,
+  "end": 2.22
+ },
+ {
+  "word": "in",
+  "start": 2.22,
+  "end": 2.32
+ },
+ {
+  "word": "its",
+  "start": 2.32,
+  "end": 2.46
+ },
+ {
+  "word": "history",
+  "start": 2.46,
+  "end": 3.06
+ },
+ {
+  "word": "It",
+  "start": 3.22,
+  "end": 3.31
+ },
+ {
+  "word": "lasted",
+  "start": 3.31,
+  "end": 3.66
+ },
+ {
+  "word": "one",
+  "start": 3.66,
+  "end": 3.95
+ },
+ {
+  "word": "day",
+  "start": 3.95,
+  "end": 4.3
+ },
+ {
+  "word": "On",
+  "start": 4.51,
+  "end": 4.63
+ },
+ {
+  "word": "Tuesday",
+  "start": 4.63,
+  "end": 5.2
+ },
+ {
+  "word": "the",
+  "start": 5.2,
+  "end": 5.37
+ },
+ {
+  "word": "Taiex",
+  "start": 5.37,
+  "end": 5.89
+ },
+ {
+  "word": "rocketed",
+  "start": 5.89,
+  "end": 6.37
+ },
+ {
+  "word": "three",
+  "start": 6.37,
+  "end": 6.64
+ },
+ {
+  "word": "thousand",
+  "start": 6.64,
+  "end": 7.12
+ },
+ {
+  "word": "three",
+  "start": 7.12,
+  "end": 7.38
+ },
+ {
+  "word": "hundred",
+  "start": 7.38,
+  "end": 7.66
+ },
+ {
+  "word": "ten",
+  "start": 7.66,
+  "end": 7.9
+ },
+ {
+  "word": "points",
+  "start": 7.9,
+  "end": 8.48
+ },
+ {
+  "word": "up",
+  "start": 8.48,
+  "end": 8.63
+ },
+ {
+  "word": "nine",
+  "start": 8.63,
+  "end": 8.98
+ },
+ {
+  "word": "percent",
+  "start": 8.98,
+  "end": 9.61
+ },
+ {
+  "word": "the",
+  "start": 9.61,
+  "end": 9.7
+ },
+ {
+  "word": "biggest",
+  "start": 9.7,
+  "end": 10.06
+ },
+ {
+  "word": "one-day",
+  "start": 10.06,
+  "end": 10.46
+ },
+ {
+  "word": "gain",
+  "start": 10.46,
+  "end": 10.75
+ },
+ {
+  "word": "ever",
+  "start": 10.75,
+  "end": 11.06
+ },
+ {
+  "word": "recorded",
+  "start": 11.06,
+  "end": 11.63
+ },
+ {
+  "word": "One",
+  "start": 11.86,
+  "end": 12.02
+ },
+ {
+  "word": "company",
+  "start": 12.02,
+  "end": 12.38
+ },
+ {
+  "word": "did",
+  "start": 12.38,
+  "end": 12.52
+ },
+ {
+  "word": "the",
+  "start": 12.52,
+  "end": 12.58
+ },
+ {
+  "word": "lifting",
+  "start": 12.58,
+  "end": 13.13
+ },
+ {
+  "word": "TSMC",
+  "start": 13.13,
+  "end": 14.2
+ },
+ {
+  "word": "forty",
+  "start": 14.2,
+  "end": 14.49
+ },
+ {
+  "word": "percent",
+  "start": 14.49,
+  "end": 14.83
+ },
+ {
+  "word": "of",
+  "start": 14.83,
+  "end": 14.9
+ },
+ {
+  "word": "the",
+  "start": 14.9,
+  "end": 14.96
+ },
+ {
+  "word": "whole",
+  "start": 14.96,
+  "end": 15.18
+ },
+ {
+  "word": "market",
+  "start": 15.18,
+  "end": 15.59
+ },
+ {
+  "word": "pinned",
+  "start": 15.59,
+  "end": 15.89
+ },
+ {
+  "word": "at",
+  "start": 15.89,
+  "end": 15.97
+ },
+ {
+  "word": "its",
+  "start": 15.97,
+  "end": 16.17
+ },
+ {
+  "word": "ten",
+  "start": 16.17,
+  "end": 16.39
+ },
+ {
+  "word": "percent",
+  "start": 16.39,
+  "end": 16.77
+ },
+ {
+  "word": "daily",
+  "start": 16.77,
+  "end": 17.06
+ },
+ {
+  "word": "limit",
+  "start": 17.06,
+  "end": 17.59
+ },
+ {
+  "word": "Seoul",
+  "start": 17.59,
+  "end": 17.91
+ },
+ {
+  "word": "partied",
+  "start": 17.91,
+  "end": 18.24
+ },
+ {
+  "word": "too",
+  "start": 18.24,
+  "end": 18.7
+ },
+ {
+  "word": "the",
+  "start": 18.7,
+  "end": 18.79
+ },
+ {
+  "word": "Kospi",
+  "start": 18.79,
+  "end": 19.23
+ },
+ {
+  "word": "jumped",
+  "start": 19.23,
+  "end": 19.51
+ },
+ {
+  "word": "six",
+  "start": 19.51,
+  "end": 19.78
+ },
+ {
+  "word": "percent",
+  "start": 19.78,
+  "end": 20.34
+ },
+ {
+  "word": "back",
+  "start": 20.34,
+  "end": 20.64
+ },
+ {
+  "word": "above",
+  "start": 20.64,
+  "end": 20.86
+ },
+ {
+  "word": "five",
+  "start": 20.86,
+  "end": 21.16
+ },
+ {
+  "word": "thousand",
+  "start": 21.16,
+  "end": 21.65
+ },
+ {
+  "word": "Then",
+  "start": 21.65,
+  "end": 22.0
+ },
+ {
+  "word": "came",
+  "start": 22.0,
+  "end": 22.27
+ },
+ {
+  "word": "Wednesday",
+  "start": 22.27,
+  "end": 22.8
+ },
+ {
+  "word": "down",
+  "start": 22.94,
+  "end": 23.18
+ },
+ {
+  "word": "three",
+  "start": 23.18,
+  "end": 23.48
+ },
+ {
+  "word": "thousand",
+  "start": 23.48,
+  "end": 23.94
+ },
+ {
+  "word": "four",
+  "start": 23.94,
+  "end": 24.22
+ },
+ {
+  "word": "hundred",
+  "start": 24.22,
+  "end": 24.46
+ },
+ {
+  "word": "forty",
+  "start": 24.46,
+  "end": 24.77
+ },
+ {
+  "word": "points",
+  "start": 24.77,
+  "end": 25.13
+ },
+ {
+  "word": "in",
+  "start": 25.13,
+  "end": 25.22
+ },
+ {
+  "word": "one",
+  "start": 25.22,
+  "end": 25.48
+ },
+ {
+  "word": "morning",
+  "start": 25.48,
+  "end": 25.95
+ },
+ {
+  "word": "The",
+  "start": 26.07,
+  "end": 26.14
+ },
+ {
+  "word": "record",
+  "start": 26.14,
+  "end": 26.68
+ },
+ {
+  "word": "erased",
+  "start": 26.68,
+  "end": 27.13
+ },
+ {
+  "word": "in",
+  "start": 27.13,
+  "end": 27.27
+ },
+ {
+  "word": "hours",
+  "start": 27.27,
+  "end": 27.84
+ },
+ {
+  "word": "The",
+  "start": 28.01,
+  "end": 28.1
+ },
+ {
+  "word": "Daily",
+  "start": 28.1,
+  "end": 28.42
+ },
+ {
+  "word": "Toon",
+  "start": 28.42,
+  "end": 28.68
+ },
+ {
+  "word": "News",
+  "start": 28.68,
+  "end": 29.24
+ },
+ {
+  "word": "the",
+  "start": 29.24,
+  "end": 29.32
+ },
+ {
+  "word": "world",
+  "start": 29.32,
+  "end": 29.83
+ },
+ {
+  "word": "in",
+  "start": 29.83,
+  "end": 29.98
+ },
+ {
+  "word": "toons",
+  "start": 29.98,
+  "end": 30.51
+ }
+]
