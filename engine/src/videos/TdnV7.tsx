@@ -172,7 +172,7 @@ const Truck: React.FC<{ x: number }> = ({ x }) => (
     <Box p={[0, 3.42, 0]} s={[6.5, 0.25, 2.7]} color="#39424e" line={1} />
     <Box p={[3.85, 1.3, 0]} s={[1.5, 2.2, 2.4]} color="#6a7683" line={2} />
     <Box p={[4.15, 1.75, 0]} s={[0.5, 0.85, 2.0]} color="#bfe4f2" line={1} />
-    <CanvasPlane p={[0, 1.95, 1.33]} s={[4.6, 1.3]} px={[690, 195]} draw={(c, W, H) => { c.fillStyle = "#39424e"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 92px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("ARMORED CASH", W / 2, H / 2 + 3); }} />
+    <CanvasPlane p={[0, 1.95, 1.33]} s={[4.6, 1.3]} px={[690, 195]} draw={(c, W, H) => { c.fillStyle = "#39424e"; c.fillRect(0, 0, W, H); c.fillStyle = "#ffd36a"; c.font = "900 74px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("ARMORED CASH", W / 2, H / 2 + 3); }} />
     {[-2.2, 2.0, 3.85].map((wx, i) => <Cyl key={i} p={[wx, 0.55, 1.25]} rt={0.55} h={0.3} rot={[Math.PI / 2, 0, 0]} color="#14161f" line={1} />)}
     <Ball p={[4.62, 0.95, 0.8]} r={0.13} color="#ffd94a" ink={0} /><Ball p={[4.62, 0.95, -0.8]} r={0.13} color="#ffd94a" ink={0} />
   </group>
@@ -288,8 +288,8 @@ const S4 = ({ t, f }: Ctx) => (<>
   <StoreFront t={t} f={f} sky={["#3a2c5e", "#c65a4a"]} wall="#d9a83e" signBg="#173f30" papered />
   <DemandNote t={t} />
   {/* the cordon, revealed as the camera pulls back */}
-  <PoliceCar p={[-4.7, 0, 2.7]} rotY={0.35} f={f} />
-  <PoliceCar p={[4.8, 0, 2.8]} rotY={-0.3} f={f} />
+  <PoliceCar p={[-4.3, 0, 2.7]} rotY={0.35} f={f} />
+  <PoliceCar p={[4.4, 0, 2.8]} rotY={-0.3} f={f} />
   <Box p={[0, 1.05, 3.4]} s={[13.5, 0.16, 0.06]} color="#ffd94a" line={0} />
   {[-6.5, 6.5].map((x, i) => <Cyl key={i} p={[x, 0.5, 3.4]} rt={0.09} h={1.0} color="#8a93a6" line={1} />)}
   <Person p={[-2.7, 0, 2.3]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "hold", armK: 1, armR: [0.3, 0.8], armL: [-0.3, 0.8], lookX: 0.2 }} />
@@ -342,7 +342,7 @@ const S5 = ({ t, f }: Ctx) => {
     <Person p={[-2.2, 0, -3.4]} sy={0} h={3.45} look={officerLook} f={f} pose={{ mood: "smile", arms: "point", armK: 1, armR: [-0.8, 0.55], lookX: -0.5 }} />
     {/* the command post: table, map, radios — and the president */}
     <Desk p={[5.6, 0, -3.2]} w={3.4} top="#39424e" leg="#14161f" d={1.4} />
-    <CanvasPlane p={[5.6, 4.6, -6.9]} s={[4.6, 3.1]} px={[690, 465]} frame="#10131c" draw={(c, W, H) => {
+    <CanvasPlane p={[5.6, 4.6, -6.3]} s={[4.6, 3.1]} px={[690, 465]} frame="#10131c" draw={(c, W, H) => {
       c.fillStyle = "#17352e"; c.fillRect(0, 0, W, H);
       c.strokeStyle = "#7adbc8"; c.lineWidth = 7; c.beginPath();
       c.moveTo(30, H * 0.72); c.bezierCurveTo(W * 0.3, H * 0.5, W * 0.45, H * 0.85, W * 0.62, H * 0.6); c.bezierCurveTo(W * 0.75, H * 0.42, W * 0.85, H * 0.6, W - 26, H * 0.4); c.stroke();
@@ -435,7 +435,7 @@ const S7 = ({ t, f }: Ctx) => {
     <Person p={[-3.2, 0, 2.1]} sy={0} h={3.4} look={hostageLooks[1]} f={f} pose={{ mood: "laugh", arms: "hold", armK: 1, armR: [0.1, 0.8], armL: [-0.42, 0.8], lookX: -0.6, flip: true }} />
     <Box p={[0, 1.05, 3.6]} s={[15.5, 0.16, 0.06]} color="#ffd94a" line={0} />
     {/* the medic van */}
-    <group position={[5.7, 0, -3.6]} rotation={[0, -0.15, 0]}>
+    <group position={[4.9, 0, -3.8]} rotation={[0, -0.15, 0]}>
       <Box p={[0, 1.35, 0]} s={[4.4, 2.3, 2.1]} color="#f2f0ea" line={2} />
       <Box p={[2.6, 1.0, 0]} s={[1.1, 1.6, 1.9]} color="#dfe6ee" line={2} />
       <CanvasPlane p={[0, 1.5, 1.07]} s={[1.15, 1.15]} px={[230, 230]} draw={(c, W, H) => { c.clearRect(0, 0, W, H); c.fillStyle = "#e23b3b"; c.fillRect(W * 0.38, H * 0.12, W * 0.24, H * 0.76); c.fillRect(W * 0.12, H * 0.38, W * 0.76, H * 0.24); }} />
