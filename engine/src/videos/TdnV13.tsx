@@ -120,7 +120,7 @@ const S1 = ({ t, f }: Ctx) => {
     <group position={[dx, 0, -2.6]}>
       <Person p={[0, 0, 0]} h={3.9} look={duterteLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.3 }} />
     </group>
-    <Person p={[-4.9, 0, -2.2]} h={3.9} look={counselLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.4 }} />
+    <Person p={[-4.2, 0, -2.2]} h={3.9} look={counselLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.4 }} />
     {boardK > 0.02 ? <group position={[0, 9.4, -9.8]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.2} lines={[{ t: "THE HAGUE — MONDAY", s: 88, c: "#ffd36a" }]} /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
   </>);
@@ -313,7 +313,7 @@ const S8 = ({ t, f }: Ctx) => {
       ))}
       <Box p={[0, 0.18, 0]} s={[2.2, 0.36, 1.2]} color="#8a6d1f" line={1} />
     </group>
-    <Person p={[-3.9, 0, -2.6]} h={3.9} look={duterteLook} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.4 }} />
+    <Person p={[-3.1, 0, -2.6]} h={3.9} look={duterteLook} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.4 }} />
     {bK > 0.02 ? <group position={[0, 9.5, -9.6]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "UP TO 30 YEARS", s: 100, c: "#ff6a5e" }, { t: "— OR LIFE —", s: 84, c: "#ffd36a" }]} /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
   </>);
@@ -336,7 +336,7 @@ const S9 = ({ t, f }: Ctx) => {
     <Shelf p={[-7.6, 0, -8.6]} /><Shelf p={[7.6, 0, -8.6]} />
     <Plant p={[-6.2, 0, -6.4]} /><Plant p={[6.2, 0, -6.4]} />
     {qK > 0.02 ? <group position={[0, 9.3, -9.4]} scale={[qK, qK, 1]}><Board p={[0, 0, 0]} w={9.2} lines={[{ t: "JUSTICE AT LAST —", s: 84, c: "#f5f7fa" }, { t: "OR POLITICS?", s: 96, c: "#ffd36a" }]} /></group> : null}
-    <Sign p={[0, 0.5, -1.2]} s={[8.8, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={62} frame="#7a4a8c" />
+    <Sign p={[0, 11.7, -10.5]} s={[7.6, 0.85]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={62} frame="#7a4a8c" />
     <Dust t={t} area={[8, 4, 5]} />
   </>);
 };
