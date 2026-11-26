@@ -1,0 +1,22 @@
+{
+ "composition": "BedahV2P1",
+ "job": "kitabedah-v2-p1",
+ "output": "bedah-v2-part1.mp4",
+ "video": "Bedah Kasus Manila \u2014 long-form V2 (animated rebuild), part 1 of 4",
+ "width": 1280,
+ "height": 720,
+ "fps": 30,
+ "render": {
+  "concurrency": 3,
+  "gl": "swangle",
+  "scale": 1.5
+ },
+ "stills": {
+  "frames": [
+   300,
+   1650,
+   3300
+  ],
+  "scale": 0.4
+ }
+}
