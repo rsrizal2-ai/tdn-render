@@ -219,7 +219,7 @@ const S4 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ffffff"; c.beginPath(); c.arc(W * 0.52, H * 0.20, 17, 0, 7); c.fill();
       c.strokeStyle = "#ff5040"; c.lineWidth = 9; c.setLineDash([20, 14]); c.beginPath(); c.moveTo(W * 0.52, H * 0.20); c.lineTo(W - 60, H * 0.83); c.stroke(); c.setLineDash([]);
     }} />
-    <group position={[0.15, 6.6 + vanK * 1.6, -9.4]} scale={[1 - vanK * 0.85, 1 - vanK * 0.85, 1]}>
+    <group position={[0.26, 6.30 + vanK * 1.6, -9.4]} scale={[1 - vanK * 0.85, 1 - vanK * 0.85, 1]}>
       <Sack p={[-0.95, 0, 0]} s={0.95} /><Sack p={[0.95, 0, 0]} s={0.95} /><Sack p={[0, 1.15, 0]} s={0.85} />
     </group>
     {boardK > 0.02 ? <group position={[0, 1.7, -6.4]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.6} bg="#101828" frame="#ff5040" lines={[{ t: "$8.5 TRILLION", s: 104, c: "#ff9a8a" }, { t: "GONE FROM THE PEAK", s: 58, c: "#f5f7fa" }]} /></group> : null}
@@ -235,7 +235,7 @@ const K5: Key[] = [
 ];
 const S5 = ({ t, f }: Ctx) => {
   const dropK = clamp(seg(t, 24.60, 27.30, Easing.in(Easing.cubic)));
-  const balY = lerp(7.6, 4.35, dropK), tilt = lerp(0, 0.38, dropK);
+  const balY = lerp(7.05, 4.15, dropK), tilt = lerp(0, 0.38, dropK);
   const thud = t > 27.30 && t < 27.55 ? Math.sin((t - 27.30) * 40) * 0.09 : 0;
   return (<>
     <Cam t={t} keys={K5} />
@@ -243,8 +243,8 @@ const S5 = ({ t, f }: Ctx) => {
     <Floor kind="carpet" a="#1d1430" b="#241a3d" unit={2} w={38} d={38} />
     <WallDoor z={-11} W={38} kind="plain" a="#2b1f47" b="#2b1f47" base="#120b24" />
     <group position={[0.6, balY + thud, -7.6]} rotation={[0, 0, tilt]}>
-      <Ball p={[0, 0, 0]} r={2.05} color="#7a5cff" ink={0.05} s={[1, 1.08, 1]} />
-      <CanvasPlane p={[0, 0.25, 2.02]} s={[2.5, 1.25]} px={[512, 256]} draw={(c, W, H) => {
+      <Ball p={[0, 0, 0]} r={1.8} color="#7a5cff" ink={0.05} s={[1, 1.08, 1]} />
+      <CanvasPlane p={[0, 0.25, 1.78]} s={[2.2, 1.1]} px={[512, 256]} draw={(c, W, H) => {
         c.clearRect(0, 0, W, H); c.fillStyle = "#ffffff"; c.font = "900 170px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText("AI", W / 2, H / 2 + 6);
       }} />
       <Box p={[-0.85, -2.35, 0]} s={[0.07, 1.05, 0.07]} color="#c9ccd4" line={0} rot={[0, 0, 0.3]} />
@@ -252,7 +252,7 @@ const S5 = ({ t, f }: Ctx) => {
       <Box p={[0, -3.15, 0]} s={[2.3, 1.05, 1.5]} color="#8a5a2e" line={2} />
       <CrashChart p={[0, -3.05, 0.78]} w={1.9} title="MKT" color="#ff5040" />
     </group>
-    <Sign p={[0, 9.7, -10.4]} s={[9.4, 1.05]} text="THE BOOM BECAME THE DRAG" bg="#120b24" fg="#c9b8ff" size={66} frame="#7a5cff" />
+    <Sign p={[0, 10.15, -10.4]} s={[9.4, 1.05]} text="THE BOOM BECAME THE DRAG" bg="#120b24" fg="#c9b8ff" size={66} frame="#7a5cff" />
     <Person p={[-4.6, 0, -2.6]} h={3.8} look={traderLook} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 24.2, 24.7), armR: [0.7, 0.95], lookX: 0.45 }} />
     <Person p={[5.2, 0, -2.8]} h={3.8} look={analyst} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.4 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(215,200,255,.85)" />
@@ -283,8 +283,8 @@ const S6 = ({ t, f }: Ctx) => {
     {signK > 0.02 ? <group position={[1.9, 3.6, -6.6]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[3.3, 0.9]} text="$58,000" bg="#3d1420" fg="#ff8a7a" size={88} frame="#e5233a" /></group> : null}
     <BtcCoin p={[coinX, coinY, -6.9]} s={1.15} rotZ={-slideK * 5.2 + bounceK * 1.2} />
     {bounceK > 0.03 && bounceK < 0.97 ? <Box p={[1.8, (2.05 + coinY) / 2 + 0.4, -6.9]} s={[0.09, Math.max(0.2, coinY - 2.05), 0.09]} color="#f5f0e2" line={0} /> : null}
-    <Person p={[-4.7, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
-    <Person p={[4.9, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
+    <Person p={[-4.1, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
+    <Person p={[4.3, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(190,215,255,.85)" />
   </>);
 };
