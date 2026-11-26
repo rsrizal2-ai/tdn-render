@@ -71,7 +71,7 @@ const Stamp: React.FC<{ p: V3; w: number; text: string; color?: string }> = ({ p
   </group>
 );
 /* courtroom columns */
-const Columns: React.FC<{ z?: number }> = ({ z = -9 }) => (
+const Columns: React.FC<{ z?: number }> = ({ z = -10.6 }) => (
   <>{[-6.4, -3.2, 3.2, 6.4].map((x, i) => (
     <group key={i} position={[x, 0, z]}>
       <Cyl p={[0, 5.2, 0]} rt={0.55} rb={0.62} h={10.4} color="#d8d2c2" line={1} />
@@ -121,7 +121,7 @@ const S1 = ({ t, f }: Ctx) => {
       <Person p={[0, 0, 0]} h={3.9} look={duterteLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.3 }} />
     </group>
     <Person p={[-4.9, 0, -2.2]} h={3.9} look={counselLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.4 }} />
-    {boardK > 0.02 ? <group position={[0, 9.4, -9.8]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.2} lines={[{ t: "THE HAGUE — MONDAY", s: 96, c: "#ffd36a" }]} /></group> : null}
+    {boardK > 0.02 ? <group position={[0, 9.4, -9.8]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.2} lines={[{ t: "THE HAGUE — MONDAY", s: 88, c: "#ffd36a" }]} /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
   </>);
 };
@@ -175,7 +175,7 @@ const S3 = ({ t, f }: Ctx) => {
     <WallDoor z={-11} W={38} kind="plain" a="#33415e" b="#33415e" base="#141b2a" />
     <Columns />
     <Sign p={[0, 10.6, -10.2]} s={[9.4, 1.0]} text="INTERNATIONAL CRIMINAL COURT" bg="#0d1524" fg="#dfe8ff" size={54} frame="#c9a227" />
-    {bK > 0.02 ? <group position={[0, 8.5, -9.6]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={8.8} lines={[{ t: "3 COUNTS", s: 110, c: "#ff6a5e" }, { t: "CRIMES AGAINST HUMANITY", s: 66, c: "#f5f7fa" }]} /></group> : null}
+    {bK > 0.02 ? <group position={[0, 8.5, -9.6]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={8.8} lines={[{ t: "3 COUNTS", s: 100, c: "#ff6a5e" }, { t: "CRIMES AGAINST", s: 64, c: "#f5f7fa" }, { t: "HUMANITY", s: 64, c: "#f5f7fa" }]} /></group> : null}
     {card(c1, -3.6, "1", "MURDER", "#ff6a5e")}
     {card(c2, 0, "2", "MURDER", "#ff6a5e")}
     {card(c3, 3.6, "3", "MURDER +", "#ffb37a")}
@@ -195,7 +195,7 @@ const S4 = ({ t, f }: Ctx) => {
   const m3 = seg(t, 34.4, 34.9, Easing.out(Easing.back(1.7)));
   const vK = seg(t, 37.6, 38.15, Easing.out(Easing.back(1.7)));
   const marker = (k: number, x: number, lines: { t: string; s?: number; c?: string }[]) => k > 0.02 ? (
-    <group key={lines[0].t} position={[x, 7.6, -8.6]} scale={[k, k, 1]}><Board p={[0, 0, 0]} w={4.6} lines={lines} /></group>
+    <group key={lines[0].t} position={[x, 7.6, -8.6]} scale={[k, k, 1]}><Board p={[0, 0, 0]} w={4.2} lines={lines} /></group>
   ) : null;
   return (<>
     <Cam t={t} keys={K4} />
@@ -207,9 +207,9 @@ const S4 = ({ t, f }: Ctx) => {
       <Box p={[0, 0, 0]} s={[lerp(0.2, 13.4, tlK), 0.22, 0.22]} color="#c9a227" line={1} />
       {[-6.2, 0, 6.2].map((x, i) => <Ball key={i} p={[x, 0, 0]} r={0.42} color="#ffd36a" ink={0.03} />)}
     </group>
-    {marker(m1, -5.6, [{ t: "DAVAO CITY", s: 74, c: "#f5f7fa" }, { t: "MAYOR YEARS", s: 58, c: "#ffd36a" }])}
-    {marker(m2, 0.2, [{ t: "“HIGH-VALUE", s: 64, c: "#f5f7fa" }, { t: "TARGETS”", s: 64, c: "#f5f7fa" }])}
-    {marker(m3, 5.8, [{ t: "VILLAGE", s: 70, c: "#f5f7fa" }, { t: "CLEARANCE OPS", s: 56, c: "#ffd36a" }])}
+    {marker(m1, -4.4, [{ t: "DAVAO CITY", s: 74, c: "#f5f7fa" }, { t: "MAYOR YEARS", s: 58, c: "#ffd36a" }])}
+    {marker(m2, 0.1, [{ t: "“HIGH-VALUE", s: 64, c: "#f5f7fa" }, { t: "TARGETS”", s: 64, c: "#f5f7fa" }])}
+    {marker(m3, 4.4, [{ t: "VILLAGE", s: 70, c: "#f5f7fa" }, { t: "CLEARANCE OPS", s: 56, c: "#ffd36a" }])}
     <Person p={[-3.4, 0, -3.0]} h={3.9} look={duterteLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.35 }} />
     <Person p={[3.6, 0, -3.0]} h={3.9} look={counselLook} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 36.8, 37.3), armR: [0.8, 0.6], lookX: -0.4 }} />
     {vK > 0.02 ? <group position={[0, 1.15, -4.6]} scale={[vK, vK, 1]}><Sign p={[0, 0, 0]} s={[9.2, 1.05]} text="78 VICTIMS NAMED IN THE CHARGES" bg="#101828" fg="#ff9a8a" size={54} frame="#e5233a" /></group> : null}
@@ -233,7 +233,7 @@ const S5 = ({ t, f }: Ctx) => {
     <Desk p={[0, 0, -5.6]} w={9.2} top="#4a3423" leg="#131a29" d={2.6} />
     <Person p={[-2.6, 0, -3.4]} h={3.9} look={lawyerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 41.2, 41.7), armR: [0.8, 0.6], lookX: 0.3 }} />
     <Person p={[2.8, 0, -3.4]} h={3.9} look={duterteLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.3 }} />
-    {sK > 0.02 ? <group position={[0, 9.2, -9.4]} scale={[sK, sK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "“NOT A CRIMES-AGAINST-", s: 72, c: "#f5f7fa" }, { t: "HUMANITY CASE” — DEFENCE", s: 72, c: "#ffd36a" }]} /></group> : null}
+    {sK > 0.02 ? <group position={[0, 9.2, -9.4]} scale={[sK, sK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "“NOT A CRIMES-", s: 70, c: "#f5f7fa" }, { t: "AGAINST-HUMANITY", s: 70, c: "#f5f7fa" }, { t: "CASE” — DEFENCE", s: 70, c: "#ffd36a" }]} /></group> : null}
     {stK > 0.02 ? <group position={[0, 5.6, -6.2]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.4} text="PRESUMED INNOCENT" color="#2fd46a" /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
   </>);
@@ -313,7 +313,7 @@ const S8 = ({ t, f }: Ctx) => {
       ))}
       <Box p={[0, 0.18, 0]} s={[2.2, 0.36, 1.2]} color="#8a6d1f" line={1} />
     </group>
-    <Person p={[-4.6, 0, -2.6]} h={3.9} look={duterteLook} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.4 }} />
+    <Person p={[-3.9, 0, -2.6]} h={3.9} look={duterteLook} f={f} pose={{ mood: "worry", arms: "down", lookX: 0.4 }} />
     {bK > 0.02 ? <group position={[0, 9.5, -9.6]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "UP TO 30 YEARS", s: 100, c: "#ff6a5e" }, { t: "— OR LIFE —", s: 84, c: "#ffd36a" }]} /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
   </>);
@@ -336,7 +336,7 @@ const S9 = ({ t, f }: Ctx) => {
     <Shelf p={[-7.6, 0, -8.6]} /><Shelf p={[7.6, 0, -8.6]} />
     <Plant p={[-6.2, 0, -6.4]} /><Plant p={[6.2, 0, -6.4]} />
     {qK > 0.02 ? <group position={[0, 9.3, -9.4]} scale={[qK, qK, 1]}><Board p={[0, 0, 0]} w={9.2} lines={[{ t: "JUSTICE AT LAST —", s: 84, c: "#f5f7fa" }, { t: "OR POLITICS?", s: 96, c: "#ffd36a" }]} /></group> : null}
-    <Sign p={[0, 1.05, -4.2]} s={[8.8, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={62} frame="#7a4a8c" />
+    <Sign p={[0, 0.5, -1.2]} s={[8.8, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={62} frame="#7a4a8c" />
     <Dust t={t} area={[8, 4, 5]} />
   </>);
 };
