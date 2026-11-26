@@ -337,8 +337,8 @@ const S7 = ({ t, f }: Ctx) => {
         </group>
       );
     })}
-    {calK > 0.02 ? <group position={[-4.0, 7.9, -8.2]} scale={[calK, calK, 1]}><Board p={[0, 0, 0]} w={4.6} bg="#101828" lines={[{ t: "7 MONTHS", s: 96, c: "#ffd36a" }, { t: "OF WATCHING", s: 60, c: "#f5f7fa" }]} /></group> : null}
-    {letK > 0.02 ? <group position={[4.0, 7.9, -8.2]} scale={[letK, letK, 1]}><Board p={[0, 0, 0]} w={4.6} bg="#0e2f1c" frame="#2fd46a" lines={[{ t: "LET THEM IN", s: 88, c: "#8ae8b0" }, { t: "ON PURPOSE", s: 60, c: "#f5f7fa" }]} /></group> : null}
+    {calK > 0.02 ? <group position={[-4.0, 8.75, -8.2]} scale={[calK, calK, 1]}><Board p={[0, 0, 0]} w={4.6} bg="#101828" lines={[{ t: "7 MONTHS", s: 96, c: "#ffd36a" }, { t: "OF WATCHING", s: 60, c: "#f5f7fa" }]} /></group> : null}
+    {letK > 0.02 ? <group position={[4.0, 8.75, -8.2]} scale={[letK, letK, 1]}><Board p={[0, 0, 0]} w={4.6} bg="#0e2f1c" frame="#2fd46a" lines={[{ t: "LET THEM IN", s: 88, c: "#8ae8b0" }, { t: "ON PURPOSE", s: 60, c: "#f5f7fa" }]} /></group> : null}
     <Person p={[-3.4, 0, -3.0]} h={3.8} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 45.2, 45.9), armR: [0.8, 0.7], lookX: 0.4 }} />
     <Person p={[3.5, 0, -3.0]} h={3.8} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "hold", armR: [0.35, 0.55], armL: [-0.35, 0.55], lookX: -0.4 }} />
     <Box p={[3.5, 1.95, -2.65]} s={[0.52, 0.7, 0.06]} color="#f5f0e2" line={1} />
