@@ -134,15 +134,15 @@ const S2 = ({ t, f }: Ctx) => {
     <Floor kind="tile" a="#0d2b1a" b="#0a2416" unit={2} w={36} d={36} />
     <WallDoor z={-9} W={34} kind="plain" a="#123a24" b="#123a24" base="#081a10" />
     <Board p={[0, 5.6, -8.6]} w={9.6} bg="#0e2f1c" frame="#2fd46a" lines={[{ t: "NDLEA", s: 120, c: "#ffffff" }, { t: "NIGERIA DRUG ENFORCEMENT", s: 56, c: "#8ae8b0" }]} />
-    <Box p={[0, 0.78, -3.6]} s={[3.4, 1.55, 1.1]} color="#14532d" line={2} />
-    <Box p={[0, 1.65, -3.6]} s={[3.7, 0.18, 1.3]} color="#0e2f1c" line={1} />
-    {[-0.8, 0, 0.8].map((x, i) => (
-      <group key={i} position={[x, 1.74, -3.3]} rotation={[0.5, 0, 0]}>
+    <Box p={[0, 0.78, -3.6]} s={[3.0, 1.55, 1.1]} color="#14532d" line={2} />
+    <Box p={[0, 1.65, -3.6]} s={[3.3, 0.18, 1.3]} color="#0e2f1c" line={1} />
+    {[-1.15, 0, 1.15].map((x, i) => (
+      <group key={i} position={[x, 1.6, -3.15]} rotation={[0.5, 0, 0]}>
         <Cyl p={[0, 0.35, 0]} rt={0.045} h={0.7} color="#22262e" line={0} />
         <Ball p={[0, 0.78, 0]} r={0.16} color="#39424e" ink={0.03} />
       </group>
     ))}
-    <Person p={[0, 0, -4.05]} h={3.9} look={chiefLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 8.6, 9.2), armR: [0.7, 0.5], lookX: 0.25 }} />
+    <Person p={[0, 0, -3.85]} h={3.9} look={chiefLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 8.6, 9.2), armR: [0.7, 0.5], lookX: 0.25 }} />
     <Person p={[-3.55, 0, -3.4]} h={3.8} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.3 }} />
     <Person p={[3.55, 0, -3.4]} h={3.8} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.3 }} />
     {signK > 0.02 ? <group position={[0, 1.15, -2.3]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[7.6, 1.1]} text="BIGGEST BUSTS OF THE YEAR" bg="#0e2f1c" fg="#ffd36a" size={62} frame="#ffd36a" /></group> : null}
@@ -410,7 +410,7 @@ const S9 = ({ t, f }: Ctx) => {
     <Box p={[4.25, 2.2, -8.8]} s={[4.6, 4.4, 1.2]} color="#49525e" line={2} />
     <Box p={[4.25, 1.55, -8.15]} s={[2.0, 3.1, 0.14]} color="#5d4a33" line={1} />
     {[-0.7, -0.25, 0.2, 0.65].map((dx, i) => <Box key={i} p={[4.25 + dx, 1.9 - i * 0.22, -8.02]} s={[0.34, 0.2, 0.06]} color="#c8ccd2" line={0} rot={[0, 0, 0.5]} />)}
-    {lockK > 0.02 ? <group position={[4.25, 1.55, -7.9]} scale={[lockK, lockK, 1]}>
+    {lockK > 0.02 ? <group position={[4.25, 1.55, -7.9]} scale={[lockK * 1.35, lockK * 1.35, 1]}>
       <Box p={[0, -0.25, 0]} s={[0.85, 0.95, 0.22]} color="#c9a227" line={2} />
       <Cyl p={[0, 0.42, 0]} rt={0.3} h={0.5} color="#8a97a5" line={1} />
     </group> : null}
