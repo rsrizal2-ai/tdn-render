@@ -1,0 +1,666 @@
+{
+ "duration": 532.076,
+ "narration": {
+  "file": "voice/vo-full.wav",
+  "at": 0
+ },
+ "beats": [
+  {
+   "file": "voice/s1b01.wav",
+   "at": 0.4
+  },
+  {
+   "file": "voice/s1b02.wav",
+   "at": 2.348
+  },
+  {
+   "file": "voice/s1b03.wav",
+   "at": 4.488
+  },
+  {
+   "file": "voice/s1b04.wav",
+   "at": 8.02
+  },
+  {
+   "file": "voice/s1b05.wav",
+   "at": 10.952
+  },
+  {
+   "file": "voice/s1b06.wav",
+   "at": 12.66
+  },
+  {
+   "file": "voice/s1b07.wav",
+   "at": 14.032
+  },
+  {
+   "file": "voice/s1b08.wav",
+   "at": 15.452
+  },
+  {
+   "file": "voice/s1b09.wav",
+   "at": 16.944
+  },
+  {
+   "file": "voice/s1b10.wav",
+   "at": 21.052
+  },
+  {
+   "file": "voice/s1b11.wav",
+   "at": 26.072
+  },
+  {
+   "file": "voice/s1b12.wav",
+   "at": 28.284
+  },
+  {
+   "file": "voice/s1b13.wav",
+   "at": 30.376
+  },
+  {
+   "file": "voice/s2b01.wav",
+   "at": 32.106
+  },
+  {
+   "file": "voice/s2b02.wav",
+   "at": 33.838
+  },
+  {
+   "file": "voice/s2b03.wav",
+   "at": 41.21
+  },
+  {
+   "file": "voice/s2b04.wav",
+   "at": 43.782
+  },
+  {
+   "file": "voice/s2b05.wav",
+   "at": 45.442
+  },
+  {
+   "file": "voice/s2b06.wav",
+   "at": 51.302
+  },
+  {
+   "file": "voice/s2b07.wav",
+   "at": 59.802
+  },
+  {
+   "file": "voice/s2b08.wav",
+   "at": 67.534
+  },
+  {
+   "file": "voice/s2b09.wav",
+   "at": 70.586
+  },
+  {
+   "file": "voice/s2b10.wav",
+   "at": 72.966
+  },
+  {
+   "file": "voice/s2b11.wav",
+   "at": 83.458
+  },
+  {
+   "file": "voice/s2b12.wav",
+   "at": 86.03
+  },
+  {
+   "file": "voice/s2b13.wav",
+   "at": 89.922
+  },
+  {
+   "file": "voice/s3b01.wav",
+   "at": 92.204
+  },
+  {
+   "file": "voice/s3b02.wav",
+   "at": 94.416
+  },
+  {
+   "file": "voice/s3b03.wav",
+   "at": 97.444
+  },
+  {
+   "file": "voice/s3b04.wav",
+   "at": 100.376
+  },
+  {
+   "file": "voice/s3b05.wav",
+   "at": 103.548
+  },
+  {
+   "file": "voice/s3b06.wav",
+   "at": 107.896
+  },
+  {
+   "file": "voice/s3b07.wav",
+   "at": 109.556
+  },
+  {
+   "file": "voice/s3b08.wav",
+   "at": 114.696
+  },
+  {
+   "file": "voice/s3b09.wav",
+   "at": 119.548
+  },
+  {
+   "file": "voice/s3b10.wav",
+   "at": 122.048
+  },
+  {
+   "file": "voice/s3b11.wav",
+   "at": 125.628
+  },
+  {
+   "file": "voice/s3b12.wav",
+   "at": 130.648
+  },
+  {
+   "file": "voice/s4b01.wav",
+   "at": 135.09
+  },
+  {
+   "file": "voice/s4b02.wav",
+   "at": 138.718
+  },
+  {
+   "file": "voice/s4b03.wav",
+   "at": 141.386
+  },
+  {
+   "file": "voice/s4b04.wav",
+   "at": 147.318
+  },
+  {
+   "file": "voice/s4b05.wav",
+   "at": 149.098
+  },
+  {
+   "file": "voice/s4b06.wav",
+   "at": 151.43
+  },
+  {
+   "file": "voice/s4b07.wav",
+   "at": 155.082
+  },
+  {
+   "file": "voice/s4b08.wav",
+   "at": 156.382
+  },
+  {
+   "file": "voice/s4b09.wav",
+   "at": 159.314
+  },
+  {
+   "file": "voice/s4b10.wav",
+   "at": 162.222
+  },
+  {
+   "file": "voice/s4b11.wav",
+   "at": 165.802
+  },
+  {
+   "file": "voice/s4b12.wav",
+   "at": 168.014
+  },
+  {
+   "file": "voice/s4b13.wav",
+   "at": 170.754
+  },
+  {
+   "file": "voice/s4b14.wav",
+   "at": 174.214
+  },
+  {
+   "file": "voice/s4b15.wav",
+   "at": 180.962
+  },
+  {
+   "file": "voice/s4b16.wav",
+   "at": 184.662
+  },
+  {
+   "file": "voice/s4b17.wav",
+   "at": 189.994
+  },
+  {
+   "file": "voice/s4b18.wav",
+   "at": 195.854
+  },
+  {
+   "file": "voice/s4b19.wav",
+   "at": 197.874
+  },
+  {
+   "file": "voice/s4b20.wav",
+   "at": 208.102
+  },
+  {
+   "file": "voice/s4b21.wav",
+   "at": 213.074
+  },
+  {
+   "file": "voice/s4b22.wav",
+   "at": 219.054
+  },
+  {
+   "file": "voice/s4b23.wav",
+   "at": 220.762
+  },
+  {
+   "file": "voice/s5b01.wav",
+   "at": 223.98
+  },
+  {
+   "file": "voice/s5b02.wav",
+   "at": 226.72
+  },
+  {
+   "file": "voice/s5b03.wav",
+   "at": 230.06
+  },
+  {
+   "file": "voice/s5b04.wav",
+   "at": 232.56
+  },
+  {
+   "file": "voice/s5b05.wav",
+   "at": 234.172
+  },
+  {
+   "file": "voice/s5b06.wav",
+   "at": 235.784
+  },
+  {
+   "file": "voice/s5b07.wav",
+   "at": 241.116
+  },
+  {
+   "file": "voice/s5b08.wav",
+   "at": 244.336
+  },
+  {
+   "file": "voice/s5b09.wav",
+   "at": 246.284
+  },
+  {
+   "file": "voice/s5b10.wav",
+   "at": 248.784
+  },
+  {
+   "file": "voice/s5b11.wav",
+   "at": 250.636
+  },
+  {
+   "file": "voice/s5b12.wav",
+   "at": 252.128
+  },
+  {
+   "file": "voice/s5b13.wav",
+   "at": 255.276
+  },
+  {
+   "file": "voice/s5b14.wav",
+   "at": 258.688
+  },
+  {
+   "file": "voice/s5b15.wav",
+   "at": 263.396
+  },
+  {
+   "file": "voice/s5b16.wav",
+   "at": 265.464
+  },
+  {
+   "file": "voice/s5b17.wav",
+   "at": 266.572
+  },
+  {
+   "file": "voice/s5b18.wav",
+   "at": 270.512
+  },
+  {
+   "file": "voice/s6b01.wav",
+   "at": 273.874
+  },
+  {
+   "file": "voice/s6b02.wav",
+   "at": 275.726
+  },
+  {
+   "file": "voice/s6b03.wav",
+   "at": 278.034
+  },
+  {
+   "file": "voice/s6b04.wav",
+   "at": 282.766
+  },
+  {
+   "file": "voice/s6b05.wav",
+   "at": 286.706
+  },
+  {
+   "file": "voice/s6b06.wav",
+   "at": 289.038
+  },
+  {
+   "file": "voice/s6b07.wav",
+   "at": 291.226
+  },
+  {
+   "file": "voice/s6b08.wav",
+   "at": 292.934
+  },
+  {
+   "file": "voice/s6b09.wav",
+   "at": 297.882
+  },
+  {
+   "file": "voice/s6b10.wav",
+   "at": 303.094
+  },
+  {
+   "file": "voice/s6b11.wav",
+   "at": 313.154
+  },
+  {
+   "file": "voice/s6b12.wav",
+   "at": 315.846
+  },
+  {
+   "file": "voice/s6b13.wav",
+   "at": 321.706
+  },
+  {
+   "file": "voice/s6b14.wav",
+   "at": 328.646
+  },
+  {
+   "file": "voice/s7b01.wav",
+   "at": 330.904
+  },
+  {
+   "file": "voice/s7b02.wav",
+   "at": 333.716
+  },
+  {
+   "file": "voice/s7b03.wav",
+   "at": 339.336
+  },
+  {
+   "file": "voice/s7b04.wav",
+   "at": 345.484
+  },
+  {
+   "file": "voice/s7b05.wav",
+   "at": 353.984
+  },
+  {
+   "file": "voice/s7b06.wav",
+   "at": 358.164
+  },
+  {
+   "file": "voice/s7b07.wav",
+   "at": 360.616
+  },
+  {
+   "file": "voice/s7b08.wav",
+   "at": 371.204
+  },
+  {
+   "file": "voice/s7b09.wav",
+   "at": 375.864
+  },
+  {
+   "file": "voice/s7b10.wav",
+   "at": 382.396
+  },
+  {
+   "file": "voice/s7b11.wav",
+   "at": 392.984
+  },
+  {
+   "file": "voice/s7b12.wav",
+   "at": 399.396
+  },
+  {
+   "file": "voice/s7b13.wav",
+   "at": 410.656
+  },
+  {
+   "file": "voice/s7b14.wav",
+   "at": 418.484
+  },
+  {
+   "file": "voice/s7b15.wav",
+   "at": 425.112
+  },
+  {
+   "file": "voice/s7b16.wav",
+   "at": 427.9
+  },
+  {
+   "file": "voice/s7b17.wav",
+   "at": 433.088
+  },
+  {
+   "file": "voice/s7b18.wav",
+   "at": 436.116
+  },
+  {
+   "file": "voice/s7b19.wav",
+   "at": 439.144
+  },
+  {
+   "file": "voice/s7b20.wav",
+   "at": 444.092
+  },
+  {
+   "file": "voice/s7b21.wav",
+   "at": 446.544
+  },
+  {
+   "file": "voice/s8b01.wav",
+   "at": 449.162
+  },
+  {
+   "file": "voice/s8b02.wav",
+   "at": 452.79
+  },
+  {
+   "file": "voice/s8b03.wav",
+   "at": 454.522
+  },
+  {
+   "file": "voice/s8b04.wav",
+   "at": 458.222
+  },
+  {
+   "file": "voice/s8b05.wav",
+   "at": 460.41
+  },
+  {
+   "file": "voice/s8b06.wav",
+   "at": 462.358
+  },
+  {
+   "file": "voice/s8b07.wav",
+   "at": 464.138
+  },
+  {
+   "file": "voice/s8b08.wav",
+   "at": 467.19
+  },
+  {
+   "file": "voice/s8b09.wav",
+   "at": 471.49
+  },
+  {
+   "file": "voice/s8b10.wav",
+   "at": 475.742
+  },
+  {
+   "file": "voice/s8b11.wav",
+   "at": 481.65
+  },
+  {
+   "file": "voice/s8b12.wav",
+   "at": 486.358
+  },
+  {
+   "file": "voice/s8b13.wav",
+   "at": 491.018
+  },
+  {
+   "file": "voice/s8b14.wav",
+   "at": 493.086
+  },
+  {
+   "file": "voice/s8b15.wav",
+   "at": 495.418
+  },
+  {
+   "file": "voice/s8b16.wav",
+   "at": 499.166
+  },
+  {
+   "file": "voice/s8b17.wav",
+   "at": 500.706
+  },
+  {
+   "file": "voice/s8b18.wav",
+   "at": 502.678
+  },
+  {
+   "file": "voice/s9b01.wav",
+   "at": 506.856
+  },
+  {
+   "file": "voice/s9b02.wav",
+   "at": 508.636
+  },
+  {
+   "file": "voice/s9b03.wav",
+   "at": 510.248
+  },
+  {
+   "file": "voice/s9b04.wav",
+   "at": 511.788
+  },
+  {
+   "file": "voice/s9b05.wav",
+   "at": 515.896
+  },
+  {
+   "file": "voice/s9b06.wav",
+   "at": 520.004
+  },
+  {
+   "file": "voice/s9b07.wav",
+   "at": 525.624
+  },
+  {
+   "file": "voice/s9b08.wav",
+   "at": 529.324
+  }
+ ],
+ "sfx": [
+  {
+   "t": 26.072,
+   "kind": "impact",
+   "gain": 0.4
+  },
+  {
+   "t": 32.126,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 92.224,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 135.11,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 224.0,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 273.894,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 330.924,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 449.182,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 454.522,
+   "kind": "klik",
+   "gain": 0.18
+  },
+  {
+   "t": 464.138,
+   "kind": "klik",
+   "gain": 0.18
+  },
+  {
+   "t": 471.49,
+   "kind": "klik",
+   "gain": 0.18
+  },
+  {
+   "t": 481.65,
+   "kind": "klik",
+   "gain": 0.18
+  },
+  {
+   "t": 491.018,
+   "kind": "klik",
+   "gain": 0.18
+  },
+  {
+   "t": 506.876,
+   "kind": "whoosh",
+   "gain": 0.35,
+   "dur": 0.9
+  },
+  {
+   "t": 525.624,
+   "kind": "powerdown",
+   "gain": 0.35,
+   "dur": 1.2
+  }
+ ],
+ "bed": {
+  "pad": 0.3,
+  "groove": 0.0,
+  "arp": 0.0,
+  "bright": 0.0,
+  "duck": 0.45,
+  "fadeIn": 2.5,
+  "from": 0.0,
+  "to": 531.276,
+  "bpm": 72
+ }
+}
