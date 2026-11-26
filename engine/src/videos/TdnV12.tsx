@@ -197,7 +197,7 @@ const S3 = ({ t, f }: Ctx) => {
     <Floor kind="tile" a="#1a141f" b="#140f19" unit={2} w={40} d={40} />
     <WallDoor z={-13} W={40} kind="plain" a="#171021" b="#171021" base="#0a0612" />
     {[-9.5, -5.7, -1.9, 1.9, 5.7, 9.5].map((x, i) => <Tower key={i} p={[x, 0, -11.5 - (i % 2) * 1.4]} w={3.3} h={9.4 + (i % 3)} tone={i === 2 || i === 3 ? "#453a30" : "#2e3444"} lit={0.35} />)}
-    {signK > 0.02 ? <group position={[0, 10.6, -10.4]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[9.6, 1.05]} text="HONG KONG — DEADLIEST SINCE 1948" bg="#12060a" fg="#ff9a8a" size={56} frame="#e5233a" /></group> : null}
+    {signK > 0.02 ? <group position={[0, 9.9, -8.6]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[9.6, 1.05]} text="HONG KONG — DEADLIEST SINCE 1948" bg="#12060a" fg="#ff9a8a" size={56} frame="#e5233a" /></group> : null}
     {stampK > 0.02 ? <group position={[0, 4.6, -5.6]} scale={[stampK, stampK, 1]}><Stamp p={[0, 0, 0]} w={8.6} text="ENTIRELY PREVENTABLE" /></group> : null}
     <Person p={[0, 0, -1.8]} h={3.9} look={analyst} f={f} pose={{ mood: "worry", arms: "down", lookX: 0 }} />
     <Dust t={t} area={[8, 5, 5]} color="rgba(255,200,190,.8)" />
