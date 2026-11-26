@@ -1,0 +1,43 @@
+name: kitabedah
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Job folder under jobs/ (self-contained: film.html, record-landscape.mjs, mix.py, film/timeline.json, voice/vo-full.wav)"
+        required: true
+        default: "kitabedah-manila"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Record film frames (silent video, 1920x1080, 30 fps)
+        working-directory: jobs/${{ inputs.job }}
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node record-landscape.mjs --project . --page film.html --out video-silent.mp4
+
+      - name: Mix narration + bed + sfx (-14 LUFS)
+        working-directory: jobs/${{ inputs.job }}
+        run: python3 mix.py --project .
+
+      - name: Mux final MP4
+        working-directory: jobs/${{ inputs.job }}
+        run: |
+          ffmpeg -y -v error -i video-silent.mp4 -i film/audio.wav \
+            -c:v copy -c:a aac -b:a 160k -shortest bedah-kasus-manila.mp4
+          ls -la bedah-kasus-manila.mp4
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bedah-kasus-manila
+          path: jobs/${{ inputs.job }}/bedah-kasus-manila.mp4
