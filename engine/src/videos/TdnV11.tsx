@@ -141,7 +141,7 @@ const S1 = ({ t, f }: Ctx) => {
     </group>
     {boardK > 0.02 ? <group position={[0, 8.6, -10.6]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.8} bg="#241806" frame="#f0c040" lines={[{ t: "$4 TRILLION", s: 118, c: "#ffd36a" }]} /></group> : null}
     {stampK > 0.02 ? <group position={[0.9, 3.4, -3.6]} scale={[stampK, stampK, 1]}><Stamp p={[0, 0, 0]} w={5.2} text="GONE" /></group> : null}
-    <Person p={[-4.3, 0, -2.6]} h={3.9} look={analyst} f={f} pose={{ mood: t < 1.52 ? "grin" : "worry", arms: "point", armK: seg(t, 0.4, 0.8), armR: [0.85, 0.6], lookX: 0.55 }} />
+    <Person p={[-3.5, 0, -2.6]} h={3.9} look={analyst} f={f} pose={{ mood: t < 1.52 ? "grin" : "worry", arms: "point", armK: seg(t, 0.4, 0.8), armR: [0.85, 0.6], lookX: 0.55 }} />
     <Dust t={t} area={[8, 4, 5]} />
   </>);
 };
@@ -180,7 +180,7 @@ const K3: Key[] = [
 const S3 = ({ t, f }: Ctx) => {
   const dotK = clamp(seg(t, 11.23, 15.80));
   const dotX = lerp(-5.1, 4.6, dotK), dotY = lerp(6.6, 3.15, dotK * dotK);
-  const bearX = lerp(11.5, 6.4, clamp(seg(t, 17.80, 18.60, Easing.out(Easing.cubic))));
+  const bearX = lerp(11.5, 4.7, clamp(seg(t, 17.80, 18.60, Easing.out(Easing.cubic))));
   const stampK = seg(t, 18.15, 18.5, Easing.out(Easing.back(1.7)));
   return (<>
     <Cam t={t} keys={K3} />
@@ -219,7 +219,7 @@ const S4 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ffffff"; c.beginPath(); c.arc(W * 0.52, H * 0.20, 17, 0, 7); c.fill();
       c.strokeStyle = "#ff5040"; c.lineWidth = 9; c.setLineDash([20, 14]); c.beginPath(); c.moveTo(W * 0.52, H * 0.20); c.lineTo(W - 60, H * 0.83); c.stroke(); c.setLineDash([]);
     }} />
-    <group position={[-0.1, 7.35 + vanK * 1.6, -9.4]} scale={[1 - vanK * 0.85, 1 - vanK * 0.85, 1]}>
+    <group position={[0.15, 6.6 + vanK * 1.6, -9.4]} scale={[1 - vanK * 0.85, 1 - vanK * 0.85, 1]}>
       <Sack p={[-0.95, 0, 0]} s={0.95} /><Sack p={[0.95, 0, 0]} s={0.95} /><Sack p={[0, 1.15, 0]} s={0.85} />
     </group>
     {boardK > 0.02 ? <group position={[0, 1.7, -6.4]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.6} bg="#101828" frame="#ff5040" lines={[{ t: "$8.5 TRILLION", s: 104, c: "#ff9a8a" }, { t: "GONE FROM THE PEAK", s: 58, c: "#f5f7fa" }]} /></group> : null}
@@ -252,7 +252,7 @@ const S5 = ({ t, f }: Ctx) => {
       <Box p={[0, -3.15, 0]} s={[2.3, 1.05, 1.5]} color="#8a5a2e" line={2} />
       <CrashChart p={[0, -3.05, 0.78]} w={1.9} title="MKT" color="#ff5040" />
     </group>
-    <Sign p={[0, 10.3, -10.4]} s={[9.4, 1.05]} text="THE BOOM BECAME THE DRAG" bg="#120b24" fg="#c9b8ff" size={66} frame="#7a5cff" />
+    <Sign p={[0, 9.7, -10.4]} s={[9.4, 1.05]} text="THE BOOM BECAME THE DRAG" bg="#120b24" fg="#c9b8ff" size={66} frame="#7a5cff" />
     <Person p={[-4.6, 0, -2.6]} h={3.8} look={traderLook} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 24.2, 24.7), armR: [0.7, 0.95], lookX: 0.45 }} />
     <Person p={[5.2, 0, -2.8]} h={3.8} look={analyst} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.4 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(215,200,255,.85)" />
@@ -276,15 +276,15 @@ const S6 = ({ t, f }: Ctx) => {
     <Floor kind="tile" a="#0e1830" b="#0b1425" unit={2} w={38} d={38} />
     <WallDoor z={-11} W={38} kind="plain" a="#16233c" b="#16233c" base="#0a1120" />
     {/* the slope down to the cliff edge */}
-    <Box p={[-3.1, 3.3, -7.8]} s={[8.6, 0.5, 3.2]} color="#39424e" line={2} rot={[0, 0, -0.42]} />
+    <Box p={[-3.1, 3.3, -7.8]} s={[8.6, 0.5, 3.2]} color="#46525f" line={2} rot={[0, 0, -0.42]} />
     <Box p={[2.6, 0.75, -7.8]} s={[3.4, 1.5, 3.2]} color="#2c3646" line={2} />
-    <Box p={[6.4, 2.6, -7.8]} s={[0.28, 5.2, 3.2]} color="#f0a832" line={1} />
-    <Sign p={[6.4, 5.6, -7.6]} s={[3.1, 0.85]} text="$60,000" bg="#0a1120" fg="#2fd46a" size={88} frame="#2fd46a" />
+    <Box p={[5.1, 2.6, -7.8]} s={[0.28, 5.2, 3.2]} color="#f0a832" line={1} />
+    <Sign p={[5.1, 5.6, -7.6]} s={[2.9, 0.85]} text="$60,000" bg="#0a1120" fg="#2fd46a" size={88} frame="#2fd46a" />
     {signK > 0.02 ? <group position={[1.9, 3.6, -6.6]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[3.3, 0.9]} text="$58,000" bg="#3d1420" fg="#ff8a7a" size={88} frame="#e5233a" /></group> : null}
     <BtcCoin p={[coinX, coinY, -6.9]} s={1.15} rotZ={-slideK * 5.2 + bounceK * 1.2} />
     {bounceK > 0.03 && bounceK < 0.97 ? <Box p={[1.8, (2.05 + coinY) / 2 + 0.4, -6.9]} s={[0.09, Math.max(0.2, coinY - 2.05), 0.09]} color="#f5f0e2" line={0} /> : null}
-    <Person p={[-6.0, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
-    <Person p={[6.2, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
+    <Person p={[-4.7, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
+    <Person p={[4.9, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(190,215,255,.85)" />
   </>);
 };
@@ -351,8 +351,8 @@ const S8 = ({ t, f }: Ctx) => {
       <Person p={[-2.5, 0.32, 0]} h={3.3} look={traderLook} f={f} pose={{ mood: tipK > 0.6 ? "worry" : "smile", arms: "down", lookX: 0.3 }} />
       <Person p={[4.3, 0.32, 0]} h={3.3} look={trader2Look} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 44.6, 45.1), armR: [0.7, 0.5], lookX: -0.4 }} />
     </group>
-    <Sign p={[-4.6, 6.9, -8.6]} s={[3.6, 0.85]} text="LONGS" bg="#0e2f1c" fg="#8ae8b0" size={88} frame="#2fd46a" />
-    <Sign p={[4.6, 6.9, -8.6]} s={[3.6, 0.85]} text="SHORTS" bg="#3d1420" fg="#ff8a7a" size={88} frame="#e5233a" />
+    <Sign p={[-4.6, 7.7, -8.6]} s={[3.6, 0.85]} text="LONGS" bg="#0e2f1c" fg="#8ae8b0" size={88} frame="#2fd46a" />
+    <Sign p={[4.6, 7.7, -8.6]} s={[3.6, 0.85]} text="SHORTS" bg="#3d1420" fg="#ff8a7a" size={88} frame="#e5233a" />
     {boardK > 0.02 ? <group position={[0, 9.3, -9.8]} scale={[boardK, boardK, 1]}><Board p={[0, 0, 0]} w={8.8} bg="#180d04" frame="#ff8a3c" lines={[{ t: "$500 MILLION+", s: 100, c: "#ffb37a" }, { t: "LIQUIDATED IN A DAY", s: 58, c: "#f5f7fa" }]} /></group> : null}
     <Person p={[6.1, 0, -2.4]} h={3.8} look={analyst} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 43.0, 43.5), armR: [0.8, 0.55], lookX: -0.5 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(255,220,180,.85)" />
@@ -460,8 +460,8 @@ const S11 = ({ t, f }: Ctx) => {
       c.fillStyle = "#ff8a7a"; c.font = "700 30px Inter, Arial"; c.fillText("MARKETS SPECIAL", W / 2, H * 0.9);
     }} />
     {/* fear gauge, right of the backdrop */}
-    <group position={[7.6, 5.4, -6.6]}>
-      <CanvasPlane p={[0, 0, 0]} s={[4.3, 3.1]} px={[640, 462]} frame="#8a97a5" draw={(c, W, H) => {
+    <group position={[3.75, 5.4, -6.6]}>
+      <CanvasPlane p={[0, 0, 0]} s={[3.2, 2.3]} px={[640, 462]} frame="#8a97a5" draw={(c, W, H) => {
         c.fillStyle = "#101828"; c.fillRect(0, 0, W, H);
         const cx = W / 2, cy = H * 0.78, R = W * 0.36;
         const zones: [string, number, number][] = [["#2fd46a", Math.PI, Math.PI * 1.33], ["#ffd36a", Math.PI * 1.33, Math.PI * 1.66], ["#e5233a", Math.PI * 1.66, Math.PI * 2]];
@@ -470,11 +470,11 @@ const S11 = ({ t, f }: Ctx) => {
         c.fillStyle = "#ff8a7a"; c.font = "900 40px Inter, Arial"; c.fillText("EXTREME FEAR", cx, H * 0.95);
       }} />
       <group position={[0, -0.62, 0.12]} rotation={[0, 0, needleRot]}>
-        <Box p={[0, 0.62, 0]} s={[0.13, 1.35, 0.05]} color="#ffd36a" line={0} />
+        <Box p={[0, 0.5, 0]} s={[0.13, 1.1, 0.05]} color="#ffd36a" line={0} />
       </group>
       <Ball p={[0, -0.62, 0.14]} r={0.16} color="#f5f7fa" ink={0.02} />
     </group>
-    {numK > 0.02 ? <group position={[-7.4, 5.5, -6.6]} scale={[numK, numK, 1]}><Board p={[0, 0, 0]} w={3.6} bg="#2b0f16" frame="#e5233a" lines={[{ t: "11", s: 150, c: "#ff5040" }, { t: "FEAR INDEX", s: 52, c: "#f5f7fa" }]} /></group> : null}
+    {numK > 0.02 ? <group position={[-3.4, 5.6, -6.9]} scale={[numK, numK, 1]}><Board p={[0, 0, 0]} w={3.0} bg="#2b0f16" frame="#e5233a" lines={[{ t: "11", s: 150, c: "#ff5040" }, { t: "FEAR INDEX", s: 52, c: "#f5f7fa" }]} /></group> : null}
     <Glow p={[0, 5.6, -6.6]} r={5.4} color="rgba(255,120,90,1)" o={0.13} />
     <Globe p={[-5.9, 2.5, -5.2]} r={1.55} rotY={t * 0.4} />
     <Cyl p={[-5.9, 0.45, -5.2]} rt={0.09} h={0.9} color="#8a93a6" line={1} /><Cyl p={[-5.9, 0.06, -5.2]} rt={0.55} h={0.12} color="#5e2430" line={1} />
