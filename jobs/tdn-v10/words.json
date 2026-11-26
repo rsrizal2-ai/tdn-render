@@ -1,0 +1,1092 @@
+[
+ {
+  "word": "It",
+  "start": 0.0,
+  "end": 0.13
+ },
+ {
+  "word": "looked",
+  "start": 0.13,
+  "end": 0.33
+ },
+ {
+  "word": "like",
+  "start": 0.33,
+  "end": 0.47
+ },
+ {
+  "word": "an",
+  "start": 0.47,
+  "end": 0.53
+ },
+ {
+  "word": "oil",
+  "start": 0.53,
+  "end": 0.85
+ },
+ {
+  "word": "company",
+  "start": 0.85,
+  "end": 1.31
+ },
+ {
+  "word": "Hidden",
+  "start": 1.42,
+  "end": 1.61
+ },
+ {
+  "word": "behind",
+  "start": 1.61,
+  "end": 1.95
+ },
+ {
+  "word": "it",
+  "start": 1.95,
+  "end": 2.09
+ },
+ {
+  "word": "sat",
+  "start": 2.09,
+  "end": 2.29
+ },
+ {
+  "word": "a",
+  "start": 2.29,
+  "end": 2.32
+ },
+ {
+  "word": "meth",
+  "start": 2.32,
+  "end": 2.63
+ },
+ {
+  "word": "factory",
+  "start": 2.63,
+  "end": 3.16
+ },
+ {
+  "word": "and",
+  "start": 3.16,
+  "end": 3.33
+ },
+ {
+  "word": "a",
+  "start": 3.33,
+  "end": 3.36
+ },
+ {
+  "word": "drug",
+  "start": 3.36,
+  "end": 3.71
+ },
+ {
+  "word": "haul",
+  "start": 3.71,
+  "end": 3.96
+ },
+ {
+  "word": "worth",
+  "start": 3.96,
+  "end": 4.26
+ },
+ {
+  "word": "two",
+  "start": 4.26,
+  "end": 4.5
+ },
+ {
+  "word": "hundred",
+  "start": 4.5,
+  "end": 4.82
+ },
+ {
+  "word": "and",
+  "start": 4.82,
+  "end": 4.92
+ },
+ {
+  "word": "twenty-seven",
+  "start": 4.92,
+  "end": 5.53
+ },
+ {
+  "word": "million",
+  "start": 5.53,
+  "end": 5.99
+ },
+ {
+  "word": "dollars",
+  "start": 5.99,
+  "end": 6.52
+ },
+ {
+  "word": "This",
+  "start": 6.74,
+  "end": 6.92
+ },
+ {
+  "word": "week",
+  "start": 6.92,
+  "end": 7.33
+ },
+ {
+  "word": "Nigeria's",
+  "start": 7.33,
+  "end": 7.87
+ },
+ {
+  "word": "drug",
+  "start": 7.87,
+  "end": 8.15
+ },
+ {
+  "word": "agency",
+  "start": 8.15,
+  "end": 8.67
+ },
+ {
+  "word": "the",
+  "start": 8.67,
+  "end": 8.89
+ },
+ {
+  "word": "NDLEA",
+  "start": 8.89,
+  "end": 10.12
+ },
+ {
+  "word": "unveiled",
+  "start": 10.12,
+  "end": 10.64
+ },
+ {
+  "word": "one",
+  "start": 10.64,
+  "end": 10.77
+ },
+ {
+  "word": "of",
+  "start": 10.77,
+  "end": 10.83
+ },
+ {
+  "word": "the",
+  "start": 10.83,
+  "end": 10.9
+ },
+ {
+  "word": "biggest",
+  "start": 10.9,
+  "end": 11.28
+ },
+ {
+  "word": "drug",
+  "start": 11.28,
+  "end": 11.58
+ },
+ {
+  "word": "busts",
+  "start": 11.58,
+  "end": 11.92
+ },
+ {
+  "word": "of",
+  "start": 11.92,
+  "end": 12.0
+ },
+ {
+  "word": "the",
+  "start": 12.0,
+  "end": 12.07
+ },
+ {
+  "word": "year",
+  "start": 12.07,
+  "end": 12.51
+ },
+ {
+  "word": "Inside",
+  "start": 12.68,
+  "end": 13.04
+ },
+ {
+  "word": "an",
+  "start": 13.04,
+  "end": 13.13
+ },
+ {
+  "word": "industrial",
+  "start": 13.13,
+  "end": 13.62
+ },
+ {
+  "word": "complex",
+  "start": 13.62,
+  "end": 14.18
+ },
+ {
+  "word": "in",
+  "start": 14.18,
+  "end": 14.36
+ },
+ {
+  "word": "Enugu",
+  "start": 14.36,
+  "end": 14.99
+ },
+ {
+  "word": "in",
+  "start": 14.99,
+  "end": 15.09
+ },
+ {
+  "word": "the",
+  "start": 15.09,
+  "end": 15.15
+ },
+ {
+  "word": "country's",
+  "start": 15.15,
+  "end": 15.52
+ },
+ {
+  "word": "southeast",
+  "start": 15.52,
+  "end": 16.31
+ },
+ {
+  "word": "agents",
+  "start": 16.31,
+  "end": 16.67
+ },
+ {
+  "word": "seized",
+  "start": 16.67,
+  "end": 16.97
+ },
+ {
+  "word": "one",
+  "start": 16.97,
+  "end": 17.21
+ },
+ {
+  "word": "and",
+  "start": 17.21,
+  "end": 17.3
+ },
+ {
+  "word": "a",
+  "start": 17.3,
+  "end": 17.33
+ },
+ {
+  "word": "half",
+  "start": 17.33,
+  "end": 17.59
+ },
+ {
+  "word": "tonnes",
+  "start": 17.59,
+  "end": 18.05
+ },
+ {
+  "word": "of",
+  "start": 18.05,
+  "end": 18.13
+ },
+ {
+  "word": "methamphetamine",
+  "start": 18.13,
+  "end": 19.01
+ },
+ {
+  "word": "and",
+  "start": 19.01,
+  "end": 19.22
+ },
+ {
+  "word": "nearly",
+  "start": 19.22,
+  "end": 19.47
+ },
+ {
+  "word": "seven",
+  "start": 19.47,
+  "end": 19.89
+ },
+ {
+  "word": "tonnes",
+  "start": 19.89,
+  "end": 20.2
+ },
+ {
+  "word": "of",
+  "start": 20.2,
+  "end": 20.28
+ },
+ {
+  "word": "chemicals",
+  "start": 20.28,
+  "end": 20.97
+ },
+ {
+  "word": "from",
+  "start": 20.97,
+  "end": 21.11
+ },
+ {
+  "word": "a",
+  "start": 21.11,
+  "end": 21.14
+ },
+ {
+  "word": "factory",
+  "start": 21.14,
+  "end": 21.62
+ },
+ {
+  "word": "built",
+  "start": 21.62,
+  "end": 21.88
+ },
+ {
+  "word": "to",
+  "start": 21.88,
+  "end": 21.97
+ },
+ {
+  "word": "cook",
+  "start": 21.97,
+  "end": 22.26
+ },
+ {
+  "word": "the",
+  "start": 22.26,
+  "end": 22.33
+ },
+ {
+  "word": "drug",
+  "start": 22.33,
+  "end": 22.67
+ },
+ {
+  "word": "around",
+  "start": 22.67,
+  "end": 22.95
+ },
+ {
+  "word": "the",
+  "start": 22.95,
+  "end": 23.01
+ },
+ {
+  "word": "clock",
+  "start": 23.01,
+  "end": 23.46
+ },
+ {
+  "word": "And",
+  "start": 23.67,
+  "end": 23.8
+ },
+ {
+  "word": "the",
+  "start": 23.8,
+  "end": 23.88
+ },
+ {
+  "word": "alleged",
+  "start": 23.88,
+  "end": 24.24
+ },
+ {
+  "word": "recipe",
+  "start": 24.24,
+  "end": 24.67
+ },
+ {
+  "word": "came",
+  "start": 24.67,
+  "end": 24.94
+ },
+ {
+  "word": "with",
+  "start": 24.94,
+  "end": 25.05
+ },
+ {
+  "word": "imported",
+  "start": 25.05,
+  "end": 25.56
+ },
+ {
+  "word": "labour",
+  "start": 25.56,
+  "end": 26.0
+ },
+ {
+  "word": "Agents",
+  "start": 26.21,
+  "end": 26.54
+ },
+ {
+  "word": "say",
+  "start": 26.54,
+  "end": 26.71
+ },
+ {
+  "word": "a",
+  "start": 26.71,
+  "end": 26.74
+ },
+ {
+  "word": "sixty-three-year-old",
+  "start": 26.74,
+  "end": 27.7
+ },
+ {
+  "word": "Nigerian",
+  "start": 27.7,
+  "end": 28.27
+ },
+ {
+  "word": "drug",
+  "start": 28.27,
+  "end": 28.56
+ },
+ {
+  "word": "baron",
+  "start": 28.56,
+  "end": 29.05
+ },
+ {
+  "word": "Chuks",
+  "start": 29.05,
+  "end": 29.44
+ },
+ {
+  "word": "Enoch",
+  "start": 29.44,
+  "end": 29.93
+ },
+ {
+  "word": "Ezeike",
+  "start": 29.93,
+  "end": 30.63
+ },
+ {
+  "word": "recruited",
+  "start": 30.63,
+  "end": 31.05
+ },
+ {
+  "word": "five",
+  "start": 31.05,
+  "end": 31.47
+ },
+ {
+  "word": "Mexican",
+  "start": 31.47,
+  "end": 31.95
+ },
+ {
+  "word": "meth",
+  "start": 31.95,
+  "end": 32.17
+ },
+ {
+  "word": "specialists",
+  "start": 32.17,
+  "end": 32.9
+ },
+ {
+  "word": "flew",
+  "start": 32.9,
+  "end": 33.23
+ },
+ {
+  "word": "them",
+  "start": 33.23,
+  "end": 33.36
+ },
+ {
+  "word": "halfway",
+  "start": 33.36,
+  "end": 33.84
+ },
+ {
+  "word": "around",
+  "start": 33.84,
+  "end": 34.09
+ },
+ {
+  "word": "the",
+  "start": 34.09,
+  "end": 34.15
+ },
+ {
+  "word": "world",
+  "start": 34.15,
+  "end": 34.7
+ },
+ {
+  "word": "and",
+  "start": 34.7,
+  "end": 34.84
+ },
+ {
+  "word": "smuggled",
+  "start": 34.84,
+  "end": 35.26
+ },
+ {
+  "word": "them",
+  "start": 35.26,
+  "end": 35.43
+ },
+ {
+  "word": "into",
+  "start": 35.43,
+  "end": 35.65
+ },
+ {
+  "word": "Nigeria",
+  "start": 35.65,
+  "end": 36.21
+ },
+ {
+  "word": "on",
+  "start": 36.21,
+  "end": 36.41
+ },
+ {
+  "word": "forged",
+  "start": 36.41,
+  "end": 36.88
+ },
+ {
+  "word": "passports",
+  "start": 36.88,
+  "end": 37.6
+ },
+ {
+  "word": "He",
+  "start": 37.81,
+  "end": 37.92
+ },
+ {
+  "word": "even",
+  "start": 37.92,
+  "end": 38.15
+ },
+ {
+  "word": "built",
+  "start": 38.15,
+  "end": 38.35
+ },
+ {
+  "word": "them",
+  "start": 38.35,
+  "end": 38.51
+ },
+ {
+  "word": "living",
+  "start": 38.51,
+  "end": 38.84
+ },
+ {
+  "word": "quarters",
+  "start": 38.84,
+  "end": 39.27
+ },
+ {
+  "word": "inside",
+  "start": 39.27,
+  "end": 39.69
+ },
+ {
+  "word": "the",
+  "start": 39.69,
+  "end": 39.75
+ },
+ {
+  "word": "plant",
+  "start": 39.75,
+  "end": 40.31
+ },
+ {
+  "word": "so",
+  "start": 40.31,
+  "end": 40.44
+ },
+ {
+  "word": "they",
+  "start": 40.44,
+  "end": 40.53
+ },
+ {
+  "word": "never",
+  "start": 40.53,
+  "end": 40.77
+ },
+ {
+  "word": "had",
+  "start": 40.77,
+  "end": 40.93
+ },
+ {
+  "word": "to",
+  "start": 40.93,
+  "end": 40.99
+ },
+ {
+  "word": "step",
+  "start": 40.99,
+  "end": 41.27
+ },
+ {
+  "word": "outside",
+  "start": 41.27,
+  "end": 41.92
+ },
+ {
+  "word": "But",
+  "start": 42.1,
+  "end": 42.22
+ },
+ {
+  "word": "the",
+  "start": 42.22,
+  "end": 42.35
+ },
+ {
+  "word": "agency",
+  "start": 42.35,
+  "end": 42.78
+ },
+ {
+  "word": "had",
+  "start": 42.78,
+  "end": 42.89
+ },
+ {
+  "word": "been",
+  "start": 42.89,
+  "end": 43.0
+ },
+ {
+  "word": "watching",
+  "start": 43.0,
+  "end": 43.45
+ },
+ {
+  "word": "for",
+  "start": 43.45,
+  "end": 43.57
+ },
+ {
+  "word": "seven",
+  "start": 43.57,
+  "end": 43.96
+ },
+ {
+  "word": "months",
+  "start": 43.96,
+  "end": 44.43
+ },
+ {
+  "word": "Investigators",
+  "start": 44.65,
+  "end": 45.33
+ },
+ {
+  "word": "tracked",
+  "start": 45.33,
+  "end": 45.64
+ },
+ {
+  "word": "the",
+  "start": 45.64,
+  "end": 45.71
+ },
+ {
+  "word": "route",
+  "start": 45.71,
+  "end": 46.03
+ },
+ {
+  "word": "from",
+  "start": 46.03,
+  "end": 46.23
+ },
+ {
+  "word": "Mexico",
+  "start": 46.23,
+  "end": 46.86
+ },
+ {
+  "word": "through",
+  "start": 46.86,
+  "end": 47.01
+ },
+ {
+  "word": "Colombia",
+  "start": 47.01,
+  "end": 47.61
+ },
+ {
+  "word": "and",
+  "start": 47.61,
+  "end": 47.75
+ },
+ {
+  "word": "France",
+  "start": 47.75,
+  "end": 48.44
+ },
+ {
+  "word": "into",
+  "start": 48.44,
+  "end": 48.62
+ },
+ {
+  "word": "Benin",
+  "start": 48.62,
+  "end": 49.1
+ },
+ {
+  "word": "and",
+  "start": 49.1,
+  "end": 49.29
+ },
+ {
+  "word": "across",
+  "start": 49.29,
+  "end": 49.65
+ },
+ {
+  "word": "the",
+  "start": 49.65,
+  "end": 49.71
+ },
+ {
+  "word": "border",
+  "start": 49.71,
+  "end": 50.15
+ },
+ {
+  "word": "They",
+  "start": 50.35,
+  "end": 50.43
+ },
+ {
+  "word": "even",
+  "start": 50.43,
+  "end": 50.67
+ },
+ {
+  "word": "let",
+  "start": 50.67,
+  "end": 50.84
+ },
+ {
+  "word": "the",
+  "start": 50.84,
+  "end": 50.91
+ },
+ {
+  "word": "five",
+  "start": 50.91,
+  "end": 51.27
+ },
+ {
+  "word": "men",
+  "start": 51.27,
+  "end": 51.5
+ },
+ {
+  "word": "in",
+  "start": 51.5,
+  "end": 51.86
+ },
+ {
+  "word": "on",
+  "start": 51.86,
+  "end": 52.08
+ },
+ {
+  "word": "purpose",
+  "start": 52.08,
+  "end": 52.69
+ },
+ {
+  "word": "to",
+  "start": 52.69,
+  "end": 52.81
+ },
+ {
+  "word": "map",
+  "start": 52.81,
+  "end": 53.08
+ },
+ {
+  "word": "the",
+  "start": 53.08,
+  "end": 53.16
+ },
+ {
+  "word": "whole",
+  "start": 53.16,
+  "end": 53.43
+ },
+ {
+  "word": "network",
+  "start": 53.43,
+  "end": 53.94
+ },
+ {
+  "word": "Then",
+  "start": 53.94,
+  "end": 54.54
+ },
+ {
+  "word": "on",
+  "start": 54.54,
+  "end": 54.7
+ },
+ {
+  "word": "November",
+  "start": 54.7,
+  "end": 55.06
+ },
+ {
+  "word": "the",
+  "start": 55.06,
+  "end": 55.15
+ },
+ {
+  "word": "eleventh",
+  "start": 55.15,
+  "end": 55.75
+ },
+ {
+  "word": "more",
+  "start": 55.75,
+  "end": 55.89
+ },
+ {
+  "word": "than",
+  "start": 55.89,
+  "end": 56.07
+ },
+ {
+  "word": "two",
+  "start": 56.07,
+  "end": 56.32
+ },
+ {
+  "word": "hundred",
+  "start": 56.32,
+  "end": 56.66
+ },
+ {
+  "word": "officers",
+  "start": 56.66,
+  "end": 57.24
+ },
+ {
+  "word": "hit",
+  "start": 57.24,
+  "end": 57.39
+ },
+ {
+  "word": "the",
+  "start": 57.39,
+  "end": 57.45
+ },
+ {
+  "word": "lab",
+  "start": 57.45,
+  "end": 57.89
+ },
+ {
+  "word": "and",
+  "start": 57.89,
+  "end": 58.03
+ },
+ {
+  "word": "the",
+  "start": 58.03,
+  "end": 58.09
+ },
+ {
+  "word": "baron's",
+  "start": 58.09,
+  "end": 58.48
+ },
+ {
+  "word": "hotel",
+  "start": 58.48,
+  "end": 58.95
+ },
+ {
+  "word": "at",
+  "start": 58.95,
+  "end": 59.01
+ },
+ {
+  "word": "the",
+  "start": 59.01,
+  "end": 59.08
+ },
+ {
+  "word": "same",
+  "start": 59.08,
+  "end": 59.41
+ },
+ {
+  "word": "time",
+  "start": 59.41,
+  "end": 59.85
+ },
+ {
+  "word": "Six",
+  "start": 60.05,
+  "end": 60.31
+ },
+ {
+  "word": "men",
+  "start": 60.31,
+  "end": 60.49
+ },
+ {
+  "word": "are",
+  "start": 60.49,
+  "end": 60.54
+ },
+ {
+  "word": "now",
+  "start": 60.54,
+  "end": 60.83
+ },
+ {
+  "word": "under",
+  "start": 60.83,
+  "end": 61.03
+ },
+ {
+  "word": "arrest",
+  "start": 61.03,
+  "end": 61.64
+ },
+ {
+  "word": "and",
+  "start": 61.64,
+  "end": 61.74
+ },
+ {
+  "word": "the",
+  "start": 61.74,
+  "end": 61.8
+ },
+ {
+  "word": "factory",
+  "start": 61.8,
+  "end": 62.24
+ },
+ {
+  "word": "is",
+  "start": 62.24,
+  "end": 62.38
+ },
+ {
+  "word": "finished",
+  "start": 62.38,
+  "end": 62.93
+ },
+ {
+  "word": "the",
+  "start": 62.93,
+  "end": 63.08
+ },
+ {
+  "word": "fourth",
+  "start": 63.08,
+  "end": 63.45
+ },
+ {
+  "word": "industrial",
+  "start": 63.45,
+  "end": 64.04
+ },
+ {
+  "word": "meth",
+  "start": 64.04,
+  "end": 64.32
+ },
+ {
+  "word": "lab",
+  "start": 64.32,
+  "end": 64.59
+ },
+ {
+  "word": "Nigeria",
+  "start": 64.59,
+  "end": 65.12
+ },
+ {
+  "word": "has",
+  "start": 65.12,
+  "end": 65.26
+ },
+ {
+  "word": "shut",
+  "start": 65.26,
+  "end": 65.54
+ },
+ {
+  "word": "down",
+  "start": 65.54,
+  "end": 65.97
+ },
+ {
+  "word": "The",
+  "start": 66.14,
+  "end": 66.2
+ },
+ {
+  "word": "Daily",
+  "start": 66.2,
+  "end": 66.59
+ },
+ {
+  "word": "Toon",
+  "start": 66.59,
+  "end": 66.91
+ },
+ {
+  "word": "News",
+  "start": 66.91,
+  "end": 67.36
+ },
+ {
+  "word": "the",
+  "start": 67.48,
+  "end": 67.56
+ },
+ {
+  "word": "world",
+  "start": 67.56,
+  "end": 68.17
+ },
+ {
+  "word": "in",
+  "start": 68.17,
+  "end": 68.35
+ },
+ {
+  "word": "toons",
+  "start": 68.35,
+  "end": 68.91
+ }
+]
