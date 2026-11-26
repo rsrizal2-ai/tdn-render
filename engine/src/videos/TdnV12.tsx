@@ -62,7 +62,10 @@ const Stamp: React.FC<{ p: V3; w: number; text: string; color?: string }> = ({ p
   <group position={p} rotation={[0, 0, -0.16]}>
     <CanvasPlane p={[0, 0, 0]} s={[w, w * 0.3]} px={[1024, 307]} draw={(c, W, H) => {
       c.clearRect(0, 0, W, H); c.strokeStyle = color; c.lineWidth = 16; c.strokeRect(14, 14, W - 28, H - 28);
-      c.fillStyle = color; c.font = "900 118px Inter, Arial"; c.textAlign = "center"; c.textBaseline = "middle"; c.fillText(text, W / 2, H / 2 + 4);
+      c.fillStyle = color; c.textAlign = "center"; c.textBaseline = "middle";
+      let fs = 118; c.font = `900 ${fs}px Inter, Arial`;
+      while (c.measureText(text).width > W - 110 && fs > 30) { fs -= 6; c.font = `900 ${fs}px Inter, Arial`; }
+      c.fillText(text, W / 2, H / 2 + 4);
     }} />
   </group>
 );
@@ -407,7 +410,7 @@ const S9 = ({ t, f }: Ctx) => {
       </group>);
     })}
     <Sign p={[0, 9.3, -10.2]} s={[9.8, 1.05]} text="THE RENOVATION CONTRACT" bg="#180d04" fg="#ffd36a" size={66} frame="#c9a227" />
-    {winK > 0.02 ? <group position={[0, 1.9, -6.0]} scale={[winK, winK, 1]}><Board p={[0, 0, 0]} w={8.4} bg="#241806" frame="#f0c040" lines={[{ t: "HK$336 MILLION", s: 104, c: "#ffd36a" }]} /></group> : null}
+    {winK > 0.02 ? <group position={[0, 1.9, -6.6]} scale={[winK, winK, 1]}><Board p={[0, 0, 0]} w={7.2} bg="#241806" frame="#f0c040" lines={[{ t: "HK$336 MILLION", s: 104, c: "#ffd36a" }]} /></group> : null}
     {signK > 0.02 ? <group position={[0, 6.9, -8.8]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[8.8, 0.95]} text="THE MOST EXPENSIVE OF 57 BIDS" bg="#101828" fg="#f5f7fa" size={58} frame="#ffd36a" /></group> : null}
     {/* the auctioneer's gavel */}
     <group position={[5.6, 2.6, -4.6]} rotation={[0, 0, -0.5 + gavelK]}>
