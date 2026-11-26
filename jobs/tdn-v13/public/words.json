@@ -1,0 +1,1107 @@
+[
+ {
+  "word": "On",
+  "start": 0.0,
+  "end": 0.14
+ },
+ {
+  "word": "Monday",
+  "start": 0.14,
+  "end": 0.68
+ },
+ {
+  "word": "a",
+  "start": 0.68,
+  "end": 0.74
+ },
+ {
+  "word": "former",
+  "start": 0.74,
+  "end": 1.11
+ },
+ {
+  "word": "president",
+  "start": 1.11,
+  "end": 1.61
+ },
+ {
+  "word": "walks",
+  "start": 1.61,
+  "end": 1.96
+ },
+ {
+  "word": "into",
+  "start": 1.96,
+  "end": 2.16
+ },
+ {
+  "word": "a",
+  "start": 2.16,
+  "end": 2.19
+ },
+ {
+  "word": "courtroom",
+  "start": 2.19,
+  "end": 2.73
+ },
+ {
+  "word": "in",
+  "start": 2.73,
+  "end": 2.83
+ },
+ {
+  "word": "The",
+  "start": 2.83,
+  "end": 2.89
+ },
+ {
+  "word": "Hague",
+  "start": 2.89,
+  "end": 3.53
+ },
+ {
+  "word": "not",
+  "start": 3.53,
+  "end": 3.71
+ },
+ {
+  "word": "to",
+  "start": 3.71,
+  "end": 3.78
+ },
+ {
+  "word": "give",
+  "start": 3.78,
+  "end": 3.91
+ },
+ {
+  "word": "a",
+  "start": 3.91,
+  "end": 3.94
+ },
+ {
+  "word": "speech",
+  "start": 3.94,
+  "end": 4.59
+ },
+ {
+  "word": "but",
+  "start": 4.59,
+  "end": 4.72
+ },
+ {
+  "word": "to",
+  "start": 4.72,
+  "end": 4.78
+ },
+ {
+  "word": "stand",
+  "start": 4.78,
+  "end": 5.15
+ },
+ {
+  "word": "trial",
+  "start": 5.15,
+  "end": 5.65
+ },
+ {
+  "word": "Rodrigo",
+  "start": 5.86,
+  "end": 6.28
+ },
+ {
+  "word": "Duterte",
+  "start": 6.28,
+  "end": 7.01
+ },
+ {
+  "word": "eighty-one",
+  "start": 7.01,
+  "end": 7.62
+ },
+ {
+  "word": "once",
+  "start": 7.73,
+  "end": 7.95
+ },
+ {
+  "word": "ruled",
+  "start": 7.95,
+  "end": 8.28
+ },
+ {
+  "word": "the",
+  "start": 8.28,
+  "end": 8.35
+ },
+ {
+  "word": "Philippines",
+  "start": 8.35,
+  "end": 9.04
+ },
+ {
+  "word": "Since",
+  "start": 9.26,
+  "end": 9.49
+ },
+ {
+  "word": "March",
+  "start": 9.49,
+  "end": 9.8
+ },
+ {
+  "word": "twenty",
+  "start": 9.8,
+  "end": 10.05
+ },
+ {
+  "word": "twenty-five",
+  "start": 10.05,
+  "end": 10.78
+ },
+ {
+  "word": "he",
+  "start": 10.78,
+  "end": 10.87
+ },
+ {
+  "word": "has",
+  "start": 10.87,
+  "end": 10.97
+ },
+ {
+  "word": "sat",
+  "start": 10.97,
+  "end": 11.27
+ },
+ {
+  "word": "in",
+  "start": 11.27,
+  "end": 11.38
+ },
+ {
+  "word": "a",
+  "start": 11.38,
+  "end": 11.43
+ },
+ {
+  "word": "detention",
+  "start": 11.43,
+  "end": 11.92
+ },
+ {
+  "word": "cell",
+  "start": 11.92,
+  "end": 12.17
+ },
+ {
+  "word": "in",
+  "start": 12.17,
+  "end": 12.23
+ },
+ {
+  "word": "The",
+  "start": 12.23,
+  "end": 12.29
+ },
+ {
+  "word": "Hague",
+  "start": 12.29,
+  "end": 12.76
+ },
+ {
+  "word": "waiting",
+  "start": 12.76,
+  "end": 13.19
+ },
+ {
+  "word": "for",
+  "start": 13.19,
+  "end": 13.3
+ },
+ {
+  "word": "this",
+  "start": 13.3,
+  "end": 13.49
+ },
+ {
+  "word": "week",
+  "start": 13.49,
+  "end": 13.86
+ },
+ {
+  "word": "Prosecutors",
+  "start": 14.06,
+  "end": 14.71
+ },
+ {
+  "word": "at",
+  "start": 14.71,
+  "end": 14.77
+ },
+ {
+  "word": "the",
+  "start": 14.77,
+  "end": 14.88
+ },
+ {
+  "word": "International",
+  "start": 14.88,
+  "end": 15.45
+ },
+ {
+  "word": "Criminal",
+  "start": 15.45,
+  "end": 15.8
+ },
+ {
+  "word": "Court",
+  "start": 15.8,
+  "end": 16.08
+ },
+ {
+  "word": "have",
+  "start": 16.08,
+  "end": 16.2
+ },
+ {
+  "word": "charged",
+  "start": 16.2,
+  "end": 16.64
+ },
+ {
+  "word": "him",
+  "start": 16.64,
+  "end": 16.74
+ },
+ {
+  "word": "with",
+  "start": 16.74,
+  "end": 16.91
+ },
+ {
+  "word": "three",
+  "start": 16.91,
+  "end": 17.14
+ },
+ {
+  "word": "counts",
+  "start": 17.14,
+  "end": 17.51
+ },
+ {
+  "word": "of",
+  "start": 17.51,
+  "end": 17.59
+ },
+ {
+  "word": "crimes",
+  "start": 17.59,
+  "end": 17.98
+ },
+ {
+  "word": "against",
+  "start": 17.98,
+  "end": 18.31
+ },
+ {
+  "word": "humanity",
+  "start": 18.31,
+  "end": 18.85
+ },
+ {
+  "word": "murder",
+  "start": 19.01,
+  "end": 19.52
+ },
+ {
+  "word": "and",
+  "start": 19.52,
+  "end": 19.66
+ },
+ {
+  "word": "attempted",
+  "start": 19.66,
+  "end": 20.05
+ },
+ {
+  "word": "murder",
+  "start": 20.05,
+  "end": 20.46
+ },
+ {
+  "word": "They",
+  "start": 20.69,
+  "end": 20.78
+ },
+ {
+  "word": "allege",
+  "start": 20.78,
+  "end": 21.1
+ },
+ {
+  "word": "a",
+  "start": 21.1,
+  "end": 21.13
+ },
+ {
+  "word": "widespread",
+  "start": 21.13,
+  "end": 21.93
+ },
+ {
+  "word": "systematic",
+  "start": 21.93,
+  "end": 22.61
+ },
+ {
+  "word": "attack",
+  "start": 22.61,
+  "end": 23.08
+ },
+ {
+  "word": "on",
+  "start": 23.08,
+  "end": 23.18
+ },
+ {
+  "word": "civilians",
+  "start": 23.18,
+  "end": 23.81
+ },
+ {
+  "word": "during",
+  "start": 23.81,
+  "end": 24.01
+ },
+ {
+  "word": "his",
+  "start": 24.01,
+  "end": 24.17
+ },
+ {
+  "word": "war",
+  "start": 24.17,
+  "end": 24.47
+ },
+ {
+  "word": "on",
+  "start": 24.47,
+  "end": 24.59
+ },
+ {
+  "word": "drugs",
+  "start": 24.59,
+  "end": 25.07
+ },
+ {
+  "word": "between",
+  "start": 25.07,
+  "end": 25.49
+ },
+ {
+  "word": "twenty",
+  "start": 25.49,
+  "end": 25.76
+ },
+ {
+  "word": "eleven",
+  "start": 25.76,
+  "end": 26.21
+ },
+ {
+  "word": "and",
+  "start": 26.34,
+  "end": 26.5
+ },
+ {
+  "word": "twenty",
+  "start": 26.5,
+  "end": 26.74
+ },
+ {
+  "word": "nineteen",
+  "start": 26.74,
+  "end": 27.33
+ },
+ {
+  "word": "The",
+  "start": 27.5,
+  "end": 27.56
+ },
+ {
+  "word": "counts",
+  "start": 27.56,
+  "end": 27.86
+ },
+ {
+  "word": "reach",
+  "start": 27.86,
+  "end": 28.1
+ },
+ {
+  "word": "back",
+  "start": 28.1,
+  "end": 28.34
+ },
+ {
+  "word": "to",
+  "start": 28.34,
+  "end": 28.43
+ },
+ {
+  "word": "his",
+  "start": 28.43,
+  "end": 28.58
+ },
+ {
+  "word": "years",
+  "start": 28.58,
+  "end": 28.88
+ },
+ {
+  "word": "as",
+  "start": 28.88,
+  "end": 29.0
+ },
+ {
+  "word": "mayor",
+  "start": 29.0,
+  "end": 29.32
+ },
+ {
+  "word": "of",
+  "start": 29.32,
+  "end": 29.41
+ },
+ {
+  "word": "Davao",
+  "start": 29.41,
+  "end": 29.79
+ },
+ {
+  "word": "City",
+  "start": 29.79,
+  "end": 30.21
+ },
+ {
+  "word": "then",
+  "start": 30.21,
+  "end": 30.57
+ },
+ {
+  "word": "to",
+  "start": 30.57,
+  "end": 30.68
+ },
+ {
+  "word": "his",
+  "start": 30.68,
+  "end": 30.82
+ },
+ {
+  "word": "presidency",
+  "start": 30.82,
+  "end": 31.52
+ },
+ {
+  "word": "alleged",
+  "start": 31.69,
+  "end": 32.09
+ },
+ {
+  "word": "murders",
+  "start": 32.09,
+  "end": 32.49
+ },
+ {
+  "word": "of",
+  "start": 32.49,
+  "end": 32.57
+ },
+ {
+  "word": "so-called",
+  "start": 32.57,
+  "end": 33.12
+ },
+ {
+  "word": "high-value",
+  "start": 33.12,
+  "end": 33.78
+ },
+ {
+  "word": "targets",
+  "start": 33.78,
+  "end": 34.31
+ },
+ {
+  "word": "and",
+  "start": 34.31,
+  "end": 34.6
+ },
+ {
+  "word": "killings",
+  "start": 34.6,
+  "end": 35.02
+ },
+ {
+  "word": "in",
+  "start": 35.02,
+  "end": 35.14
+ },
+ {
+  "word": "village",
+  "start": 35.14,
+  "end": 35.48
+ },
+ {
+  "word": "clearance",
+  "start": 35.48,
+  "end": 35.88
+ },
+ {
+  "word": "operations",
+  "start": 35.88,
+  "end": 36.6
+ },
+ {
+  "word": "In",
+  "start": 36.82,
+  "end": 36.94
+ },
+ {
+  "word": "all",
+  "start": 36.94,
+  "end": 37.25
+ },
+ {
+  "word": "the",
+  "start": 37.25,
+  "end": 37.39
+ },
+ {
+  "word": "charges",
+  "start": 37.39,
+  "end": 37.81
+ },
+ {
+  "word": "name",
+  "start": 37.81,
+  "end": 38.02
+ },
+ {
+  "word": "seventy-eight",
+  "start": 38.02,
+  "end": 38.74
+ },
+ {
+  "word": "victims",
+  "start": 38.74,
+  "end": 39.31
+ },
+ {
+  "word": "His",
+  "start": 39.51,
+  "end": 39.66
+ },
+ {
+  "word": "lawyers",
+  "start": 39.66,
+  "end": 40.06
+ },
+ {
+  "word": "fire",
+  "start": 40.06,
+  "end": 40.31
+ },
+ {
+  "word": "back",
+  "start": 40.31,
+  "end": 40.72
+ },
+ {
+  "word": "this",
+  "start": 40.72,
+  "end": 41.01
+ },
+ {
+  "word": "is",
+  "start": 41.01,
+  "end": 41.13
+ },
+ {
+  "word": "not",
+  "start": 41.13,
+  "end": 41.31
+ },
+ {
+  "word": "a",
+  "start": 41.31,
+  "end": 41.34
+ },
+ {
+  "word": "crimes",
+  "start": 41.34,
+  "end": 41.77
+ },
+ {
+  "word": "against",
+  "start": 41.77,
+  "end": 42.1
+ },
+ {
+  "word": "humanity",
+  "start": 42.1,
+  "end": 42.52
+ },
+ {
+  "word": "case",
+  "start": 42.52,
+  "end": 42.96
+ },
+ {
+  "word": "they",
+  "start": 42.96,
+  "end": 43.12
+ },
+ {
+  "word": "say",
+  "start": 43.12,
+  "end": 43.48
+ },
+ {
+  "word": "and",
+  "start": 43.58,
+  "end": 43.71
+ },
+ {
+  "word": "it",
+  "start": 43.71,
+  "end": 43.78
+ },
+ {
+  "word": "does",
+  "start": 43.78,
+  "end": 43.95
+ },
+ {
+  "word": "not",
+  "start": 43.95,
+  "end": 44.17
+ },
+ {
+  "word": "belong",
+  "start": 44.17,
+  "end": 44.59
+ },
+ {
+  "word": "in",
+  "start": 44.59,
+  "end": 44.66
+ },
+ {
+  "word": "The",
+  "start": 44.66,
+  "end": 44.72
+ },
+ {
+  "word": "Hague",
+  "start": 44.72,
+  "end": 45.19
+ },
+ {
+  "word": "Duterte",
+  "start": 45.37,
+  "end": 45.96
+ },
+ {
+  "word": "is",
+  "start": 45.96,
+  "end": 46.07
+ },
+ {
+  "word": "presumed",
+  "start": 46.07,
+  "end": 46.55
+ },
+ {
+  "word": "innocent",
+  "start": 46.55,
+  "end": 47.1
+ },
+ {
+  "word": "On",
+  "start": 47.27,
+  "end": 47.43
+ },
+ {
+  "word": "Monday",
+  "start": 47.43,
+  "end": 47.88
+ },
+ {
+  "word": "the",
+  "start": 47.88,
+  "end": 47.99
+ },
+ {
+  "word": "judges",
+  "start": 47.99,
+  "end": 48.37
+ },
+ {
+  "word": "will",
+  "start": 48.37,
+  "end": 48.53
+ },
+ {
+  "word": "ask",
+  "start": 48.53,
+  "end": 48.8
+ },
+ {
+  "word": "him",
+  "start": 48.8,
+  "end": 48.89
+ },
+ {
+  "word": "to",
+  "start": 48.89,
+  "end": 48.97
+ },
+ {
+  "word": "enter",
+  "start": 48.97,
+  "end": 49.25
+ },
+ {
+  "word": "his",
+  "start": 49.25,
+  "end": 49.4
+ },
+ {
+  "word": "plea",
+  "start": 49.4,
+  "end": 49.82
+ },
+ {
+  "word": "Then",
+  "start": 50.0,
+  "end": 50.17
+ },
+ {
+  "word": "prosecutors",
+  "start": 50.17,
+  "end": 50.88
+ },
+ {
+  "word": "open",
+  "start": 50.88,
+  "end": 51.11
+ },
+ {
+  "word": "their",
+  "start": 51.11,
+  "end": 51.24
+ },
+ {
+  "word": "case",
+  "start": 51.24,
+  "end": 51.71
+ },
+ {
+  "word": "the",
+  "start": 51.71,
+  "end": 51.92
+ },
+ {
+  "word": "first",
+  "start": 51.92,
+  "end": 52.3
+ },
+ {
+  "word": "of",
+  "start": 52.3,
+  "end": 52.38
+ },
+ {
+  "word": "about",
+  "start": 52.38,
+  "end": 52.66
+ },
+ {
+  "word": "one",
+  "start": 52.66,
+  "end": 52.9
+ },
+ {
+  "word": "hundred",
+  "start": 52.9,
+  "end": 53.27
+ },
+ {
+  "word": "witnesses",
+  "start": 53.27,
+  "end": 53.9
+ },
+ {
+  "word": "More",
+  "start": 54.11,
+  "end": 54.25
+ },
+ {
+  "word": "than",
+  "start": 54.25,
+  "end": 54.39
+ },
+ {
+  "word": "five",
+  "start": 54.39,
+  "end": 54.73
+ },
+ {
+  "word": "hundred",
+  "start": 54.73,
+  "end": 55.0
+ },
+ {
+  "word": "victims",
+  "start": 55.0,
+  "end": 55.43
+ },
+ {
+  "word": "are",
+  "start": 55.43,
+  "end": 55.5
+ },
+ {
+  "word": "taking",
+  "start": 55.5,
+  "end": 55.82
+ },
+ {
+  "word": "part",
+  "start": 55.82,
+  "end": 56.34
+ },
+ {
+  "word": "and",
+  "start": 56.34,
+  "end": 56.45
+ },
+ {
+  "word": "the",
+  "start": 56.45,
+  "end": 56.51
+ },
+ {
+  "word": "whole",
+  "start": 56.51,
+  "end": 56.77
+ },
+ {
+  "word": "world",
+  "start": 56.77,
+  "end": 57.13
+ },
+ {
+  "word": "can",
+  "start": 57.13,
+  "end": 57.28
+ },
+ {
+  "word": "watch",
+  "start": 57.28,
+  "end": 57.77
+ },
+ {
+  "word": "streamed",
+  "start": 57.89,
+  "end": 58.35
+ },
+ {
+  "word": "with",
+  "start": 58.35,
+  "end": 58.5
+ },
+ {
+  "word": "a",
+  "start": 58.5,
+  "end": 58.54
+ },
+ {
+  "word": "thirty-minute",
+  "start": 58.54,
+  "end": 59.08
+ },
+ {
+  "word": "delay",
+  "start": 59.08,
+  "end": 59.59
+ },
+ {
+  "word": "If",
+  "start": 59.79,
+  "end": 59.89
+ },
+ {
+  "word": "convicted",
+  "start": 59.89,
+  "end": 60.55
+ },
+ {
+  "word": "he",
+  "start": 60.55,
+  "end": 60.66
+ },
+ {
+  "word": "faces",
+  "start": 60.66,
+  "end": 61.06
+ },
+ {
+  "word": "up",
+  "start": 61.06,
+  "end": 61.15
+ },
+ {
+  "word": "to",
+  "start": 61.15,
+  "end": 61.23
+ },
+ {
+  "word": "thirty",
+  "start": 61.23,
+  "end": 61.57
+ },
+ {
+  "word": "years",
+  "start": 61.57,
+  "end": 62.13
+ },
+ {
+  "word": "in",
+  "start": 62.24,
+  "end": 62.34
+ },
+ {
+  "word": "extreme",
+  "start": 62.34,
+  "end": 62.79
+ },
+ {
+  "word": "cases",
+  "start": 62.79,
+  "end": 63.41
+ },
+ {
+  "word": "life",
+  "start": 63.41,
+  "end": 63.82
+ },
+ {
+  "word": "Justice",
+  "start": 63.96,
+  "end": 64.39
+ },
+ {
+  "word": "at",
+  "start": 64.39,
+  "end": 64.48
+ },
+ {
+  "word": "last",
+  "start": 64.48,
+  "end": 65.07
+ },
+ {
+  "word": "or",
+  "start": 65.07,
+  "end": 65.2
+ },
+ {
+  "word": "politics",
+  "start": 65.2,
+  "end": 65.81
+ },
+ {
+  "word": "in",
+  "start": 65.81,
+  "end": 65.9
+ },
+ {
+  "word": "a",
+  "start": 65.9,
+  "end": 65.93
+ },
+ {
+  "word": "courtroom",
+  "start": 65.93,
+  "end": 66.55
+ },
+ {
+  "word": "Tell",
+  "start": 66.75,
+  "end": 66.91
+ },
+ {
+  "word": "us",
+  "start": 66.91,
+  "end": 67.03
+ },
+ {
+  "word": "in",
+  "start": 67.03,
+  "end": 67.09
+ },
+ {
+  "word": "the",
+  "start": 67.09,
+  "end": 67.15
+ },
+ {
+  "word": "comments",
+  "start": 67.15,
+  "end": 67.73
+ },
+ {
+  "word": "The",
+  "start": 67.73,
+  "end": 68.02
+ },
+ {
+  "word": "Daily",
+  "start": 68.02,
+  "end": 68.38
+ },
+ {
+  "word": "Toon",
+  "start": 68.38,
+  "end": 68.7
+ },
+ {
+  "word": "News",
+  "start": 68.7,
+  "end": 69.18
+ },
+ {
+  "word": "the",
+  "start": 69.28,
+  "end": 69.35
+ },
+ {
+  "word": "world",
+  "start": 69.35,
+  "end": 69.94
+ },
+ {
+  "word": "in",
+  "start": 69.94,
+  "end": 70.09
+ },
+ {
+  "word": "toons",
+  "start": 70.09,
+  "end": 70.65
+ }
+]

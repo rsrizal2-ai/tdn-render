@@ -14,6 +14,7 @@ import { TdnV9 } from "./videos/TdnV9";
 import { TdnV10 } from "./videos/TdnV10";
 import { TdnV11 } from "./videos/TdnV11";
 import { TdnV12 } from "./videos/TdnV12";
+import { TdnV13 } from "./videos/TdnV13";
 import { BedahV2P1, BedahV2P2, BedahV2P3, BedahV2P4 } from "./videos/BedahV2";
 // DURATION: set durationInFrames = ceil(voiceover_seconds * 30). Use --props or edit per video.
 export const Root: React.FC = () => <>
@@ -30,6 +31,7 @@ export const Root: React.FC = () => <>
   <Composition id="TdnV10" component={TdnV10} width={720} height={1280} fps={30} durationInFrames={2070} />
   <Composition id="TdnV11" component={TdnV11} width={720} height={1280} fps={30} durationInFrames={2010} />
   <Composition id="TdnV12" component={TdnV12} width={720} height={1280} fps={30} durationInFrames={1957} />
+  <Composition id="TdnV13" component={TdnV13} width={720} height={1280} fps={30} durationInFrames={2122} />
   <Composition id="BedahV2P1" component={BedahV2P1} width={1280} height={720} fps={30} durationInFrames={4041} />
   <Composition id="BedahV2P2" component={BedahV2P2} width={1280} height={720} fps={30} durationInFrames={4167} />
   <Composition id="BedahV2P3" component={BedahV2P3} width={1280} height={720} fps={30} durationInFrames={3492} />
