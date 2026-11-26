@@ -212,7 +212,7 @@ const S4 = ({ t, f }: Ctx) => {
     <WallDoor z={-11} W={38} kind="plain" a="#27374a" b="#27374a" base="#101a26" />
     <CanvasPlane p={[0, 4.9, -10.2]} s={[13.2, 7.6]} px={[1155, 665]} frame="#5a7ba6" draw={(c, W, H) => {
       c.fillStyle = "#0e1a29"; c.fillRect(0, 0, W, H);
-      c.fillStyle = "#8ae8ff"; c.font = "900 58px Inter, Arial"; c.textAlign = "center"; c.fillText("THE OCTOBER PEAK", W / 2, 76);
+      c.fillStyle = "#8ae8ff"; c.font = "900 58px Inter, Arial"; c.textAlign = "left"; c.fillText("THE OCTOBER PEAK", 56, 76);
       c.beginPath(); c.moveTo(40, H - 60); c.lineTo(W * 0.34, H * 0.52); c.lineTo(W * 0.52, H * 0.20); c.lineTo(W * 0.68, H * 0.55); c.lineTo(W - 40, H - 90); c.closePath();
       c.fillStyle = "#33507a"; c.fill();
       c.strokeStyle = "#f5f7fa"; c.lineWidth = 7; c.beginPath(); c.moveTo(40, H - 60); c.lineTo(W * 0.34, H * 0.52); c.lineTo(W * 0.52, H * 0.20); c.lineTo(W * 0.68, H * 0.55); c.lineTo(W - 40, H - 90); c.stroke();
@@ -268,7 +268,7 @@ const S6 = ({ t, f }: Ctx) => {
   const slideK = clamp(seg(t, 29.11, 31.30, Easing.in(Easing.cubic)));
   const bounceK = clamp(seg(t, 31.90, 33.10, Easing.out(Easing.back(1.4))));
   const coinX = lerp(-4.6, 1.8, slideK);
-  const coinY = lerp(6.3, 2.05, slideK) + bounceK * 1.9;
+  const coinY = lerp(6.3, 2.6, slideK) + bounceK * 1.9;
   const signK = seg(t, 30.45, 30.85, Easing.out(Easing.back(1.7)));
   return (<>
     <Cam t={t} keys={K6} />
@@ -278,13 +278,13 @@ const S6 = ({ t, f }: Ctx) => {
     {/* the slope down to the cliff edge */}
     <Box p={[-3.1, 3.3, -7.8]} s={[8.6, 0.5, 3.2]} color="#46525f" line={2} rot={[0, 0, -0.42]} />
     <Box p={[2.6, 0.75, -7.8]} s={[3.4, 1.5, 3.2]} color="#2c3646" line={2} />
-    <Box p={[5.1, 2.6, -7.8]} s={[0.28, 5.2, 3.2]} color="#f0a832" line={1} />
-    <Sign p={[5.1, 5.6, -7.6]} s={[2.9, 0.85]} text="$60,000" bg="#0a1120" fg="#2fd46a" size={88} frame="#2fd46a" />
+    <Box p={[4.8, 2.6, -7.8]} s={[0.28, 5.2, 3.2]} color="#f0a832" line={1} />
+    <Sign p={[4.8, 5.6, -7.6]} s={[2.9, 0.85]} text="$60,000" bg="#0a1120" fg="#2fd46a" size={88} frame="#2fd46a" />
     {signK > 0.02 ? <group position={[1.9, 3.6, -6.6]} scale={[signK, signK, 1]}><Sign p={[0, 0, 0]} s={[3.3, 0.9]} text="$58,000" bg="#3d1420" fg="#ff8a7a" size={88} frame="#e5233a" /></group> : null}
     <BtcCoin p={[coinX, coinY, -6.9]} s={1.15} rotZ={-slideK * 5.2 + bounceK * 1.2} />
-    {bounceK > 0.03 && bounceK < 0.97 ? <Box p={[1.8, (2.05 + coinY) / 2 + 0.4, -6.9]} s={[0.09, Math.max(0.2, coinY - 2.05), 0.09]} color="#f5f0e2" line={0} /> : null}
-    <Person p={[-4.1, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
-    <Person p={[4.3, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
+    {bounceK > 0.03 && bounceK < 0.97 ? <Box p={[1.8, (2.6 + coinY) / 2 + 0.4, -6.9]} s={[0.09, Math.max(0.2, coinY - 2.6), 0.09]} color="#f5f0e2" line={0} /> : null}
+    <Person p={[-3.7, 0, -2.6]} h={3.8} look={analyst} f={f} pose={{ mood: "worry", arms: "point", armK: seg(t, 29.4, 29.9), armR: [0.85, 0.7], lookX: 0.5 }} />
+    <Person p={[3.9, 0, -2.6]} h={3.7} look={trader2Look} f={f} pose={{ mood: t > 32.4 ? "smile" : "worry", arms: "down", lookX: -0.45 }} />
     <Dust t={t} area={[8, 4, 5]} color="rgba(190,215,255,.85)" />
   </>);
 };
