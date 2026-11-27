@@ -1,0 +1,1117 @@
+[
+ {
+  "word": "A",
+  "start": 0.0,
+  "end": 0.09
+ },
+ {
+  "word": "US",
+  "start": 0.09,
+  "end": 0.41
+ },
+ {
+  "word": "warplane",
+  "start": 0.41,
+  "end": 0.93
+ },
+ {
+  "word": "has",
+  "start": 0.93,
+  "end": 1.14
+ },
+ {
+  "word": "just",
+  "start": 1.14,
+  "end": 1.44
+ },
+ {
+  "word": "shot",
+  "start": 1.44,
+  "end": 1.68
+ },
+ {
+  "word": "a",
+  "start": 1.68,
+  "end": 1.72
+ },
+ {
+  "word": "cargo",
+  "start": 1.72,
+  "end": 2.11
+ },
+ {
+  "word": "ship",
+  "start": 2.11,
+  "end": 2.36
+ },
+ {
+  "word": "to",
+  "start": 2.36,
+  "end": 2.49
+ },
+ {
+  "word": "a",
+  "start": 2.49,
+  "end": 2.52
+ },
+ {
+  "word": "stop",
+  "start": 2.52,
+  "end": 2.93
+ },
+ {
+  "word": "in",
+  "start": 2.93,
+  "end": 2.99
+ },
+ {
+  "word": "the",
+  "start": 2.99,
+  "end": 3.05
+ },
+ {
+  "word": "Gulf",
+  "start": 3.05,
+  "end": 3.33
+ },
+ {
+  "word": "of",
+  "start": 3.33,
+  "end": 3.43
+ },
+ {
+  "word": "Oman",
+  "start": 3.43,
+  "end": 4.03
+ },
+ {
+  "word": "The",
+  "start": 4.03,
+  "end": 4.1
+ },
+ {
+  "word": "ship",
+  "start": 4.1,
+  "end": 4.32
+ },
+ {
+  "word": "was",
+  "start": 4.32,
+  "end": 4.47
+ },
+ {
+  "word": "trying",
+  "start": 4.47,
+  "end": 4.73
+ },
+ {
+  "word": "to",
+  "start": 4.73,
+  "end": 4.81
+ },
+ {
+  "word": "run",
+  "start": 4.81,
+  "end": 5.04
+ },
+ {
+  "word": "America's",
+  "start": 5.04,
+  "end": 5.53
+ },
+ {
+  "word": "naval",
+  "start": 5.53,
+  "end": 5.81
+ },
+ {
+  "word": "blockade",
+  "start": 5.81,
+  "end": 6.28
+ },
+ {
+  "word": "of",
+  "start": 6.28,
+  "end": 6.38
+ },
+ {
+  "word": "Iran",
+  "start": 6.38,
+  "end": 6.85
+ },
+ {
+  "word": "It",
+  "start": 6.96,
+  "end": 7.05
+ },
+ {
+  "word": "never",
+  "start": 7.05,
+  "end": 7.27
+ },
+ {
+  "word": "stood",
+  "start": 7.27,
+  "end": 7.48
+ },
+ {
+  "word": "a",
+  "start": 7.48,
+  "end": 7.51
+ },
+ {
+  "word": "chance",
+  "start": 7.51,
+  "end": 8.07
+ },
+ {
+  "word": "On",
+  "start": 8.26,
+  "end": 8.42
+ },
+ {
+  "word": "Thursday",
+  "start": 8.42,
+  "end": 9.0
+ },
+ {
+  "word": "the",
+  "start": 9.0,
+  "end": 9.12
+ },
+ {
+  "word": "Pacific",
+  "start": 9.12,
+  "end": 9.53
+ },
+ {
+  "word": "Archer",
+  "start": 9.53,
+  "end": 10.02
+ },
+ {
+  "word": "a",
+  "start": 10.02,
+  "end": 10.07
+ },
+ {
+  "word": "merchant",
+  "start": 10.07,
+  "end": 10.51
+ },
+ {
+  "word": "ship",
+  "start": 10.51,
+  "end": 10.76
+ },
+ {
+  "word": "flying",
+  "start": 10.76,
+  "end": 11.1
+ },
+ {
+  "word": "the",
+  "start": 11.1,
+  "end": 11.16
+ },
+ {
+  "word": "flag",
+  "start": 11.16,
+  "end": 11.52
+ },
+ {
+  "word": "of",
+  "start": 11.52,
+  "end": 11.59
+ },
+ {
+  "word": "Palau",
+  "start": 11.59,
+  "end": 12.15
+ },
+ {
+  "word": "sailed",
+  "start": 12.29,
+  "end": 12.63
+ },
+ {
+  "word": "out",
+  "start": 12.63,
+  "end": 12.74
+ },
+ {
+  "word": "of",
+  "start": 12.74,
+  "end": 12.82
+ },
+ {
+  "word": "the",
+  "start": 12.82,
+  "end": 12.9
+ },
+ {
+  "word": "Iranian",
+  "start": 12.9,
+  "end": 13.39
+ },
+ {
+  "word": "port",
+  "start": 13.39,
+  "end": 13.71
+ },
+ {
+  "word": "of",
+  "start": 13.71,
+  "end": 13.85
+ },
+ {
+  "word": "Bandar",
+  "start": 13.85,
+  "end": 14.41
+ },
+ {
+  "word": "Abbas",
+  "start": 14.41,
+  "end": 15.03
+ },
+ {
+  "word": "bound",
+  "start": 15.03,
+  "end": 15.28
+ },
+ {
+  "word": "for",
+  "start": 15.28,
+  "end": 15.4
+ },
+ {
+  "word": "Singapore",
+  "start": 15.4,
+  "end": 16.03
+ },
+ {
+  "word": "American",
+  "start": 16.26,
+  "end": 16.65
+ },
+ {
+  "word": "commanders",
+  "start": 16.65,
+  "end": 17.16
+ },
+ {
+  "word": "say",
+  "start": 17.16,
+  "end": 17.3
+ },
+ {
+  "word": "the",
+  "start": 17.3,
+  "end": 17.37
+ },
+ {
+  "word": "crew",
+  "start": 17.37,
+  "end": 17.64
+ },
+ {
+  "word": "ignored",
+  "start": 17.64,
+  "end": 18.03
+ },
+ {
+  "word": "repeated",
+  "start": 18.03,
+  "end": 18.46
+ },
+ {
+  "word": "warnings",
+  "start": 18.46,
+  "end": 18.94
+ },
+ {
+  "word": "and",
+  "start": 18.94,
+  "end": 19.04
+ },
+ {
+  "word": "kept",
+  "start": 19.04,
+  "end": 19.27
+ },
+ {
+  "word": "going",
+  "start": 19.27,
+  "end": 19.7
+ },
+ {
+  "word": "So",
+  "start": 19.83,
+  "end": 19.98
+ },
+ {
+  "word": "a",
+  "start": 19.98,
+  "end": 20.01
+ },
+ {
+  "word": "US",
+  "start": 20.01,
+  "end": 20.38
+ },
+ {
+  "word": "military",
+  "start": 20.38,
+  "end": 20.91
+ },
+ {
+  "word": "aircraft",
+  "start": 20.91,
+  "end": 21.46
+ },
+ {
+  "word": "fired",
+  "start": 21.46,
+  "end": 21.77
+ },
+ {
+  "word": "precision",
+  "start": 21.77,
+  "end": 22.23
+ },
+ {
+  "word": "munitions",
+  "start": 22.23,
+  "end": 22.73
+ },
+ {
+  "word": "straight",
+  "start": 22.73,
+  "end": 23.17
+ },
+ {
+  "word": "into",
+  "start": 23.17,
+  "end": 23.36
+ },
+ {
+  "word": "the",
+  "start": 23.36,
+  "end": 23.43
+ },
+ {
+  "word": "ship's",
+  "start": 23.43,
+  "end": 23.77
+ },
+ {
+  "word": "stern",
+  "start": 23.77,
+  "end": 24.23
+ },
+ {
+  "word": "The",
+  "start": 24.39,
+  "end": 24.45
+ },
+ {
+  "word": "strike",
+  "start": 24.45,
+  "end": 24.81
+ },
+ {
+  "word": "knocked",
+  "start": 24.81,
+  "end": 25.13
+ },
+ {
+  "word": "out",
+  "start": 25.13,
+  "end": 25.28
+ },
+ {
+  "word": "its",
+  "start": 25.28,
+  "end": 25.4
+ },
+ {
+  "word": "propulsion",
+  "start": 25.4,
+  "end": 26.0
+ },
+ {
+  "word": "and",
+  "start": 26.0,
+  "end": 26.22
+ },
+ {
+  "word": "the",
+  "start": 26.22,
+  "end": 26.28
+ },
+ {
+  "word": "huge",
+  "start": 26.28,
+  "end": 26.65
+ },
+ {
+  "word": "vessel",
+  "start": 26.65,
+  "end": 26.99
+ },
+ {
+  "word": "ground",
+  "start": 26.99,
+  "end": 27.39
+ },
+ {
+  "word": "to",
+  "start": 27.39,
+  "end": 27.5
+ },
+ {
+  "word": "a",
+  "start": 27.5,
+  "end": 27.53
+ },
+ {
+  "word": "halt",
+  "start": 27.53,
+  "end": 27.91
+ },
+ {
+  "word": "in",
+  "start": 27.91,
+  "end": 28.01
+ },
+ {
+  "word": "open",
+  "start": 28.01,
+  "end": 28.27
+ },
+ {
+  "word": "water",
+  "start": 28.27,
+  "end": 28.71
+ },
+ {
+  "word": "Its",
+  "start": 28.92,
+  "end": 29.08
+ },
+ {
+  "word": "civilian",
+  "start": 29.08,
+  "end": 29.49
+ },
+ {
+  "word": "crew",
+  "start": 29.49,
+  "end": 29.76
+ },
+ {
+  "word": "was",
+  "start": 29.76,
+  "end": 29.94
+ },
+ {
+  "word": "unharmed",
+  "start": 29.94,
+  "end": 30.52
+ },
+ {
+  "word": "The",
+  "start": 30.72,
+  "end": 30.8
+ },
+ {
+  "word": "Pacific",
+  "start": 30.8,
+  "end": 31.2
+ },
+ {
+  "word": "Archer",
+  "start": 31.2,
+  "end": 31.57
+ },
+ {
+  "word": "is",
+  "start": 31.57,
+  "end": 31.7
+ },
+ {
+  "word": "at",
+  "start": 31.7,
+  "end": 31.79
+ },
+ {
+  "word": "least",
+  "start": 31.79,
+  "end": 32.06
+ },
+ {
+  "word": "the",
+  "start": 32.06,
+  "end": 32.13
+ },
+ {
+  "word": "fifteenth",
+  "start": 32.13,
+  "end": 32.72
+ },
+ {
+  "word": "ship",
+  "start": 32.72,
+  "end": 33.03
+ },
+ {
+  "word": "disabled",
+  "start": 33.03,
+  "end": 33.55
+ },
+ {
+  "word": "since",
+  "start": 33.55,
+  "end": 33.78
+ },
+ {
+  "word": "the",
+  "start": 33.78,
+  "end": 33.85
+ },
+ {
+  "word": "blockade",
+  "start": 33.85,
+  "end": 34.36
+ },
+ {
+  "word": "began",
+  "start": 34.36,
+  "end": 34.72
+ },
+ {
+  "word": "in",
+  "start": 34.72,
+  "end": 34.79
+ },
+ {
+  "word": "the",
+  "start": 34.79,
+  "end": 34.86
+ },
+ {
+  "word": "spring",
+  "start": 34.86,
+  "end": 35.3
+ },
+ {
+  "word": "and",
+  "start": 35.3,
+  "end": 35.54
+ },
+ {
+  "word": "the",
+  "start": 35.54,
+  "end": 35.6
+ },
+ {
+  "word": "sixth",
+  "start": 35.6,
+  "end": 36.09
+ },
+ {
+  "word": "since",
+  "start": 36.09,
+  "end": 36.34
+ },
+ {
+  "word": "it",
+  "start": 36.34,
+  "end": 36.41
+ },
+ {
+  "word": "resumed",
+  "start": 36.41,
+  "end": 36.83
+ },
+ {
+  "word": "in",
+  "start": 36.83,
+  "end": 36.93
+ },
+ {
+  "word": "July",
+  "start": 36.93,
+  "end": 37.53
+ },
+ {
+  "word": "after",
+  "start": 37.53,
+  "end": 37.8
+ },
+ {
+  "word": "a",
+  "start": 37.8,
+  "end": 37.83
+ },
+ {
+  "word": "pause",
+  "start": 37.83,
+  "end": 38.25
+ },
+ {
+  "word": "for",
+  "start": 38.25,
+  "end": 38.35
+ },
+ {
+  "word": "peace",
+  "start": 38.35,
+  "end": 38.65
+ },
+ {
+  "word": "talks",
+  "start": 38.65,
+  "end": 39.09
+ },
+ {
+  "word": "Earlier",
+  "start": 39.36,
+  "end": 39.64
+ },
+ {
+  "word": "this",
+  "start": 39.64,
+  "end": 39.85
+ },
+ {
+  "word": "month",
+  "start": 39.85,
+  "end": 40.18
+ },
+ {
+  "word": "Washington",
+  "start": 40.18,
+  "end": 40.73
+ },
+ {
+  "word": "also",
+  "start": 40.73,
+  "end": 41.16
+ },
+ {
+  "word": "unveiled",
+  "start": 41.16,
+  "end": 41.6
+ },
+ {
+  "word": "Task",
+  "start": 41.6,
+  "end": 41.99
+ },
+ {
+  "word": "Force",
+  "start": 41.99,
+  "end": 42.35
+ },
+ {
+  "word": "Iron",
+  "start": 42.35,
+  "end": 42.68
+ },
+ {
+  "word": "Gate",
+  "start": 42.68,
+  "end": 43.18
+ },
+ {
+  "word": "a",
+  "start": 43.18,
+  "end": 43.25
+ },
+ {
+  "word": "new",
+  "start": 43.25,
+  "end": 43.48
+ },
+ {
+  "word": "push",
+  "start": 43.48,
+  "end": 43.83
+ },
+ {
+  "word": "to",
+  "start": 43.83,
+  "end": 43.93
+ },
+ {
+  "word": "choke",
+  "start": 43.93,
+  "end": 44.28
+ },
+ {
+  "word": "off",
+  "start": 44.28,
+  "end": 44.49
+ },
+ {
+  "word": "weapons",
+  "start": 44.49,
+  "end": 44.95
+ },
+ {
+  "word": "and",
+  "start": 44.95,
+  "end": 45.05
+ },
+ {
+  "word": "sanctioned",
+  "start": 45.05,
+  "end": 45.55
+ },
+ {
+  "word": "goods",
+  "start": 45.55,
+  "end": 45.89
+ },
+ {
+  "word": "crossing",
+  "start": 45.89,
+  "end": 46.28
+ },
+ {
+  "word": "Iran's",
+  "start": 46.28,
+  "end": 46.72
+ },
+ {
+  "word": "land",
+  "start": 46.72,
+  "end": 47.01
+ },
+ {
+  "word": "borders",
+  "start": 47.01,
+  "end": 47.44
+ },
+ {
+  "word": "and",
+  "start": 47.44,
+  "end": 47.53
+ },
+ {
+  "word": "the",
+  "start": 47.53,
+  "end": 47.59
+ },
+ {
+  "word": "Caspian",
+  "start": 47.59,
+  "end": 48.1
+ },
+ {
+  "word": "Sea",
+  "start": 48.1,
+  "end": 48.53
+ },
+ {
+  "word": "Tehran",
+  "start": 48.68,
+  "end": 49.06
+ },
+ {
+  "word": "is",
+  "start": 49.06,
+  "end": 49.18
+ },
+ {
+  "word": "refusing",
+  "start": 49.18,
+  "end": 49.69
+ },
+ {
+  "word": "to",
+  "start": 49.69,
+  "end": 49.76
+ },
+ {
+  "word": "back",
+  "start": 49.76,
+  "end": 50.03
+ },
+ {
+  "word": "down",
+  "start": 50.03,
+  "end": 50.46
+ },
+ {
+  "word": "An",
+  "start": 50.59,
+  "end": 50.69
+ },
+ {
+  "word": "adviser",
+  "start": 50.69,
+  "end": 51.15
+ },
+ {
+  "word": "to",
+  "start": 51.15,
+  "end": 51.27
+ },
+ {
+  "word": "Iran's",
+  "start": 51.27,
+  "end": 51.67
+ },
+ {
+  "word": "supreme",
+  "start": 51.67,
+  "end": 52.12
+ },
+ {
+  "word": "leader",
+  "start": 52.12,
+  "end": 52.46
+ },
+ {
+  "word": "says",
+  "start": 52.46,
+  "end": 52.78
+ },
+ {
+  "word": "the",
+  "start": 52.78,
+  "end": 52.86
+ },
+ {
+  "word": "Strait",
+  "start": 52.86,
+  "end": 53.19
+ },
+ {
+  "word": "of",
+  "start": 53.19,
+  "end": 53.29
+ },
+ {
+  "word": "Hormuz",
+  "start": 53.29,
+  "end": 53.83
+ },
+ {
+  "word": "will",
+  "start": 53.83,
+  "end": 53.97
+ },
+ {
+  "word": "not",
+  "start": 53.97,
+  "end": 54.21
+ },
+ {
+  "word": "be",
+  "start": 54.21,
+  "end": 54.37
+ },
+ {
+  "word": "reopened",
+  "start": 54.37,
+  "end": 54.95
+ },
+ {
+  "word": "and",
+  "start": 54.95,
+  "end": 55.24
+ },
+ {
+  "word": "Iran",
+  "start": 55.24,
+  "end": 55.56
+ },
+ {
+  "word": "will",
+  "start": 55.56,
+  "end": 55.72
+ },
+ {
+  "word": "not",
+  "start": 55.72,
+  "end": 55.92
+ },
+ {
+  "word": "allow",
+  "start": 55.92,
+  "end": 56.22
+ },
+ {
+  "word": "the",
+  "start": 56.22,
+  "end": 56.29
+ },
+ {
+  "word": "blockade",
+  "start": 56.29,
+  "end": 56.87
+ },
+ {
+  "word": "to",
+  "start": 56.87,
+  "end": 56.95
+ },
+ {
+  "word": "remain",
+  "start": 56.95,
+  "end": 57.26
+ },
+ {
+  "word": "in",
+  "start": 57.26,
+  "end": 57.37
+ },
+ {
+  "word": "place",
+  "start": 57.37,
+  "end": 57.87
+ },
+ {
+  "word": "Two",
+  "start": 58.05,
+  "end": 58.24
+ },
+ {
+  "word": "fleets",
+  "start": 58.24,
+  "end": 58.86
+ },
+ {
+  "word": "One",
+  "start": 58.86,
+  "end": 59.08
+ },
+ {
+  "word": "narrow",
+  "start": 59.08,
+  "end": 59.4
+ },
+ {
+  "word": "sea",
+  "start": 59.4,
+  "end": 59.83
+ },
+ {
+  "word": "And",
+  "start": 59.95,
+  "end": 60.07
+ },
+ {
+  "word": "a",
+  "start": 60.07,
+  "end": 60.11
+ },
+ {
+  "word": "blockade",
+  "start": 60.11,
+  "end": 60.64
+ },
+ {
+  "word": "neither",
+  "start": 60.64,
+  "end": 60.96
+ },
+ {
+  "word": "side",
+  "start": 60.96,
+  "end": 61.3
+ },
+ {
+  "word": "will",
+  "start": 61.3,
+  "end": 61.45
+ },
+ {
+  "word": "abandon",
+  "start": 61.45,
+  "end": 61.98
+ },
+ {
+  "word": "The",
+  "start": 62.12,
+  "end": 62.18
+ },
+ {
+  "word": "next",
+  "start": 62.18,
+  "end": 62.43
+ },
+ {
+  "word": "ship",
+  "start": 62.43,
+  "end": 62.68
+ },
+ {
+  "word": "that",
+  "start": 62.68,
+  "end": 62.79
+ },
+ {
+  "word": "tries",
+  "start": 62.79,
+  "end": 63.1
+ },
+ {
+  "word": "to",
+  "start": 63.1,
+  "end": 63.18
+ },
+ {
+  "word": "run",
+  "start": 63.18,
+  "end": 63.4
+ },
+ {
+  "word": "it",
+  "start": 63.4,
+  "end": 63.51
+ },
+ {
+  "word": "now",
+  "start": 63.51,
+  "end": 63.73
+ },
+ {
+  "word": "knows",
+  "start": 63.73,
+  "end": 64.0
+ },
+ {
+  "word": "exactly",
+  "start": 64.0,
+  "end": 64.56
+ },
+ {
+  "word": "what",
+  "start": 64.56,
+  "end": 64.73
+ },
+ {
+  "word": "is",
+  "start": 64.73,
+  "end": 64.84
+ },
+ {
+  "word": "waiting",
+  "start": 64.84,
+  "end": 65.14
+ },
+ {
+  "word": "for",
+  "start": 65.14,
+  "end": 65.41
+ },
+ {
+  "word": "it",
+  "start": 65.41,
+  "end": 65.55
+ }
+]
