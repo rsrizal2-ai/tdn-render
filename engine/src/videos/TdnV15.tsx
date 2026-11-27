@@ -116,11 +116,11 @@ const IndiaMap: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
     c.fillText("ARABIAN SEA", 60, 700); c.fillText("BAY OF BENGAL", 640, 760);
   }} />
 );
-const MapPin: React.FC<{ p: V3; label: string }> = ({ p, label }) => (
+const MapPin: React.FC<{ p: V3; label: string; dy?: number }> = ({ p, label, dy = 1.3 }) => (
   <group position={p}>
     <Ball p={[0, 0.55, 0]} r={0.34} color="#e5233a" />
     <Cyl p={[0, 0.1, 0]} rt={0.05} rb={0.16} h={0.5} color="#e5233a" line={1} />
-    <Sign p={[0, 1.3, 0]} s={[2.4, 0.58]} text={label} bg="#101828" fg="#ffd36a" size={54} frame="#e5233a" />
+    <Sign p={[0, dy, 0]} s={[2.4, 0.58]} text={label} bg="#101828" fg="#ffd36a" size={54} frame="#e5233a" />
   </group>
 );
 /* flag boards */
@@ -409,9 +409,9 @@ const S6 = ({ t, f }: Ctx) => {
     <Sign p={[0, 11.4, -10.6]} s={[9.8, 0.9]} text="POLICE EVIDENCE ROOM" bg="#0d1524" fg="#dfe8ff" size={58} frame="#38b6d9" />
     {/* long evidence table */}
     <Box p={[0, 0.55, -5.0]} s={[12.5, 1.1, 3.0]} color="#39485c" line={2} />
-    <PhonePile p={[-3.6, 1.1, -5.0]} n={16} />
+    <group position={[-3.6, 1.1, -5.0]} scale={[1.3, 1.3, 1.3]}><PhonePile p={[0, 0, 0]} n={16} /></group>
     {/* desktop towers + monitors */}
-    <group position={[1.5, 1.1, -5.0]}>
+    <group position={[1.5, 1.1, -5.0]} scale={[1.15, 1.15, 1.15]}>
       {[0, 1.55, 3.1].map((x, i) => (
         <group key={i} position={[x, 0, 0]}>
           <Box p={[0, 0.75, 0.3]} s={[0.8, 1.5, 1.1]} color="#1c2735" line={2} />
@@ -419,8 +419,8 @@ const S6 = ({ t, f }: Ctx) => {
         </group>
       ))}
     </group>
-    <Person p={[-4.6, 0, -2.9]} h={3.9} look={policeLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 32.8, 33.3), armR: [0.8, 0.6], lookX: 0.4 }} />
-    <Person p={[4.8, 0, -2.9]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.4 }} />
+    <Person p={[-3.9, 0, -2.9]} h={3.9} look={policeLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 32.8, 33.3), armR: [0.8, 0.6], lookX: 0.4 }} />
+    <Person p={[3.9, 0, -2.9]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.4 }} />
     {pK > 0.02 ? <group position={[-3.3, 8.9, -8.6]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={6.2} lines={[{ t: "355", s: 120, c: "#ffd36a" }, { t: "PHONES", s: 64, c: "#f5f7fa" }]} /></group> : null}
     {cK > 0.02 ? <group position={[3.5, 8.9, -8.6]} scale={[cK, cK, 1]}><Board p={[0, 0, 0]} w={6.2} lines={[{ t: "168", s: 120, c: "#ffd36a" }, { t: "COMPUTERS", s: 64, c: "#f5f7fa" }]} /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
@@ -448,7 +448,7 @@ const S7 = ({ t, f }: Ctx) => {
     {[-4.8, -3.2, -1.6].map((x, i) => (
       <group key={i} position={[x, 1.1, -4.8]}>
         <Box p={[0, 0.06, 0]} s={[1.4, 0.12, 1.0]} color="#9aa2ae" line={1} />
-        <Box p={[0, 0.55, -0.5]} s={[1.4, 1.0, 0.08]} color="#27407c" line={1} rot={[-0.35, 0, 0]} />
+        <Box p={[0, 0.55, -0.5]} s={[1.4, 1.0, 0.08]} color="#3d5a8a" line={1} rot={[-0.22, 0, 0]} />
       </group>
     ))}
     {/* SIM cards fanned on a tray */}
@@ -457,12 +457,12 @@ const S7 = ({ t, f }: Ctx) => {
       {[-0.7, 0, 0.7].map((x, i) => <Box key={i} p={[x, 0.12, 0]} s={[0.55, 0.06, 0.75]} color={i === 1 ? "#ffd36a" : "#f5f7fa"} line={1} rot={[0, (i - 1) * 0.35, 0]} />)}
     </group>
     {/* the passport mountain */}
-    <group position={[4.1, 1.1, -5.0]}>
+    <group position={[3.7, 1.1, -5.0]}>
       <Passport p={[0, 0, 0]} /><Passport p={[0.75, 0, 0.2]} color="#1f3a6e" rot={0.5} /><Passport p={[-0.7, 0, 0.25]} color="#274d27" rot={-0.4} />
       <Passport p={[0.35, 0.17, -0.1]} color="#7a1f2b" rot={0.2} /><Passport p={[-0.3, 0.17, 0.1]} color="#1f3a6e" rot={-0.2} />
       <Passport p={[0.05, 0.34, 0.05]} color="#274d27" rot={0.35} />
     </group>
-    <Person p={[-4.7, 0, -2.9]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 39.8, 40.3), armR: [0.8, 0.6], lookX: 0.4 }} />
+    <Person p={[-3.9, 0, -2.9]} h={3.9} look={officer2Look} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 39.8, 40.3), armR: [0.8, 0.6], lookX: 0.4 }} />
     {lK > 0.02 ? <group position={[-3.4, 8.9, -8.6]} scale={[lK, lK, 1]}><Board p={[0, 0, 0]} w={5.6} lines={[{ t: "26", s: 110, c: "#ffd36a" }, { t: "LAPTOPS", s: 60, c: "#f5f7fa" }]} /></group> : null}
     {sK > 0.02 ? <group position={[0.4, 8.9, -8.6]} scale={[sK, sK, 1]}><Board p={[0, 0, 0]} w={5.6} lines={[{ t: "53", s: 110, c: "#ffd36a" }, { t: "SIM CARDS", s: 60, c: "#f5f7fa" }]} /></group> : null}
     {pK > 0.02 ? <group position={[4.0, 8.9, -8.6]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={5.2} lines={[{ t: "174", s: 110, c: "#ffd36a" }, { t: "PASSPORTS", s: 60, c: "#f5f7fa" }]} /></group> : null}
@@ -515,12 +515,12 @@ const S9 = ({ t, f }: Ctx) => {
   const pinK = (at: number) => seg(t, at, at + 0.4, Easing.out(Easing.back(2.0)));
   const bK = seg(t, 51.0, 51.55, Easing.out(Easing.back(1.7)));
   const sK = seg(t, 52.65, 53.15, Easing.out(Easing.back(1.7)));
-  const pins: { at: number; x: number; y: number; label: string }[] = [
-    { at: 48.6, x: 0.1, y: 1.5, label: "DELHI" },
-    { at: 49.1, x: 2.0, y: 1.25, label: "UTTAR PRADESH" },
-    { at: 49.6, x: -1.0, y: 1.95, label: "HARYANA" },
-    { at: 50.1, x: -1.6, y: 2.75, label: "PUNJAB" },
-    { at: 50.6, x: -2.2, y: 0.9, label: "RAJASTHAN" },
+  const pins: { at: number; x: number; y: number; dy: number; label: string }[] = [
+    { at: 48.6, x: 0.35, y: 1.45, dy: 1.5, label: "DELHI" },
+    { at: 49.1, x: 2.2, y: 1.35, dy: 2.35, label: "UTTAR PRADESH" },
+    { at: 49.6, x: -0.8, y: 2.0, dy: 0.55, label: "HARYANA" },
+    { at: 50.1, x: -1.7, y: 2.9, dy: 2.3, label: "PUNJAB" },
+    { at: 50.6, x: -2.3, y: 0.8, dy: 1.25, label: "RAJASTHAN" },
   ];
   return (<>
     <Cam t={t} keys={K9} />
@@ -530,12 +530,12 @@ const S9 = ({ t, f }: Ctx) => {
     <group position={[0.4, 6.9, -10]}>
       <IndiaMap p={[0, 0, 0]} w={8.2} />
       {pins.map((pn) => { const k = pinK(pn.at); return k > 0.02 ? (
-        <group key={pn.label} position={[pn.x, pn.y, 0.15]} scale={[k, k, 1]}><MapPin p={[0, 0, 0]} label={pn.label} /></group>
+        <group key={pn.label} position={[pn.x, pn.y, 0.15]} scale={[k, k, 1]}><MapPin p={[0, 0, 0]} label={pn.label} dy={pn.dy} /></group>
       ) : null; })}
     </group>
     {/* two wanted boards flank the map */}
     {wK > 0.02 ? <group position={[-4.6, 3.4, -7.6]} scale={[wK, wK, 1]}><WantedBoard p={[0, 0, 0]} w={2.9} caption="ALLEGED KEY MEMBER" /></group> : null}
-    {wK > 0.02 ? <group position={[5.2, 3.4, -7.6]} scale={[wK, wK, 1]}><WantedBoard p={[0, 0, 0]} w={2.9} caption="ALLEGED KEY MEMBER" /></group> : null}
+    {wK > 0.02 ? <group position={[4.9, 3.4, -7.6]} scale={[wK, wK, 1]}><WantedBoard p={[0, 0, 0]} w={2.9} caption="ALLEGED KEY MEMBER" /></group> : null}
     {rK > 0.02 ? <group position={[0, 1.35, -5.6]} scale={[rK, rK, 1]}><Stamp p={[0, 0, 0]} w={6.2} text="ON THE RUN" /></group> : null}
     {bK > 0.02 ? <group position={[0, 11.2, -10.2]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={8.6} lines={[{ t: "10+ POLICE TEAMS", s: 84, c: "#8ae8ff" }]} /></group> : null}
     {sK > 0.02 ? <group position={[0, 9.0, -9.8]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[8.8, 0.9]} text="ACROSS FIVE STATES" bg="#101828" fg="#ffd36a" size={58} frame="#c9a227" /></group> : null}
