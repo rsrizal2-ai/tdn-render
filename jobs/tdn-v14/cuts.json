@@ -1,0 +1,217 @@
+{
+ "original_duration": 74.952,
+ "trimmed_duration": 64.293,
+ "removed_total": 10.659,
+ "cuts": [
+  {
+   "orig_pause_start": 0.0,
+   "orig_pause_len": 0.135,
+   "new_pause_len": 0.05,
+   "removed": 0.085
+  },
+  {
+   "orig_pause_start": 0.96,
+   "orig_pause_len": 0.344,
+   "new_pause_len": 0.173,
+   "removed": 0.171
+  },
+  {
+   "orig_pause_start": 2.905,
+   "orig_pause_len": 0.463,
+   "new_pause_len": 0.209,
+   "removed": 0.254
+  },
+  {
+   "orig_pause_start": 5.274,
+   "orig_pause_len": 0.767,
+   "new_pause_len": 0.3,
+   "removed": 0.467
+  },
+  {
+   "orig_pause_start": 6.446,
+   "orig_pause_len": 0.33,
+   "new_pause_len": 0.169,
+   "removed": 0.161
+  },
+  {
+   "orig_pause_start": 9.704,
+   "orig_pause_len": 0.207,
+   "new_pause_len": 0.132,
+   "removed": 0.075
+  },
+  {
+   "orig_pause_start": 11.213,
+   "orig_pause_len": 0.528,
+   "new_pause_len": 0.228,
+   "removed": 0.3
+  },
+  {
+   "orig_pause_start": 13.907,
+   "orig_pause_len": 0.453,
+   "new_pause_len": 0.206,
+   "removed": 0.247
+  },
+  {
+   "orig_pause_start": 16.87,
+   "orig_pause_len": 0.309,
+   "new_pause_len": 0.163,
+   "removed": 0.146
+  },
+  {
+   "orig_pause_start": 17.74,
+   "orig_pause_len": 0.822,
+   "new_pause_len": 0.317,
+   "removed": 0.505
+  },
+  {
+   "orig_pause_start": 21.477,
+   "orig_pause_len": 0.651,
+   "new_pause_len": 0.265,
+   "removed": 0.386
+  },
+  {
+   "orig_pause_start": 24.832,
+   "orig_pause_len": 0.797,
+   "new_pause_len": 0.309,
+   "removed": 0.488
+  },
+  {
+   "orig_pause_start": 27.75,
+   "orig_pause_len": 0.816,
+   "new_pause_len": 0.315,
+   "removed": 0.502
+  },
+  {
+   "orig_pause_start": 32.627,
+   "orig_pause_len": 0.32,
+   "new_pause_len": 0.166,
+   "removed": 0.154
+  },
+  {
+   "orig_pause_start": 34.026,
+   "orig_pause_len": 0.728,
+   "new_pause_len": 0.289,
+   "removed": 0.44
+  },
+  {
+   "orig_pause_start": 36.238,
+   "orig_pause_len": 0.382,
+   "new_pause_len": 0.185,
+   "removed": 0.197
+  },
+  {
+   "orig_pause_start": 38.479,
+   "orig_pause_len": 0.728,
+   "new_pause_len": 0.288,
+   "removed": 0.439
+  },
+  {
+   "orig_pause_start": 40.819,
+   "orig_pause_len": 0.418,
+   "new_pause_len": 0.195,
+   "removed": 0.223
+  },
+  {
+   "orig_pause_start": 43.728,
+   "orig_pause_len": 0.577,
+   "new_pause_len": 0.243,
+   "removed": 0.334
+  },
+  {
+   "orig_pause_start": 45.19,
+   "orig_pause_len": 0.383,
+   "new_pause_len": 0.185,
+   "removed": 0.198
+  },
+  {
+   "orig_pause_start": 46.873,
+   "orig_pause_len": 0.419,
+   "new_pause_len": 0.196,
+   "removed": 0.224
+  },
+  {
+   "orig_pause_start": 48.355,
+   "orig_pause_len": 0.342,
+   "new_pause_len": 0.173,
+   "removed": 0.17
+  },
+  {
+   "orig_pause_start": 49.746,
+   "orig_pause_len": 0.705,
+   "new_pause_len": 0.282,
+   "removed": 0.424
+  },
+  {
+   "orig_pause_start": 52.756,
+   "orig_pause_len": 0.692,
+   "new_pause_len": 0.278,
+   "removed": 0.414
+  },
+  {
+   "orig_pause_start": 55.337,
+   "orig_pause_len": 0.38,
+   "new_pause_len": 0.184,
+   "removed": 0.196
+  },
+  {
+   "orig_pause_start": 56.511,
+   "orig_pause_len": 0.774,
+   "new_pause_len": 0.302,
+   "removed": 0.472
+  },
+  {
+   "orig_pause_start": 59.583,
+   "orig_pause_len": 0.497,
+   "new_pause_len": 0.219,
+   "removed": 0.278
+  },
+  {
+   "orig_pause_start": 61.706,
+   "orig_pause_len": 0.751,
+   "new_pause_len": 0.295,
+   "removed": 0.456
+  },
+  {
+   "orig_pause_start": 63.207,
+   "orig_pause_len": 0.2,
+   "new_pause_len": 0.13,
+   "removed": 0.07
+  },
+  {
+   "orig_pause_start": 65.418,
+   "orig_pause_len": 0.703,
+   "new_pause_len": 0.281,
+   "removed": 0.422
+  },
+  {
+   "orig_pause_start": 67.434,
+   "orig_pause_len": 0.57,
+   "new_pause_len": 0.241,
+   "removed": 0.329
+  },
+  {
+   "orig_pause_start": 69.522,
+   "orig_pause_len": 0.718,
+   "new_pause_len": 0.286,
+   "removed": 0.433
+  },
+  {
+   "orig_pause_start": 71.13,
+   "orig_pause_len": 0.716,
+   "new_pause_len": 0.285,
+   "removed": 0.431
+  },
+  {
+   "orig_pause_start": 72.942,
+   "orig_pause_len": 0.375,
+   "new_pause_len": 0.182,
+   "removed": 0.193
+  },
+  {
+   "orig_pause_start": 74.524,
+   "orig_pause_len": 0.428,
+   "new_pause_len": 0.05,
+   "removed": 0.378
+  }
+ ]
+}
