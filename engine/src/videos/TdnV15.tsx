@@ -516,9 +516,9 @@ const S9 = ({ t, f }: Ctx) => {
   const bK = seg(t, 51.0, 51.55, Easing.out(Easing.back(1.7)));
   const sK = seg(t, 52.65, 53.15, Easing.out(Easing.back(1.7)));
   const pins: { at: number; x: number; y: number; dy: number; label: string }[] = [
-    { at: 48.6, x: 0.35, y: 1.45, dy: 1.5, label: "DELHI" },
+    { at: 48.6, x: 0.5, y: 1.45, dy: 1.3, label: "DELHI" },
     { at: 49.1, x: 2.2, y: 1.35, dy: 2.35, label: "UTTAR PRADESH" },
-    { at: 49.6, x: -0.8, y: 2.0, dy: 0.55, label: "HARYANA" },
+    { at: 49.6, x: -1.0, y: 2.0, dy: 1.3, label: "HARYANA" },
     { at: 50.1, x: -1.7, y: 2.9, dy: 2.3, label: "PUNJAB" },
     { at: 50.6, x: -2.3, y: 0.8, dy: 1.25, label: "RAJASTHAN" },
   ];
