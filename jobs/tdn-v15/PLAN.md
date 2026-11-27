@@ -26,8 +26,7 @@ Mix: -15.9 LUFS measured (target -15.5), 28 SFX events.
   overlay chip 15.5–18.3s "POLICE SAY: PROMISED WELL-PAID WORK".
 - S5 23.13–31.23 THE SCAM FLOOR — two rows of call desks with monitors and phones, overseer
   at the back; board "FAKE INVESTMENT SCAMS" 23.6s; ID + MY flags rise 26.35s with sign
-  "VICTIMS BACK HOME"; board 28.95s "THOSE WHO REFUSED / WERE ASSAULTED — POLICE SAY";
-  overlay chip 24.9–27.9s "FORCED TO SCAM PEOPLE BACK HOME".
+  "VICTIMS BACK HOME"; board 28.95s "THOSE WHO REFUSED / WERE ASSAULTED — POLICE SAY".
 - S6 31.23–37.25 SEIZED I — evidence room: phone pile (board "355 PHONES" 33.3s) and desktop
   computers (board "168 COMPUTERS" 35.55s) on the evidence table.
 - S7 37.25–42.37 SEIZED II — laptops ("26 LAPTOPS" 37.55s), SIM cards on a tray ("53 SIM
