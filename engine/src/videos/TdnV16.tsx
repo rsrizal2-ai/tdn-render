@@ -68,7 +68,7 @@ const Stamp: React.FC<{ p: V3; w: number; text: string; color?: string }> = ({ p
   </group>
 );
 /* open-sea floor: deep blue tile reads as stylised water */
-const Sea: React.FC<{ a?: string; b?: string }> = ({ a = "#155e8a", b = "#0f4a73" }) => (
+const Sea: React.FC<{ a?: string; b?: string }> = ({ a = "#17608f", b = "#12537e" }) => (
   <Floor kind="tile" a={a} b={b} unit={3} w={90} d={70} />
 );
 /* big container ship, bow pointing +x, rides at y=0 waterline */
@@ -152,14 +152,17 @@ const FlagPalau: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
     c.fillStyle = "#ffde00"; c.beginPath(); c.arc(W * 0.42, H / 2, H * 0.31, 0, Math.PI * 2); c.fill();
   }} />
 );
-/* radio warning rings */
+/* radio warning rings: stroked circles on a transparent canvas (a flat cylinder reads as a disc) */
 const RadioRings: React.FC<{ p: V3; t: number }> = ({ p, t }) => (
-  <group position={p}>
-    {[0, 1, 2].map((i) => {
+  <CanvasPlane p={p} s={[5.4, 5.4]} px={[512, 512]} draw={(c, W, H) => {
+    c.clearRect(0, 0, W, H); c.strokeStyle = "#ffd36a"; c.lineWidth = 13;
+    for (let i = 0; i < 3; i++) {
       const ph = (t * 0.55 + i / 3) % 1;
-      return <Cyl key={i} p={[0, 0, 0]} rt={0.6 + ph * 2.6} rb={0.6 + ph * 2.6} h={0.05} color="#ffd36a" line={0} rot={[Math.PI / 2, 0, 0]} />;
-    })}
-  </group>
+      c.globalAlpha = (1 - ph) * 0.9;
+      c.beginPath(); c.arc(W / 2, H / 2, 30 + ph * (W / 2 - 44), 0, Math.PI * 2); c.stroke();
+    }
+    c.globalAlpha = 1;
+  }} />
 );
 /* stylised strait map: Persian Gulf left, Gulf of Oman right, narrows in the middle */
 const HormuzMap: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
@@ -180,10 +183,10 @@ const HormuzMap: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
     c.fillStyle = "#f5f7fa"; c.font = "900 64px Inter, Arial";
     c.fillText("IRAN", W * 0.5, H * 0.16);
     c.fillText("OMAN", W * 0.5, H * 0.88);
-    c.fillStyle = "#8ae8ff"; c.font = "900 40px Inter, Arial";
-    c.fillText("PERSIAN GULF", W * 0.17, H * 0.52);
-    c.fillText("GULF OF OMAN", W * 0.84, H * 0.5);
-    c.fillStyle = "#ffd36a"; c.font = "900 46px Inter, Arial";
+    c.fillStyle = "#8ae8ff"; c.font = "900 34px Inter, Arial";
+    c.fillText("PERSIAN GULF", W * 0.15, H * 0.64);
+    c.fillText("GULF OF OMAN", W * 0.85, H * 0.38);
+    c.fillStyle = "#ffd36a"; c.font = "900 42px Inter, Arial";
     c.fillText("STRAIT OF HORMUZ", W * 0.52, H * 0.52);
   }} />
 );
@@ -209,8 +212,8 @@ const IranMap: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
 
 /* =================== S1 0 – 8.26  hook: shot to a stop =================== */
 const K1: Key[] = [
-  { t: 0, pos: [0, 4.4, 15.5], look: [0, 3.4, -6], fov: 60 },
-  { t: 8.26, pos: [0, 4.2, 13.2], look: [0, 3.4, -6], fov: 57 },
+  { t: 0, pos: [0, 4.4, 17.6], look: [0, 3.4, -6], fov: 60 },
+  { t: 8.26, pos: [0, 4.2, 15.4], look: [0, 3.4, -6], fov: 57 },
 ];
 const S1 = ({ t, f }: Ctx) => {
   const shipX = lerp(-2.2, 0.8, clamp(seg(t, 0, 8.26)));
@@ -224,18 +227,18 @@ const S1 = ({ t, f }: Ctx) => {
     {/* dawn sky glow on the horizon */}
     <Glow p={[-9, 8.5, -22]} r={4.5} color="#ffb35e" />
     <Glow p={[10, 9.5, -24]} r={3.4} color="#ff9a5e" />
-    <CargoShip p={[shipX, 0, -6]} s={1.06} t={t} />
+    <CargoShip p={[shipX, 0, -6]} s={0.95} t={t} />
     {/* the warplane streaks across on "shot" */}
     {jetK > 0 && jetK < 1 ? <Jet p={[lerp(-16, 17, Easing.in(Easing.cubic)(jetK)), 9.6, -13]} s={0.9} /> : null}
     {bK > 0.02 ? <group position={[0, 10.6, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.6} lines={[{ t: "SHOT TO A STOP", s: 100, c: "#ff6a5e" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0, 7.2, -10.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.4, 0.95]} text="RUNNING THE IRAN BLOCKADE" bg="#101828" fg="#ffd36a" size={52} frame="#c9a227" /></group> : null}
+    {sK > 0.02 ? <group position={[0, 7.2, -10.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.4, 0.95]} text="RUNNING THE IRAN BLOCKADE" bg="#101828" fg="#ffd36a" size={118} frame="#c9a227" /></group> : null}
   </>);
 };
 
 /* =================== S2 8.26 – 16.26  the ship leaves Bandar Abbas =================== */
 const K2: Key[] = [
-  { t: 8.26, pos: [0, 4.4, 15.8], look: [0, 3.6, -6], fov: 60 },
-  { t: 16.26, pos: [0, 4.2, 13.4], look: [0, 3.6, -6], fov: 57 },
+  { t: 8.26, pos: [0, 4.4, 17.8], look: [0, 3.6, -6], fov: 60 },
+  { t: 16.26, pos: [0, 4.2, 15.4], look: [0, 3.6, -6], fov: 57 },
 ];
 const S2 = ({ t, f }: Ctx) => {
   const shipX = lerp(-4.6, 2.8, clamp(seg(t, 8.26, 16.26)));
@@ -260,11 +263,11 @@ const S2 = ({ t, f }: Ctx) => {
         </group>
       ))}
     </group>
-    <Sign p={[0, 12.3, -17]} s={[10.6, 0.95]} text="BANDAR ABBAS — IRAN" bg="#0d1524" fg="#8ae8ff" size={56} frame="#38b6d9" />
-    <CargoShip p={[shipX, 0, -6.5]} s={1.02} t={t} />
+    <Sign p={[0, 12.3, -17]} s={[10.6, 0.95]} text="BANDAR ABBAS — IRAN" bg="#0d1524" fg="#8ae8ff" size={120} frame="#38b6d9" />
+    <CargoShip p={[shipX, 0, -6.5]} s={0.92} t={t} />
     {flagK > 0.02 ? <group position={[4.6, 8.9, -9.6]} scale={[flagK, flagK, 1]}>
       <FlagPalau p={[0, 0, 0]} w={3.6} />
-      <Sign p={[0, -1.7, 0]} s={[4.6, 0.9]} text="FLAG OF PALAU" bg="#101828" fg="#f5f7fa" size={54} frame="#c9a227" />
+      <Sign p={[0, -1.7, 0]} s={[4.6, 0.9]} text="FLAG OF PALAU" bg="#101828" fg="#f5f7fa" size={66} frame="#c9a227" />
     </group> : null}
     {bK > 0.02 ? <group position={[0, 10.9, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.2} lines={[{ t: "BOUND FOR SINGAPORE", s: 82, c: "#8affc1" }]} /></group> : null}
   </>);
@@ -286,16 +289,16 @@ const S3 = ({ t, f }: Ctx) => {
     <Warship p={[-4.4, 0, -7.5]} s={0.92} t={t} />
     <CargoShip p={[5.6, 0, -10.5]} s={0.82} t={t} />
     <RadioRings p={[-1.2, 6.4, -7.5]} t={t} />
-    <Sign p={[-4.4, 11.6, -9.8]} s={[8.8, 0.9]} text="U.S. NAVY — STOP!" bg="#0d1524" fg="#dfe8ff" size={56} frame="#38b6d9" />
-    {sK > 0.02 ? <group position={[2.8, 9.3, -10.2]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[9.8, 0.95]} text="REPEATED WARNINGS" bg="#101828" fg="#ffd36a" size={56} frame="#c9a227" /></group> : null}
+    <Sign p={[-4.4, 11.6, -9.8]} s={[8.8, 0.9]} text="U.S. NAVY — STOP!" bg="#0d1524" fg="#dfe8ff" size={104} frame="#38b6d9" />
+    {sK > 0.02 ? <group position={[2.8, 9.3, -10.2]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[9.8, 0.95]} text="REPEATED WARNINGS" bg="#101828" fg="#ffd36a" size={112} frame="#c9a227" /></group> : null}
     {stK > 0.02 ? <group position={[3.4, 5.9, -6.4]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={5.6} text="IGNORED" /></group> : null}
   </>);
 };
 
 /* =================== S4 19.83 – 30.72  the strike =================== */
 const K4: Key[] = [
-  { t: 19.83, pos: [0, 4.4, 15.8], look: [0, 3.6, -6], fov: 60 },
-  { t: 30.72, pos: [0, 4.2, 13.0], look: [0, 3.4, -6], fov: 57 },
+  { t: 19.83, pos: [0, 4.4, 17.8], look: [0, 3.6, -6], fov: 60 },
+  { t: 30.72, pos: [0, 4.2, 15.2], look: [0, 3.4, -6], fov: 57 },
 ];
 const S4 = ({ t, f }: Ctx) => {
   const jetK = clamp(seg(t, 20.1, 22.3));
@@ -314,15 +317,15 @@ const S4 = ({ t, f }: Ctx) => {
     <Lights warm="#ffd9a8" />
     <Sea />
     <Glow p={[11, 9, -24]} r={3.6} color="#ff9a5e" />
-    <CargoShip p={[shipX, 0, -6.5]} s={1.05} t={t} wake={wake} smoke={smokeK} />
+    <CargoShip p={[shipX, 0, -6.5]} s={0.95} t={t} wake={wake} smoke={smokeK} />
     {jetK > 0 && jetK < 1 ? <Jet p={[lerp(-15, 15, Easing.in(Easing.cubic)(jetK)), 10.4, -14]} s={0.95} /> : null}
     {misK > 0 && misK < 1 ? <group position={[mx, my, -8]} rotation={[0, 0, -0.7]}>
       <Cyl p={[0, 0, 0]} rt={0.16} rb={0.2} h={1.7} color="#e8ecf2" line={1} rot={[0, 0, Math.PI / 2]} />
       <Ball p={[-1.05, 0, 0]} r={0.34} color="#ffb35e" ink={0} />
     </group> : null}
-    {hit && t < 24.3 ? <Ball p={[-5.2, 2.6, -6.5]} r={lerp(0.6, 2.6, clamp(seg(t, 23.75, 24.3)))} color="#ffd9a8" ink={0} /> : null}
+    {hit && t < 24.35 ? <Glow p={[-5.2, 2.9, -6.3]} r={lerp(1.2, 5.2, clamp(seg(t, 23.75, 24.35)))} color="#ffcf8a" /> : null}
     {bK > 0.02 ? <group position={[0, 10.8, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.8} lines={[{ t: "PROPULSION", s: 84, c: "#f5f7fa" }, { t: "KNOCKED OUT", s: 84, c: "#ff6a5e" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0, 7.4, -10.4]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.2, 0.95]} text="CIVILIAN CREW UNHARMED" bg="#0d2417" fg="#8affc1" size={52} frame="#2fd46a" /></group> : null}
+    {sK > 0.02 ? <group position={[0, 7.4, -10.4]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.2, 0.95]} text="CIVILIAN CREW UNHARMED" bg="#0d2417" fg="#8affc1" size={108} frame="#2fd46a" /></group> : null}
   </>);
 };
 
@@ -337,11 +340,11 @@ const S5 = ({ t, f }: Ctx) => {
   const sK = seg(t, 37.85, 38.4, Easing.out(Easing.back(1.7)));
   const miniShip = (i: number) => {
     const col = i % 5, row = Math.floor(i / 5);
-    const x = -6.4 + col * 3.2, z = -5.2 - row * 3.4;
+    const x = -5.6 + col * 2.8, z = -5.2 - row * 3.4;
     const isLast = i === 14;
     const on = seg(t, 31.1 + i * 0.14, 31.5 + i * 0.14, Easing.out(Easing.back(1.7)));
     return on > 0.02 ? (
-      <group key={i} position={[x, 0, z]} scale={[on * 0.34, on * 0.34, on * 0.34]}>
+      <group key={i} position={[x, 0, z]} scale={[on * 0.3, on * 0.3, on * 0.3]}>
         <Box p={[0, 0.85, 0]} s={[9.5, 1.7, 2.4]} color={isLast ? "#8c2f39" : "#3d4756"} line={2} />
         <Box p={[-3.4, 2.6, 0]} s={[1.5, 1.9, 2.0]} color={isLast ? "#e8ecf2" : "#59636f"} line={2} />
         <Box p={[1.2, 2.2, 0]} s={[4.6, 1.0, 2.1]} color={isLast ? "#c2452d" : "#4a5462"} line={2} />
@@ -359,7 +362,7 @@ const S5 = ({ t, f }: Ctx) => {
     {Array.from({ length: 15 }, (_, i) => miniShip(i))}
     {bK > 0.02 ? <group position={[0, 12.1, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.6} lines={[{ t: "15TH SHIP DISABLED", s: 84, c: "#ffd36a" }]} /></group> : null}
     {b2K > 0.02 ? <group position={[0, 9.9, -11]} scale={[b2K, b2K, 1]}><Board p={[0, 0, 0]} w={8.2} bg="#14240f" frame="#2fd46a" lines={[{ t: "6TH SINCE JULY", s: 84, c: "#8affc1" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0, 7.6, -10.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.9]} text="AFTER A PAUSE FOR PEACE TALKS" bg="#101828" fg="#8ae8ff" size={46} frame="#38b6d9" /></group> : null}
+    {sK > 0.02 ? <group position={[0, 7.6, -10.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.9]} text="AFTER A PAUSE FOR PEACE TALKS" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
   </>);
 };
 
@@ -385,8 +388,8 @@ const S6 = ({ t, f }: Ctx) => {
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#4c4436" b="#403a2e" unit={2.4} w={60} d={50} />
     {/* the map backdrop */}
-    <group position={[0, 7.0, -13]}>
-      <IranMap p={[0, 0, 0]} w={13.5} />
+    <group position={[0, 8.3, -13]}>
+      <IranMap p={[0, 0, 0]} w={14.5} />
     </group>
     {/* the iron gate slams shut across the border road */}
     <group position={[0, 0, -5.5]}>
@@ -402,7 +405,7 @@ const S6 = ({ t, f }: Ctx) => {
     {truck(-1.8, -2.2, "#c2452d")}
     {truck(1.9, -1.4, "#31517d")}
     {bK > 0.02 ? <group position={[0, 11.9, -11.5]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={10.2} lines={[{ t: "TASK FORCE IRON GATE", s: 76, c: "#ffd36a" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0, 9.6, -11]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.9]} text="LAND BORDERS + THE CASPIAN SEA" bg="#101828" fg="#8ae8ff" size={44} frame="#38b6d9" /></group> : null}
+    {sK > 0.02 ? <group position={[0, 9.6, -11]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.9]} text="LAND BORDERS + THE CASPIAN SEA" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
   </>);
 };
 
@@ -432,7 +435,7 @@ const S7 = ({ t, f }: Ctx) => {
     </group>
     {/* a small ship waits, stopped, before the barrier */}
     <CargoShip p={[0.5, 0, -9.5]} s={0.55} t={t} wake={0.06} />
-    {aK > 0.02 ? <group position={[0, 12.4, -12]} scale={[aK, aK, 1]}><Sign p={[0, 0, 0]} s={[11.6, 0.9]} text="ADVISER TO IRAN'S SUPREME LEADER" bg="#101828" fg="#ffd36a" size={42} frame="#c9a227" /></group> : null}
+    {aK > 0.02 ? <group position={[0, 12.4, -12]} scale={[aK, aK, 1]}><Sign p={[0, 0, 0]} s={[11.6, 0.9]} text="ADVISER TO IRAN'S SUPREME LEADER" bg="#101828" fg="#ffd36a" size={96} frame="#c9a227" /></group> : null}
     {qK > 0.02 ? <group position={[0, 10.2, -11.5]} scale={[qK, qK, 1]}><Board p={[0, 0, 0]} w={11.2} bg="#2a0f14" frame="#e5233a" lines={[{ t: "“THE STRAIT WILL NOT", s: 66, c: "#f5f7fa" }, { t: "BE REOPENED”", s: 66, c: "#ff9a8a" }]} /></group> : null}
     {q2K > 0.02 ? <group position={[0, 5.6, -10.6]} scale={[q2K, q2K, 1]}><Board p={[0, 0, 0]} w={10.6} lines={[{ t: "THE BLOCKADE WILL", s: 62, c: "#f5f7fa" }, { t: "NOT REMAIN IN PLACE", s: 62, c: "#ff9a8a" }]} /></group> : null}
   </>);
@@ -440,8 +443,8 @@ const S7 = ({ t, f }: Ctx) => {
 
 /* =================== S8 58.05 – 65.55  closer: two fleets, one narrow sea =================== */
 const K8: Key[] = [
-  { t: 58.05, pos: [0, 4.4, 16.2], look: [0, 3.4, -6], fov: 60 },
-  { t: 65.55, pos: [0, 4.2, 13.6], look: [0, 3.4, -6], fov: 57 },
+  { t: 58.05, pos: [0, 4.4, 18.4], look: [0, 3.4, -6], fov: 60 },
+  { t: 65.55, pos: [0, 4.2, 15.8], look: [0, 3.4, -6], fov: 57 },
 ];
 const S8 = ({ t, f }: Ctx) => {
   const bK = seg(t, 60.15, 60.7, Easing.out(Easing.back(1.7)));
@@ -452,13 +455,13 @@ const S8 = ({ t, f }: Ctx) => {
     <Sea a="#14486e" b="#0e3a5c" />
     <Glow p={[0, 9.5, -26]} r={4.2} color="#ff9a5e" />
     {/* the standoff: US warship left, Iranian patrol boat right, a runner approaching */}
-    <Warship p={[-5.2, 0, -8.5]} s={0.88} t={t} />
-    <group position={[5.6, 0, -8.5]} scale={[-0.62, 0.62, 0.62]}>
+    <Warship p={[-4.7, 0, -8.5]} s={0.8} t={t} />
+    <group position={[5.1, 0, -8.5]} scale={[-0.56, 0.56, 0.56]}>
       <Warship p={[0, 0, 0]} s={1} t={t} />
     </group>
     <CargoShip p={[lerp(-1.5, 0.4, clamp(seg(t, 58.05, 65.55))), 0, -14.5]} s={0.66} t={t} wake={0.5} />
     {bK > 0.02 ? <group position={[0, 11.3, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={10.4} lines={[{ t: "NEITHER SIDE", s: 80, c: "#f5f7fa" }, { t: "WILL BACK DOWN", s: 80, c: "#ff6a5e" }]} /></group> : null}
-    {brandK > 0.02 ? <group position={[0, 8.2, -10.6]} scale={[brandK, brandK, 1]}><Sign p={[0, 0, 0]} s={[8.6, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={60} frame="#7a4a8c" /></group> : null}
+    {brandK > 0.02 ? <group position={[0, 8.2, -10.6]} scale={[brandK, brandK, 1]}><Sign p={[0, 0, 0]} s={[8.6, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={100} frame="#7a4a8c" /></group> : null}
   </>);
 };
 
