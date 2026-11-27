@@ -151,8 +151,8 @@ const S1 = ({ t, f }: Ctx) => {
       <Box p={[2.6, 1.55, 0]} s={[5.2, 0.28, 0.12]} color="#e5233a" line={2} />
     </group>
     <Box p={[3.4, 0.8, -1.2]} s={[0.5, 1.6, 0.5]} color="#39485c" line={2} />
-    {bK > 0.02 ? <group position={[0, 9.9, -10.5]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "3 TONNES OF METH", s: 100, c: "#ff6a5e" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0, 6.9, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.95]} text="THROUGH MILITARY AIRBASES" bg="#0d1524" fg="#dfe8ff" size={56} frame="#38b6d9" /></group> : null}
+    {bK > 0.02 ? <group position={[0, 8.7, -10.5]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.0} lines={[{ t: "3 TONNES OF METH", s: 100, c: "#ff6a5e" }]} /></group> : null}
+    {sK > 0.02 ? <group position={[0, 6.2, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.95]} text="THROUGH MILITARY AIRBASES" bg="#0d1524" fg="#dfe8ff" size={56} frame="#38b6d9" /></group> : null}
   </>);
 };
 
@@ -251,13 +251,17 @@ const S4 = ({ t, f }: Ctx) => {
     <Floor kind="tile" a="#2c3038" b="#23262e" unit={2} w={40} d={40} />
     <WallDoor z={-11} W={40} kind="plain" a="#3a4152" b="#3a4152" base="#181c26" />
     <Box p={[0, 0.03, -3]} s={[28, 0.05, 0.5]} color="#ffd36a" line={0} />
+    {/* hangars at the back */}
+    <Box p={[-3.6, 2.2, -10.6]} s={[5.6, 4.4, 0.4]} color="#2c3646" line={2} />
+    <Box p={[4.2, 2.2, -10.6]} s={[5.2, 4.4, 0.4]} color="#2c3646" line={2} />
+    <StreetLamp p={[6.9, 0, -6.2]} h={8.6} flip />
     {/* guard post */}
-    <group position={[-5.6, 0, -6.8]}>
+    <group position={[-4.5, 0, -6.8]}>
       <Box p={[0, 1.9, 0]} s={[2.6, 3.8, 2.2]} color="#48586c" line={2} />
       <Box p={[0, 3.2, 0.35]} s={[1.6, 1.2, 0.12]} color="#8ae8ff" line={1} />
       <Box p={[0, 4.05, 0]} s={[3.1, 0.3, 2.7]} color="#39485c" line={2} />
     </group>
-    <Person p={[-5.6, 0, -4.2]} h={3.8} look={guardLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.5 }} />
+    <Person p={[-4.5, 0, -4.2]} h={3.8} look={guardLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.5 }} />
     {/* the insider walks through as the barrier lifts */}
     <group position={[0, 0, -5.2]} rotation={[0, 0, 0]}>
       <group position={[1.9, 0, 0]} rotation={[0, 0, lerp(0, -1.2, liftK)]}>
@@ -265,8 +269,8 @@ const S4 = ({ t, f }: Ctx) => {
       </group>
       <Box p={[1.9, 0.75, 0]} s={[0.5, 1.5, 0.5]} color="#39485c" line={2} />
     </group>
-    <Person p={[3.2, 0, -4.6]} h={3.9} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 26.9, 27.3), armR: [0.8, 0.6], lookX: -0.4 }} />
-    <Crate p={[5.6, 0, -6.6]} /><Crate p={[5.6, 1.3, -6.6]} />
+    <Person p={[2.7, 0, -4.6]} h={3.9} look={officerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 26.9, 27.3), armR: [0.8, 0.6], lookX: -0.4 }} />
+    <Crate p={[4.7, 0, -6.6]} /><Crate p={[4.7, 1.3, -6.6]} />
     {qK > 0.02 ? <group position={[0, 9.9, -10.2]} scale={[qK, qK, 1]}><Board p={[0, 0, 0]} w={9.4} lines={[{ t: "HOW DOES METH CROSS", s: 76, c: "#f5f7fa" }, { t: "A GUARDED RUNWAY?", s: 76, c: "#ffd36a" }]} /></group> : null}
     {sK > 0.02 ? <group position={[0, 6.6, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.8, 0.95]} text="INSIDERS HAD DIRECT ACCESS" bg="#160d0d" fg="#ff9a8a" size={56} frame="#e5233a" /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
@@ -372,15 +376,16 @@ const S7 = ({ t, f }: Ctx) => {
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#262e3d" b="#1e2531" unit={2} w={38} d={38} />
     <WallDoor z={-11} W={38} kind="plain" a="#303c52" b="#303c52" base="#121826" />
+    <Sign p={[0, 11.4, -10.6]} s={[9.6, 0.9]} text="AIRBASE EVIDENCE STORE" bg="#0d1524" fg="#dfe8ff" size={58} frame="#38b6d9" />
     {/* the big scale with seized crates */}
-    <group position={[-3.6, 0, -6.2]}>
+    <group position={[-3.2, 0, -6.0]} scale={[1.25, 1.25, 1.25]}>
       <Box p={[0, 0.35, 0]} s={[4.6, 0.7, 3.2]} color="#39485c" line={2} />
       <Crate p={[-1.0, 0.7, 0]} /><Crate p={[1.0, 0.7, 0]} /><Crate p={[0, 2.0, 0]} />
       <Cyl p={[0, 3.9, 0]} rt={0.09} rb={0.09} h={1.4} color="#9aa2ae" line={1} />
       <Ball p={[0, 4.75, 0]} r={0.62} color="#ffd36a" ink={0.03} />
     </group>
-    <Person p={[-6.9, 0, -3.4]} h={3.9} look={mpLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.4 }} />
-    {stK > 0.02 ? <group position={[-3.4, 7.6, -6.8]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.2} text="96.64 KG SEIZED" /></group> : null}
+    <Person p={[-5.8, 0, -3.4]} h={3.9} look={mpLook} f={f} pose={{ mood: "deadpan", arms: "down", lookX: 0.4 }} />
+    {stK > 0.02 ? <group position={[-3.2, 8.6, -7.4]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.8} text="96.64 KG SEIZED" /></group> : null}
     {/* wanted board: silhouette only */}
     {wK > 0.02 ? <group position={[3.9, 5.9, -8.6]} scale={[wK, wK, 1]}>
       <Box p={[0, 0, 0]} s={[3.9, 5.2, 0.25]} color="#efe6d0" line={2} />
@@ -434,7 +439,7 @@ const S8 = ({ t, f }: Ctx) => {
         return <Ball key={i} p={[x, 0, z]} r={0.13} color={i % 7 === 0 ? "#ff6a5e" : "#dfe8ff"} ink={0.03} />;
       })}
     </group>
-    {bK > 0.02 ? <group position={[0, 10.1, -10]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.2} lines={[{ t: "TRAFFICKING CHARGES", s: 88, c: "#f5f7fa" }, { t: "SECTION 39B — DRUGS ACT", s: 58, c: "#ffd36a" }]} /></group> : null}
+    {bK > 0.02 ? <group position={[0, 10.1, -10]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.2} lines={[{ t: "TRAFFICKING CHARGES", s: 74, c: "#f5f7fa" }, { t: "SECTION 39B — DRUGS ACT", s: 52, c: "#ffd36a" }]} /></group> : null}
     {stK > 0.02 ? <group position={[0, 6.9, -7.2]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.6} text="DEATH PENALTY" /></group> : null}
     {dK > 0.02 ? <group position={[3.9, 3.4, -6.2]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[5.6, 1.0]} text="15 MILLION DOSES" bg="#160d0d" fg="#ff9a8a" size={58} frame="#e5233a" /></group> : null}
     <Dust t={t} area={[8, 4, 5]} />
@@ -455,8 +460,8 @@ const S9 = ({ t, f }: Ctx) => {
     <Floor kind="carpet" a="#241d33" b="#1c1628" unit={2} w={38} d={38} />
     <WallDoor z={-11} W={38} kind="plain" a="#372c4e" b="#372c4e" base="#150f22" />
     {/* minister at the podium, left */}
-    <Box p={[-4.3, 0, -4.6]} s={[2.3, 1.5, 0.9]} color="#2a1846" line={2} />
-    <Person p={[-4.3, 0, -5.7]} h={4.1} look={ministerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 58.6, 59.1), armR: [0.8, 0.6], lookX: 0.3 }} />
+    <Box p={[-3.7, 0, -4.6]} s={[2.3, 1.5, 0.9]} color="#2a1846" line={2} />
+    <Person p={[-3.7, 0, -5.7]} h={4.1} look={ministerLook} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 58.6, 59.1), armR: [0.8, 0.6], lookX: 0.3 }} />
     {/* TDN desk, right — the hunt goes on */}
     <Desk p={[3.9, 0, -5.6]} w={5.4} top="#4a3423" leg="#131a29" d={2.4} />
     <Person p={[3.9, 0, -3.4]} h={4.0} look={analyst} f={f} pose={{ mood: "deadpan", arms: "point", armK: seg(t, 61.6, 62.1), armR: [0.8, 0.6], lookX: 0 }} />
