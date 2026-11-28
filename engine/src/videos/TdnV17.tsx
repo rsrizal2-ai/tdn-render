@@ -132,9 +132,9 @@ const S1 = ({ t, f }: Ctx) => {
     <CloudCore p={[0, 5.6, -13]} s={1.5} />
     <Box p={[0, 0.5, -13]} s={[4.6, 1.0, 2.6]} color="#232f47" line={2} />
     {/* the intruder, hooded, at a terminal in the right foreground */}
-    <Desk p={[4.9, 0, -2.5]} w={3.0} top="#2a3448" leg="#1a2233" />
-    <Monitor p={[4.9, 1.85, -3.1]} s={1.15} screen="#3a0f14" />
-    <Person p={[4.9, 0, -1.2]} h={3.5} look={intruder} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.85, armR: [0.7, 0.55], armL: [0.45, 0.5], lookX: -0.5, hunch: 0.35 }} />
+    <Desk p={[3.8, 0, -2.5]} w={3.0} top="#2a3448" leg="#1a2233" />
+    <Monitor p={[3.8, 1.85, -3.1]} s={1.15} screen="#3a0f14" />
+    <Person p={[3.8, 0, -1.2]} h={3.5} look={intruder} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.85, armR: [0.7, 0.55], armL: [0.45, 0.5], lookX: -0.5, hunch: 0.35 }} />
     {bK > 0.02 ? <group position={[0, 10.9, -11]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={10.6} lines={[{ t: "THE AIR FORCE'S CLOUD", s: 74, c: "#f5f7fa" }, { t: "WAS HACKED", s: 96, c: "#ff6a5e" }]} /></group> : null}
   </>);
 };
@@ -196,7 +196,7 @@ const S3 = ({ t, f }: Ctx) => {
     {/* the analyst spots it */}
     <Person p={[0, 0, -2.2]} h={3.9} look={analyst} f={f} pose={{ mood: found ? "shock" : "smile", arms: "point", armK: 0.8, armR: [0.7, 0.7], lookX: 0.1, nerv: found ? 0.7 : 0 }} />
     {found ? <Glow p={[0, 8.6, -10]} r={3.6} color="#ff4a3c" o={0.4} /> : null}
-    {stK > 0.02 ? <group position={[3.6, 6.2, -5.6]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.4} text="INTRUDER FOUND" /></group> : null}
+    {stK > 0.02 ? <group position={[2.4, 6.2, -5.6]} scale={[stK, stK, 1]}><Stamp p={[0, 0, 0]} w={6.0} text="INTRUDER FOUND" /></group> : null}
     {sK > 0.02 ? <group position={[0, 12.2, -10.5]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.6, 0.95]} text="DISRUPTION ACROSS THE PLATFORM" bg="#2a0f14" fg="#ff9a8a" size={92} frame="#e5233a" /></group> : null}
   </>);
 };
@@ -247,10 +247,10 @@ const S4 = ({ t, f }: Ctx) => {
     </group>
     <Glow p={[-5.4, 1.7, -4.2]} r={2.2} color="#ff9a3c" o={0.5} />
     {/* the intruder climbs through the layers to the top */}
-    <Person p={[ix, iy, -4.9]} h={3.1} look={intruder} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.7, armR: [0.6, 0.8], lookX: 0.3, hunch: climb > 0 && climb < 1 ? 0.4 : 0.1 }} />
+    <Person p={[ix, iy, -4.15]} h={3.1} look={intruder} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.7, armR: [0.6, 0.8], lookX: 0.3, hunch: climb > 0 && climb < 1 ? 0.4 : 0.1 }} />
     {flawK > 0.02 ? <group position={[-4.9, 5.6, -6.5]} scale={[flawK, flawK, 1]}><Sign p={[0, 0, 0]} s={[7.6, 0.9]} text="ONE SOFTWARE FLAW" bg="#2a0f14" fg="#ffb35e" size={104} frame="#e5233a" /></group> : null}
     {bK > 0.02 ? <group position={[1.8, 12.6, -9]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.8} lines={[{ t: "THE CONTROL PLANE", s: 82, c: "#8ae8ff" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[1.6, 10.2, -8.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.95]} text="ABOVE EVERYTHING IT RUNS" bg="#101828" fg="#ffd36a" size={104} frame="#c9a227" /></group> : null}
+    {sK > 0.02 ? <group position={[0.6, 10.2, -8.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.2, 0.95]} text="ABOVE EVERYTHING IT RUNS" bg="#101828" fg="#ffd36a" size={104} frame="#c9a227" /></group> : null}
   </>);
 };
 
@@ -288,13 +288,13 @@ const S5 = ({ t, f }: Ctx) => {
     <Cam t={t} keys={K5} />
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#1d2c47" b="#182640" unit={2.6} w={60} d={50} />
-    <Rack p={[-8.8, 0, -6]} h={6.8} w={2.0} t={t} seed={2} />
-    <Rack p={[8.8, 0, -6]} h={6.8} w={2.0} t={t} seed={6} />
+    <Rack p={[-6.6, 0, -6]} h={6.8} w={2.0} t={t} seed={2} />
+    <Rack p={[6.6, 0, -6]} h={6.8} w={2.0} t={t} seed={6} />
     {sK > 0.02 ? <group position={[0, 12.3, -10]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.4, 1.0]} text="SINCE 2017 — ONE-STOP SHOP" bg="#0d2f47" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
-    {chip(-7.6, 36.1, "MICROSOFT", "#7fb2ff")}
-    {chip(-2.55, 37.0, "AMAZON", "#ffb35e")}
-    {chip(2.55, 37.7, "ORACLE", "#ff8a8a")}
-    {chip(7.6, 38.45, "GOOGLE", "#8affc1")}
+    {chip(-5.85, 36.1, "MICROSOFT", "#7fb2ff")}
+    {chip(-1.95, 37.0, "AMAZON", "#ffb35e")}
+    {chip(1.95, 37.7, "ORACLE", "#ff8a8a")}
+    {chip(5.85, 38.45, "GOOGLE", "#8affc1")}
     {tile(-3.1, 4.6, 42.0, "PERSONNEL RECORDS", "file", "#38b6d9")}
     {tile(3.1, 4.6, 42.95, "PAY", "coin", "#c9a227")}
     {tile(-3.1, 1.2, 43.55, "LOGISTICS", "truck", "#2fd46a")}
@@ -328,14 +328,14 @@ const S6 = ({ t, f }: Ctx) => {
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#24334f" b="#1d2a42" unit={2.4} w={60} d={50} />
     {/* contractor boards, top left */}
-    {aK > 0.02 ? <group position={[-4.4, 11.9, -10.5]} scale={[aK, aK, 1]}>
+    {aK > 0.02 ? <group position={[-3.8, 11.9, -10.5]} scale={[aK, aK, 1]}>
       <Board p={[0, 0, 0]} w={6.4} lines={[{ t: "SAIC", s: 96, c: "#f5f7fa" }]} />
       {lK > 0.5 ? <group position={[0, 0, 0.2]}>
         <Box p={[0, 0, 0]} s={[5.4, 0.3, 0.1]} color="#e5233a" line={0} rot={[0, 0, 0.5]} />
         <Box p={[0, 0, 0]} s={[5.4, 0.3, 0.1]} color="#e5233a" line={0} rot={[0, 0, -0.5]} />
       </group> : null}
     </group> : null}
-    {lK > 0.02 ? <group position={[-4.4, 9.3, -10.5]} scale={[lK, lK, 1]}><Board p={[0, 0, 0]} w={7.6} bg="#0d2417" frame="#2fd46a" lines={[{ t: "LEIDOS — SINCE 2025", s: 62, c: "#8affc1" }]} /></group> : null}
+    {lK > 0.02 ? <group position={[-3.8, 9.3, -10.5]} scale={[lK, lK, 1]}><Board p={[0, 0, 0]} w={7.6} bg="#0d2417" frame="#2fd46a" lines={[{ t: "LEIDOS — SINCE 2025", s: 62, c: "#8affc1" }]} /></group> : null}
     {/* the conveyor of back-office apps heading for the cloud gate */}
     <Box p={[0, 1.05, -6]} s={[19, 0.5, 2.2]} color="#39424c" line={2} />
     {[0, 1, 2, 3, 4].map(appBox)}
