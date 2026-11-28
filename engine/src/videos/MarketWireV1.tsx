@@ -185,11 +185,11 @@ const S1 = ({ t }: Ctx) => {
     <Lights warm="#bcd2ff" />
     <Floor kind="tile" a="#131c2e" b="#0f1624" unit={2.4} w={60} d={56} />
     <Box p={[0, 6.2, -12.5]} s={[30, 12.4, 0.4]} color="#16233a" line={0} />
-    {hK > 0.02 ? <group position={[0, 12.35, -11]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[11.4, 0.95]} text="FRIDAY'S SCOREBOARD" bg="#101828" fg="#ffd36a" size={96} frame="#c9a227" /></group> : null}
+    {hK > 0.02 ? <group position={[0, 12.0, -10.4]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[11.4, 0.95]} text="FRIDAY'S SCOREBOARD" bg="#101828" fg="#ffd36a" size={96} frame="#c9a227" /></group> : null}
     {aK > 0.02 ? <group position={[-4.75, 9.3, -10.6]} scale={[aK, aK, 1]}><Tile p={[0, 0, 0]} label="STOCKS" value="PARTY" pct="+2.3%" up /></group> : null}
     {bK > 0.02 ? <group position={[0, 9.3, -10.6]} scale={[bK, bK, 1]}><Tile p={[0, 0, 0]} label="GOLD" value="$3,653" pct="+2.45%" up /></group> : null}
     {cK > 0.02 ? <group position={[4.75 + shake, 9.3, -10.6]} scale={[cK, cK, 1]}><Tile p={[0, 0, 0]} label="BITCOIN" value="$59,800" pct="-3%" up={false} /></group> : null}
-    <Glow p={[4.75, 9.3, -9.8]} r={3.2} color="#ff4a3c" o={0.3 * cK} />
+    {cK > 0.02 ? <Glow p={[4.75, 9.3, -9.8]} r={3.2} color="#ff4a3c" o={0.3 * cK} /> : null}
     <Bull p={[0, 0, -3.6]} t={t} pose="point" />
     <Plant p={[-6.4, 0, -4.5]} />
     <Plant p={[6.4, 0, -4.5]} />
@@ -222,7 +222,7 @@ const S2 = ({ t }: Ctx) => {
       const y = 13.5 - ((lt * 1.25 + i * 0.83) % 12.5);
       return <Box key={i} p={[-7.5 + rnd(i * 3.3) * 15, y, -6 - rnd(i * 7.1) * 3]} s={[0.34, 0.22, 0.04]} color={["#2fd46a", "#ffd36a", "#38b6d9", "#ff8ac2"][i % 4]} line={0} rot={[0, 0, lt * 2 + i]} />;
     })}
-    <Bull p={[-5.3, 0, -3.4]} t={t} pose="point" s={0.78} />
+    <Bull p={[-4.55, 0, -3.4]} t={t} pose="point" s={0.78} />
   </>);
 };
 
@@ -252,7 +252,7 @@ const S3 = ({ t }: Ctx) => {
     {tile(-4.75, 6.6, 21.32, "EV", "TESLA", "+5%", false)}
     {tile(0, 6.6, 21.6, "TECH", "AMAZON", "+4%", false)}
     {tile(4.75, 6.6, 21.9, "AI CHIP", "NVIDIA", "+0.8%", true)}
-    <Bull p={[5.6, 0, -3.2]} t={t} pose="thumb" s={0.78} />
+    <Bull p={[4.65, 0, -3.2]} t={t} pose="thumb" s={0.78} />
   </>);
 };
 
@@ -276,8 +276,8 @@ const S4 = ({ t }: Ctx) => {
     <Box p={[0, 6.4, -12.5]} s={[30, 12.8, 0.4]} color="#2a2110" line={0} />
     {/* the 15-month-low floor the metals bounced off */}
     <Box p={[0, 0.65, -8.6]} s={[17, 0.28, 2.2]} color="#4a3a16" line={2} />
-    <group position={[0, 1.7, -8.4]}><Sign p={[0, 0, 0]} s={[9.6, 0.8]} text="15-MONTH LOW $3,426" bg="#101828" fg="#ffd36a" size={92} frame="#c9a227" /></group>
-    <group position={[-1.5, 3.1 + bounce * 0.5, -8.2]}><Arrow3D p={[0, 0, 0]} L={2.6} color="#2fd46a" rot={[0, 0, -0.7]} /></group>
+    <group position={[-3.6, 1.75, -7.6]}><Sign p={[0, 0, 0]} s={[7.6, 0.75]} text="15-MONTH LOW $3,426" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group>
+    <group position={[-0.4, 3.1 + bounce * 0.5, -8.2]}><Arrow3D p={[0, 0, 0]} L={2.6} color="#2fd46a" rot={[0, 0, -0.7]} /></group>
     {/* gold stack + board */}
     {[-5.6, -3.9].map((x, i) => <Bar key={"g" + i} p={[x, 1.05, -6.6]} color="#e8b93c" />)}
     <Bar p={[-4.75, 1.58, -6.6]} color="#ffd94d" />
@@ -289,7 +289,7 @@ const S4 = ({ t }: Ctx) => {
     <Glow p={[4.8, 1.6, -6.2]} r={2.4} color="#dfe8ff" o={0.35} />
     {sK > 0.02 ? <group position={[4.75, 9.9, -10.6]} scale={[sK, sK, 1]}><Tile p={[0, 0, 0]} label="SILVER" value="$43.7" pct="+5.3%" up /></group> : null}
     {fK > 0.02 ? <group position={[0, 13.3, -10.8]} scale={[fK, fK, 1]}><Sign p={[0, 0, 0]} s={[12.4, 0.95]} text="FIRST WEEKLY GAIN IN 3 WEEKS" bg="#0d2f1a" fg="#8affc1" size={80} frame="#2fd46a" /></group> : null}
-    <Bull p={[0, 0, -3.3]} t={t} pose="point" s={0.8} />
+    <Bull p={[2.6, 0, -3.3]} t={t} pose="point" s={0.8} />
   </>);
 };
 
@@ -307,21 +307,21 @@ const S5 = ({ t }: Ctx) => {
   /* coins leak away to the right and drop */
   const leak = (i: number) => {
     const ph = ((t * 0.85 + i * 1.9) % 8.5);
-    return <BtcCoin key={i} p={[-1 + ph * 1.35, 3.4 - Math.max(0, ph - 5.5) * 0.55, -7.6]} s={0.8} />;
+    return <BtcCoin key={i} p={[-1 + ph * 0.9, 3.4 - Math.max(0, ph - 5.5) * 0.55, -7.6]} s={0.8} />;
   };
   return (<>
     <Cam t={t} keys={K5} impacts={[[30.5, 0.1]]} />
     <Lights warm="#dfe8ff" />
     <Floor kind="tile" a="#2a1216" b="#200d10" unit={2.4} w={60} d={52} />
     <Box p={[0, 6.4, -12.5]} s={[30, 12.8, 0.4]} color="#2c1218" line={0} />
-    <group position={[-3.4, 6.1, -12.2]}><CandleBoard p={[0, 0, 0]} w={12.6} up={false} label="CRYPTO — 24 HOURS" /></group>
+    <group position={[-2.0, 6.1, -12.2]}><CandleBoard p={[0, 0, 0]} w={11.6} up={false} label="CRYPTO — 24 HOURS" /></group>
     {bK > 0.02 ? <group position={[-4.9, 10.9, -10.5]} scale={[bK, bK, 1]}><Tile p={[0, 0, 0]} label="BITCOIN" value="$59,800" pct="-3%" up={false} /></group> : null}
     {eK > 0.02 ? <group position={[-0.2, 10.9, -10.5]} scale={[eK, eK, 1]}><Tile p={[0, 0, 0]} label="ETHEREUM" value="$1,656" pct="-5%" up={false} /></group> : null}
     {wK > 0.02 ? <group position={[4.5, 10.9, -10.5]} scale={[wK, wK, 1]}><Tile p={[0, 0, 0]} label="WLFI" value="PLUNGED" pct="-18%" up={false} dim /></group> : null}
     {[0, 1, 2, 3, 4].map(leak)}
     {lK > 0.02 ? <group position={[0.6, 13.35, -10.8]} scale={[lK, lK, 1]}><Sign p={[0, 0, 0]} s={[11.8, 0.95]} text="ETF MONEY LEAKING OUT" bg="#2a0f14" fg="#ff9a8a" size={92} frame="#e5233a" /></group> : null}
     <Glow p={[0, 8, -11]} r={7} color="#ff4a3c" o={0.16} />
-    <Bull p={[5.9, 0, -3.3]} t={t} pose="down" headTilt={headShake} s={0.8} />
+    <Bull p={[4.85, 0, -3.3]} t={t} pose="down" headTilt={headShake} s={0.8} />
   </>);
 };
 
@@ -337,8 +337,8 @@ const Whale: React.FC<{ p: V3; t: number }> = ({ p, t }) => {
     <group position={[p[0], y, p[2]]}>
       <Ball p={[0, 0, 0]} r={1.5} color="#33507a" s={[2.4, 1.05, 1.05]} ink={0.06} />
       <Ball p={[0.1, -0.28, 0.18]} r={1.32} color="#bcd2ff" s={[2.25, 0.85, 0.92]} ink={0.02} />
-      <Box p={[-3.75, 0.42, 0]} s={[1.5, 0.95, 0.24]} color="#33507a" line={2} rot={[0, 0, 0.5]} />
-      <Box p={[-3.75, -0.35, 0]} s={[1.35, 0.85, 0.24]} color="#33507a" line={2} rot={[0, 0, -0.5]} />
+      <Box p={[-4.3, 0.42, 0]} s={[1.5, 0.95, 0.24]} color="#33507a" line={2} rot={[0, 0, 0.5]} />
+      <Box p={[-4.3, -0.35, 0]} s={[1.35, 0.85, 0.24]} color="#33507a" line={2} rot={[0, 0, -0.5]} />
       <Box p={[0.1, -1.05, 0]} s={[1.15, 0.75, 0.2]} color="#33507a" line={2} rot={[0, 0, 0.35]} />
       <Ball p={[2.62, 0.28, 0.98]} r={0.12} color="#0b0d1a" ink={0.01} />
       <Box p={[2.1, -0.6, 1.02]} s={[1.25, 0.09, 0.05]} color="#16233a" line={0} rot={[0, 0, -0.14]} />
@@ -367,7 +367,7 @@ const S6 = ({ t }: Ctx) => {
     {[0, 1, 2, 3, 4].map(feed)}
     {wK > 0.02 ? <group position={[0, 11.9, -10.8]} scale={[wK, wK, 1]}><Board p={[0, 0, 0]} w={12.6} lines={[{ t: "WHALES ADDED 121,117 BTC", s: 74, c: "#ffd36a" }, { t: "THIS QUARTER", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {dK > 0.02 ? <group position={[0, 9.3, -10.6]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[9.8, 0.95]} text="BUYING THE DIP" bg="#0d2f1a" fg="#8affc1" size={100} frame="#2fd46a" /></group> : null}
-    <Bull p={[-5.6, 0, -3.3]} t={t} pose="thumb" s={0.8} />
+    <Bull p={[-4.7, 0, -3.3]} t={t} pose="thumb" s={0.8} />
   </>);
 };
 
@@ -397,9 +397,9 @@ const S7 = ({ t }: Ctx) => {
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#131c2e" b="#0f1624" unit={2.4} w={60} d={52} />
     <Box p={[0, 6.4, -12.5]} s={[30, 12.8, 0.4]} color="#16233a" line={0} />
-    {jK > 0.02 ? <group position={[-3.6, 10.2, -10.6]} scale={[jK, jK, 1]}><CalBoard p={[0, 0, 0]} w={5.6} top="FRIDAY · DEC" day="4" label="JOBS REPORT" col="#38b6d9" /></group> : null}
-    {fK > 0.02 ? <group position={[3.6, 10.2, -10.6]} scale={[fK, fK, 1]}><CalBoard p={[0, 0, 0]} w={5.6} top="DEC" day="8–9" label="THE FED MEETS" col="#e5233a" /></group> : null}
-    {rK > 0.02 ? <group position={[2.9, 6.9, -10.2]} scale={[rK, rK, 1]}><Stamp p={[0, 0, 0]} w={7.6} text="RATE HIKE 98% PRICED IN" /></group> : null}
+    {jK > 0.02 ? <group position={[-3.6, 10.5, -10.6]} scale={[jK, jK, 1]}><CalBoard p={[0, 0, 0]} w={5.6} top="FRIDAY · DEC" day="4" label="JOBS REPORT" col="#38b6d9" /></group> : null}
+    {fK > 0.02 ? <group position={[3.6, 10.5, -10.6]} scale={[fK, fK, 1]}><CalBoard p={[0, 0, 0]} w={5.6} top="DEC" day="8–9" label="THE FED MEETS" col="#e5233a" /></group> : null}
+    {rK > 0.02 ? <group position={[3.1, 6.45, -10.2]} scale={[rK, rK, 1]}><Stamp p={[0, 0, 0]} w={7.6} text="RATE HIKE 98% PRICED IN" /></group> : null}
     {bK > 0.02 ? <group position={[-4.35, 6.6, -10.4]} scale={[bK, bK, 1]}><Sign p={[0, 0, 0]} s={[6.4, 0.9]} text="THE MARKET WIRE" bg="#12081f" fg="#ffd36a" size={92} frame="#c9a227" /></group> : null}
     {nK > 0.02 ? <group position={[0, 3.1, -9.6]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={11.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "NOT FINANCIAL ADVICE", s: 76, c: "#ff9a8a" }]} /></group> : null}
     <Bull p={[0, 0, -3.5]} t={t} pose="shrug" s={0.8} />
@@ -422,7 +422,7 @@ export const MarketWireV1: React.FC = () => {
       <Grade t={t} shaft={false} tint={t < 4.81 ? "rgba(120,190,255,.06)" : t < 14.81 ? "rgba(80,255,150,.05)" : t < 22.60 ? "rgba(120,190,255,.06)" : t < 30.26 ? "rgba(255,190,90,.08)" : t < 39.47 ? "rgba(255,80,60,.07)" : t < 47.10 ? "rgba(90,160,255,.07)" : "rgba(255,200,110,.06)"} />
       {/* S1 chip: data basis */}
       {t > 0.4 && t < 4.6 ? (
-        <div style={{ position: "absolute", left: 0, right: 0, top: 190, textAlign: "center" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center" }}>
           <span style={{ display: "inline-block", background: "rgba(10,16,30,.88)", color: "#ffd36a", fontFamily: "Inter, Arial", fontWeight: 900, fontSize: 46, padding: "16px 30px", borderRadius: 18 }}>
             DATA: FRI CLOSE · CRYPTO 24H
           </span>
