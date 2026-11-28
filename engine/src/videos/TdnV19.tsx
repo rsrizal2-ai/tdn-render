@@ -173,7 +173,7 @@ const S2 = ({ t, f }: Ctx) => {
     <Plant p={[8.8, 0, -4]} />
     {calK > 0.02 ? <group position={[-6.1, 12.3, -10]} scale={[calK, calK, 1]}><Board p={[0, 0, 0]} w={5.9} lines={[{ t: "12 NOV", s: 96, c: "#ffd36a" }, { t: "ANNOUNCED", s: 56, c: "#f5f7fa" }]} /></group> : null}
     {hK > 0.02 ? <group position={[4.4, 12.4, -10]} scale={[hK, hK, 1]}><Board p={[0, 0, 0]} w={8.2} bg="#2a0f14" frame="#e5233a" lines={[{ t: "THE CEO", s: 84, c: "#ff9a8a" }, { t: "RESIGNS", s: 84, c: "#f5f7fa" }]} /></group> : null}
-    {mK > 0.02 ? <group position={[5.4, 5.9, -5.6]} scale={[mK, mK, 1]}><Sign p={[0, 0, 0]} s={[7.6, 0.95]} text="MEGASPEED — SINGAPORE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
+    {mK > 0.02 ? <group position={[2.2, 5.9, -5.6]} scale={[mK, mK, 1]}><Sign p={[0, 0, 0]} s={[7.2, 0.95]} text="MEGASPEED — SINGAPORE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
     {sK > 0.02 ? <group position={[-0.6, 8.6, -9.6]} scale={[sK, sK, 1]}><Board p={[0, 0, 0]} w={9.8} bg="#2a0f14" frame="#e5233a" lines={[{ t: "SUSPECTED OF SPYING", s: 72, c: "#ff9a8a" }, { t: "ALLEGED — NEVER PROVEN", s: 52, c: "#f5f7fa" }]} /></group> : null}
     {eK > 0.02 ? <group position={[0, 12.9, -10.4]} scale={[eK, eK, 1]}><Sign p={[0, 0, 0]} s={[10.6, 0.95]} text="NO EVIDENCE MADE PUBLIC" bg="#0d2f1a" fg="#8affc1" size={96} frame="#2fd46a" /></group> : null}
   </>);
@@ -250,9 +250,9 @@ const S4 = ({ t, f }: Ctx) => {
     <group position={[lerp(9.2, 4.6, Easing.inOut(Easing.cubic)(inK)), 0, -5.6]}>
       <Person p={[0, 0, 0]} h={3.8} look={jensen} f={f} pose={{ mood: "smile", arms: "down", lookX: -0.35, walk: inK > 0 && inK < 1 ? t * 5.6 : 0, speed: 1.4 }} />
     </group>
-    {wK > 0.02 ? <group position={[-6.9, 6.3, -4.6]} scale={[wK, wK, 1]}><Sign p={[0, 0, 0]} s={[5.6, 0.9]} text="WASHINGTON" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
+    {wK > 0.02 ? <group position={[-4.6, 6.3, -4.6]} scale={[wK, wK, 1]}><Sign p={[0, 0, 0]} s={[5.2, 0.9]} text="WASHINGTON" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
     {uK > 0.02 ? <group position={[0, 13, -10.6]} scale={[uK, uK, 1]}><Board p={[0, 0, 0]} w={11.4} lines={[{ t: "THE PRESIDENT URGES:", s: 66, c: "#8ae8ff" }, { t: "BRING HIM BACK", s: 84, c: "#ffd36a" }]} /></group> : null}
-    {pK > 0.02 ? <group position={[6.1, 9.4, -9.8]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={6.2} bg="#0d2f47" frame="#38b6d9" lines={[{ t: "OFFICIALS", s: 62, c: "#8ae8ff" }, { t: "PRESS THE BOARD", s: 50, c: "#f5f7fa" }]} /></group> : null}
+    {pK > 0.02 ? <group position={[5.0, 9.4, -9.8]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={6.2} bg="#0d2f47" frame="#38b6d9" lines={[{ t: "OFFICIALS", s: 62, c: "#8ae8ff" }, { t: "PRESS THE BOARD", s: 50, c: "#f5f7fa" }]} /></group> : null}
     {calK > 0.02 ? <group position={[-7, 12.5, -10.2]} scale={[calK, calK, 1]}><Board p={[0, 0, 0]} w={5.4} lines={[{ t: "23 NOV", s: 92, c: "#ffd36a" }, { t: "THE VOTE", s: 54, c: "#f5f7fa" }]} /></group> : null}
     {rK > 0.02 ? <group position={[0, 9.9, -10.2]} scale={[rK, rK, 1]}><Board p={[0, 0, 0]} w={9.4} bg="#0d2f1a" frame="#2fd46a" lines={[{ t: "REINSTATED", s: 88, c: "#8affc1" }, { t: "UNANIMOUS", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {chK > 0.02 ? <group position={[0, 6.6, -9.9]} scale={[chK, chK, 1]}><Sign p={[0, 0, 0]} s={[10.8, 0.95]} text="CHAIRMAN: STILL JONES" bg="#101828" fg="#ffd36a" size={96} frame="#c9a227" /></group> : null}
@@ -289,20 +289,20 @@ const S5 = ({ t, f }: Ctx) => {
     <Box p={[0, 1.15, -2.8]} s={[17.5, 0.45, 1.9]} color="#39424c" line={2} />
     {[0, 1, 2, 3, 4, 5].map(beltItem)}
     {/* the partner stacks, labelled when their names are spoken */}
-    <Crate p={[-6.6, 0.75, -7.6]} label="DELL" />
-    <Crate p={[-6.6, 2.3, -7.6]} label="DELL" />
-    <Crate p={[6.6, 0.75, -7.6]} label="SUPERMICRO" col="#ffd36a" />
-    <Crate p={[6.6, 2.3, -7.6]} label="SUPERMICRO" col="#ffd36a" />
-    {dK > 0.02 ? <group position={[0, 12.9, -10.4]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[11.8, 0.95]} text="DELL + SUPERMICRO: STOP SHIPPING" bg="#2a0f14" fg="#ff9a8a" size={84} frame="#e5233a" /></group> : null}
+    <Crate p={[-5.9, 0.75, -7.6]} label="DELL" />
+    <Crate p={[-5.9, 2.3, -7.6]} label="DELL" />
+    <Crate p={[5.9, 0.75, -7.6]} label="SUPERMICRO" col="#ffd36a" />
+    <Crate p={[5.9, 2.3, -7.6]} label="SUPERMICRO" col="#ffd36a" />
+    {dK > 0.02 ? <group position={[0, 14.3, -10.4]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[11.8, 0.95]} text="DELL + SUPERMICRO: STOP SHIPPING" bg="#2a0f14" fg="#ff9a8a" size={84} frame="#e5233a" /></group> : null}
     {/* the warning light */}
     <Ball p={[0, 8.6, -9.9]} r={0.42} color={halted ? "#ff4a3c" : "#3a4353"} ink={0.02} />
     <Glow p={[0, 8.6, -9.5]} r={2.6} color="#ff4a3c" o={halted ? 0.5 + 0.25 * Math.sin(t * 6) : 0} />
     {/* the dockworker watches the line die */}
     <Person p={[-4.6, 0, -4.4]} h={3.8} look={dockworker} f={f} pose={{ mood: halted ? "worry" : "deadpan", arms: "down", lookX: 0.45 }} />
-    {country(-6.5, 11.2, 51.3, "MALAYSIA")}
-    {country(-2.2, 11.8, 52.0, "SINGAPORE")}
-    {country(2.2, 11.8, 52.8, "THAILAND")}
-    {country(6.5, 11.2, 53.5, "INDONESIA", true)}
+    {country(-5.6, 10.9, 51.3, "MALAYSIA")}
+    {country(-1.9, 11.3, 52.0, "SINGAPORE")}
+    {country(1.9, 11.3, 52.8, "THAILAND")}
+    {country(5.6, 10.9, 53.5, "INDONESIA", true)}
     {t > 53.95 ? <group position={[0, 7.4, -9.4]} scale={[seg(t, 53.95, 54.02, Easing.out(Easing.back(2.2))), seg(t, 53.95, 54.02, Easing.out(Easing.back(2.2))), 1]}><Stamp p={[0, 0, 0]} w={8.6} text="SHIPMENTS HALTED" /></group> : null}
   </>);
 };
@@ -318,7 +318,7 @@ const S6 = ({ t, f }: Ctx) => {
   const aK = seg(t, 58.1, 58.55, Easing.out(Easing.back(2.2)));
   /* dotted route: beads bend from the crates toward the China board */
   const bead = (i: number) => {
-    const u = i / 9, x = lerp(2.2, 7.6, u), y = 2.6 + Math.sin(u * Math.PI) * 2.2, z = -7.4;
+    const u = i / 9, x = lerp(2.2, 5.6, u), y = 2.6 + Math.sin(u * Math.PI) * 2.2, z = -7.4;
     return <Ball key={i} p={[x, y, z]} r={0.14} color="#ffd36a" ink={0.01} />;
   };
   return (<>
@@ -342,7 +342,7 @@ const S6 = ({ t, f }: Ctx) => {
     <Crate p={[1.4, 0.75, -6.2]} label="AI SERVER" />
     <Crate p={[3.4, 0.75, -6.6]} label="AI SERVER" />
     {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(bead)}
-    <Board p={[8.3, 8.9, -9.8]} w={5.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }]} />
+    <Board p={[5.0, 8.9, -9.8]} w={4.8} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }]} />
     {/* a data-centre tower waiting in the dark, far left */}
     <group position={[-10.6, 0, -13]}>
       <Box p={[0, 5, 0]} s={[5.5, 10, 2.4]} color="#141f33" line={1} />
@@ -351,9 +351,9 @@ const S6 = ({ t, f }: Ctx) => {
         for (let r = 0; r < 12; r++) for (let i = 0; i < 4; i++) { c.fillStyle = rnd(r * 17 + i * 3) > 0.8 ? "#2b4a73" : "#0a1120"; c.fillRect(14 + i * ((W - 28) / 4), 12 + r * ((H - 24) / 12), (W - 28) / 4 - 9, (H - 24) / 12 - 8); }
       }} />
     </group>
-    {dK > 0.02 ? <group position={[-3.4, 12.9, -10.4]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[8.6, 0.95]} text="EFFECTIVE 19 NOV" bg="#101828" fg="#ffd36a" size={100} frame="#c9a227" /></group> : null}
+    {dK > 0.02 ? <group position={[-3.4, 14.9, -10.4]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[8.6, 0.95]} text="EFFECTIVE 19 NOV" bg="#101828" fg="#ffd36a" size={100} frame="#c9a227" /></group> : null}
     {lK > 0.02 ? <group position={[1.8, 13.1, -10.6]} scale={[lK, lK, 1]}><Board p={[0, 0, 0]} w={9.8} lines={[{ t: "EXPORT LICENCES", s: 76, c: "#ffd36a" }, { t: "NOW REQUIRED", s: 66, c: "#f5f7fa" }]} /></group> : null}
-    {aK > 0.02 ? <group position={[5, 5.9, -8.9]} scale={[aK, aK, 1]}><Stamp p={[0, 0, 0]} w={6.6} text="ALLEGED ROUTES" /></group> : null}
+    {aK > 0.02 ? <group position={[3.6, 5.9, -8.9]} scale={[aK, aK, 1]}><Stamp p={[0, 0, 0]} w={6.2} text="ALLEGED ROUTES" /></group> : null}
   </>);
 };
 
@@ -382,7 +382,7 @@ const S7 = ({ t, f }: Ctx) => {
     </group>
     {/* the founder, back on the pavement, looking up at his lit office */}
     <Person p={[3.6, 0, -4.6]} h={3.8} look={jensen} f={f} pose={{ mood: "deadpan", arms: "down", lookX: -0.2 }} />
-    {iK > 0.02 ? <group position={[-4.9, 4.6, -5]} scale={[iK, iK, 1]}><Stamp p={[0, 0, 0]} w={6.4} text="INVESTIGATIONS OPEN" /></group> : null}
+    {iK > 0.02 ? <group position={[-3.4, 4.8, -5]} scale={[iK, iK, 1]}><Stamp p={[0, 0, 0]} w={5.8} text="INVESTIGATIONS OPEN" /></group> : null}
     {sK > 0.02 ? <group position={[0, 11.6, -11]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.4, 0.95]} text="THE SAGA IS NOT OVER" bg="#101828" fg="#ffd36a" size={100} frame="#c9a227" /></group> : null}
     {brandK > 0.02 ? <group position={[0, 9.2, -10.6]} scale={[brandK, brandK, 1]}><Sign p={[0, 0, 0]} s={[8.6, 0.95]} text="THE DAILY TOON NEWS" bg="#12081f" fg="#ffd36a" size={100} frame="#7a4a8c" /></group> : null}
   </>);
