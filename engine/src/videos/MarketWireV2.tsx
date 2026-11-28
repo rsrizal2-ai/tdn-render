@@ -243,7 +243,7 @@ const S1 = ({ t }: Ctx) => {
     <Lights warm="#dfe8ff" />
     <Floor kind="tile" a="#2a1216" b="#200d10" unit={2.4} w={60} d={56} />
     <Box p={[0, 6.2, -12.5]} s={[30, 12.4, 0.4]} color="#2c1218" line={0} />
-    <group position={[0, 5.9, -12.2]}><CandleBoard p={[0, 0, 0]} w={13.2} up={false} label="BITCOIN — NOVEMBER" /></group>
+    <group position={[0, 5.9, -12.2]}><CandleBoard p={[0, 0, 0]} w={13.2} up={false} label="BITCOIN — NOV" /></group>
     {hK > 0.02 ? <group position={[0, 12.35, -10.4]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[12.2, 0.95]} text="WORST NOVEMBER ON RECORD" bg="#2a0f14" fg="#ff9a8a" size={88} frame="#e5233a" /></group> : null}
     {bK > 0.02 ? <group position={[4.2 + shake, 10.2, -10.6]} scale={[bK, bK, 1]}><Tile p={[0, 0, 0]} label="BITCOIN" value="$59,900" pct="-26%" up={false} /></group> : null}
     <Glow p={[0, 7, -11]} r={7} color="#ff4a3c" o={0.15} />
@@ -313,7 +313,7 @@ const S3 = ({ t }: Ctx) => {
     {hK > 0.02 ? <group position={[0, 13.5, -10.9]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[12.6, 0.9]} text="SHORT-TERM HOLDERS -25.8%" bg="#2a0f14" fg="#ff9a8a" size={80} frame="#e5233a" /></group> : null}
     {[0, 1, 2, 3].map(drop)}
     <Glow p={[0, 8, -11]} r={7} color="#ff4a3c" o={0.14} />
-    <Bull p={[4.85, 0, -3.3]} t={t} pose="down" headTilt={headShake} s={0.8} />
+    <Bull p={[4.45, 0, -3.4]} t={t} pose="down" headTilt={headShake} s={0.78} />
   </>);
 };
 
