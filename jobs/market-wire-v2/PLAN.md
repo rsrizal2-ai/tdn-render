@@ -21,7 +21,9 @@ Plessis -> "pless is", Hayes -> "haze", BlackRock's -> "black rocks").
 Mix: -15.5 LUFS integrated, TP -1.7 dBTP, 30 SFX events (mix_sfx.py --lufs -15).
 Cuts: [0, 4.15, 15.21, 25.43, 32.11, 38.57, 46.12, 52.80] — 1584 frames @30fps.
 Beats: S1 hook — night-red studio, crashing candle board BITCOIN — NOVEMBER,
-sign WORST NOVEMBER ON RECORD (0.3), tile BITCOIN $59,900 -26% (2.5), bull point /
+data chip on screen 0.4-2.3 only, sign WORST NOVEMBER ON RECORD (2.4, after the
+chip leaves — reel #1's chip-over-sign clash avoided), tile BITCOIN $59,900
+-26% (2.5), bull point /
 S2 the great exit — vault room with a lit EXIT door, coins stream out through it,
 board US BITCOIN ETFs — NOVEMBER / $5.78 BILLION OUT (5.25), sign A RECORD MONTH
 OF EXITS (7.03), tiles FRIDAY ALONE $389M OUT (9.44) / BLACKROCK IBIT $327M OUT

@@ -122,7 +122,7 @@ const CliffBoard: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
     for (const [x, y] of [pts[0], pts[pts.length - 1]]) { c.fillStyle = "#ffd36a"; c.beginPath(); c.arc(x, y, 13, 0, 7); c.fill(); }
     c.fillStyle = "#f5f7fa"; c.textAlign = "left"; c.textBaseline = "middle";
     c.font = "900 44px Inter, Arial"; c.fillText("OCT 28 · $81,255", 40, 58);
-    c.fillStyle = "#ff9a8a"; c.textAlign = "right"; c.fillText("NOW · $59,857", W - 36, H - 52);
+    c.fillStyle = "#ff9a8a"; c.textAlign = "right"; c.fillText("NOW · $59,857", W - 36, 372);
     c.fillStyle = "#ff5a4c"; c.textAlign = "left"; c.font = "900 40px Inter, Arial"; c.fillText("BITCOIN — LAST 30 DAYS", 40, H - 52);
   }} />
 );
@@ -157,8 +157,9 @@ const ZoneChart: React.FC<{ p: V3; w: number }> = ({ p, w }) => (
     const ny = H * 0.47;
     c.strokeStyle = "#ffd36a"; c.lineWidth = 5; c.setLineDash([16, 12]);
     c.beginPath(); c.moveTo(30, ny); c.lineTo(W - 30, ny); c.stroke(); c.setLineDash([]);
+    c.fillStyle = "rgba(6,10,20,0.88)"; c.fillRect(34, ny - 76, 356, 56);
     c.fillStyle = "#ffd36a"; c.textAlign = "left"; c.font = "900 44px Inter, Arial";
-    c.fillText("NOW ≈ $59.9K", 48, ny - 40);
+    c.fillText("NOW ≈ $59.9K", 48, ny - 48);
   }} />
 );
 /* a gold Bitcoin coin */
@@ -231,10 +232,10 @@ const Bull: React.FC<{ p: V3; t: number; pose?: BullPose; flip?: boolean; headTi
 /* =================== S1 0 – 4.15  hook: the worst November on record =================== */
 const K1: Key[] = [
   { t: 0, pos: [0, 4.4, 17.6], look: [0, 4.2, -6], fov: 60 },
-  { t: 4.15, pos: [0, 4.2, 15.8], look: [0, 4.2, -6], fov: 58 },
+  { t: 4.15, pos: [0, 4.2, 16.2], look: [0, 4.2, -6], fov: 58 },
 ];
 const S1 = ({ t }: Ctx) => {
-  const hK = seg(t, 0.3, 0.8, Easing.out(Easing.back(1.7)));
+  const hK = seg(t, 2.4, 2.9, Easing.out(Easing.back(1.7)));
   const bK = seg(t, 2.5, 3.0, Easing.out(Easing.back(1.7)));
   const shake = t > 3.0 && t < 3.8 ? Math.sin(t * 55) * 0.06 : 0;
   return (<>
@@ -243,8 +244,8 @@ const S1 = ({ t }: Ctx) => {
     <Floor kind="tile" a="#2a1216" b="#200d10" unit={2.4} w={60} d={56} />
     <Box p={[0, 6.2, -12.5]} s={[30, 12.4, 0.4]} color="#2c1218" line={0} />
     <group position={[0, 5.9, -12.2]}><CandleBoard p={[0, 0, 0]} w={13.2} up={false} label="BITCOIN — NOVEMBER" /></group>
-    {hK > 0.02 ? <group position={[0, 12.1, -10.4]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[12.2, 0.95]} text="WORST NOVEMBER ON RECORD" bg="#2a0f14" fg="#ff9a8a" size={88} frame="#e5233a" /></group> : null}
-    {bK > 0.02 ? <group position={[4.75 + shake, 10.35, -10.6]} scale={[bK, bK, 1]}><Tile p={[0, 0, 0]} label="BITCOIN" value="$59,900" pct="-26%" up={false} /></group> : null}
+    {hK > 0.02 ? <group position={[0, 12.35, -10.4]} scale={[hK, hK, 1]}><Sign p={[0, 0, 0]} s={[12.2, 0.95]} text="WORST NOVEMBER ON RECORD" bg="#2a0f14" fg="#ff9a8a" size={88} frame="#e5233a" /></group> : null}
+    {bK > 0.02 ? <group position={[4.2 + shake, 10.2, -10.6]} scale={[bK, bK, 1]}><Tile p={[0, 0, 0]} label="BITCOIN" value="$59,900" pct="-26%" up={false} /></group> : null}
     <Glow p={[0, 7, -11]} r={7} color="#ff4a3c" o={0.15} />
     <Bull p={[-4.55, 0, -3.6]} t={t} pose="point" />
     <Plant p={[6.4, 0, -4.5]} />
@@ -282,7 +283,7 @@ const S2 = ({ t }: Ctx) => {
     {rK > 0.02 ? <group position={[0, 13.5, -10.9]} scale={[rK, rK, 1]}><Sign p={[0, 0, 0]} s={[12.0, 0.9]} text="A RECORD MONTH OF EXITS" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
     {fK > 0.02 ? <group position={[-4.75, 6.35, -10.6]} scale={[fK, fK, 1]}><Tile p={[0, 0, 0]} label="FRIDAY ALONE" value="$389M" pct="OUT" up={false} /></group> : null}
     {iK > 0.02 ? <group position={[-0.35, 6.35, -10.6]} scale={[iK, iK, 1]}><Tile p={[0, 0, 0]} label="BLACKROCK IBIT" value="$327M" pct="OUT" up={false} dim /></group> : null}
-    <Bull p={[-4.7, 0, -3.3]} t={t} pose="point" s={0.8} />
+    <Bull p={[-4.35, 0, -3.5]} t={t} pose="point" s={0.78} />
   </>);
 };
 
@@ -299,7 +300,7 @@ const S3 = ({ t }: Ctx) => {
   /* coins tumble off the cliff edge */
   const drop = (i: number) => {
     const ph = ((t * 0.9 + i * 2.3) % 8.2);
-    return <BtcCoin key={i} p={[-5.5 + ph * 0.75, 4.6 - Math.max(0, ph - 4.6) * 0.85, -7.8]} s={0.75} />;
+    return <BtcCoin key={i} p={[-5.8 + ph * 0.78, 5.2 - Math.max(0, ph - 5.0) * 1.05, -7.8]} s={0.75} />;
   };
   return (<>
     <Cam t={t} keys={K3} impacts={[[15.5, 0.1]]} />
@@ -438,7 +439,7 @@ export const MarketWireV2: React.FC = () => {
       <Scene start={CUTS[6]} end={CUTS[7]} bg="#0a1120" trans="whip">{(c) => <S7 {...c} />}</Scene>
       <Grade t={t} shaft={false} tint={t < 4.15 ? "rgba(255,80,60,.07)" : t < 15.21 ? "rgba(120,190,255,.06)" : t < 25.43 ? "rgba(255,80,60,.07)" : t < 32.11 ? "rgba(80,255,150,.05)" : t < 38.57 ? "rgba(150,90,255,.06)" : t < 46.12 ? "rgba(120,190,255,.06)" : "rgba(255,200,110,.06)"} />
       {/* S1 chip: data basis */}
-      {t > 0.4 && t < 3.95 ? (
+      {t > 0.4 && t < 2.3 ? (
         <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center" }}>
           <span style={{ display: "inline-block", background: "rgba(10,16,30,.88)", color: "#ffd36a", fontFamily: "Inter, Arial", fontWeight: 900, fontSize: 46, padding: "16px 30px", borderRadius: 18 }}>
             DATA: NOVEMBER 2026 · FARSIDE
