@@ -1,0 +1,827 @@
+[
+ {
+  "word": "Wall",
+  "start": 0.0,
+  "end": 0.23
+ },
+ {
+  "word": "Street",
+  "start": 0.23,
+  "end": 0.51
+ },
+ {
+  "word": "threw",
+  "start": 0.51,
+  "end": 0.69
+ },
+ {
+  "word": "a",
+  "start": 0.69,
+  "end": 0.72
+ },
+ {
+  "word": "party",
+  "start": 0.72,
+  "end": 1.08
+ },
+ {
+  "word": "on",
+  "start": 1.08,
+  "end": 1.2
+ },
+ {
+  "word": "Friday",
+  "start": 1.2,
+  "end": 1.74
+ },
+ {
+  "word": "Gold",
+  "start": 1.9,
+  "end": 2.22
+ },
+ {
+  "word": "came",
+  "start": 2.22,
+  "end": 2.49
+ },
+ {
+  "word": "too",
+  "start": 2.49,
+  "end": 2.99
+ },
+ {
+  "word": "Bitcoin",
+  "start": 2.99,
+  "end": 3.49
+ },
+ {
+  "word": "got",
+  "start": 3.49,
+  "end": 3.65
+ },
+ {
+  "word": "left",
+  "start": 3.65,
+  "end": 3.93
+ },
+ {
+  "word": "out",
+  "start": 3.93,
+  "end": 4.05
+ },
+ {
+  "word": "in",
+  "start": 4.05,
+  "end": 4.11
+ },
+ {
+  "word": "the",
+  "start": 4.11,
+  "end": 4.17
+ },
+ {
+  "word": "cold",
+  "start": 4.17,
+  "end": 4.63
+ },
+ {
+  "word": "The",
+  "start": 4.81,
+  "end": 4.89
+ },
+ {
+  "word": "Dow",
+  "start": 4.89,
+  "end": 5.17
+ },
+ {
+  "word": "jumped",
+  "start": 5.17,
+  "end": 5.47
+ },
+ {
+  "word": "five",
+  "start": 5.47,
+  "end": 5.84
+ },
+ {
+  "word": "hundred",
+  "start": 5.84,
+  "end": 6.12
+ },
+ {
+  "word": "ninety-two",
+  "start": 6.12,
+  "end": 6.61
+ },
+ {
+  "word": "points",
+  "start": 6.61,
+  "end": 7.09
+ },
+ {
+  "word": "The",
+  "start": 7.09,
+  "end": 7.33
+ },
+ {
+  "word": "S",
+  "start": 7.33,
+  "end": 7.51
+ },
+ {
+  "word": "and",
+  "start": 7.51,
+  "end": 7.62
+ },
+ {
+  "word": "P",
+  "start": 7.62,
+  "end": 7.8
+ },
+ {
+  "word": "five",
+  "start": 7.8,
+  "end": 8.1
+ },
+ {
+  "word": "hundred",
+  "start": 8.1,
+  "end": 8.5
+ },
+ {
+  "word": "climbed",
+  "start": 8.5,
+  "end": 8.84
+ },
+ {
+  "word": "one",
+  "start": 8.84,
+  "end": 9.13
+ },
+ {
+  "word": "point",
+  "start": 9.13,
+  "end": 9.42
+ },
+ {
+  "word": "six",
+  "start": 9.42,
+  "end": 9.69
+ },
+ {
+  "word": "percent",
+  "start": 9.69,
+  "end": 10.33
+ },
+ {
+  "word": "and",
+  "start": 10.33,
+  "end": 10.46
+ },
+ {
+  "word": "the",
+  "start": 10.46,
+  "end": 10.52
+ },
+ {
+  "word": "Nasdaq",
+  "start": 10.52,
+  "end": 11.13
+ },
+ {
+  "word": "leapt",
+  "start": 11.13,
+  "end": 11.46
+ },
+ {
+  "word": "two",
+  "start": 11.46,
+  "end": 11.7
+ },
+ {
+  "word": "point",
+  "start": 11.7,
+  "end": 11.98
+ },
+ {
+  "word": "three",
+  "start": 11.98,
+  "end": 12.41
+ },
+ {
+  "word": "Best",
+  "start": 12.57,
+  "end": 12.84
+ },
+ {
+  "word": "week",
+  "start": 12.84,
+  "end": 13.07
+ },
+ {
+  "word": "since",
+  "start": 13.07,
+  "end": 13.34
+ },
+ {
+  "word": "April",
+  "start": 13.34,
+  "end": 13.68
+ },
+ {
+  "word": "twenty",
+  "start": 13.68,
+  "end": 13.96
+ },
+ {
+  "word": "twenty-five",
+  "start": 13.96,
+  "end": 14.62
+ },
+ {
+  "word": "A",
+  "start": 14.81,
+  "end": 14.88
+ },
+ {
+  "word": "chip",
+  "start": 14.88,
+  "end": 15.11
+ },
+ {
+  "word": "stock",
+  "start": 15.11,
+  "end": 15.45
+ },
+ {
+  "word": "rebound",
+  "start": 15.45,
+  "end": 15.91
+ },
+ {
+  "word": "did",
+  "start": 15.91,
+  "end": 16.05
+ },
+ {
+  "word": "the",
+  "start": 16.05,
+  "end": 16.11
+ },
+ {
+  "word": "heavy",
+  "start": 16.11,
+  "end": 16.34
+ },
+ {
+  "word": "lifting",
+  "start": 16.34,
+  "end": 16.79
+ },
+ {
+  "word": "SanDisk",
+  "start": 16.91,
+  "end": 17.49
+ },
+ {
+  "word": "up",
+  "start": 17.49,
+  "end": 17.68
+ },
+ {
+  "word": "sixteen",
+  "start": 17.68,
+  "end": 18.17
+ },
+ {
+  "word": "percent",
+  "start": 18.17,
+  "end": 18.77
+ },
+ {
+  "word": "Micron",
+  "start": 18.77,
+  "end": 19.29
+ },
+ {
+  "word": "up",
+  "start": 19.29,
+  "end": 19.55
+ },
+ {
+  "word": "eight",
+  "start": 19.55,
+  "end": 19.96
+ },
+ {
+  "word": "Marvell",
+  "start": 19.96,
+  "end": 20.54
+ },
+ {
+  "word": "up",
+  "start": 20.54,
+  "end": 20.66
+ },
+ {
+  "word": "seven",
+  "start": 20.66,
+  "end": 21.14
+ },
+ {
+  "word": "Tesla",
+  "start": 21.27,
+  "end": 21.77
+ },
+ {
+  "word": "up",
+  "start": 21.77,
+  "end": 21.9
+ },
+ {
+  "word": "five",
+  "start": 21.9,
+  "end": 22.39
+ },
+ {
+  "word": "Gold",
+  "start": 22.6,
+  "end": 22.87
+ },
+ {
+  "word": "reclaimed",
+  "start": 22.87,
+  "end": 23.34
+ },
+ {
+  "word": "three",
+  "start": 23.34,
+  "end": 23.66
+ },
+ {
+  "word": "thousand",
+  "start": 23.66,
+  "end": 24.12
+ },
+ {
+  "word": "six",
+  "start": 24.12,
+  "end": 24.42
+ },
+ {
+  "word": "hundred",
+  "start": 24.42,
+  "end": 24.66
+ },
+ {
+  "word": "fifty-three",
+  "start": 24.66,
+  "end": 25.21
+ },
+ {
+  "word": "dollars",
+  "start": 25.21,
+  "end": 25.58
+ },
+ {
+  "word": "an",
+  "start": 25.58,
+  "end": 25.65
+ },
+ {
+  "word": "ounce",
+  "start": 25.65,
+  "end": 26.04
+ },
+ {
+  "word": "its",
+  "start": 26.17,
+  "end": 26.34
+ },
+ {
+  "word": "first",
+  "start": 26.34,
+  "end": 26.69
+ },
+ {
+  "word": "weekly",
+  "start": 26.69,
+  "end": 27.02
+ },
+ {
+  "word": "gain",
+  "start": 27.02,
+  "end": 27.36
+ },
+ {
+  "word": "in",
+  "start": 27.36,
+  "end": 27.47
+ },
+ {
+  "word": "three",
+  "start": 27.47,
+  "end": 27.76
+ },
+ {
+  "word": "weeks",
+  "start": 27.76,
+  "end": 28.21
+ },
+ {
+  "word": "and",
+  "start": 28.21,
+  "end": 28.49
+ },
+ {
+  "word": "silver",
+  "start": 28.49,
+  "end": 28.9
+ },
+ {
+  "word": "surged",
+  "start": 28.9,
+  "end": 29.29
+ },
+ {
+  "word": "five",
+  "start": 29.29,
+  "end": 29.63
+ },
+ {
+  "word": "percent",
+  "start": 29.63,
+  "end": 30.26
+ },
+ {
+  "word": "But",
+  "start": 30.26,
+  "end": 30.49
+ },
+ {
+  "word": "crypto",
+  "start": 30.49,
+  "end": 30.91
+ },
+ {
+  "word": "bled",
+  "start": 30.91,
+  "end": 31.4
+ },
+ {
+  "word": "Bitcoin",
+  "start": 31.58,
+  "end": 32.07
+ },
+ {
+  "word": "slid",
+  "start": 32.07,
+  "end": 32.39
+ },
+ {
+  "word": "under",
+  "start": 32.39,
+  "end": 32.6
+ },
+ {
+  "word": "sixty",
+  "start": 32.6,
+  "end": 32.96
+ },
+ {
+  "word": "thousand",
+  "start": 32.96,
+  "end": 33.34
+ },
+ {
+  "word": "dollars",
+  "start": 33.34,
+  "end": 33.84
+ },
+ {
+  "word": "Ethereum",
+  "start": 34.01,
+  "end": 34.49
+ },
+ {
+  "word": "dropped",
+  "start": 34.49,
+  "end": 34.81
+ },
+ {
+  "word": "five",
+  "start": 34.81,
+  "end": 35.15
+ },
+ {
+  "word": "percent",
+  "start": 35.15,
+  "end": 35.74
+ },
+ {
+  "word": "the",
+  "start": 35.74,
+  "end": 35.84
+ },
+ {
+  "word": "worst",
+  "start": 35.84,
+  "end": 36.22
+ },
+ {
+  "word": "of",
+  "start": 36.22,
+  "end": 36.3
+ },
+ {
+  "word": "the",
+  "start": 36.3,
+  "end": 36.36
+ },
+ {
+  "word": "majors",
+  "start": 36.36,
+  "end": 37.05
+ },
+ {
+  "word": "as",
+  "start": 37.05,
+  "end": 37.22
+ },
+ {
+  "word": "money",
+  "start": 37.22,
+  "end": 37.47
+ },
+ {
+  "word": "kept",
+  "start": 37.47,
+  "end": 37.72
+ },
+ {
+  "word": "leaking",
+  "start": 37.72,
+  "end": 38.13
+ },
+ {
+  "word": "out",
+  "start": 38.13,
+  "end": 38.25
+ },
+ {
+  "word": "of",
+  "start": 38.25,
+  "end": 38.34
+ },
+ {
+  "word": "Bitcoin",
+  "start": 38.34,
+  "end": 38.82
+ },
+ {
+  "word": "funds",
+  "start": 38.82,
+  "end": 39.3
+ },
+ {
+  "word": "Here",
+  "start": 39.47,
+  "end": 39.61
+ },
+ {
+  "word": "is",
+  "start": 39.61,
+  "end": 39.7
+ },
+ {
+  "word": "the",
+  "start": 39.7,
+  "end": 39.78
+ },
+ {
+  "word": "twist",
+  "start": 39.78,
+  "end": 40.37
+ },
+ {
+  "word": "the",
+  "start": 40.37,
+  "end": 40.46
+ },
+ {
+  "word": "biggest",
+  "start": 40.46,
+  "end": 40.86
+ },
+ {
+  "word": "whales",
+  "start": 40.86,
+  "end": 41.35
+ },
+ {
+  "word": "quietly",
+  "start": 41.35,
+  "end": 41.94
+ },
+ {
+  "word": "added",
+  "start": 41.94,
+  "end": 42.24
+ },
+ {
+  "word": "one",
+  "start": 42.24,
+  "end": 42.52
+ },
+ {
+  "word": "hundred",
+  "start": 42.52,
+  "end": 42.9
+ },
+ {
+  "word": "twenty-one",
+  "start": 42.9,
+  "end": 43.42
+ },
+ {
+  "word": "thousand",
+  "start": 43.42,
+  "end": 43.92
+ },
+ {
+  "word": "Bitcoin",
+  "start": 43.92,
+  "end": 44.4
+ },
+ {
+  "word": "this",
+  "start": 44.4,
+  "end": 44.56
+ },
+ {
+  "word": "quarter",
+  "start": 44.56,
+  "end": 45.0
+ },
+ {
+  "word": "The",
+  "start": 45.17,
+  "end": 45.24
+ },
+ {
+  "word": "big",
+  "start": 45.24,
+  "end": 45.46
+ },
+ {
+  "word": "wallets",
+  "start": 45.46,
+  "end": 45.91
+ },
+ {
+  "word": "are",
+  "start": 45.91,
+  "end": 46.03
+ },
+ {
+  "word": "buying",
+  "start": 46.03,
+  "end": 46.44
+ },
+ {
+  "word": "the",
+  "start": 46.44,
+  "end": 46.51
+ },
+ {
+  "word": "dip",
+  "start": 46.51,
+  "end": 47.1
+ },
+ {
+  "word": "What",
+  "start": 47.1,
+  "end": 47.25
+ },
+ {
+  "word": "to",
+  "start": 47.25,
+  "end": 47.32
+ },
+ {
+  "word": "watch",
+  "start": 47.32,
+  "end": 47.8
+ },
+ {
+  "word": "the",
+  "start": 47.9,
+  "end": 47.98
+ },
+ {
+  "word": "jobs",
+  "start": 47.98,
+  "end": 48.34
+ },
+ {
+  "word": "report",
+  "start": 48.34,
+  "end": 48.66
+ },
+ {
+  "word": "on",
+  "start": 48.66,
+  "end": 48.78
+ },
+ {
+  "word": "Friday",
+  "start": 48.78,
+  "end": 49.26
+ },
+ {
+  "word": "then",
+  "start": 49.26,
+  "end": 49.55
+ },
+ {
+  "word": "the",
+  "start": 49.55,
+  "end": 49.61
+ },
+ {
+  "word": "Fed",
+  "start": 49.61,
+  "end": 49.98
+ },
+ {
+  "word": "meets",
+  "start": 49.98,
+  "end": 50.25
+ },
+ {
+  "word": "December",
+  "start": 50.25,
+  "end": 50.7
+ },
+ {
+  "word": "eighth",
+  "start": 50.7,
+  "end": 51.03
+ },
+ {
+  "word": "with",
+  "start": 51.03,
+  "end": 51.15
+ },
+ {
+  "word": "a",
+  "start": 51.15,
+  "end": 51.18
+ },
+ {
+  "word": "rate",
+  "start": 51.18,
+  "end": 51.46
+ },
+ {
+  "word": "hike",
+  "start": 51.46,
+  "end": 51.73
+ },
+ {
+  "word": "almost",
+  "start": 51.73,
+  "end": 52.1
+ },
+ {
+  "word": "fully",
+  "start": 52.1,
+  "end": 52.4
+ },
+ {
+  "word": "priced",
+  "start": 52.4,
+  "end": 52.79
+ },
+ {
+  "word": "in",
+  "start": 52.79,
+  "end": 53.07
+ },
+ {
+  "word": "Not",
+  "start": 53.23,
+  "end": 53.44
+ },
+ {
+  "word": "financial",
+  "start": 53.44,
+  "end": 53.92
+ },
+ {
+  "word": "advice",
+  "start": 53.92,
+  "end": 54.42
+ }
+]
