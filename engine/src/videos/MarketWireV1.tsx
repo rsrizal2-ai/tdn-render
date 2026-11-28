@@ -365,7 +365,7 @@ const S6 = ({ t }: Ctx) => {
     })}
     <Whale p={[1.8, 5.4, -9.5]} t={t} />
     {[0, 1, 2, 3, 4].map(feed)}
-    {wK > 0.02 ? <group position={[0, 11.9, -10.8]} scale={[wK, wK, 1]}><Board p={[0, 0, 0]} w={12.6} lines={[{ t: "WHALES ADDED 121,117 BTC", s: 74, c: "#ffd36a" }, { t: "THIS QUARTER", s: 66, c: "#f5f7fa" }]} /></group> : null}
+    {wK > 0.02 ? <group position={[0, 11.9, -10.8]} scale={[wK, wK, 1]}><Board p={[0, 0, 0]} w={12.6} lines={[{ t: "WHALES ADDED 121,117 BTC", s: 64, c: "#ffd36a" }, { t: "THIS QUARTER", s: 60, c: "#f5f7fa" }]} /></group> : null}
     {dK > 0.02 ? <group position={[0, 9.3, -10.6]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[9.8, 0.95]} text="BUYING THE DIP" bg="#0d2f1a" fg="#8affc1" size={100} frame="#2fd46a" /></group> : null}
     <Bull p={[-4.7, 0, -3.3]} t={t} pose="thumb" s={0.8} />
   </>);
@@ -402,7 +402,7 @@ const S7 = ({ t }: Ctx) => {
     {rK > 0.02 ? <group position={[3.1, 6.45, -10.2]} scale={[rK, rK, 1]}><Stamp p={[0, 0, 0]} w={7.6} text="RATE HIKE 98% PRICED IN" /></group> : null}
     {bK > 0.02 ? <group position={[-4.35, 6.6, -10.4]} scale={[bK, bK, 1]}><Sign p={[0, 0, 0]} s={[6.4, 0.9]} text="THE MARKET WIRE" bg="#12081f" fg="#ffd36a" size={92} frame="#c9a227" /></group> : null}
     {nK > 0.02 ? <group position={[0, 3.1, -9.6]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={11.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "NOT FINANCIAL ADVICE", s: 76, c: "#ff9a8a" }]} /></group> : null}
-    <Bull p={[0, 0, -3.5]} t={t} pose="shrug" s={0.8} />
+    <Bull p={[-4.55, 0, -3.5]} t={t} pose="shrug" s={0.8} />
   </>);
 };
 
