@@ -129,8 +129,8 @@ const S1 = ({ t, f }: Ctx) => {
 
 /* =================== S2 7.33 – 18.91  raid 1: five at the terminals =================== */
 const K2: Key[] = [
-  { t: 7.33, pos: [0, 4.4, 17.6], look: [0, 3.9, -6], fov: 60 },
-  { t: 18.91, pos: [0, 4.2, 15.2], look: [0, 3.9, -6], fov: 57 },
+  { t: 7.33, pos: [0, 4.3, 15.6], look: [0, 3.7, -6], fov: 60 },
+  { t: 18.91, pos: [0, 4.1, 13.8], look: [0, 3.7, -6], fov: 57 },
 ];
 const S2 = ({ t, f }: Ctx) => {
   const sK = seg(t, 9.55, 10.1, Easing.out(Easing.back(1.7)));
@@ -141,43 +141,43 @@ const S2 = ({ t, f }: Ctx) => {
     const ph = ((t * 0.9 + i * 1.55) % 9.3);
     const x = -7.6 + ph;
     return ph < 4.9
-      ? <Box key={i} p={[x, 1.62, -3.4]} s={[1.05, 0.1, 0.62]} color="#7fc46a" line={1} />
-      : <UsdtCoin key={i} p={[x, 1.68, -3.4]} s={0.85} />;
+      ? <Box key={i} p={[x, 1.62, -2.8]} s={[1.05, 0.1, 0.62]} color="#7fc46a" line={1} />
+      : <UsdtCoin key={i} p={[x, 1.68, -2.8]} s={0.85} />;
   };
   return (<>
     <Cam t={t} keys={K2} impacts={[[8.9, 0.1]]} />
     <Lights warm="#ffe9c4" />
     <Floor kind="tile" a="#1d2a44" b="#182540" unit={2.4} w={60} d={50} />
     {/* back wall + the exchange row: five workers at terminals */}
-    <Box p={[0, 5.4, -10.6]} s={[26, 10.8, 0.4]} color="#24334f" line={0} />
+    <Box p={[0, 5.4, -9.8]} s={[26, 10.8, 0.4]} color="#24334f" line={0} />
     {[-6.4, -3.2, 0, 3.2, 6.4].map((x, i) => (
       <group key={i}>
-        <Desk p={[x, 0, -7.6]} w={2.7} top="#33415e" leg="#232f47" />
-        <Monitor p={[x, 1.95, -8.3]} s={1.05} screen={i % 2 ? "#12351f" : "#0f2f47"} />
-        <Person p={[x, 0, -6.2]} h={3.4} look={worker} f={f + i * 7} pose={{ mood: t > 9.2 ? "shock" : "deadpan", arms: "point", armK: 0.8, armR: [0.65, 0.5], armL: [0.5, 0.55], lookX: i % 2 ? 0.2 : -0.2, hunch: 0.3 }} />
+        <Desk p={[x, 0, -6.8]} w={2.7} top="#33415e" leg="#232f47" />
+        <Monitor p={[x, 1.95, -7.5]} s={1.05} screen={i % 2 ? "#12351f" : "#0f2f47"} />
+        <Person p={[x, 0, -5.4]} h={3.7} look={worker} f={f + i * 7} pose={{ mood: t > 9.2 ? "shock" : "deadpan", arms: "point", armK: 0.8, armR: [0.65, 0.5], armL: [0.5, 0.55], lookX: i % 2 ? 0.2 : -0.2, hunch: 0.3 }} />
       </group>
     ))}
     {/* the conveyor in front: cash in, crypto out */}
-    <Box p={[0, 1.15, -3.4]} s={[16.5, 0.45, 1.7]} color="#39424c" line={2} />
+    <Box p={[0, 1.15, -2.8]} s={[16.5, 0.45, 1.7]} color="#39424c" line={2} />
     {[0, 1, 2, 3, 4, 5].map(beltItem)}
     {/* the raiding officer strides in */}
-    <Person p={[lerp(-10.5, -8.3, Easing.out(Easing.cubic)(raidK)), 0, -4.6]} h={3.9} look={officer} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.85, armR: [0.85, 0.7], lookX: 0.5, walk: raidK < 1 ? t * 6.4 : 0, speed: 1.6 }} />
-    {sK > 0.02 ? <group position={[0, 12.4, -10.2]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.95]} text="CHAIYAPRUEK ROAD — NONG PRUE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
-    {uK > 0.02 ? <group position={[5.6, 6.6, -6.8]} scale={[uK, uK, 1]}><Board p={[0, 0, 0]} w={5.6} bg="#0d2f1a" frame="#26a17b" lines={[{ t: "USDT", s: 120, c: "#8affc1" }, { t: "DOLLAR STABLECOIN", s: 52, c: "#f5f7fa" }]} /></group> : null}
+    <Person p={[lerp(-10.5, -8.3, Easing.out(Easing.cubic)(raidK)), 0, -4.0]} h={3.9} look={officer} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.85, armR: [0.85, 0.7], lookX: 0.5, walk: raidK < 1 ? t * 6.4 : 0, speed: 1.6 }} />
+    {sK > 0.02 ? <group position={[0, 12.4, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.95]} text="CHAIYAPRUEK ROAD — NONG PRUE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
+    {uK > 0.02 ? <group position={[5.6, 6.6, -6.2]} scale={[uK, uK, 1]}><Board p={[0, 0, 0]} w={5.6} bg="#0d2f1a" frame="#26a17b" lines={[{ t: "USDT", s: 120, c: "#8affc1" }, { t: "DOLLAR STABLECOIN", s: 52, c: "#f5f7fa" }]} /></group> : null}
   </>);
 };
 
 /* =================== S3 18.91 – 24.22  the evidence lineup =================== */
 const K3: Key[] = [
-  { t: 18.91, pos: [0, 4.3, 16.4], look: [0, 4.0, -6], fov: 60 },
-  { t: 24.22, pos: [0, 4.1, 14.8], look: [0, 4.0, -6], fov: 58 },
+  { t: 18.91, pos: [0, 4.2, 14.4], look: [0, 3.8, -6], fov: 60 },
+  { t: 24.22, pos: [0, 4.0, 13.2], look: [0, 3.8, -6], fov: 58 },
 ];
 const S3 = ({ t, f }: Ctx) => {
   const tile = (x: number, at: number, label: string, sub: string, icon: string, col: string) => {
     const k = seg(t, at, at + 0.45, Easing.out(Easing.back(1.7)));
     return k > 0.02 ? (
-      <group key={label} position={[x, 5.6, -8.8]} scale={[k, k, 1]}>
-        <CanvasPlane p={[0, 0, 0]} s={[5.9, 4.6]} px={[640, 500]} frame={col} draw={(c, W, H) => {
+      <group key={label} position={[x, 5.3, -8.8]} scale={[k, k, 1]}>
+        <CanvasPlane p={[0, 0, 0]} s={[5.3, 4.2]} px={[640, 500]} frame={col} draw={(c, W, H) => {
           c.fillStyle = "#101828"; c.fillRect(0, 0, W, H);
           c.fillStyle = col; c.strokeStyle = col; c.textAlign = "center"; c.textBaseline = "middle";
           if (icon === "computer") { c.strokeRect(W / 2 - 95, 46, 190, 128); c.fillRect(W / 2 - 95, 66, 190, 8); c.fillRect(W / 2 - 14, 174, 28, 26); c.fillRect(W / 2 - 62, 200, 124, 12); }
@@ -195,18 +195,18 @@ const S3 = ({ t, f }: Ctx) => {
     <Lights warm="#dfe8ff" />
     <Floor kind="carpet" a="#141d30" b="#101828" unit={2} w={52} d={44} />
     {/* the evidence table */}
-    <Box p={[0, 0.95, -6.5]} s={[17.5, 0.4, 2.6]} color="#2a3448" line={2} />
+    <Box p={[0, 0.95, -6.5]} s={[15.5, 0.4, 2.6]} color="#2a3448" line={2} />
     {[-6.2, -2.1, 2.1, 6.2].map((x, i) => <Box key={i} p={[x, 0.45, -6.5]} s={[0.35, 0.9, 2.2]} color="#1a2233" line={1} />)}
     <Monitor p={[-6.3, 1.85, -6.6]} s={0.95} screen="#0f2f47" />
     {[-4.4, -3.5, -2.6].map((x, i) => <Box key={"ph" + i} p={[x, 1.3, -6.4]} s={[0.62, 0.28, 0.14]} color="#39496b" line={1} rot={[0, 0.4 * i, 0]} />)}
     <Box p={[0.4, 1.32, -6.5]} s={[1.5, 0.34, 0.9]} color="#232f47" line={1} />
     {[2.9, 4.1, 5.3].map((x, i) => <Box key={"hw" + i} p={[x, 1.3, -6.4]} s={[0.95, 0.3, 0.6]} color="#26a17b" line={1} />)}
     {/* the officer presents the haul */}
-    <Person p={[-8.3, 0, -4.2]} h={3.9} look={officer} f={f} pose={{ mood: "smile", arms: "point", armK: 0.85, armR: [0.85, 0.65], lookX: 0.55 }} />
-    {tile(-6.3, 19.7, "COMPUTERS", "SEIZED", "computer", "#38b6d9")}
-    {tile(-2.1, 20.5, "13 PHONES", "SEIZED", "phones", "#ffd36a")}
-    {tile(2.1, 21.75, "ROUTERS", "SEIZED", "router", "#8affc1")}
-    {tile(6.3, 22.55, "3 WALLETS", "HARDWARE", "wallet", "#26a17b")}
+    <Person p={[-7.6, 0, -4.2]} h={3.9} look={officer} f={f} pose={{ mood: "smile", arms: "point", armK: 0.85, armR: [0.85, 0.65], lookX: 0.55 }} />
+    {tile(-5.4, 19.7, "COMPUTERS", "SEIZED", "computer", "#38b6d9")}
+    {tile(-1.8, 20.5, "13 PHONES", "SEIZED", "phones", "#ffd36a")}
+    {tile(1.8, 21.75, "ROUTERS", "SEIZED", "router", "#8affc1")}
+    {tile(5.4, 22.55, "3 WALLETS", "HARDWARE", "wallet", "#26a17b")}
   </>);
 };
 
@@ -244,13 +244,13 @@ const S4 = ({ t, f }: Ctx) => {
     <Box p={[-10.5, 6, -16]} s={[6.5, 12, 2.6]} color="#141f33" line={1} />
     <Box p={[10.5, 5, -16]} s={[6.5, 10, 2.6]} color="#141f33" line={1} />
     {/* the coordinator is brought out of the lobby */}
-    <group position={[lerp(0, -2.6, Easing.inOut(Easing.cubic)(outK)), 0, -10.6]}>
+    <group position={[lerp(0, -2.6, Easing.inOut(Easing.cubic)(outK)), 0, -9.9]}>
       <Person p={[0, 0, 0]} h={3.7} look={coord} f={f} pose={{ mood: "worry", arms: "down", lookX: -0.3, tilt: -0.05, walk: outK > 0 && outK < 1 ? t * 5.4 : 0, speed: 1.4 }} />
     </group>
-    <group position={[lerp(1.6, -0.9, Easing.inOut(Easing.cubic)(outK)), 0, -10.9]}>
+    <group position={[lerp(1.6, -0.9, Easing.inOut(Easing.cubic)(outK)), 0, -10.2]}>
       <Person p={[0, 0, 0]} h={3.9} look={officer} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.6, armR: [0.55, 0.5], lookX: -0.4, walk: outK > 0 && outK < 1 ? t * 5.4 : 0, speed: 1.4 }} />
     </group>
-    {flK > 0.02 ? <group position={[6.9, 13.9, -11.4]} scale={[flK, flK, 1]}><Sign p={[0, 0, 0]} s={[6.9, 0.95]} text="17TH FLOOR" bg="#101828" fg="#ffd36a" size={110} frame="#c9a227" /></group> : null}
+    {flK > 0.02 ? <group position={[5.6, 13.9, -11.4]} scale={[flK, flK, 1]}><Sign p={[0, 0, 0]} s={[6.2, 0.95]} text="17TH FLOOR" bg="#101828" fg="#ffd36a" size={110} frame="#c9a227" /></group> : null}
     {cK > 0.02 ? <group position={[0, 12.1, -10.6]} scale={[cK, cK, 1]}><Board p={[0, 0, 0]} w={10.2} lines={[{ t: "THE COORDINATOR", s: 78, c: "#ffb35e" }, { t: "ARRESTED", s: 78, c: "#f5f7fa" }]} /></group> : null}
   </>);
 };
@@ -281,10 +281,10 @@ const S5 = ({ t, f }: Ctx) => {
     {[-4.6, -0.6, 3.4].map(chev)}
     {[0, 1, 2, 3, 4, 5].map(pkt)}
     {/* source boards, left */}
-    {aK > 0.02 ? <group position={[-5.6, 9.6, -9.5]} scale={[aK, aK, 1]}><Board p={[0, 0, 0]} w={7.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CALL-CENTRE", s: 66, c: "#ff9a8a" }, { t: "SCAMS", s: 66, c: "#f5f7fa" }]} /></group> : null}
-    {gK > 0.02 ? <group position={[-5.6, 6.2, -9.5]} scale={[gK, gK, 1]}><Board p={[0, 0, 0]} w={7.6} bg="#241031" frame="#7a4a8c" lines={[{ t: "ONLINE", s: 66, c: "#d3a6ff" }, { t: "GAMBLING", s: 66, c: "#f5f7fa" }]} /></group> : null}
+    {aK > 0.02 ? <group position={[-4.4, 9.6, -9.0]} scale={[aK, aK, 1]}><Board p={[0, 0, 0]} w={7.2} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CALL-CENTRE", s: 66, c: "#ff9a8a" }, { t: "SCAMS", s: 66, c: "#f5f7fa" }]} /></group> : null}
+    {gK > 0.02 ? <group position={[-4.4, 6.2, -9.0]} scale={[gK, gK, 1]}><Board p={[0, 0, 0]} w={7.2} bg="#241031" frame="#7a4a8c" lines={[{ t: "ONLINE", s: 66, c: "#d3a6ff" }, { t: "GAMBLING", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {/* destination board, right */}
-    {chK > 0.02 ? <group position={[6.1, 7.9, -9.5]} scale={[chK, chK, 1]}><Board p={[0, 0, 0]} w={6.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }, { t: "MOST ALLEGED VICTIMS", s: 40, c: "#f5f7fa" }]} /></group> : null}
+    {chK > 0.02 ? <group position={[4.9, 7.9, -9.0]} scale={[chK, chK, 1]}><Board p={[0, 0, 0]} w={6.4} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }, { t: "MOST ALLEGED VICTIMS", s: 40, c: "#f5f7fa" }]} /></group> : null}
     {/* the scale of it, top centre */}
     {nK > 0.02 ? <group position={[0.8, 12.6, -10.5]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={10.6} lines={[{ t: "200,000,000 BAHT", s: 80, c: "#ffd36a" }, { t: "EVERY MONTH", s: 68, c: "#f5f7fa" }]} /></group> : null}
     {dK > 0.02 ? <group position={[0.8, 10.2, -10.5]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[9.2, 0.9]} text="≈ 6,000,000 US DOLLARS" bg="#0d2f1a" fg="#8affc1" size={92} frame="#2fd46a" /></group> : null}
@@ -341,7 +341,7 @@ const S6 = ({ t, f }: Ctx) => {
     {pK > 0.02 ? <group position={[0, 12.9, -10.8]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={9.6} lines={[{ t: "50,000 BAHT", s: 84, c: "#ffd36a" }, { t: "A MONTH", s: 72, c: "#f5f7fa" }]} /></group> : null}
     {uK > 0.02 ? <group position={[-2.2, 9.2, -9.9]} scale={[uK, uK, 1]}><Stamp p={[0, 0, 0]} w={6.8} text="UNLICENSED" /></group> : null}
     {wK > 0.02 ? <group position={[2.4, 7.6, -9.9]} scale={[wK, wK, 1]}><Stamp p={[0, 0, 0]} w={7.4} text="NO WORK PERMIT" /></group> : null}
-    {vK > 0.02 ? <group position={[8.1, 12.9, -10.8]} scale={[vK, vK, 1]}><Sign p={[0, 0, 0]} s={[5.4, 0.9]} text="5 OF 6" bg="#0d2f47" fg="#8ae8ff" size={110} frame="#38b6d9" /></group> : null}
+    {vK > 0.02 ? <group position={[6.3, 12.7, -10.8]} scale={[vK, vK, 1]}><Sign p={[0, 0, 0]} s={[4.8, 0.9]} text="5 OF 6" bg="#0d2f47" fg="#8ae8ff" size={110} frame="#38b6d9" /></group> : null}
   </>);
 };
 
