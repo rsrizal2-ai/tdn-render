@@ -1,0 +1,977 @@
+[
+ {
+  "word": "Two",
+  "start": 0.0,
+  "end": 0.22
+ },
+ {
+  "word": "hundred",
+  "start": 0.22,
+  "end": 0.47
+ },
+ {
+  "word": "million",
+  "start": 0.47,
+  "end": 0.86
+ },
+ {
+  "word": "baht",
+  "start": 0.86,
+  "end": 1.05
+ },
+ {
+  "word": "a",
+  "start": 1.05,
+  "end": 1.08
+ },
+ {
+  "word": "month",
+  "start": 1.08,
+  "end": 1.47
+ },
+ {
+  "word": "That",
+  "start": 1.61,
+  "end": 1.74
+ },
+ {
+  "word": "is",
+  "start": 1.74,
+  "end": 1.84
+ },
+ {
+  "word": "how",
+  "start": 1.84,
+  "end": 1.92
+ },
+ {
+  "word": "much",
+  "start": 1.92,
+  "end": 2.11
+ },
+ {
+  "word": "money",
+  "start": 2.11,
+  "end": 2.33
+ },
+ {
+  "word": "police",
+  "start": 2.33,
+  "end": 2.7
+ },
+ {
+  "word": "say",
+  "start": 2.7,
+  "end": 2.87
+ },
+ {
+  "word": "was",
+  "start": 2.87,
+  "end": 3.05
+ },
+ {
+  "word": "washed",
+  "start": 3.05,
+  "end": 3.45
+ },
+ {
+  "word": "through",
+  "start": 3.45,
+  "end": 3.63
+ },
+ {
+  "word": "two",
+  "start": 3.63,
+  "end": 3.88
+ },
+ {
+  "word": "quiet",
+  "start": 3.88,
+  "end": 4.25
+ },
+ {
+  "word": "properties",
+  "start": 4.25,
+  "end": 4.73
+ },
+ {
+  "word": "in",
+  "start": 4.73,
+  "end": 4.82
+ },
+ {
+  "word": "Pattaya",
+  "start": 4.82,
+  "end": 5.35
+ },
+ {
+  "word": "turned",
+  "start": 5.47,
+  "end": 5.73
+ },
+ {
+  "word": "from",
+  "start": 5.73,
+  "end": 5.91
+ },
+ {
+  "word": "cash",
+  "start": 5.91,
+  "end": 6.4
+ },
+ {
+  "word": "into",
+  "start": 6.4,
+  "end": 6.56
+ },
+ {
+  "word": "crypto",
+  "start": 6.56,
+  "end": 7.13
+ },
+ {
+  "word": "On",
+  "start": 7.33,
+  "end": 7.43
+ },
+ {
+  "word": "Friday",
+  "start": 7.43,
+  "end": 7.86
+ },
+ {
+  "word": "evening",
+  "start": 7.86,
+  "end": 8.3
+ },
+ {
+  "word": "Thai",
+  "start": 8.3,
+  "end": 8.52
+ },
+ {
+  "word": "police",
+  "start": 8.52,
+  "end": 8.86
+ },
+ {
+  "word": "raided",
+  "start": 8.86,
+  "end": 9.17
+ },
+ {
+  "word": "a",
+  "start": 9.17,
+  "end": 9.21
+ },
+ {
+  "word": "house",
+  "start": 9.21,
+  "end": 9.58
+ },
+ {
+  "word": "on",
+  "start": 9.58,
+  "end": 9.72
+ },
+ {
+  "word": "Chaiyapruek",
+  "start": 9.72,
+  "end": 10.31
+ },
+ {
+  "word": "Road",
+  "start": 10.31,
+  "end": 10.7
+ },
+ {
+  "word": "in",
+  "start": 10.7,
+  "end": 10.9
+ },
+ {
+  "word": "Nong",
+  "start": 10.9,
+  "end": 11.16
+ },
+ {
+  "word": "Prue",
+  "start": 11.16,
+  "end": 11.58
+ },
+ {
+  "word": "Inside",
+  "start": 11.7,
+  "end": 12.19
+ },
+ {
+  "word": "they",
+  "start": 12.19,
+  "end": 12.28
+ },
+ {
+  "word": "say",
+  "start": 12.28,
+  "end": 12.6
+ },
+ {
+  "word": "five",
+  "start": 12.6,
+  "end": 13.0
+ },
+ {
+  "word": "Chinese",
+  "start": 13.0,
+  "end": 13.42
+ },
+ {
+  "word": "nationals",
+  "start": 13.42,
+  "end": 13.91
+ },
+ {
+  "word": "were",
+  "start": 13.91,
+  "end": 14.01
+ },
+ {
+  "word": "working",
+  "start": 14.01,
+  "end": 14.36
+ },
+ {
+  "word": "exchange",
+  "start": 14.36,
+  "end": 14.87
+ },
+ {
+  "word": "terminals",
+  "start": 14.87,
+  "end": 15.36
+ },
+ {
+  "word": "converting",
+  "start": 15.36,
+  "end": 15.88
+ },
+ {
+  "word": "cash",
+  "start": 15.88,
+  "end": 16.34
+ },
+ {
+  "word": "into",
+  "start": 16.34,
+  "end": 16.55
+ },
+ {
+  "word": "USDT",
+  "start": 16.55,
+  "end": 17.61
+ },
+ {
+  "word": "the",
+  "start": 17.61,
+  "end": 17.69
+ },
+ {
+  "word": "dollar",
+  "start": 17.69,
+  "end": 18.04
+ },
+ {
+  "word": "stablecoin",
+  "start": 18.04,
+  "end": 18.76
+ },
+ {
+  "word": "Officers",
+  "start": 18.91,
+  "end": 19.37
+ },
+ {
+  "word": "seized",
+  "start": 19.37,
+  "end": 19.67
+ },
+ {
+  "word": "computers",
+  "start": 19.67,
+  "end": 20.41
+ },
+ {
+  "word": "thirteen",
+  "start": 20.41,
+  "end": 20.82
+ },
+ {
+  "word": "mobile",
+  "start": 20.82,
+  "end": 21.1
+ },
+ {
+  "word": "phones",
+  "start": 21.1,
+  "end": 21.69
+ },
+ {
+  "word": "routers",
+  "start": 21.69,
+  "end": 22.32
+ },
+ {
+  "word": "and",
+  "start": 22.32,
+  "end": 22.48
+ },
+ {
+  "word": "three",
+  "start": 22.48,
+  "end": 22.7
+ },
+ {
+  "word": "crypto",
+  "start": 22.7,
+  "end": 23.11
+ },
+ {
+  "word": "hardware",
+  "start": 23.11,
+  "end": 23.5
+ },
+ {
+  "word": "wallets",
+  "start": 23.5,
+  "end": 24.02
+ },
+ {
+  "word": "At",
+  "start": 24.22,
+  "end": 24.32
+ },
+ {
+  "word": "the",
+  "start": 24.32,
+  "end": 24.38
+ },
+ {
+  "word": "same",
+  "start": 24.38,
+  "end": 24.64
+ },
+ {
+  "word": "time",
+  "start": 24.64,
+  "end": 25.15
+ },
+ {
+  "word": "a",
+  "start": 25.15,
+  "end": 25.22
+ },
+ {
+  "word": "second",
+  "start": 25.22,
+  "end": 25.59
+ },
+ {
+  "word": "team",
+  "start": 25.59,
+  "end": 25.82
+ },
+ {
+  "word": "hit",
+  "start": 25.82,
+  "end": 25.96
+ },
+ {
+  "word": "a",
+  "start": 25.96,
+  "end": 25.99
+ },
+ {
+  "word": "condo",
+  "start": 25.99,
+  "end": 26.43
+ },
+ {
+  "word": "on",
+  "start": 26.43,
+  "end": 26.53
+ },
+ {
+  "word": "the",
+  "start": 26.53,
+  "end": 26.59
+ },
+ {
+  "word": "seventeenth",
+  "start": 26.59,
+  "end": 27.13
+ },
+ {
+  "word": "floor",
+  "start": 27.13,
+  "end": 27.57
+ },
+ {
+  "word": "of",
+  "start": 27.57,
+  "end": 27.69
+ },
+ {
+  "word": "Lumpini",
+  "start": 27.69,
+  "end": 28.12
+ },
+ {
+  "word": "Park",
+  "start": 28.12,
+  "end": 28.43
+ },
+ {
+  "word": "Beach",
+  "start": 28.43,
+  "end": 28.83
+ },
+ {
+  "word": "in",
+  "start": 28.83,
+  "end": 28.98
+ },
+ {
+  "word": "Jomtien",
+  "start": 28.98,
+  "end": 29.62
+ },
+ {
+  "word": "There",
+  "start": 29.81,
+  "end": 30.06
+ },
+ {
+  "word": "they",
+  "start": 30.06,
+  "end": 30.23
+ },
+ {
+  "word": "arrested",
+  "start": 30.23,
+  "end": 30.61
+ },
+ {
+  "word": "a",
+  "start": 30.61,
+  "end": 30.64
+ },
+ {
+  "word": "sixth",
+  "start": 30.64,
+  "end": 31.02
+ },
+ {
+  "word": "man",
+  "start": 31.02,
+  "end": 31.44
+ },
+ {
+  "word": "who",
+  "start": 31.44,
+  "end": 31.57
+ },
+ {
+  "word": "police",
+  "start": 31.57,
+  "end": 31.88
+ },
+ {
+  "word": "describe",
+  "start": 31.88,
+  "end": 32.37
+ },
+ {
+  "word": "as",
+  "start": 32.37,
+  "end": 32.46
+ },
+ {
+  "word": "the",
+  "start": 32.46,
+  "end": 32.57
+ },
+ {
+  "word": "operation's",
+  "start": 32.57,
+  "end": 33.18
+ },
+ {
+  "word": "coordinator",
+  "start": 33.18,
+  "end": 33.88
+ },
+ {
+  "word": "Police",
+  "start": 34.09,
+  "end": 34.39
+ },
+ {
+  "word": "estimate",
+  "start": 34.39,
+  "end": 34.81
+ },
+ {
+  "word": "the",
+  "start": 34.81,
+  "end": 34.87
+ },
+ {
+  "word": "network",
+  "start": 34.87,
+  "end": 35.31
+ },
+ {
+  "word": "moved",
+  "start": 35.31,
+  "end": 35.59
+ },
+ {
+  "word": "around",
+  "start": 35.59,
+  "end": 35.89
+ },
+ {
+  "word": "two",
+  "start": 35.89,
+  "end": 36.1
+ },
+ {
+  "word": "hundred",
+  "start": 36.1,
+  "end": 36.38
+ },
+ {
+  "word": "million",
+  "start": 36.38,
+  "end": 36.72
+ },
+ {
+  "word": "baht",
+  "start": 36.72,
+  "end": 37.04
+ },
+ {
+  "word": "every",
+  "start": 37.04,
+  "end": 37.27
+ },
+ {
+  "word": "month",
+  "start": 37.27,
+  "end": 37.82
+ },
+ {
+  "word": "roughly",
+  "start": 37.82,
+  "end": 38.11
+ },
+ {
+  "word": "six",
+  "start": 38.11,
+  "end": 38.44
+ },
+ {
+  "word": "million",
+  "start": 38.44,
+  "end": 38.77
+ },
+ {
+  "word": "US",
+  "start": 38.77,
+  "end": 39.09
+ },
+ {
+  "word": "dollars",
+  "start": 39.09,
+  "end": 39.61
+ },
+ {
+  "word": "They",
+  "start": 39.8,
+  "end": 39.9
+ },
+ {
+  "word": "say",
+  "start": 39.9,
+  "end": 40.08
+ },
+ {
+  "word": "some",
+  "start": 40.08,
+  "end": 40.28
+ },
+ {
+  "word": "of",
+  "start": 40.28,
+  "end": 40.34
+ },
+ {
+  "word": "the",
+  "start": 40.34,
+  "end": 40.4
+ },
+ {
+  "word": "money",
+  "start": 40.4,
+  "end": 40.63
+ },
+ {
+  "word": "came",
+  "start": 40.63,
+  "end": 40.89
+ },
+ {
+  "word": "from",
+  "start": 40.89,
+  "end": 41.05
+ },
+ {
+  "word": "call-centre",
+  "start": 41.05,
+  "end": 41.62
+ },
+ {
+  "word": "scams",
+  "start": 41.62,
+  "end": 42.13
+ },
+ {
+  "word": "and",
+  "start": 42.13,
+  "end": 42.22
+ },
+ {
+  "word": "online",
+  "start": 42.22,
+  "end": 42.69
+ },
+ {
+  "word": "gambling",
+  "start": 42.69,
+  "end": 43.19
+ },
+ {
+  "word": "and",
+  "start": 43.19,
+  "end": 43.42
+ },
+ {
+  "word": "that",
+  "start": 43.42,
+  "end": 43.52
+ },
+ {
+  "word": "most",
+  "start": 43.52,
+  "end": 43.81
+ },
+ {
+  "word": "of",
+  "start": 43.81,
+  "end": 43.88
+ },
+ {
+  "word": "the",
+  "start": 43.88,
+  "end": 43.99
+ },
+ {
+  "word": "alleged",
+  "start": 43.99,
+  "end": 44.36
+ },
+ {
+  "word": "victims",
+  "start": 44.36,
+  "end": 44.8
+ },
+ {
+  "word": "were",
+  "start": 44.8,
+  "end": 44.95
+ },
+ {
+  "word": "in",
+  "start": 44.95,
+  "end": 45.04
+ },
+ {
+  "word": "China",
+  "start": 45.04,
+  "end": 45.52
+ },
+ {
+  "word": "Five",
+  "start": 45.71,
+  "end": 45.97
+ },
+ {
+  "word": "of",
+  "start": 45.97,
+  "end": 46.05
+ },
+ {
+  "word": "the",
+  "start": 46.05,
+  "end": 46.12
+ },
+ {
+  "word": "six",
+  "start": 46.12,
+  "end": 46.43
+ },
+ {
+  "word": "men",
+  "start": 46.43,
+  "end": 46.66
+ },
+ {
+  "word": "held",
+  "start": 46.66,
+  "end": 46.92
+ },
+ {
+  "word": "student",
+  "start": 46.92,
+  "end": 47.27
+ },
+ {
+  "word": "visas",
+  "start": 47.27,
+  "end": 47.92
+ },
+ {
+  "word": "and",
+  "start": 47.92,
+  "end": 48.04
+ },
+ {
+  "word": "were",
+  "start": 48.04,
+  "end": 48.14
+ },
+ {
+  "word": "allegedly",
+  "start": 48.14,
+  "end": 48.61
+ },
+ {
+  "word": "paid",
+  "start": 48.61,
+  "end": 48.89
+ },
+ {
+  "word": "about",
+  "start": 48.89,
+  "end": 49.11
+ },
+ {
+  "word": "fifty",
+  "start": 49.11,
+  "end": 49.46
+ },
+ {
+  "word": "thousand",
+  "start": 49.46,
+  "end": 49.87
+ },
+ {
+  "word": "baht",
+  "start": 49.87,
+  "end": 50.1
+ },
+ {
+  "word": "a",
+  "start": 50.1,
+  "end": 50.13
+ },
+ {
+  "word": "month",
+  "start": 50.13,
+  "end": 50.51
+ },
+ {
+  "word": "All",
+  "start": 50.69,
+  "end": 50.9
+ },
+ {
+  "word": "six",
+  "start": 50.9,
+  "end": 51.28
+ },
+ {
+  "word": "now",
+  "start": 51.28,
+  "end": 51.45
+ },
+ {
+  "word": "face",
+  "start": 51.45,
+  "end": 51.74
+ },
+ {
+  "word": "charges",
+  "start": 51.74,
+  "end": 52.4
+ },
+ {
+  "word": "including",
+  "start": 52.4,
+  "end": 52.87
+ },
+ {
+  "word": "running",
+  "start": 52.87,
+  "end": 53.12
+ },
+ {
+  "word": "an",
+  "start": 53.12,
+  "end": 53.21
+ },
+ {
+  "word": "unlicensed",
+  "start": 53.21,
+  "end": 53.85
+ },
+ {
+  "word": "digital-asset",
+  "start": 53.85,
+  "end": 54.6
+ },
+ {
+  "word": "business",
+  "start": 54.6,
+  "end": 55.07
+ },
+ {
+  "word": "and",
+  "start": 55.07,
+  "end": 55.35
+ },
+ {
+  "word": "working",
+  "start": 55.35,
+  "end": 55.67
+ },
+ {
+  "word": "without",
+  "start": 55.67,
+  "end": 55.94
+ },
+ {
+  "word": "work",
+  "start": 55.94,
+  "end": 56.19
+ },
+ {
+  "word": "permits",
+  "start": 56.19,
+  "end": 56.69
+ },
+ {
+  "word": "The",
+  "start": 56.69,
+  "end": 56.97
+ },
+ {
+  "word": "raids",
+  "start": 56.97,
+  "end": 57.3
+ },
+ {
+  "word": "were",
+  "start": 57.3,
+  "end": 57.38
+ },
+ {
+  "word": "led",
+  "start": 57.38,
+  "end": 57.64
+ },
+ {
+  "word": "by",
+  "start": 57.64,
+  "end": 57.78
+ },
+ {
+  "word": "Police",
+  "start": 57.78,
+  "end": 58.15
+ },
+ {
+  "word": "Region",
+  "start": 58.15,
+  "end": 58.5
+ },
+ {
+  "word": "2",
+  "start": 58.5,
+  "end": 58.73
+ },
+ {
+  "word": "commander",
+  "start": 58.73,
+  "end": 59.17
+ },
+ {
+  "word": "Wasan",
+  "start": 59.17,
+  "end": 59.73
+ },
+ {
+  "word": "Techa-akrakesom",
+  "start": 59.73,
+  "end": 60.72
+ },
+ {
+  "word": "And",
+  "start": 60.87,
+  "end": 60.99
+ },
+ {
+  "word": "police",
+  "start": 60.99,
+  "end": 61.3
+ },
+ {
+  "word": "say",
+  "start": 61.3,
+  "end": 61.49
+ },
+ {
+  "word": "the",
+  "start": 61.49,
+  "end": 61.58
+ },
+ {
+  "word": "investigation",
+  "start": 61.58,
+  "end": 62.38
+ },
+ {
+  "word": "is",
+  "start": 62.38,
+  "end": 62.5
+ },
+ {
+  "word": "still",
+  "start": 62.5,
+  "end": 62.8
+ },
+ {
+  "word": "widening",
+  "start": 62.8,
+  "end": 63.25
+ }
+]
