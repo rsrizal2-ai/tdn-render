@@ -242,15 +242,15 @@ const S4 = ({ t, f }: Ctx) => {
       }} />
     </group>
     {/* the cracked panel at the base — the flaw */}
-    <group position={[-5.4, 0, -4.6]}>
+    <group position={[-5.0, 0, -4.6]}>
       <Crack p={[0, 1.7, 0]} w={2.6} glowK={0.5 + 0.5 * Math.sin(t * 4.4)} />
     </group>
-    <Glow p={[-5.4, 1.7, -4.2]} r={2.2} color="#ff9a3c" o={0.5} />
+    <Glow p={[-5.0, 1.7, -4.2]} r={2.2} color="#ff9a3c" o={0.5} />
     {/* the intruder climbs through the layers to the top */}
     <Person p={[ix, iy, -4.15]} h={3.1} look={intruder} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.7, armR: [0.6, 0.8], lookX: 0.3, hunch: climb > 0 && climb < 1 ? 0.4 : 0.1 }} />
-    {flawK > 0.02 ? <group position={[-4.9, 5.6, -6.5]} scale={[flawK, flawK, 1]}><Sign p={[0, 0, 0]} s={[7.6, 0.9]} text="ONE SOFTWARE FLAW" bg="#2a0f14" fg="#ffb35e" size={104} frame="#e5233a" /></group> : null}
+    {flawK > 0.02 ? <group position={[-4.5, 5.6, -6.5]} scale={[flawK, flawK, 1]}><Sign p={[0, 0, 0]} s={[7.6, 0.9]} text="ONE SOFTWARE FLAW" bg="#2a0f14" fg="#ffb35e" size={104} frame="#e5233a" /></group> : null}
     {bK > 0.02 ? <group position={[1.8, 12.6, -9]} scale={[bK, bK, 1]}><Board p={[0, 0, 0]} w={9.8} lines={[{ t: "THE CONTROL PLANE", s: 82, c: "#8ae8ff" }]} /></group> : null}
-    {sK > 0.02 ? <group position={[0.6, 10.2, -8.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.2, 0.95]} text="ABOVE EVERYTHING IT RUNS" bg="#101828" fg="#ffd36a" size={104} frame="#c9a227" /></group> : null}
+    {sK > 0.02 ? <group position={[0.6, 6.85, -4.8]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[10.2, 0.95]} text="ABOVE EVERYTHING IT RUNS" bg="#101828" fg="#ffd36a" size={104} frame="#c9a227" /></group> : null}
   </>);
 };
 
