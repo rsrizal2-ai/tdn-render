@@ -27,7 +27,7 @@ type Trans = "ghost" | "zoom" | "flash" | "whip";
 const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
 
 const officer: Look = { skin: "#f2c894", body: "#2e5aa8", outfit: "hoodie", hair: "short", hairColor: "#14141f", badge: "#ffd36a", shoe: "#14141f" };
-const worker: Look = { skin: "#fbe3c8", body: "#3a4152", outfit: "hoodie", hair: "short", hairColor: "#0c0c12", shoe: "#1b1b2a" };
+const worker: Look = { skin: "#fbe3c8", body: "#d97b2f", outfit: "hoodie", hair: "short", hairColor: "#0c0c12", shoe: "#1b1b2a" };
 const coord: Look = { skin: "#e8b98d", body: "#6a4a8c", outfit: "hoodie", hair: "short", hairColor: "#0c0c12", shoe: "#0c0c12" };
 const commander: Look = { skin: "#eec39a", body: "#1d3f75", outfit: "hoodie", hair: "short", hairColor: "#23232e", glasses: true, badge: "#ffd36a", shoe: "#14141f" };
 
@@ -162,7 +162,7 @@ const S2 = ({ t, f }: Ctx) => {
     {[0, 1, 2, 3, 4, 5].map(beltItem)}
     {/* the raiding officer strides in */}
     <Person p={[lerp(-10.5, -8.3, Easing.out(Easing.cubic)(raidK)), 0, -4.0]} h={3.9} look={officer} f={f} pose={{ mood: "deadpan", arms: "point", armK: 0.85, armR: [0.85, 0.7], lookX: 0.5, walk: raidK < 1 ? t * 6.4 : 0, speed: 1.6 }} />
-    {sK > 0.02 ? <group position={[0, 12.4, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.95]} text="CHAIYAPRUEK ROAD — NONG PRUE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
+    {sK > 0.02 ? <group position={[0, 11.5, -9.6]} scale={[sK, sK, 1]}><Sign p={[0, 0, 0]} s={[11.2, 0.95]} text="CHAIYAPRUEK ROAD — NONG PRUE" bg="#101828" fg="#ffd36a" size={88} frame="#c9a227" /></group> : null}
     {uK > 0.02 ? <group position={[5.6, 6.6, -6.2]} scale={[uK, uK, 1]}><Board p={[0, 0, 0]} w={5.6} bg="#0d2f1a" frame="#26a17b" lines={[{ t: "USDT", s: 120, c: "#8affc1" }, { t: "DOLLAR STABLECOIN", s: 52, c: "#f5f7fa" }]} /></group> : null}
   </>);
 };
@@ -177,7 +177,7 @@ const S3 = ({ t, f }: Ctx) => {
     const k = seg(t, at, at + 0.45, Easing.out(Easing.back(1.7)));
     return k > 0.02 ? (
       <group key={label} position={[x, 5.3, -8.8]} scale={[k, k, 1]}>
-        <CanvasPlane p={[0, 0, 0]} s={[5.3, 4.2]} px={[640, 500]} frame={col} draw={(c, W, H) => {
+        <CanvasPlane p={[0, 0, 0]} s={[4.7, 3.8]} px={[640, 500]} frame={col} draw={(c, W, H) => {
           c.fillStyle = "#101828"; c.fillRect(0, 0, W, H);
           c.fillStyle = col; c.strokeStyle = col; c.textAlign = "center"; c.textBaseline = "middle";
           if (icon === "computer") { c.strokeRect(W / 2 - 95, 46, 190, 128); c.fillRect(W / 2 - 95, 66, 190, 8); c.fillRect(W / 2 - 14, 174, 28, 26); c.fillRect(W / 2 - 62, 200, 124, 12); }
@@ -202,11 +202,11 @@ const S3 = ({ t, f }: Ctx) => {
     <Box p={[0.4, 1.32, -6.5]} s={[1.5, 0.34, 0.9]} color="#232f47" line={1} />
     {[2.9, 4.1, 5.3].map((x, i) => <Box key={"hw" + i} p={[x, 1.3, -6.4]} s={[0.95, 0.3, 0.6]} color="#26a17b" line={1} />)}
     {/* the officer presents the haul */}
-    <Person p={[-7.6, 0, -4.2]} h={3.9} look={officer} f={f} pose={{ mood: "smile", arms: "point", armK: 0.85, armR: [0.85, 0.65], lookX: 0.55 }} />
-    {tile(-5.4, 19.7, "COMPUTERS", "SEIZED", "computer", "#38b6d9")}
-    {tile(-1.8, 20.5, "13 PHONES", "SEIZED", "phones", "#ffd36a")}
-    {tile(1.8, 21.75, "ROUTERS", "SEIZED", "router", "#8affc1")}
-    {tile(5.4, 22.55, "3 WALLETS", "HARDWARE", "wallet", "#26a17b")}
+    <Person p={[-5.5, 0, -3.6]} h={3.9} look={officer} f={f} pose={{ mood: "smile", arms: "point", armK: 0.85, armR: [0.85, 0.65], lookX: 0.55 }} />
+    {tile(-4.8, 19.7, "COMPUTERS", "SEIZED", "computer", "#38b6d9")}
+    {tile(-1.6, 20.5, "13 PHONES", "SEIZED", "phones", "#ffd36a")}
+    {tile(1.6, 21.75, "ROUTERS", "SEIZED", "router", "#8affc1")}
+    {tile(4.8, 22.55, "3 WALLETS", "HARDWARE", "wallet", "#26a17b")}
   </>);
 };
 
@@ -280,11 +280,15 @@ const S5 = ({ t, f }: Ctx) => {
     <Box p={[0, 3.05, -7.7]} s={[16.5, 0.14, 0.14]} color="#39496b" line={0} />
     {[-4.6, -0.6, 3.4].map(chev)}
     {[0, 1, 2, 3, 4, 5].map(pkt)}
+    {/* origin: the wash house in Pattaya, present from the first frame */}
+    <House p={[-5.6, 0, -8.8]} s={0.62} />
+    <Board p={[-5.0, 5.9, -9.0]} w={6.2} lines={[{ t: "PATTAYA", s: 84, c: "#ffd36a" }, { t: "THE WASH HOUSE", s: 52, c: "#f5f7fa" }]} />
     {/* source boards, left */}
     {aK > 0.02 ? <group position={[-4.4, 9.6, -9.0]} scale={[aK, aK, 1]}><Board p={[0, 0, 0]} w={7.2} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CALL-CENTRE", s: 66, c: "#ff9a8a" }, { t: "SCAMS", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {gK > 0.02 ? <group position={[-4.4, 6.2, -9.0]} scale={[gK, gK, 1]}><Board p={[0, 0, 0]} w={7.2} bg="#241031" frame="#7a4a8c" lines={[{ t: "ONLINE", s: 66, c: "#d3a6ff" }, { t: "GAMBLING", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {/* destination board, right */}
-    {chK > 0.02 ? <group position={[4.9, 7.9, -9.0]} scale={[chK, chK, 1]}><Board p={[0, 0, 0]} w={6.4} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }, { t: "MOST ALLEGED VICTIMS", s: 40, c: "#f5f7fa" }]} /></group> : null}
+    <group position={[4.9, 7.9, -9.0]} scale={[0.9 + 0.1 * chK, 0.9 + 0.1 * chK, 1]}><Board p={[0, 0, 0]} w={6.4} bg="#2a0f14" frame="#e5233a" lines={[{ t: "CHINA", s: 96, c: "#ff9a8a" }, { t: "MOST ALLEGED VICTIMS", s: 40, c: "#f5f7fa" }]} /></group>
+    {chK > 0.02 ? <Glow p={[4.9, 7.9, -8.6]} r={3.6} color="#ff4a3c" o={0.45} /> : null}
     {/* the scale of it, top centre */}
     {nK > 0.02 ? <group position={[0.8, 12.6, -10.5]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={10.6} lines={[{ t: "200,000,000 BAHT", s: 80, c: "#ffd36a" }, { t: "EVERY MONTH", s: 68, c: "#f5f7fa" }]} /></group> : null}
     {dK > 0.02 ? <group position={[0.8, 10.2, -10.5]} scale={[dK, dK, 1]}><Sign p={[0, 0, 0]} s={[9.2, 0.9]} text="≈ 6,000,000 US DOLLARS" bg="#0d2f1a" fg="#8affc1" size={92} frame="#2fd46a" /></group> : null}
