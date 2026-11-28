@@ -1,0 +1,922 @@
+[
+ {
+  "word": "Eleven",
+  "start": 0.0,
+  "end": 0.48
+ },
+ {
+  "word": "days",
+  "start": 0.48,
+  "end": 0.96
+ },
+ {
+  "word": "That",
+  "start": 1.06,
+  "end": 1.19
+ },
+ {
+  "word": "is",
+  "start": 1.19,
+  "end": 1.3
+ },
+ {
+  "word": "how",
+  "start": 1.3,
+  "end": 1.39
+ },
+ {
+  "word": "long",
+  "start": 1.39,
+  "end": 1.68
+ },
+ {
+  "word": "Nvidia",
+  "start": 1.68,
+  "end": 2.2
+ },
+ {
+  "word": "the",
+  "start": 2.2,
+  "end": 2.29
+ },
+ {
+  "word": "world's",
+  "start": 2.29,
+  "end": 2.62
+ },
+ {
+  "word": "most",
+  "start": 2.62,
+  "end": 2.86
+ },
+ {
+  "word": "valuable",
+  "start": 2.86,
+  "end": 3.35
+ },
+ {
+  "word": "chip",
+  "start": 3.35,
+  "end": 3.58
+ },
+ {
+  "word": "company",
+  "start": 3.58,
+  "end": 4.11
+ },
+ {
+  "word": "lasted",
+  "start": 4.11,
+  "end": 4.52
+ },
+ {
+  "word": "without",
+  "start": 4.52,
+  "end": 4.79
+ },
+ {
+  "word": "its",
+  "start": 4.79,
+  "end": 4.94
+ },
+ {
+  "word": "founder",
+  "start": 4.94,
+  "end": 5.37
+ },
+ {
+  "word": "Jensen",
+  "start": 5.37,
+  "end": 5.87
+ },
+ {
+  "word": "Huang",
+  "start": 5.87,
+  "end": 6.21
+ },
+ {
+  "word": "On",
+  "start": 6.43,
+  "end": 6.56
+ },
+ {
+  "word": "November",
+  "start": 6.56,
+  "end": 6.89
+ },
+ {
+  "word": "twelfth",
+  "start": 6.89,
+  "end": 7.37
+ },
+ {
+  "word": "Nvidia",
+  "start": 7.37,
+  "end": 7.79
+ },
+ {
+  "word": "announced",
+  "start": 7.79,
+  "end": 8.21
+ },
+ {
+  "word": "Huang",
+  "start": 8.21,
+  "end": 8.48
+ },
+ {
+  "word": "had",
+  "start": 8.48,
+  "end": 8.6
+ },
+ {
+  "word": "resigned",
+  "start": 8.6,
+  "end": 9.15
+ },
+ {
+  "word": "Reports",
+  "start": 9.33,
+  "end": 9.73
+ },
+ {
+  "word": "said",
+  "start": 9.73,
+  "end": 9.89
+ },
+ {
+  "word": "the",
+  "start": 9.89,
+  "end": 9.95
+ },
+ {
+  "word": "board",
+  "start": 9.95,
+  "end": 10.24
+ },
+ {
+  "word": "had",
+  "start": 10.24,
+  "end": 10.35
+ },
+ {
+  "word": "lost",
+  "start": 10.35,
+  "end": 10.66
+ },
+ {
+  "word": "confidence",
+  "start": 10.66,
+  "end": 11.19
+ },
+ {
+  "word": "after",
+  "start": 11.19,
+  "end": 11.39
+ },
+ {
+  "word": "revelations",
+  "start": 11.39,
+  "end": 12.04
+ },
+ {
+  "word": "of",
+  "start": 12.04,
+  "end": 12.11
+ },
+ {
+  "word": "an",
+  "start": 12.11,
+  "end": 12.17
+ },
+ {
+  "word": "affair",
+  "start": 12.17,
+  "end": 12.56
+ },
+ {
+  "word": "with",
+  "start": 12.56,
+  "end": 12.72
+ },
+ {
+  "word": "Alice",
+  "start": 12.72,
+  "end": 13.1
+ },
+ {
+  "word": "Huang",
+  "start": 13.1,
+  "end": 13.49
+ },
+ {
+  "word": "a",
+  "start": 13.62,
+  "end": 13.68
+ },
+ {
+  "word": "former",
+  "start": 13.68,
+  "end": 14.0
+ },
+ {
+  "word": "executive",
+  "start": 14.0,
+  "end": 14.55
+ },
+ {
+  "word": "at",
+  "start": 14.55,
+  "end": 14.65
+ },
+ {
+  "word": "Singapore-based",
+  "start": 14.65,
+  "end": 15.47
+ },
+ {
+  "word": "Megaspeed",
+  "start": 15.47,
+  "end": 16.16
+ },
+ {
+  "word": "a",
+  "start": 16.34,
+  "end": 16.37
+ },
+ {
+  "word": "woman",
+  "start": 16.37,
+  "end": 16.7
+ },
+ {
+  "word": "US",
+  "start": 16.7,
+  "end": 17.0
+ },
+ {
+  "word": "officials",
+  "start": 17.0,
+  "end": 17.44
+ },
+ {
+  "word": "reportedly",
+  "start": 17.44,
+  "end": 17.94
+ },
+ {
+  "word": "suspected",
+  "start": 17.94,
+  "end": 18.47
+ },
+ {
+  "word": "of",
+  "start": 18.47,
+  "end": 18.57
+ },
+ {
+  "word": "working",
+  "start": 18.57,
+  "end": 18.92
+ },
+ {
+  "word": "with",
+  "start": 18.92,
+  "end": 19.05
+ },
+ {
+  "word": "Chinese",
+  "start": 19.05,
+  "end": 19.47
+ },
+ {
+  "word": "intelligence",
+  "start": 19.47,
+  "end": 20.16
+ },
+ {
+  "word": "No",
+  "start": 20.41,
+  "end": 20.61
+ },
+ {
+  "word": "evidence",
+  "start": 20.61,
+  "end": 20.98
+ },
+ {
+  "word": "of",
+  "start": 20.98,
+  "end": 21.07
+ },
+ {
+  "word": "unlawful",
+  "start": 21.07,
+  "end": 21.51
+ },
+ {
+  "word": "conduct",
+  "start": 21.51,
+  "end": 21.99
+ },
+ {
+  "word": "has",
+  "start": 21.99,
+  "end": 22.11
+ },
+ {
+  "word": "been",
+  "start": 22.11,
+  "end": 22.23
+ },
+ {
+  "word": "made",
+  "start": 22.23,
+  "end": 22.45
+ },
+ {
+  "word": "public",
+  "start": 22.45,
+  "end": 22.91
+ },
+ {
+  "word": "The",
+  "start": 22.91,
+  "end": 23.17
+ },
+ {
+  "word": "fall",
+  "start": 23.17,
+  "end": 23.47
+ },
+ {
+  "word": "was",
+  "start": 23.47,
+  "end": 23.66
+ },
+ {
+  "word": "brutal",
+  "start": 23.66,
+  "end": 24.12
+ },
+ {
+  "word": "Nvidia",
+  "start": 24.24,
+  "end": 24.63
+ },
+ {
+  "word": "reportedly",
+  "start": 24.63,
+  "end": 25.18
+ },
+ {
+  "word": "lost",
+  "start": 25.18,
+  "end": 25.5
+ },
+ {
+  "word": "about",
+  "start": 25.5,
+  "end": 25.7
+ },
+ {
+  "word": "one",
+  "start": 25.7,
+  "end": 25.98
+ },
+ {
+  "word": "point",
+  "start": 25.98,
+  "end": 26.27
+ },
+ {
+  "word": "two",
+  "start": 26.27,
+  "end": 26.44
+ },
+ {
+  "word": "trillion",
+  "start": 26.44,
+  "end": 26.9
+ },
+ {
+  "word": "dollars",
+  "start": 26.9,
+  "end": 27.3
+ },
+ {
+  "word": "in",
+  "start": 27.3,
+  "end": 27.37
+ },
+ {
+  "word": "market",
+  "start": 27.37,
+  "end": 27.7
+ },
+ {
+  "word": "value",
+  "start": 27.7,
+  "end": 28.15
+ },
+ {
+  "word": "And",
+  "start": 28.3,
+  "end": 28.43
+ },
+ {
+  "word": "on",
+  "start": 28.43,
+  "end": 28.54
+ },
+ {
+  "word": "November",
+  "start": 28.54,
+  "end": 28.91
+ },
+ {
+  "word": "seventeenth",
+  "start": 28.91,
+  "end": 29.65
+ },
+ {
+  "word": "the",
+  "start": 29.65,
+  "end": 29.72
+ },
+ {
+  "word": "board",
+  "start": 29.72,
+  "end": 30.0
+ },
+ {
+  "word": "insisted",
+  "start": 30.0,
+  "end": 30.55
+ },
+ {
+  "word": "Huang",
+  "start": 30.55,
+  "end": 30.81
+ },
+ {
+  "word": "would",
+  "start": 30.81,
+  "end": 30.94
+ },
+ {
+  "word": "not",
+  "start": 30.94,
+  "end": 31.2
+ },
+ {
+  "word": "be",
+  "start": 31.2,
+  "end": 31.36
+ },
+ {
+  "word": "reinstated",
+  "start": 31.36,
+  "end": 32.08
+ },
+ {
+  "word": "Then",
+  "start": 32.28,
+  "end": 32.4
+ },
+ {
+  "word": "Washington",
+  "start": 32.4,
+  "end": 32.94
+ },
+ {
+  "word": "stepped",
+  "start": 32.94,
+  "end": 33.3
+ },
+ {
+  "word": "in",
+  "start": 33.3,
+  "end": 33.51
+ },
+ {
+  "word": "President",
+  "start": 33.63,
+  "end": 34.05
+ },
+ {
+  "word": "Trump",
+  "start": 34.05,
+  "end": 34.41
+ },
+ {
+  "word": "publicly",
+  "start": 34.41,
+  "end": 34.88
+ },
+ {
+  "word": "urged",
+  "start": 34.88,
+  "end": 35.21
+ },
+ {
+  "word": "Nvidia",
+  "start": 35.21,
+  "end": 35.63
+ },
+ {
+  "word": "to",
+  "start": 35.63,
+  "end": 35.73
+ },
+ {
+  "word": "take",
+  "start": 35.73,
+  "end": 35.95
+ },
+ {
+  "word": "him",
+  "start": 35.95,
+  "end": 36.06
+ },
+ {
+  "word": "back",
+  "start": 36.06,
+  "end": 36.56
+ },
+ {
+  "word": "and",
+  "start": 36.56,
+  "end": 36.7
+ },
+ {
+  "word": "senior",
+  "start": 36.7,
+  "end": 37.05
+ },
+ {
+  "word": "officials",
+  "start": 37.05,
+  "end": 37.51
+ },
+ {
+  "word": "pressed",
+  "start": 37.51,
+  "end": 37.83
+ },
+ {
+  "word": "the",
+  "start": 37.83,
+  "end": 37.89
+ },
+ {
+  "word": "board",
+  "start": 37.89,
+  "end": 38.19
+ },
+ {
+  "word": "directly",
+  "start": 38.19,
+  "end": 38.77
+ },
+ {
+  "word": "On",
+  "start": 38.94,
+  "end": 39.05
+ },
+ {
+  "word": "November",
+  "start": 39.05,
+  "end": 39.41
+ },
+ {
+  "word": "twenty-third",
+  "start": 39.41,
+  "end": 40.18
+ },
+ {
+  "word": "the",
+  "start": 40.18,
+  "end": 40.25
+ },
+ {
+  "word": "board",
+  "start": 40.25,
+  "end": 40.53
+ },
+ {
+  "word": "reversed",
+  "start": 40.53,
+  "end": 40.97
+ },
+ {
+  "word": "itself",
+  "start": 40.97,
+  "end": 41.45
+ },
+ {
+  "word": "unanimously",
+  "start": 41.45,
+  "end": 42.23
+ },
+ {
+  "word": "Huang",
+  "start": 42.45,
+  "end": 42.65
+ },
+ {
+  "word": "returned",
+  "start": 42.65,
+  "end": 43.09
+ },
+ {
+  "word": "as",
+  "start": 43.09,
+  "end": 43.24
+ },
+ {
+  "word": "chief",
+  "start": 43.24,
+  "end": 43.47
+ },
+ {
+  "word": "executive",
+  "start": 43.47,
+  "end": 44.05
+ },
+ {
+  "word": "though",
+  "start": 44.05,
+  "end": 44.24
+ },
+ {
+  "word": "not",
+  "start": 44.24,
+  "end": 44.46
+ },
+ {
+  "word": "as",
+  "start": 44.46,
+  "end": 44.6
+ },
+ {
+  "word": "chairman",
+  "start": 44.6,
+  "end": 45.07
+ },
+ {
+  "word": "Three",
+  "start": 45.24,
+  "end": 45.41
+ },
+ {
+  "word": "days",
+  "start": 45.41,
+  "end": 45.65
+ },
+ {
+  "word": "later",
+  "start": 45.65,
+  "end": 45.94
+ },
+ {
+  "word": "came",
+  "start": 45.94,
+  "end": 46.16
+ },
+ {
+  "word": "the",
+  "start": 46.16,
+  "end": 46.22
+ },
+ {
+  "word": "twist",
+  "start": 46.22,
+  "end": 46.91
+ },
+ {
+  "word": "Reports",
+  "start": 46.91,
+  "end": 47.33
+ },
+ {
+  "word": "said",
+  "start": 47.33,
+  "end": 47.5
+ },
+ {
+  "word": "Nvidia",
+  "start": 47.5,
+  "end": 47.93
+ },
+ {
+  "word": "had",
+  "start": 47.93,
+  "end": 48.12
+ },
+ {
+  "word": "told",
+  "start": 48.12,
+  "end": 48.4
+ },
+ {
+  "word": "Dell",
+  "start": 48.4,
+  "end": 48.73
+ },
+ {
+  "word": "and",
+  "start": 48.73,
+  "end": 48.85
+ },
+ {
+  "word": "Supermicro",
+  "start": 48.85,
+  "end": 49.61
+ },
+ {
+  "word": "to",
+  "start": 49.61,
+  "end": 49.73
+ },
+ {
+  "word": "halt",
+  "start": 49.73,
+  "end": 50.09
+ },
+ {
+  "word": "AI",
+  "start": 50.09,
+  "end": 50.38
+ },
+ {
+  "word": "server",
+  "start": 50.38,
+  "end": 50.73
+ },
+ {
+  "word": "shipments",
+  "start": 50.73,
+  "end": 51.16
+ },
+ {
+  "word": "to",
+  "start": 51.16,
+  "end": 51.24
+ },
+ {
+  "word": "Malaysia",
+  "start": 51.24,
+  "end": 51.8
+ },
+ {
+  "word": "Singapore",
+  "start": 51.92,
+  "end": 52.53
+ },
+ {
+  "word": "Thailand",
+  "start": 52.64,
+  "end": 53.19
+ },
+ {
+  "word": "and",
+  "start": 53.19,
+  "end": 53.36
+ },
+ {
+  "word": "Indonesia",
+  "start": 53.36,
+  "end": 54.02
+ },
+ {
+  "word": "after",
+  "start": 54.2,
+  "end": 54.45
+ },
+ {
+  "word": "a",
+  "start": 54.45,
+  "end": 54.48
+ },
+ {
+  "word": "new",
+  "start": 54.48,
+  "end": 54.69
+ },
+ {
+  "word": "US",
+  "start": 54.69,
+  "end": 55.06
+ },
+ {
+  "word": "rule",
+  "start": 55.06,
+  "end": 55.36
+ },
+ {
+  "word": "required",
+  "start": 55.36,
+  "end": 55.81
+ },
+ {
+  "word": "export",
+  "start": 55.81,
+  "end": 56.26
+ },
+ {
+  "word": "licences",
+  "start": 56.26,
+  "end": 56.91
+ },
+ {
+  "word": "a",
+  "start": 57.13,
+  "end": 57.19
+ },
+ {
+  "word": "move",
+  "start": 57.19,
+  "end": 57.47
+ },
+ {
+  "word": "aimed",
+  "start": 57.47,
+  "end": 57.74
+ },
+ {
+  "word": "at",
+  "start": 57.74,
+  "end": 57.82
+ },
+ {
+  "word": "alleged",
+  "start": 57.82,
+  "end": 58.23
+ },
+ {
+  "word": "chip",
+  "start": 58.23,
+  "end": 58.46
+ },
+ {
+  "word": "routes",
+  "start": 58.46,
+  "end": 58.76
+ },
+ {
+  "word": "into",
+  "start": 58.76,
+  "end": 58.91
+ },
+ {
+  "word": "China",
+  "start": 58.91,
+  "end": 59.4
+ },
+ {
+  "word": "Investigations",
+  "start": 59.61,
+  "end": 60.34
+ },
+ {
+  "word": "are",
+  "start": 60.34,
+  "end": 60.41
+ },
+ {
+  "word": "still",
+  "start": 60.41,
+  "end": 60.7
+ },
+ {
+  "word": "open",
+  "start": 60.7,
+  "end": 61.03
+ },
+ {
+  "word": "This",
+  "start": 61.16,
+  "end": 61.34
+ },
+ {
+  "word": "saga",
+  "start": 61.34,
+  "end": 61.63
+ },
+ {
+  "word": "is",
+  "start": 61.63,
+  "end": 61.87
+ },
+ {
+  "word": "not",
+  "start": 61.87,
+  "end": 62.14
+ },
+ {
+  "word": "over",
+  "start": 62.14,
+  "end": 62.5
+ }
+]
