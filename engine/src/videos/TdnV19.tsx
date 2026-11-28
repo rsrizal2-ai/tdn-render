@@ -250,11 +250,11 @@ const S4 = ({ t, f }: Ctx) => {
     <group position={[lerp(9.2, 4.6, Easing.inOut(Easing.cubic)(inK)), 0, -5.6]}>
       <Person p={[0, 0, 0]} h={3.8} look={jensen} f={f} pose={{ mood: "smile", arms: "down", lookX: -0.35, walk: inK > 0 && inK < 1 ? t * 5.6 : 0, speed: 1.4 }} />
     </group>
-    {wK > 0.02 ? <group position={[-4.6, 6.3, -4.6]} scale={[wK, wK, 1]}><Sign p={[0, 0, 0]} s={[5.2, 0.9]} text="WASHINGTON" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
+    {wK > 0.02 ? <group position={[-4.6, 7.7, -4.6]} scale={[wK, wK, 1]}><Sign p={[0, 0, 0]} s={[5.2, 0.9]} text="WASHINGTON" bg="#101828" fg="#8ae8ff" size={100} frame="#38b6d9" /></group> : null}
     {uK > 0.02 ? <group position={[0, 13, -10.6]} scale={[uK, uK, 1]}><Board p={[0, 0, 0]} w={11.4} lines={[{ t: "THE PRESIDENT URGES:", s: 66, c: "#8ae8ff" }, { t: "BRING HIM BACK", s: 84, c: "#ffd36a" }]} /></group> : null}
     {pK > 0.02 ? <group position={[5.0, 9.4, -9.8]} scale={[pK, pK, 1]}><Board p={[0, 0, 0]} w={6.2} bg="#0d2f47" frame="#38b6d9" lines={[{ t: "OFFICIALS", s: 62, c: "#8ae8ff" }, { t: "PRESS THE BOARD", s: 50, c: "#f5f7fa" }]} /></group> : null}
     {calK > 0.02 ? <group position={[-7, 12.5, -10.2]} scale={[calK, calK, 1]}><Board p={[0, 0, 0]} w={5.4} lines={[{ t: "23 NOV", s: 92, c: "#ffd36a" }, { t: "THE VOTE", s: 54, c: "#f5f7fa" }]} /></group> : null}
-    {rK > 0.02 ? <group position={[0, 9.9, -10.2]} scale={[rK, rK, 1]}><Board p={[0, 0, 0]} w={9.4} bg="#0d2f1a" frame="#2fd46a" lines={[{ t: "REINSTATED", s: 88, c: "#8affc1" }, { t: "UNANIMOUS", s: 66, c: "#f5f7fa" }]} /></group> : null}
+    {rK > 0.02 ? <group position={[-1.6, 9.9, -10.2]} scale={[rK, rK, 1]}><Board p={[0, 0, 0]} w={9.4} bg="#0d2f1a" frame="#2fd46a" lines={[{ t: "REINSTATED", s: 88, c: "#8affc1" }, { t: "UNANIMOUS", s: 66, c: "#f5f7fa" }]} /></group> : null}
     {chK > 0.02 ? <group position={[0, 6.6, -9.9]} scale={[chK, chK, 1]}><Sign p={[0, 0, 0]} s={[10.8, 0.95]} text="CHAIRMAN: STILL JONES" bg="#101828" fg="#ffd36a" size={96} frame="#c9a227" /></group> : null}
   </>);
 };
