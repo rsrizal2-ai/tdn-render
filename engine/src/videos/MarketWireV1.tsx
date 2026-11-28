@@ -401,7 +401,7 @@ const S7 = ({ t }: Ctx) => {
     {fK > 0.02 ? <group position={[3.6, 10.5, -10.6]} scale={[fK, fK, 1]}><CalBoard p={[0, 0, 0]} w={5.6} top="DEC" day="8–9" label="THE FED MEETS" col="#e5233a" /></group> : null}
     {rK > 0.02 ? <group position={[3.1, 6.45, -10.2]} scale={[rK, rK, 1]}><Stamp p={[0, 0, 0]} w={7.6} text="RATE HIKE 98% PRICED IN" /></group> : null}
     {bK > 0.02 ? <group position={[-4.35, 6.6, -10.4]} scale={[bK, bK, 1]}><Sign p={[0, 0, 0]} s={[6.4, 0.9]} text="THE MARKET WIRE" bg="#12081f" fg="#ffd36a" size={92} frame="#c9a227" /></group> : null}
-    {nK > 0.02 ? <group position={[0, 3.1, -9.6]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={11.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "NOT FINANCIAL ADVICE", s: 76, c: "#ff9a8a" }]} /></group> : null}
+    {nK > 0.02 ? <group position={[1.35, 3.1, -9.6]} scale={[nK, nK, 1]}><Board p={[0, 0, 0]} w={11.6} bg="#2a0f14" frame="#e5233a" lines={[{ t: "NOT FINANCIAL ADVICE", s: 76, c: "#ff9a8a" }]} /></group> : null}
     <Bull p={[-4.55, 0, -3.5]} t={t} pose="shrug" s={0.8} />
   </>);
 };
